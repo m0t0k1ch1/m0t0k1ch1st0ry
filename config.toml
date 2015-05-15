@@ -1,0 +1,32 @@
+baseurl = "http://m0t0k1ch1st0ry.com/"
+languageCode = "ja-jp"
+theme = "vienna"
+title = "m0t0k1ch1st0ry"
+disqusShortname = "m0t0k1ch1st0ry"
+paginate = 7
+
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; 2013 m0t0k1ch1st0ry.com"
+
+[params]
+    author = "m0t0k1ch1"
+    avatar = "/my-images/common/star.png"
+    contact = "m0t0k1ch1.310@gmail.com"
+    bio = "a human"
+
+    # Short subtitle/tagline. This is displayed in the header.
+    subtitle = ""
+
+    # Social accounts. Link to these accounts are displayed in the header and
+    # footer.
+    twitter = "m0t0k1ch1"
+    github = "m0t0k1ch1"
+    linkedin = ""
+    facebook = ""
+    stackoverflow = ""
+
+    # Google Analytics API key.
+    ga_api_key = "UA-40447108-1"
+
+    # Mixpanel API key.
+    mixpanel_api_key = ""

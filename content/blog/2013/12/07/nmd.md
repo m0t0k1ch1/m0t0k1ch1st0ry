@@ -1,0 +1,19 @@
++++
+date = "2013-12-07"
+tags = [ "music" ]
+title = "NMD"
++++
+
+最近聴いて電撃が疾走った曲。
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/26211881&amp;color=8c8c8c&amp;auto_play=false&amp;show_artwork=true"></iframe>
+<br />
+
+<!--more-->
+
+音楽は詩を意識せずに聴く性分なのですが、この曲を初めて聴いたときは圧倒的に詩が突き刺さりました。今の自分にとっては反語的に。過去に1回突き刺されたことでもっかい突き刺されてるあたり、悟りは遠いです。もちろん、反語的でない捉え方をしたとしても、とても渋い曲だと思います。
+
+ちなみに、2番の歌詞はボーカルの [仮谷せいら](https://twitter.com/usamelo_16) さんが描かれたそうですが、おそらく当時はまだ未成年だったようで。。その感性分けてくださいって感じです。声も素晴らしいです。
+
+近頃は暦などにも惑わされ気味で、1人でつらい感じごっこしていますが、矛先だけは間違えないように精進します。  
+はい、酔っています。

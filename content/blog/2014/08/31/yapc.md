@@ -1,0 +1,87 @@
++++
+date = "2014-08-31"
+tags = [ "yapc" ]
+title = "ブログを書くまでが YAPC::Asia Tokyo 2014"
++++
+
+去年は実力不足でいろいろバタバタしててまともに参加できなかったので、今年は気合入ってた。
+
+<blockquote class="twitter-tweet" lang="ja"><p>YAPC、聴くやつ全部キメた</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/statuses/504636484888956930">2014, 8月 27</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>去年きちんと参加できなかった分気合入ってる</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/statuses/504636681295626240">2014, 8月 27</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<br />
+実際、1日目の午前中は多目的教室2の最右前端にポジショニングしてどやってた（視力クソなのに眼鏡忘れたせい）。
+
+<!--more-->
+
+感想、ダラダラと書いてしまいそうなので、全体を通しての感想を頭に書こうと思う。それ以降は印象に残ったトークについての感想（主に自分用）なので、気が向いた方だけ目を通していただければと。
+
+<br />
+## 全体を通しての感想
+
+大きくは以下の3点。運営のみなさん、本当にありがとうございました。
+
+* Perl という入口が、ここまで様々な物事（技術に限らないという意味で）の入口に繋がっているということを伝えてくれる素晴らしいイベントだと思った
+* イベント全体、特に [@typester](https://twitter.com/typester) さんのキーノートを通してコミュニティというものの強みを再認識できた
+* 幸せな環境にいるなあと思ったし、その幸せをもっと最大限に享受していくにはもっとコミットした方がよいなあと思った
+
+ということで、来年は運営に携わってみるのもアリだなと思った（ホントに [@yusukebe](https://twitter.com/yusukebe) さんにメンション飛ばせばいいのかな…）。
+
+<br />
+## 印象に残ったトークについての感想
+
+#### ★ Go For Perl Mongers
+
+http://yapcasia.org/2014/talk/show/2276d7b2-eba7-11e3-bd6d-c7a06aeab6a4
+
+最近、仕事の中でも Golang を書かせていただけていることもあって、これは絶対に外せなかった。
+
+<blockquote class="twitter-tweet" lang="ja"><p>Go For Perl Mongers、ホントはオフィスいた方がよいのですが、これ聴きに半ば無理やり来ました <a href="https://twitter.com/hashtag/yapcasia?src=hash">#yapcasia</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/statuses/505174520244625408">2014, 8月 29</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<br />
+基本的には [@lestrrat](https://twitter.com/lestrrat) さんが自分の嵌ったポイントをベースに解説していくスタイルだった。で、その中に [自分が書いてて嵌ってブログにまとめてたこと](http://m0t0k1ch1st0ry.com/blog/2014/06/11/golang) とかも混じっていて、「あ、これに嵌るの自分だけじゃないんだ」と少しほっとしたりもした。YAPC でトークを採択されるレベルの方々が新しい技術を学ぶ過程の一部を見れたような感じで、それを自分の学習姿勢と比較すると考えることが多かったし、Golang に関する知見として覚えておきたい内容が40分に詰まっていたと思う。少し偏った表現もあった気はするけど、それはそれで「そういう見方もあるんだ」と勉強になった。
+
+<br />
+#### ★ お待たせしました。Perl で BDD を簡単に実践する最高にクールなフレームワークができました
+
+http://yapcasia.org/2014/talk/show/66c55626-eba9-11e3-bd6d-c7a06aeab6a4
+
+[Test::Kantan](http://search.cpan.org/~tokuhirom/Test-Kantan-0.36/lib/Test/Kantan.pm)、ふつうに使ってみたくなった（というか、その日に帰って使ってみた）し、そう思わせてくれるようなプロダクトを自分の思想とともに発表できるというのは純粋にかっこいいと思った。プロダクトが伴うと、伝わってくるものが大きいなと感じた。
+
+<br />
+#### ★ Dockerで遊んでみよっかー
+
+http://yapcasia.org/2014/talk/show/97cc7bbc-ef25-11e3-b7e8-e4a96aeab6a4
+
+新しい技術に対して、「本番で使わないから使わない」ではなくて「遊んでみる」ことが大切。という言葉（正確ではないと思うけど）が印象的だった。また、当然なんだけど、[@kazeburo](https://twitter.com/kazeburo) さんの言う「遊んでみる」というのが、自分の「遊んでみる」とはレベルが違うのを感じたし、そこを埋める努力をしないといけないなと思った。
+
+<br />
+#### ★ キーノート
+
+http://yapcasia.org/2014/talk/show/4c1b9652-0c86-11e4-aec0-ad686aeab6a4
+
+自分も実績（事実）で語れる人間になりたいなあと思った。あとは「全体を通しての感想」にも書いたとおり、コミュニティというものの強みを再認識できた。
+
+あと、個人的に印象的だったのは「ロールモデルをつくろう」という言葉。これ、これまでに何度も聴いてきたのだけど、あんまりそういうモチベーションになったことはなかった。でも、今回始めてそういうモチベーションになった。なんでだろう。聴くタイミングなのか伝える人なのか過去の自分がフラットに物事捉えられてなかったのか、考えることが多かった。
+
+<br />
+#### ★ 聴きたかったけど聴けなかったトーク
+
+1日目の午後は諸事情でオフィスに帰還する必要が出てきてしまったので、午後は参加できなかった。特に聴きたかったのは
+
+* [Scala In Perl Company : Hatena](http://yapcasia.org/2014/talk/show/d557ddbe-fde4-11e3-b7e8-e4a96aeab6a4)
+* [いろんな言語を適材適所で使おう](http://yapcasia.org/2014/talk/show/ce831248-ebb4-11e3-bd6d-c7a06aeab6a4)
+
+だったけれど、これは2つとも既にスライドがアップされているので本当に助かった。次回以降はこういうことのないように YAPC に向けたコンディショニングを怠らないようにしたい。特に、「[いろんな言語を適材適所で使おう](http://yapcasia.org/2014/talk/show/ce831248-ebb4-11e3-bd6d-c7a06aeab6a4)」は定期的に目を通しておきたい内容だなと感じた。
+
+<br />
+## その他
+
+* 最終日の LT で壇上に上がっていたガイアックスさんの新卒のみなさん、尊敬
+* 無限コーヒーと Red Bull、サイコーでした
+* イベント終了後、キャンパス内でいちゃこらストリートダンスしてる学生を発見してしまって、バトル仕掛けてぶっ潰(ry
+* 「TOKYO TRIBE」が公開日だったので [帰り道に観た](http://m0t0k1ch1st0ry.com/blog/2014/08/31/tokyo-tribe) のだけれど、このタイミングでこれを観たっていうのもまた一興
