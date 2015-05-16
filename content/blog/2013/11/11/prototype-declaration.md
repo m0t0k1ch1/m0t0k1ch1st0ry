@@ -40,7 +40,7 @@ say eliminate { $_ =~ /^-?\d+$/ && ($_ > 1 || $_ < 0) } @array;
 
 実行結果は以下。
 
-``` sh
+``` nohighlight
 m0t0k1ch1
 ```
 

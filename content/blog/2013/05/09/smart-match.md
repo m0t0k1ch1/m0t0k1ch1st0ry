@@ -23,7 +23,7 @@ if ($hoge ~~ [1, 3, 5]) {
 
 * 当然、出力は以下
 
-``` sh
+``` nohighlight
 $hoge is 1 or 3 or 5
 ```
 
@@ -42,7 +42,7 @@ if ('0.00' == '0') {
 
 * なんと、出力は以下
 
-``` sh
+``` nohighlight
 match!
 ```
 

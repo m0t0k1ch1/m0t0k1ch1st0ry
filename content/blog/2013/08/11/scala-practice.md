@@ -67,7 +67,7 @@ println(addPiyo("Hello world"))
 
 * 実行すると、結果は当然の如く以下
 
-``` sh
+``` nohighlight
 Hello world piyo!
 ```
 
@@ -90,7 +90,7 @@ addPiyoAndPrint("Hello world")
 
 * こちらも実行すると、結果は当然の如く以下
 
-``` sh
+``` nohighlight
 Hello world piyo!
 ```
 
@@ -121,7 +121,7 @@ $ scala searchPiyo.scala puyopuyo no piyon piyo!
 
 * と、結果は以下
 
-``` sh
+``` nohighlight
 piyon, piyo!
 ```
 

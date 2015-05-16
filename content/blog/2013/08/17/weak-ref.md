@@ -33,7 +33,7 @@ Dump $piyo;
 
 上記のプログラムを実行すると結果は以下のようになり、`REFCNT`（参照カウント）が増えているのがわかります。
 
-``` sh
+``` nohighlight
 SV = PV(0x7fd4aa03ab90) at 0x7fd4aa08b408
   REFCNT = 1
   FLAGS = (PADMY,POK,pPOK)
@@ -118,7 +118,7 @@ find_cycle($piyo);
 
 結果、以下のように循環参照が検出されます。
 
-``` sh
+``` nohighlight
 Cycle (1):
                   $Piyo::A->{'poyo'} => \%Poyo::B
                   $Poyo::B->{'piyo'} => \%Piyo::A

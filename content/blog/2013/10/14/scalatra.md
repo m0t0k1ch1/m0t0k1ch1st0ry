@@ -46,7 +46,7 @@ $ g8 scalatra/scalatra-sbt
 
 上記のコマンドを実行するといろいろ聞かれますが、何を入力すればよいかは [First steps | Scalatra](http://www.scalatra.org/2.2/getting-started/first-project.html) にちゃんと書いてあります。とりあえず、今回は以下のように入力したとして話を進めます。
 
-``` sh
+``` nohighlight
 organization [com.example]:       com.k1ch1
 package [com.example.app]:        com.k1ch1.app
 name [My Scalatra Web App]:       k1ch1
@@ -65,13 +65,16 @@ version [0.1.0-SNAPSHOT]:         （そのまま）
 $ cd k1ch1
 $ chmod u+x sbt
 $ ./sbt
+```
+
+``` nohighlight
 > container:start
 > ~;copy-resources;aux-compile
 ```
 
 * ブラウザで見てみる
 
-``` sh
+``` nohighlight
 > browse
 ```
 

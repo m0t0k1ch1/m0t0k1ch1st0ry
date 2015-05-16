@@ -43,7 +43,7 @@ func main() {
 
 上記のコードを使って、例えば以下の Markdown を変換してみると…
 
-``` text
+``` nohighlight
 # Header 1
 
 ## Header 2
