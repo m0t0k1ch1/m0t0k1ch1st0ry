@@ -1,0 +1,4 @@
+[submodule "themes/vienna"]
+	path = themes/vienna
+	url = https://github.com/m0t0k1ch1/vienna
+	branch = m0t0k1ch1st0ry
