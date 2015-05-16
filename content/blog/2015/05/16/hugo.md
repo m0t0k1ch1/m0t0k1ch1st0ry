@@ -115,7 +115,7 @@ theme を何にするかは悩みに悩んだ。これだ！！！みたいな�
 
 手を動かしたのは、記事のリスト表示でページャー使われてなかったので使うようにした（1ページ7記事）くらい。この theme でいくぞ！！！って決めてからは速かった。
 
-あと、ローカルでビルドすると
+あと、ローカルで build すると
 
 ``` nohighlight
 ERROR: 2015/05/15 Site's .BaseUrl is deprecated and will be removed in Hugo 0.15. Use .BaseURL instead.
