@@ -1,8 +1,8 @@
 baseurl = "http://m0t0k1ch1st0ry.com/"
 languageCode = "ja-jp"
-theme = "vienna"
 title = "m0t0k1ch1st0ry"
 disqusShortname = "m0t0k1ch1st0ry"
+theme = "vienna"
 paginate = 7
 
 # Copyright notice. This is displayer in the footer.
