@@ -4,7 +4,7 @@ tags = [ "golang" ]
 title = "Golang で IRC bot をつくりやすくする"
 +++
 
-Perl で IRC bot を書くとき、[UnazuSan](https://github.com/Songmu/p5-UnazuSan) の `on_command` を使うのに慣れちゃっていたので、Golang でも同じ雰囲気で書きたいなあと思って書いた。誰か既に似たようなのを書いていそうな気もする。。
+Perl で IRC bot を書くとき、[UnazuSan](https://github.com/Songmu/p5-UnazuSan) の `on_command` を使うのに慣れちゃっていたので、Golang でも同じ雰囲気で書きたいなあと思って、とりあえず骨組みだけ書いてみた。誰か既に似たようなのを書いていそうな気もする。。
 
 <div class="github-card" data-github="m0t0k1ch1/ape" data-width="300" data-height="150" data-theme="default"></div>
 <script src="http://lab.lepture.com/github-cards/widget.js"></script>
