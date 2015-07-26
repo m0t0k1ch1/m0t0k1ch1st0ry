@@ -1,0 +1,69 @@
++++
+date = "2015-07-26T21:36:12+09:00"
+tags = [ "golang" ]
+title = "Golang で IRC bot をつくりやすくする"
++++
+
+Perl で IRC bot を書くとき、[UnazuSan](https://github.com/Songmu/p5-UnazuSan) の `on_command` を使うのに慣れちゃっていたので、Golang でも同じ雰囲気で書きたいなあと思って書いた。誰か既に似たようなのを書いていそうな気もする。。
+
+<div class="github-card" data-github="m0t0k1ch1/ape" data-width="300" data-height="150" data-theme="default"></div>
+<script src="http://lab.lepture.com/github-cards/widget.js"></script>
+
+<!--more-->
+
+README にも書いた通り、こんな感じで使います。
+
+``` go
+package main
+
+import (
+	"log"
+	"strings"
+
+	"github.com/m0t0k1ch1/ape"
+)
+
+func main() {
+	con := ape.NewConnection("pooh", "pooh")
+	con.UseTLS = true
+	con.Password = "XXXXX"
+	if err := con.Connect("irc.example.com:6667"); err != nil {
+		log.Fatal(err)
+	}
+
+	con.RegisterChannel("#poyo")
+
+	con.AddAction("piyo", func(e *ape.Event) {
+		con.Response("poyo")
+	})
+
+	con.AddAction("say", func(e *ape.Event) {
+		con.Response(strings.Join(e.Args(), " "))
+	})
+
+	con.AddAction("🙏", func(e *ape.Event) {
+		con.Response("解脱")
+		con.Part(con.Channel())
+		con.Join(con.Channel())
+		con.Response("輪廻転生")
+	})
+
+	con.Loop()
+}
+```
+
+すると、こんな感じでやりとりできます。
+
+``` no-highlight
+21:26:57 m0t0k1ch1: pooh: piyo
+21:26:57 pooh: poyo
+21:27:04 m0t0k1ch1: pooh: say 🙏
+21:27:04 pooh: 🙏
+21:26:42 m0t0k1ch1: pooh: 🙏
+21:26:42 pooh: 解脱
+21:26:42 pooh has left ()
+21:26:42 pooh has joined (~pooh@example.com)
+21:26:43 pooh: 輪廻転生
+```
+
+合掌。
