@@ -59,11 +59,11 @@ func main() {
 21:26:57 pooh: poyo
 21:27:04 m0t0k1ch1: pooh: say 🙏
 21:27:04 pooh: 🙏
-21:26:42 m0t0k1ch1: pooh: 🙏
-21:26:42 pooh: 解脱
-21:26:42 pooh has left ()
-21:26:42 pooh has joined (~pooh@example.com)
-21:26:43 pooh: 輪廻転生
+21:27:11 m0t0k1ch1: pooh: 🙏
+21:27:11 pooh: 解脱
+21:27:11 pooh has left ()
+21:27:11 pooh has joined (~pooh@example.com)
+21:27:12 pooh: 輪廻転生
 ```
 
 合掌。
