@@ -38,7 +38,7 @@ func main() {
 	})
 
 	con.AddAction("say", func(e *ape.Event) {
-		con.Response(strings.Join(e.Args(), " "))
+		con.Response(strings.Join(e.Command().Args(), " "))
 	})
 
 	con.AddAction("🙏", func(e *ape.Event) {
