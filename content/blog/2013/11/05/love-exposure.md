@@ -37,8 +37,9 @@ title = "Love Exposure"
 <br />
 ## 音楽
 
+<div class="max-width-content">
 <iframe width="560" height="315" src="//www.youtube.com/embed/mKUhq7SYouA" frameborder="0" allowfullscreen></iframe>
-<br />
+</div>
 
 *  中毒症状出てる
 * 「地獄でなぜ悪い」然り、音楽が異様に耳残りするの、これはホントに異様だし、こだわりを感じる
@@ -49,8 +50,9 @@ title = "Love Exposure"
 新約聖書の中の有名な一節。作中でもろに愛が語られる場面で引用される。  
 結婚式とかでよく引用されるらしいけど、個人的にそれはちょっと違う気がしてる。
 
+<div class="max-width-content">
 <iframe width="560" height="315" src="//www.youtube.com/embed/FzUKJstNXUY" frameborder="0" allowfullscreen></iframe>
-<br />
+</div>
 
 このシーンは見返してみて初めて鳥肌が立った。  
 初見のときに鳥肌立たなかったのは逆に凄い。もちろん自分じゃなく作品が。

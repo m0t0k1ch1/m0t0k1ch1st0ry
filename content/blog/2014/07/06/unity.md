@@ -6,9 +6,9 @@ title = "Unity で 2D シューティング"
 
 引き続き、チュートリアル通りに 2D シューティングをつくってみた。[こちら](/unity/Tutorial2D.html) で遊べます。
 
-![tutorial 2D](/my-images/entry/unity-2d.gif)
-
 <!--more-->
+
+![tutorial 2D](/my-images/entry/unity-2d.gif)
 
 プレハブ化とか、当たり判定とか、アニメーションとか、やることが想像以上に多くて勉強になった。あと、デフォルトのエディタを MonoDevelop から Atom に変えて楽しんでいた。
 

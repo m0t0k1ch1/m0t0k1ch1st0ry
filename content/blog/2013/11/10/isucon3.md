@@ -6,9 +6,9 @@ title = "ISUCON3 底辺スタッフの記録"
 
 [ISUCON3](http://isucon.net) 本戦にスタッフとして参加させていただきました。準備期間と当日にやったこと、それを通して感じたことをまとめます。
 
-![isucon3 1](/my-images/entry/isucon3_1.jpg)
-
 <!--more-->
+
+![isucon3 1](/my-images/entry/isucon3_1.jpg)
 
 <br />
 ## スタッフとしてやったこと

@@ -136,7 +136,9 @@ alp の集計結果を見る限り、このあたりで明らかなボトルネ�
 
 あとは一発屋っぽい名前にしたくなかったこと。「茶柱 in the house」というチーム名が先に候補として上がっていたのですが、「予選敗退してそう」ということでボツにしました。
 
+<div class="max-width-content">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OfqjIlgSaAg" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ### チームメイトへ
 

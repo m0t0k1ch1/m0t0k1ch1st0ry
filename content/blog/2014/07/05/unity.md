@@ -6,9 +6,9 @@ title = "Unity 始めました"
 
 冷やし中華始める前に [Unity](http://japan.unity3d.com) 始めてしまった。Golang と合わせて勉強時間しっかり確保していきたい。とりあえずチュートリアル通りブロック崩しをつくってみた。思ってたより簡単にできていい感じ。
 
-![tutorial 3D](/my-images/entry/unity-3d.gif)
-
 <!--more-->
+
+![tutorial 3D](/my-images/entry/unity-3d.gif)
 
 <br />
 ## ※追記
