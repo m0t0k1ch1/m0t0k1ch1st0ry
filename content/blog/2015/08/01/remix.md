@@ -7,7 +7,6 @@ title = "Not Goodbye Happiness"
 処女作です。
 
 <iframe width="100%" height="430" scrolling="no" frameborder="no" allowtransparency="true" src="https://www.indiloop.com/player/55b7087e08ea12fd64851e0f?layout=tall&color=rgb(255%2C%20255%2C%20255)&stems=false"></iframe>
-<br /><br />
 
 <!--more-->
 
