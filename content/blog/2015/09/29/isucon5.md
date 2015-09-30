@@ -13,6 +13,7 @@ title = "ISUCON5 と chatzmers - 予選4位通過編"
 ということで、せっかくなので予選当日までの期間も含めてどう ISUCON5 に立ち向かったのかを自分視点で書こうと思います。不足している点についてはチームメイトのエントリをご参照いただければと思います。
 
 * [「ISUCON5 予選4位通過でした」](http://macotasu.hatenablog.jp/entry/2015/09/28/190442)@Maco_Tasu
+* [「ISUCON5 総合4位で予選突破！」](http://t1macrggs.hatenablog.jp/entry/2015/09/30/015143)@rg_gs
 
 <br />
 ## 当日までにやったこと
