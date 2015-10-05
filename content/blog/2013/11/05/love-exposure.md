@@ -51,7 +51,7 @@ title = "Love Exposure"
 結婚式とかでよく引用されるらしいけど、個人的にそれはちょっと違う気がしてる。
 
 <div class="max-width-content">
-<iframe width="560" height="315" src="//www.youtube.com/embed/FzUKJstNXUY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EE5f9xUEqvE" frameborder="0" allowfullscreen></iframe>
 </div>
 
 このシーンは見返してみて初めて鳥肌が立った。  
