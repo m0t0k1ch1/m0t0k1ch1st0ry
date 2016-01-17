@@ -24,6 +24,9 @@ copyright = "&copy; 2013 m0t0k1ch1st0ry.com"
     facebook = ""
     stackoverflow = ""
 
+    # Facebook App ID
+    fb_app_id = "171566516539742"
+
     # Google Analytics API key.
     ga_api_key = "UA-40447108-1"
 
