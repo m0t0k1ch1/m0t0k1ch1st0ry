@@ -8,7 +8,9 @@ title = "Quiver でメモ管理改善"
 
 Twitter のタイムラインで [こちらのエントリ](http://namaraii.com/archives/39626) を見かけて、これはよさそうと思って衝動買いしてちょっと試してみたところ、自分のニーズを全て満たしていると言っても過言ではないくらいよかった。ので、この感動を同じニーズを持った人達に伝えるべく、軽くレポートしてみようと思う。
 
+<div class="max-width-content">
 ![quiver](/my-images/entry/quiver.png)
+</div>
 
 <!--more-->
 
