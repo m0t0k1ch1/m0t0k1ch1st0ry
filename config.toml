@@ -1,35 +1,20 @@
 baseurl = "http://m0t0k1ch1st0ry.com/"
-languageCode = "ja-jp"
 title = "m0t0k1ch1st0ry"
+theme = "ghostwriter"
+languageCode = "ja-jp"
+googleAnalytics = "UA-40447108-1"
 disqusShortname = "m0t0k1ch1st0ry"
-theme = "vienna"
-paginate = 7
 
-# Copyright notice. This is displayer in the footer.
-copyright = "&copy; 2013 m0t0k1ch1st0ry.com"
+[Author]
+    name = "m0t0k1ch1"
+    profile = "https://github.com/m0t0k1ch1"
 
-[params]
-    author = "m0t0k1ch1"
-    avatar = "/my-images/common/eye.png"
-    bio = "a human"
-
-    # Short subtitle/tagline. This is displayed in the header.
-    subtitle = "since 2013"
-
-    # Social accounts. Link to these accounts are displayed in the header and
-    # footer.
-    twitter = "m0t0k1ch1"
-    github = "m0t0k1ch1"
-    disqus = "m0t0k1ch1st0ry"
-    linkedin = ""
-    facebook = ""
-    stackoverflow = ""
-
-    # Facebook App ID
-    fb_app_id = "171566516539742"
-
-    # Google Analytics API key.
-    ga_api_key = "UA-40447108-1"
-
-    # Mixpanel API key.
-    mixpanel_api_key = ""
+[Params]
+    intro = true
+    headline = "m0t0k1ch1st0ry"
+    description = "since 2013"
+    github = "https://github.com/m0t0k1ch1"
+    #linkedin = "https://linkedin.com/in/XXX"
+    #gplus = "https://google.com/XXX"
+    twitter = "https://twitter.com/m0t0k1ch1"
+    #stackoverflow = "http://stackoverflow.com/users/XXX/YYY"
