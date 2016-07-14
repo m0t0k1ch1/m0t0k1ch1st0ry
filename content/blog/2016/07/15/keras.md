@@ -300,7 +300,7 @@ https://github.com/m0t0k1ch1/keras-sample/blob/master/mnist_mlp.py
 
 冒頭でも紹介した [こちらのエントリ](http://aidiary.hatenablog.com/entry/20160328/1459174455) を参考に、学習過程をグラフで出力するためのコードを付け加えています。
 
-実行すると、以下のようなグラフが得られます。
+実行すると、以下のようなグラフが得られます。きちんと loss が減少してる。
 
 ![keras history](/my-images/entry/keras_history.png)
 
