@@ -39,7 +39,7 @@ Keras (1.0.5)
 GitHub にある [サンプルコード](https://github.com/fchollet/keras/blob/master/examples/mnist_mlp.py) を落としてきて実行してみると、以下のような感じになる。学習している雰囲気が出ていて、眺めているだけで楽しい。
 
 ``` sh
-$ > python mnist_mlp.py
+$ python mnist_mlp.py
 Using Theano backend.
 60000 train samples
 10000 test samples
