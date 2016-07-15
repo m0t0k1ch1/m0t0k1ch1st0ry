@@ -40,9 +40,9 @@ say eliminate { $_ =~ /^-?\d+$/ && ($_ > 1 || $_ < 0) } @array;
 
 実行結果は以下。
 
-``` nohighlight
+<pre>
 m0t0k1ch1
-```
+</pre>
 
 <br />
 ## 注意点

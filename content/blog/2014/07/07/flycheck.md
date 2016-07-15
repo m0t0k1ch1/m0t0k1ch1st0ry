@@ -23,7 +23,7 @@ Emacs、「モダン」という言葉に誘われて flymake から flycheck �
 
 どうやら、`flycheck-define-checker` というのを使うことで、エラーチェックの定義を追加することができる模様。見よう見まねで、できるだけシンプルに以下のような設定を書いてみた。
 
-``` nohighlight
+``` lisp
 (flycheck-define-checker perl-project-libs
   "A perl syntax checker."
   :command ("perl"
@@ -40,7 +40,7 @@ Emacs、「モダン」という言葉に誘われて flymake から flycheck �
 
 Project::Libs、便利である。で、これを `cperl-mode-hook` として登録する。
 
-``` nohighlight
+``` lisp
 (add-hook 'cperl-mode-hook
           (lambda ()
             (flycheck-mode t)

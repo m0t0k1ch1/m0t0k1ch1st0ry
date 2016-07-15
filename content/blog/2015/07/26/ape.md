@@ -54,7 +54,7 @@ func main() {
 
 すると、こんな感じでやりとりできます。
 
-``` nohighlight
+<pre>
 21:26:57 m0t0k1ch1: pooh: piyo
 21:26:57 pooh: poyo
 21:27:04 m0t0k1ch1: pooh: say 🙏
@@ -64,6 +64,6 @@ func main() {
 21:27:11 pooh has left ()
 21:27:11 pooh has joined (~pooh@example.com)
 21:27:12 pooh: 輪廻転生
-```
+</pre>
 
 合掌。

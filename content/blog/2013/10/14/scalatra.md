@@ -46,7 +46,7 @@ $ g8 scalatra/scalatra-sbt
 
 上記のコマンドを実行するといろいろ聞かれますが、何を入力すればよいかは [First steps | Scalatra](http://www.scalatra.org/2.2/getting-started/first-project.html) にちゃんと書いてあります。とりあえず、今回は以下のように入力したとして話を進めます。
 
-``` nohighlight
+<pre>
 organization [com.example]:       com.k1ch1
 package [com.example.app]:        com.k1ch1.app
 name [My Scalatra Web App]:       k1ch1
@@ -54,7 +54,7 @@ scalatra_version [2.2.1]:         （そのまま）
 servlet_name [MyScalatraServlet]: K1ch1
 scala_version [2.10.2]:           2.10.1
 version [0.1.0-SNAPSHOT]:         （そのまま）
-```
+</pre>
 
 * ビルドする
   * `./sbt` すると、ごごごっといろいろダウンロードされるので、ちょっとびっくりする
@@ -67,16 +67,16 @@ $ chmod u+x sbt
 $ ./sbt
 ```
 
-``` nohighlight
+<pre>
 > container:start
 > ~;copy-resources;aux-compile
-```
+</pre>
 
 * ブラウザで見てみる
 
-``` nohighlight
+<pre>
 > browse
-```
+</pre>
 
 見れた！！
 

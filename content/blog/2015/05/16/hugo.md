@@ -88,7 +88,7 @@ $ find . -type f | xargs sed -i '' -e 's/date: \([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\
 
 #### 移行前のメタデータ部分
 
-``` nohighlight
+<pre>
 ---
 layout: post
 title: "..."
@@ -97,17 +97,17 @@ date: YYYY-MM-DD hh:mm
 comments: true
 categories: [ category1, ... ]
 ---
-```
+</pre>
 
 #### 移行後のメタデータ部分
 
-``` nohighlight
+<pre>
 +++
 date = "YYYY-MM-DD"
 tags = [ "tag1", ... ]
 title = "..."
 +++
-```
+</pre>
 
 ### theme を調整する
 
@@ -117,9 +117,9 @@ theme を何にするかは悩みに悩んだ。これだ！！！みたいな�
 
 あと、ローカルで build すると
 
-``` nohighlight
+<pre>
 ERROR: 2015/05/15 Site's .BaseUrl is deprecated and will be removed in Hugo 0.15. Use .BaseURL instead.
-```
+</pre>
 
 こんなエラーがいくつか出たのでなおしたかったけど、なおしちゃうと wercker で [hugo-build](https://app.wercker.com/#applications/54a7744c6b3ba8733de4dcde/tab/details) がコケて死ぬので、なおさずにそのままにしておいた。
 

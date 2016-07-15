@@ -59,7 +59,7 @@ Vim と Emacs どっちも触れないのにエンジニアなんですか？へ
 * cperl-mode の hook として、auto-complete + perl-completion + flymake
 * .md と .markdown は markdown-mode で開く
 
-``` nohighlight
+``` lisp
 (defalias 'perl-mode 'cperl-mode)
 
 (add-to-list 'auto-mode-alist '("\\.t$" . cperl-mode))
@@ -93,7 +93,7 @@ Vim と Emacs どっちも触れないのにエンジニアなんですか？へ
             (flymake-mode t)))
 ```
 
-``` nohighlight
+``` lisp
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 ```

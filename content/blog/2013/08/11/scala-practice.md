@@ -67,9 +67,9 @@ println(addPiyo("Hello world"))
 
 * 実行すると、結果は当然の如く以下
 
-``` nohighlight
+<pre>
 Hello world piyo!
-```
+</pre>
 
 <br />
 #### 値を返さない（副作用のある）関数
@@ -90,9 +90,9 @@ addPiyoAndPrint("Hello world")
 
 * こちらも実行すると、結果は当然の如く以下
 
-``` nohighlight
+<pre>
 Hello world piyo!
-```
+</pre>
 
 <br />
 #### for も値を返せる
@@ -121,9 +121,9 @@ $ scala searchPiyo.scala puyopuyo no piyon piyo!
 
 * と、結果は以下
 
-``` nohighlight
+<pre>
 piyon, piyo!
-```
+</pre>
 
 <br />
 ## まとめ

@@ -84,9 +84,9 @@ sake.csv
 
 `/usr/local/etc/mecabrc` に以下を追加する。
 
-``` nohighlight
+<pre>
 userdic = /usr/local/lib/mecab/dic/userdic/sake.dic
-```
+</pre>
 
 ### after
 
