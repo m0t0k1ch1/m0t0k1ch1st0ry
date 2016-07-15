@@ -83,7 +83,7 @@ Test accuracy: 0.9816
 <br />
 ## バックエンドを TensorFlow に切り替える
 
-デフォルトのバックエンドは [Theano](http://deeplearning.net/software/theano) なので、これを TensorFlow に切り替えてみる。といっても、やることは `~/.keras/keras.json`（上記のサンプルコードを実行した際にできているはず）の中の `backend` を `tensorflow` に書き換えるだけ。
+デフォルトのバックエンドは [Theano](http://deeplearning.net/software/theano) なので、これを TensorFlow に切り替えてみる。といっても、やることは `~/.keras/keras.json`（上記のサンプルコードを実行した際にできているはず）の中の `backend` を `theano` から `tensorflow` に書き換えるだけ。
 
 TensorFlow 自体のインストール方法は [こちら](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md)。pip を使えば簡単にできる。ちなみに、自分のバージョンは以下。
 
