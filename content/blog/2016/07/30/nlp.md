@@ -144,3 +144,5 @@ $ python setup.py install
 $ pip list | grep cabocha-python
 cabocha-python (0.69)
 ```
+
+おしまい。
