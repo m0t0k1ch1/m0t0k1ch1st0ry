@@ -25,9 +25,17 @@ $ yum install nkf unzip
 
 ``` sh
 $ pip install gensim
-$ pip list | grep gensim
-gensim (0.13.1)
 ```
+
+バージョンを確認。
+
+``` sh
+$ pip list | grep gensim
+```
+
+<pre>
+gensim (0.13.1)
+</pre>
 
 <br />
 ## 青空文庫からデータを持ってくる
@@ -45,23 +53,37 @@ unzip すると、`rojinto_umi.txt` になる。下記のように、カジュ�
 
 ``` sh
 $ wc rojinto_umi.txt
-   726    807 122222 rojinto_umi.txt
 ```
+
+<pre>
+   726    807 122222 rojinto_umi.txt
+</pre>
 
 nkf で文字コードを見てみる。
 
 ``` sh
 $ nkf -g rojinto_umi.txt
-Shift_JIS (CR)
 ```
+
+<pre>
+Shift_JIS (CR)
+</pre>
 
 Shift_JIS だとつらいので、UTF-8 にする。
 
 ``` sh
 $ nkf -w --overwrite rojinto_umi.txt
-$ nkf -g rojinto_umi.txt
-UTF-8 (CR)
 ```
+
+UTF-8 になったか確認。
+
+``` sh
+$ nkf -g rojinto_umi.txt
+```
+
+<pre>
+UTF-8 (CR)
+</pre>
 
 なお、ファイルの頭とケツについてる物語と関係ない説明っぽい部分は消しておいた。
 
@@ -138,6 +160,9 @@ model.save(sys.argv[2])
 
 ``` sh
 $ python train.py rojinto_umi_wakati.txt rojinto_umi.model
+```
+
+<pre>
 2016-08-27 16:49:18,590 : INFO : collecting all words and their counts
 2016-08-27 16:49:18,590 : INFO : PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
 2016-08-27 16:49:18,607 : INFO : collected 3147 word types from a corpus of 37519 raw words and 634 sentences
@@ -162,7 +187,7 @@ $ python train.py rojinto_umi_wakati.txt rojinto_umi.model
 2016-08-27 16:49:21,742 : INFO : saving Word2Vec object under rojinto_umi.model, separately None
 2016-08-27 16:49:21,742 : INFO : not storing attribute cum_table
 2016-08-27 16:49:21,742 : INFO : not storing attribute syn0norm
-```
+</pre>
 
 所要時間 3 秒。
 
@@ -188,6 +213,9 @@ for result in results:
 
 ``` sh
 $ python similars.py rojinto_umi.model 人生
+```
+
+<pre>
 泥棒     0.9779643416404724
 不足     0.969954788684845
 温存     0.9699369668960571
@@ -198,7 +226,7 @@ $ python similars.py rojinto_umi.model 人生
 どころか         0.9677099585533142
 手間     0.9673588275909424
 ソックス         0.9660428762435913
-```
+</pre>
 
 「人生」と最もコサイン類似度の高い単語は「泥棒」とのこと。次いで「不足」「温存」。それなりに物語を汲み取れてるのではないだろうか。
 
