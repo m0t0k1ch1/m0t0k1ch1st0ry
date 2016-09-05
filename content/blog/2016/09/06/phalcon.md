@@ -4,7 +4,7 @@ tags = [ "phalcon", "php" ]
 title = "PHP 7 で multi module な Phalcon 3.0.0 を動かしてみる"
 +++
 
-Phalcon は普段から使っているけれど、まだ 3.0.0 を触ってなかったので触ってみることにした。ついでに、view として HTML を返すエンドポイント群と js から叩かれる API エンドポイント群の切り分けを意識した multi module な構成の雛形をつくってみる。
+[Phalcon](https://phalconphp.com) は普段から使っているけれど、まだ 3.0.0 を触ってなかったので触ってみることにした。ついでに、view として HTML を返すエンドポイント群と js から叩かれる API エンドポイント群の切り分けを意識した multi module な構成の雛形をつくってみる。
 
 ## PHP と Phalcon をインストールする
 
