@@ -15,7 +15,7 @@ title = "Tokyo"
 
 今回アウトプットしようと思った理由の1つでもある。イケてる母ちゃんや。。。
 
-で、本題の作品について。1つがリオ五輪の閉会式のパフォーマンス。
+で、本題の2つの作品について。1つがリオ五輪の閉会式のパフォーマンス。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sk6uU8gb8PA" frameborder="0" allowfullscreen></iframe>
 
