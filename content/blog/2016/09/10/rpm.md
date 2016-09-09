@@ -1,6 +1,6 @@
 +++
 date = "2016-09-10T01:23:35+09:00"
-tags = [ "golang" ]
+tags = [ "rpm", "golang" ]
 title = "golang で書いた何かを RPM パッケージにして yum install したい"
 +++
 
