@@ -192,6 +192,8 @@ repo 以下に先ほどこしらえた `go-rpm-sample-0.1.0-1.x86_64.rpm` を配
 $ createrepo repo
 ```
 
+これでおしまいらしい。思ってたよりかなりお手軽である。
+
 で、今回はこの repo を GitHub に置いて、gh-pages ブランチを切っておいた。gh-pages ブランチを切っておくと、https://m0t0k1ch1.github.io/rpm/x86_64/go-rpm-sample-0.1.0-1.x86_64.rpm という URL で wget したりできる。
 
 <div class="github-card" data-user="m0t0k1ch1" data-repo="rpm"></div>
