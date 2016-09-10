@@ -203,10 +203,10 @@ $ createrepo repo
 [m0t0k1ch1]
 name=m0t0k1ch1
 baseurl=https://m0t0k1ch1.github.io/rpm/$basearch
-gpgcheck=1
+gpgcheck=0
 </pre>
 
-これで yum install できる。自分のつくったものを初 yum install する記念すべき瞬間。
+これで yum install できる。初めて自分のつくったものを yum install する記念すべき瞬間。
 
 ``` sh
 $ yum install --enablerepo=m0t0k1ch1 go-rpm-sample
