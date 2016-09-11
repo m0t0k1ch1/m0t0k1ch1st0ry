@@ -194,7 +194,7 @@ $ createrepo repo
 
 これでおしまいらしい。思ってたよりかなりお手軽である。
 
-で、今回はこの repo を GitHub に置いて、gh-pages ブランチを切っておいた。gh-pages ブランチを切っておくと、https://m0t0k1ch1.github.io/rpm/x86_64/go-rpm-sample-0.1.0-1.x86_64.rpm という URL で wget したりできる。
+で、今回はこの repo を GitHub に置いて、gh-pages ブランチを切っておいた。gh-pages ブランチを切っておくと、https://m0t0k1ch1.github.io/rpm/centos/latest/x86_64/go-rpm-sample-0.1.0-1.x86_64.rpm という URL で wget したりできる。
 
 <div class="github-card" data-user="m0t0k1ch1" data-repo="rpm"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
@@ -204,7 +204,7 @@ $ createrepo repo
 <pre>
 [m0t0k1ch1]
 name=m0t0k1ch1
-baseurl=https://m0t0k1ch1.github.io/rpm/$basearch
+baseurl=https://m0t0k1ch1.github.io/rpm/centos/latest/$basearch
 gpgcheck=0
 </pre>
 
