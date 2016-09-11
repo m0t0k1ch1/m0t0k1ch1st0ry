@@ -196,7 +196,7 @@ $ createrepo repo
 
 で、今回はこの repo を GitHub に置いて、gh-pages ブランチを切っておいた。gh-pages ブランチを切っておくと、https://m0t0k1ch1.github.io/rpm/centos/latest/x86_64/go-rpm-sample-0.1.0-1.x86_64.rpm という URL で wget したりできる。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="rpm"></div>
+<div class="github-card" data-user="m0t0k1ch1" data-repo="yum-repo"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 で、例えばまっさらな別 CentOS 6 に `/etc/yum.repos.d/m0t0k1ch1.repo` を設置する。内容は以下。
@@ -204,7 +204,7 @@ $ createrepo repo
 <pre>
 [m0t0k1ch1]
 name=m0t0k1ch1
-baseurl=https://m0t0k1ch1.github.io/rpm/centos/latest/$basearch
+baseurl=https://m0t0k1ch1.github.io/yum-repo/centos/latest/$basearch
 gpgcheck=0
 </pre>
 
@@ -215,16 +215,15 @@ $ yum install --enablerepo=m0t0k1ch1 go-rpm-sample
 ```
 
 <pre>
-読み込んだプラグイン:fastestmirror, security
+読み込んだプラグイン:fastestmirror
 インストール処理の設定をしています
 Loading mirror speeds from cached hostfile
-epel/metalink                                                                     | 4.6 kB     00:00
- * base: ftp.nara.wide.ad.jp
- * epel: www.ftp.ne.jp
- * extras: ftp.nara.wide.ad.jp
- * updates: ftp.nara.wide.ad.jp
-base                                                                              | 3.7 kB     00:00
-extras                                                                            | 3.4 kB     00:00
+ * base: ftp.iij.ad.jp
+ * epel: ftp.iij.ad.jp
+ * extras: ftp.iij.ad.jp
+ * updates: ftp.iij.ad.jp
+m0t0k1ch1                                                                         | 2.9 kB     00:00
+m0t0k1ch1/primary_db                                                              | 1.8 kB     00:00
 依存性の解決をしています
 --> トランザクションの確認を実行しています。
 ---> Package go-rpm-sample.x86_64 0:0.1.0-1 will be インストール
@@ -251,6 +250,7 @@ rpm_check_debug を実行しています
 トランザクションのテストを実行しています
 トランザクションのテストを成功しました
 トランザクションを実行しています
+警告: RPMDB は yum 以外で変更されました。
   インストールしています  : go-rpm-sample-0.1.0-1.x86_64                                             1/1
   Verifying               : go-rpm-sample-0.1.0-1.x86_64                                             1/1
 
