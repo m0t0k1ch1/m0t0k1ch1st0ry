@@ -128,7 +128,7 @@ $ make install
 続いて CaboCha 本体のインストール。
 
 ``` sh
-$ wget https://drive.google.com/uc?export=download&id=00B4y35FiV1wh7SDd1Q1dUQkZQaUU -O cabocha-0.69.tar.bz2
+$ wget https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7SDd1Q1dUQkZQaUU -O cabocha-0.69.tar.bz2
 $ tar jxvf cabocha-0.69.tar.bz2
 $ cd cabocha-0.69
 $ ./configure --with-charset=utf8 --enable-utf8-only
