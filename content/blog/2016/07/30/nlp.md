@@ -96,7 +96,7 @@ mecab of 0.996
 次に辞書。
 
 ``` sh
-$ wget http://mecab.googlecode.com/files/mecab-ipadic-2.7.0-20070801.tar.gz
+$ wget https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM -O mecab-ipadic-2.7.0-20070801.tar.gz
 $ tar zxvf mecab-ipadic-2.7.0-20070801.tar.gz
 $ ./configure --with-charset=utf8
 $ make
