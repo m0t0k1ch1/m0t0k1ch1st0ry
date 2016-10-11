@@ -83,7 +83,7 @@ pip (8.1.2)
 まず本体。
 
 ``` sh
-$ wget https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7cENtOXlicTFaRUE -O mecab-0.996.tar.gz
+$ wget 'https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7cENtOXlicTFaRUE' -O mecab-0.996.tar.gz
 $ tar zxvf mecab-0.996.tar.gz
 $ cd mecab-0.996
 $ ./configure --with-charset=utf8 --enable-utf8-only
@@ -96,7 +96,7 @@ mecab of 0.996
 次に辞書。
 
 ``` sh
-$ wget https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM -O mecab-ipadic-2.7.0-20070801.tar.gz
+$ wget 'https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM' -O mecab-ipadic-2.7.0-20070801.tar.gz
 $ tar zxvf mecab-ipadic-2.7.0-20070801.tar.gz
 $ ./configure --with-charset=utf8
 $ make
@@ -117,7 +117,7 @@ mecab-python3 (0.7)
 まず、CRF++ をインストールする。
 
 ``` sh
-$ wget https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7QVR6VXJ5dWExSTQ -O CRF++-0.58.tar.gz
+$ wget 'https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7QVR6VXJ5dWExSTQ' -O CRF++-0.58.tar.gz
 $ tar zxvf CRF++-0.58.tar.gz
 $ cd CRF++-0.58
 $ ./configure
@@ -125,10 +125,9 @@ $ make
 $ make install
 ```
 
-続いて CaboCha 本体のインストール。
+続いて CaboCha 本体のインストール。[ここ](https://drive.google.com/drive/folders/0B4y35FiV1wh7cGRCUUJHVTNJRnM) から頑張って最新版（このときは 0.69）を持ってくる。
 
 ``` sh
-$ wget https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7SDd1Q1dUQkZQaUU -O cabocha-0.69.tar.bz2
 $ tar jxvf cabocha-0.69.tar.bz2
 $ cd cabocha-0.69
 $ ./configure --with-charset=utf8 --enable-utf8-only
