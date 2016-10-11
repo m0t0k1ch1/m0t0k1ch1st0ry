@@ -83,7 +83,7 @@ pip (8.1.2)
 まず本体。
 
 ``` sh
-$ wget http://mecab.googlecode.com/files/mecab-0.996.tar.gz
+$ wget https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7cENtOXlicTFaRUE -O mecab-0.996.tar.gz
 $ tar zxvf mecab-0.996.tar.gz
 $ cd mecab-0.996
 $ ./configure --with-charset=utf8 --enable-utf8-only
