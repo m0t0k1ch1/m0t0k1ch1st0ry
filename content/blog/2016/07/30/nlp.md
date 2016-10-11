@@ -114,9 +114,10 @@ mecab-python3 (0.7)
 <br />
 ## CaboCha
 
-まず、CRF++ をインストールする。[ここ](https://drive.google.com/drive/u/0/folders/0B4y35FiV1wh7fngteFhHQUN2Y1B5eUJBNHZUemJYQV9VWlBUb3JlX0xBdWVZTWtSbVBneU0) から最新版をダウンロードして、がんばってもってくる。
+まず、CRF++ をインストールする。
 
 ``` sh
+$ wget https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7QVR6VXJ5dWExSTQ -O CRF++-0.58.tar.gz
 $ tar zxvf CRF++-0.58.tar.gz
 $ cd CRF++-0.58
 $ ./configure
@@ -124,9 +125,10 @@ $ make
 $ make install
 ```
 
-CaboCha 本体も [ここ](https://drive.google.com/drive/u/0/folders/0B4y35FiV1wh7cGRCUUJHVTNJRnM) から最新版をダウンロードして、がんばってもってくる。
+続いて CaboCha 本体のインストール。
 
 ``` sh
+$ wget https://drive.google.com/uc?export=download&id=00B4y35FiV1wh7SDd1Q1dUQkZQaUU -O cabocha-0.69.tar.bz2
 $ tar jxvf cabocha-0.69.tar.bz2
 $ cd cabocha-0.69
 $ ./configure --with-charset=utf8 --enable-utf8-only
