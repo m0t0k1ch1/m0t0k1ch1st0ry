@@ -10,4 +10,4 @@ fi
 DATE=`date '+%Y/%m/%d'`
 PATH="blog/${DATE}/${TITLE}.md"
 
-$GOPATH/bin/hugo new $PATH
+/usr/local/bin/hugo new $PATH

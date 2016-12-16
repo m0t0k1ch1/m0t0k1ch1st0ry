@@ -1,3 +1,3 @@
 #!/bin/sh
 
-$GOPATH/bin/hugo server --theme=ghostwriter --watch
+/usr/local/bin/hugo server --theme=ghostwriter --watch
