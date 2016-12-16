@@ -104,9 +104,7 @@ func main() {
 <br />
 ## 今後
 
-直近だと、txout のスクリプトの中に入ってる公開鍵のハッシュを address として解釈するのはやっときたい。
-
-スクリプト部分についても、今は標準的な P2PKH しか解釈できないので、少なくとも P2SH な multisig くらいは対応しておきたい。あとは解釈するだけじゃなくて生成・バリデーションするのもラクにできたら嬉しい。以前に Testnet で以下のようなこみ入ったスクリプトの実験をしたりしていて、そんときのデバッグがしんどかったというのがある。
+直近だと、txout のスクリプトの中に入ってる公開鍵のハッシュを address として解釈するのはやっときたい。また、今は標準的な P2PKH しか解釈できないので、少なくとも P2SH な multisig くらいは対応しておきたい。あとは解釈するだけじゃなくて生成・バリデーションするのもラクにできたら嬉しい。以前に Testnet で以下のようなこみ入ったスクリプトの実験をしたりしていて、そんときのデバッグがしんどかったというのがある。
 
 <pre>
 OP_DUP 0371aaa70b225a097c615038cdc0fec8b850be37437f6b5ae2c5ecaf463ee30ed6 OP_EQUAL OP_IF OP_DUP OP_HASH160 62b0beae2b5abaccfab8c9d551f3bb2aae289891 OP_EQUALVERIFY OP_CHECKSIG OP_VERIFY OP_SHA256 6c87d5434a635e1470ff3c38956e7962ab1bf036e716b5a0636ab930faf6ce3d OP_EQUAL OP_ELSE 2 03f566e563224460fb7ec66f81dd67d974090343ddeb22321cdab562cdac593d4b 0371aaa70b225a097c615038cdc0fec8b850be37437f6b5ae2c5ecaf463ee30ed6 2 OP_CHECKMULTISIG OP_ENDIF
