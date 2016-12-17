@@ -19,6 +19,8 @@ Bitcoin の transaction は [こういう構造](https://en.bitcoin.it/wiki/Prot
 <br />
 ## できること
 
+ざっくりとは以下の 2 つ。
+
 - hex な transaction をいい感じの struct に変換する
 - struct を hex な transaction として書き出す
 
