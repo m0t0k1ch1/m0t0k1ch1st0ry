@@ -29,7 +29,7 @@ txid がわかってれば、RPC 叩いて getrawtransaction して decoderawtra
 <br />
 ## 使い方
 
-Testnet に取り込まれた実際の transaction に対して使ってみる。
+[Testnet に取り込まれた実際の transaction](http://tbtc.blockr.io/tx/info/d7a4684b71776c8c96edd670a9d0c61d03c293f4c6266b70ff5030b2c4f0bdfe) に対して使ってみる。
 
 ``` go
 package main
