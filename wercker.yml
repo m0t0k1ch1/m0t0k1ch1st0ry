@@ -1,6 +1,8 @@
 box: debian
 build:
   steps:
+    - install-packages:
+        packages: git ssh-client
     - script:
         name: initialize git submodules
         code: git submodule update --init
@@ -10,8 +12,6 @@ build:
         flags: -v --buildDrafts=true
 deploy:
   steps:
-    - install-packages:
-        packages: git ssh-client
     - lukevivier/gh-pages:
         token: $GIT_TOKEN
         domain: m0t0k1ch1st0ry.com
