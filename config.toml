@@ -9,6 +9,9 @@ disqusShortname = "m0t0k1ch1st0ry"
     name = "m0t0k1ch1"
     profile = "https://github.com/m0t0k1ch1"
 
+[Taxonomies]
+    tag = "tags"
+
 [Params]
     intro = true
     headline = "m0t0k1ch1st0ry"

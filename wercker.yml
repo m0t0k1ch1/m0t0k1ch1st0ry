@@ -2,7 +2,7 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.17"
+        version: "0.18"
         theme: ghostwriter
         flags: --buildDrafts=true
 deploy:
@@ -13,4 +13,3 @@ deploy:
         token: $GIT_TOKEN
         domain: m0t0k1ch1st0ry.com
         basedir: public
-        branch: gh-pages
