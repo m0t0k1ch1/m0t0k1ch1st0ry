@@ -1,10 +1,8 @@
-box: debian
+box: golang
 build:
   steps:
     - arjen/hugo-build:
         version: "0.18"
-        config: config.toml
-        disable_pygments: true
         flags: -v --buildDrafts=true
 deploy:
   steps:
