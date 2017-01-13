@@ -1,8 +1,8 @@
-[submodule "themes/vienna"]
-	path = themes/vienna
-	url = git@github.com:m0t0k1ch1/vienna.git
-	branch = m0t0k1ch1st0ry
 [submodule "themes/ghostwriter"]
 	path = themes/ghostwriter
-	url = git@github.com:m0t0k1ch1/ghostwriter.git
+	url = https://github.com/m0t0k1ch1/ghostwriter.git
+	branch = m0t0k1ch1st0ry
+[submodule "themes/vienna"]
+	path = themes/vienna
+	url = https://github.com/m0t0k1ch1/vienna.git
 	branch = m0t0k1ch1st0ry
