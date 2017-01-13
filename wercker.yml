@@ -2,7 +2,7 @@ box: wercker/default
 build:
   steps:
     - arjen/hugo-build:
-        version: 0.16
+        version: 0.17
         theme: ghostwriter
         flags: --buildDrafts=true
 deploy:
