@@ -2,7 +2,6 @@ baseurl = "http://m0t0k1ch1st0ry.com/"
 title = "m0t0k1ch1st0ry"
 theme = "ghostwriter"
 languageCode = "ja-jp"
-publishdir = "docs"
 googleAnalytics = "UA-40447108-1"
 disqusShortname = "m0t0k1ch1st0ry"
 

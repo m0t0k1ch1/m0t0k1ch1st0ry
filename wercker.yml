@@ -13,4 +13,3 @@ deploy:
     - lukevivier/gh-pages:
         token: $GIT_TOKEN
         domain: m0t0k1ch1st0ry.com
-        branch: master
