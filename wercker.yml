@@ -1,4 +1,10 @@
 box: golang
+check:
+  steps:
+    - script:
+        name: check branch
+        code: |
+          git branch
 build:
   steps:
     - script:
@@ -8,6 +14,10 @@ build:
     - arjen/hugo-build:
         version: "0.18"
         flags: -v --buildDrafts=true
+    - script:
+        name: copy wercker.yml
+        code: |
+          cp wercker.yml public
 deploy:
   steps:
     - lukevivier/gh-pages:
