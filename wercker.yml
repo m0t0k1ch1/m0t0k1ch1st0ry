@@ -1,10 +1,10 @@
 box: golang
-check:
+pre:
   steps:
     - script:
-        name: check branch
+        name: output message
         code: |
-          git branch
+          echo 'start to build & deploy'
 build:
   steps:
     - script:
