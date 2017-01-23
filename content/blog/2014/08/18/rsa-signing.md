@@ -30,110 +30,110 @@ $ openssl rsa -pubout < private-key.pem > public-key.pem
 package main
 
 import (
-	"crypto"
-	"crypto/rand"
-	"crypto/rsa"
-	"crypto/sha512"
-	"crypto/x509"
-	"encoding/pem"
-	"errors"
-	"fmt"
-	"io/ioutil"
-	"log"
+    "crypto"
+    "crypto/rand"
+    "crypto/rsa"
+    "crypto/sha512"
+    "crypto/x509"
+    "encoding/pem"
+    "errors"
+    "fmt"
+    "io/ioutil"
+    "log"
 )
 
 func readPrivateKey(path string) (*rsa.PrivateKey, error) {
-	privateKeyData, err := ioutil.ReadFile(path)
-	if err != nil {
-		return nil, err
-	}
+    privateKeyData, err := ioutil.ReadFile(path)
+    if err != nil {
+        return nil, err
+    }
 
-	privateKeyBlock, _ := pem.Decode(privateKeyData)
-	if privateKeyBlock == nil {
-		return nil, errors.New("invalid private key data")
-	}
-	if privateKeyBlock.Type != "RSA PRIVATE KEY" {
-		return nil, errors.New(fmt.Sprintf("invalid private key type : %s", privateKeyBlock.Type))
-	}
+    privateKeyBlock, _ := pem.Decode(privateKeyData)
+    if privateKeyBlock == nil {
+        return nil, errors.New("invalid private key data")
+    }
+    if privateKeyBlock.Type != "RSA PRIVATE KEY" {
+        return nil, errors.New(fmt.Sprintf("invalid private key type : %s", privateKeyBlock.Type))
+    }
 
-	privateKey, err := x509.ParsePKCS1PrivateKey(privateKeyBlock.Bytes)
-	if err != nil {
-		return nil, err
-	}
+    privateKey, err := x509.ParsePKCS1PrivateKey(privateKeyBlock.Bytes)
+    if err != nil {
+        return nil, err
+    }
 
-	return privateKey, err
+    return privateKey, err
 }
 
 func readPublicKey(path string) (*rsa.PublicKey, error) {
-	publicKeyData, err := ioutil.ReadFile(path)
-	if err != nil {
-		return nil, err
-	}
+    publicKeyData, err := ioutil.ReadFile(path)
+    if err != nil {
+        return nil, err
+    }
 
-	publicKeyBlock, _ := pem.Decode(publicKeyData)
-	if publicKeyBlock == nil {
-		return nil, errors.New("invalid public key data")
-	}
-	if publicKeyBlock.Type != "PUBLIC KEY" {
-		return nil, errors.New(fmt.Sprintf("invalid public key type : %s", publicKeyBlock.Type))
-	}
+    publicKeyBlock, _ := pem.Decode(publicKeyData)
+    if publicKeyBlock == nil {
+        return nil, errors.New("invalid public key data")
+    }
+    if publicKeyBlock.Type != "PUBLIC KEY" {
+        return nil, errors.New(fmt.Sprintf("invalid public key type : %s", publicKeyBlock.Type))
+    }
 
-	publicKeyInterface, err := x509.ParsePKIXPublicKey(publicKeyBlock.Bytes)
-	if err != nil {
-		return nil, err
-	}
+    publicKeyInterface, err := x509.ParsePKIXPublicKey(publicKeyBlock.Bytes)
+    if err != nil {
+        return nil, err
+    }
 
-	publicKey, ok := publicKeyInterface.(*rsa.PublicKey)
-	if !ok {
-		return nil, errors.New("not RSA public key")
-	}
+    publicKey, ok := publicKeyInterface.(*rsa.PublicKey)
+    if !ok {
+        return nil, errors.New("not RSA public key")
+    }
 
-	return publicKey, nil
+    return publicKey, nil
 }
 
 func main() {
-	// read private key
-	privateKey, err := readPrivateKey("/path/to/your/private-key.pem")
-	if err != nil {
-		log.Fatal(err)
-	}
+    // read private key
+    privateKey, err := readPrivateKey("/path/to/your/private-key.pem")
+    if err != nil {
+        log.Fatal(err)
+    }
 
-	// precompute
-	//   ref. http://golang.org/pkg/crypto/rsa/#PrivateKey.Precompute
-	//   Precompute performs some calculations that speed up private key operations in the future.
-	privateKey.Precompute()
+    // precompute
+    //   ref. http://golang.org/pkg/crypto/rsa/#PrivateKey.Precompute
+    //   Precompute performs some calculations that speed up private key operations in the future.
+    privateKey.Precompute()
 
-	// validate
-	//   ref. http://golang.org/pkg/crypto/rsa/#PrivateKey.Validate
-	//   Validate performs basic sanity checks on the key.
-	//   It returns nil if the key is valid, or else an error describing a problem.
-	if err := privateKey.Validate(); err != nil {
-		log.Fatal(err)
-	}
+    // validate
+    //   ref. http://golang.org/pkg/crypto/rsa/#PrivateKey.Validate
+    //   Validate performs basic sanity checks on the key.
+    //   It returns nil if the key is valid, or else an error describing a problem.
+    if err := privateKey.Validate(); err != nil {
+        log.Fatal(err)
+    }
 
-	// read public key
-	publicKey, err := readPublicKey("/path/to/your/public-key.pem")
-	if err != nil {
-		log.Fatal(err)
-	}
+    // read public key
+    publicKey, err := readPublicKey("/path/to/your/public-key.pem")
+    if err != nil {
+        log.Fatal(err)
+    }
 
-	// generate token hash from token
-	hasher := sha512.New()
-	hasher.Write([]byte("token"))
-	hasher.Write([]byte("salt"))
-	tokenHash := hasher.Sum(nil)
+    // generate token hash from token
+    hasher := sha512.New()
+    hasher.Write([]byte("token"))
+    hasher.Write([]byte("salt"))
+    tokenHash := hasher.Sum(nil)
 
-	// sign
-	signature, err := rsa.SignPSS(rand.Reader, privateKey, crypto.SHA512, tokenHash, nil)
-	if err != nil {
-		log.Fatal(err)
-	}
+    // sign
+    signature, err := rsa.SignPSS(rand.Reader, privateKey, crypto.SHA512, tokenHash, nil)
+    if err != nil {
+        log.Fatal(err)
+    }
 
-	// verify
-	if err := rsa.VerifyPSS(publicKey, crypto.SHA512, tokenHash, signature, nil); err != nil {
-		log.Fatal(err)
-	}
+    // verify
+    if err := rsa.VerifyPSS(publicKey, crypto.SHA512, tokenHash, signature, nil); err != nil {
+        log.Fatal(err)
+    }
 
-	log.Println("success")
+    log.Println("success")
 }
 ```
