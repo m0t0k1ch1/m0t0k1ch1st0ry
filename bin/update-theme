@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git submodule foreach git pull origin m0t0k1ch1st0ry
