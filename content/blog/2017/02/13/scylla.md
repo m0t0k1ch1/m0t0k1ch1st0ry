@@ -1,6 +1,6 @@
 +++
 date = "2017-02-13T02:35:40+09:00"
-tags = [ "scylla" ]
+tags = [ "scylla", "azure" ]
 title = "WORLD FASTEST NoSQL DATABASE な Scylla のクラスタを組んでみる on Azure"
 +++
 
