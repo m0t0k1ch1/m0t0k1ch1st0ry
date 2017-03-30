@@ -1,7 +1,7 @@
 +++
 date = "2017-03-31T01:24:20+09:00"
 tags = [ "azure" ]
-title = "Azure で Application Gataway 下の Healthy なホスト数を取得する"
+title = "Azure で Application Gateway 下の Healthy なホスト数を取得する"
 +++
 
 表題の通り、パッと見簡単そうなことがやりたかったのだけど、シュッとやる方法をシュッと見つけられなかったのでメモ。
