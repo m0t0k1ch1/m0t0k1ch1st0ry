@@ -11,7 +11,7 @@ Golang で Bitcoin の transaction のバイト列をちまちま読む package 
 <br />
 ## つくったもの
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="btctx"></div>
+<div class="github-card" data-user="m0t0k1ch1" data-repo="btc"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 Bitcoin の transaction は [こういう構造](https://en.bitcoin.it/wiki/Protocol_documentation#tx) になっているので、これを愚直に読んだり書いたりしている。エンディアンが揃っていないところがあったりで嵌ったりした。近くに有識者がいたので助かったけど、1 人でやってたら諦めてたかもしれない。
@@ -39,13 +39,13 @@ import (
     "fmt"
     "log"
 
-    "github.com/m0t0k1ch1/btctx"
+    "github.com/m0t0k1ch1/btc"
 )
 
 func main() {
     txhexOrigin := "0100000001ce3cf2e2b334e7e9fa84619469d9edc49368c2f752ea30fb48b080fc794f6d56010000006a473044022065fe1ea4e94a9b44fb62c2b874b63a947504273a60b99b8f7bbf77b4db9331b002205559d8ee93cf341d75866f9eb912af05904fb6eed7372a837308c4e37f3ab58f012103bae5f04799c40862358560e42e441c3080b997a3dec161dd40395e992362bfc9feffffff0200f2052a010000001976a914cbc222711a230ecdd9a5aa65b61ed39c24db2b3488acc08d931a1d0000001976a914426c1ad9fa94f9ea3e6f9248b8bff6768e3ac8c488ac951a1000"
 
-    tx, err := btctx.NewTxFromHex(txhexOrigin)
+    tx, err := btc.NewTxFromHex(txhexOrigin)
     if err != nil {
         log.Fatal(err)
     }
