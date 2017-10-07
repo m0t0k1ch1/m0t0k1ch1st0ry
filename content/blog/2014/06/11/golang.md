@@ -15,27 +15,27 @@ Golang の `nil` で完全に嵌ったのでメモ。
 
 ``` go
 func (r Required) IsSatisfied(obj interface{}) bool {
-	if obj == nil {
-		return false
-	}
+    if obj == nil {
+        return false
+    }
 
-	if str, ok := obj.(string); ok {
-		return len(str) > 0
-	}
-	if b, ok := obj.(bool); ok {
-		return b
-	}
-	if i, ok := obj.(int); ok {
-		return i != 0
-	}
-	if t, ok := obj.(time.Time); ok {
-		return !t.IsZero()
-	}
-	v := reflect.ValueOf(obj)
-	if v.Kind() == reflect.Slice {
-		return v.Len() > 0
-	}
-	return true
+    if str, ok := obj.(string); ok {
+        return len(str) > 0
+    }
+    if b, ok := obj.(bool); ok {
+        return b
+    }
+    if i, ok := obj.(int); ok {
+        return i != 0
+    }
+    if t, ok := obj.(time.Time); ok {
+        return !t.IsZero()
+    }
+    v := reflect.ValueOf(obj)
+    if v.Kind() == reflect.Slice {
+        return v.Len() > 0
+    }
+    return true
 }
 ```
 
@@ -45,21 +45,21 @@ func (r Required) IsSatisfied(obj interface{}) bool {
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func IsSatisfied(obj interface{}) bool {
-	if obj == nil {
-		return false
-	}
-	return true
+    if obj == nil {
+        return false
+    }
+    return true
 }
 
 func main() {
-	fmt.Println(IsSatisfied(nil)) // false
+    fmt.Println(IsSatisfied(nil)) // false
 
-	var x *int = nil
-	fmt.Println(IsSatisfied(x)) // true
+    var x *int = nil
+    fmt.Println(IsSatisfied(x)) // true
 }
 ```
 
@@ -73,17 +73,17 @@ func main() {
 package main
 
 func IsNil(obj interface{}) bool {
-	if obj == nil {
-		return true
-	}
-	return false
+    if obj == nil {
+        return true
+    }
+    return false
 }
 
 func main() {
-	println(IsNil(nil)) // true
+    println(IsNil(nil)) // true
 
-	var x *int = nil
-	println(IsNil(x)) // false
+    var x *int = nil
+    println(IsNil(x)) // false
 }
 ```
 
@@ -93,21 +93,21 @@ func main() {
 package main
 
 import (
-	"reflect"
+    "reflect"
 )
 
 func IsNil(obj interface{}) bool {
-	if obj == nil || reflect.ValueOf(obj).IsNil() {
-		return true
-	}
-	return false
+    if obj == nil || reflect.ValueOf(obj).IsNil() {
+        return true
+    }
+    return false
 }
 
 func main() {
-	println(IsNil(nil)) // true
+    println(IsNil(nil)) // true
 
-	var x *int = nil
-	println(IsNil(x)) // true
+    var x *int = nil
+    println(IsNil(x)) // true
 }
 ```
 
@@ -126,19 +126,19 @@ func main() {
 package main
 
 import (
-	"fmt"
-	"reflect"
+    "fmt"
+    "reflect"
 )
 
 func PrintType(obj interface{}) {
-	fmt.Println(reflect.TypeOf(obj))
+    fmt.Println(reflect.TypeOf(obj))
 }
 
 func main() {
-	PrintType(nil) // <nil>
+    PrintType(nil) // <nil>
 
-	var x *int = nil
-	PrintType(x) // *int
+    var x *int = nil
+    PrintType(x) // *int
 }
 ```
 

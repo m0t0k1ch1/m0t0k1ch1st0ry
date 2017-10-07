@@ -20,24 +20,24 @@ Google 先生が [github.com/google/go-github/github](https://github.com/google/
 package main
 
 import (
-	"github.com/google/go-github/github"
-	"io/ioutil"
+    "github.com/google/go-github/github"
+    "io/ioutil"
 )
 
 func main() {
-	md, err := ioutil.ReadFile("sample.md")
-	if err != nil {
-		panic(err)
-	}
+    md, err := ioutil.ReadFile("sample.md")
+    if err != nil {
+        panic(err)
+    }
 
-	client := github.NewClient(nil)
+    client := github.NewClient(nil)
 
-	html, _, err := client.Markdown(string(md), nil)
-	if err != nil {
-		panic(err)
-	}
+    html, _, err := client.Markdown(string(md), nil)
+    if err != nil {
+        panic(err)
+    }
 
-	ioutil.WriteFile("sample.html", []byte(html), 0644)
+    ioutil.WriteFile("sample.html", []byte(html), 0644)
 }
 ```
 

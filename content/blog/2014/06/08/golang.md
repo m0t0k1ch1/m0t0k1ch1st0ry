@@ -18,15 +18,15 @@ net/http では、ルーティングルールを追加するとこで出てく�
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func main() {
-	pattern := "/poyo/"
-	n := len(pattern)
-	if pattern[n-1] == '/' {
-		fmt.Printf("pattern[%d]: '/'(%d)\n", n-1, '/') // pattern[5]: '/'(47)
-	}
+    pattern := "/poyo/"
+    n := len(pattern)
+    if pattern[n-1] == '/' {
+        fmt.Printf("pattern[%d]: '/'(%d)\n", n-1, '/') // pattern[5]: '/'(47)
+    }
 }
 ```
 

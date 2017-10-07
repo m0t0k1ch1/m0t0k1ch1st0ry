@@ -19,25 +19,25 @@ title = "クロージャにメソッドを実装してみる - Golang"
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 type MyFunction func() string
 
 func (f MyFunction) String() string {
-	return "poyo"
+    return "poyo"
 }
 
 func main() {
-	function := func() string {
-		return "piyo"
-	}
-	fmt.Println(function)   // 0x22d0
-	fmt.Println(function()) // piyo
+    function := func() string {
+        return "piyo"
+    }
+    fmt.Println(function)   // 0x22d0
+    fmt.Println(function()) // piyo
 
-	myFunction := MyFunction(function)
-	fmt.Println(myFunction)   // poyo
-	fmt.Println(myFunction()) // piyo
+    myFunction := MyFunction(function)
+    fmt.Println(myFunction)   // poyo
+    fmt.Println(myFunction()) // piyo
 }
 ```
 
@@ -48,15 +48,15 @@ func main() {
 package main
 
 import (
-	"fmt"
-	"net/http"
+    "fmt"
+    "net/http"
 )
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "piyo!")
-	})
-	http.ListenAndServe(":4000", nil)
+    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprint(w, "piyo!")
+    })
+    http.ListenAndServe(":4000", nil)
 }
 ```
 
