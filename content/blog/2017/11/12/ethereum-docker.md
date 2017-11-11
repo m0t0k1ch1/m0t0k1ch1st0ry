@@ -75,7 +75,7 @@ INFO [11-11|19:51:11] Successfully sealed new block            number=3 hash=323
 INFO [11-11|19:51:11] 🔨 mined potential block                  number=3 hash=323f67…b0868f
 </pre>
 
-ノードが起動したら以下を実行してノードに接続し、お馴染みの JaveScript コンソールさんでよしなに動作確認などを行う。
+ノードが起動したら以下を実行してノードに接続し、お馴染みの JavaScript コンソールさんでよしなに動作確認などを行う。
 
 ``` sh
 $ docker exec -it geth-standalone geth attach rpc:http://localhost:8545
