@@ -65,4 +65,4 @@ $ java -jar cmdline-jmxclient-0.10.3.jar - 127.0.0.1:7199 org.apache.cassandra.m
 <br />
 ## やり残し
 
-- Table Metrics を discovery 使っていい感じに取得する
+Table Metrics を discovery 使っていい感じに取得したい。
