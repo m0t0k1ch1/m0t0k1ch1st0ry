@@ -13,7 +13,7 @@ title = "落合陽一と情熱大陸とシナスタジア"
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">とても面白かったです。＞情熱大陸<br>＃978「科学者・落合陽一」<a href="https://twitter.com/hashtag/TVer?src=hash&amp;ref_src=twsrc%5Etfw">#TVer</a> <a href="https://twitter.com/hashtag/%E6%83%85%E7%86%B1%E5%A4%A7%E9%99%B8?src=hash&amp;ref_src=twsrc%5Etfw">#情熱大陸</a><br> <a href="https://t.co/UCU6iyi6pa">https://t.co/UCU6iyi6pa</a></p>&mdash; 田端　信太郎 (@tabbata) <a href="https://twitter.com/tabbata/status/933460560057790464?ref_src=twsrc%5Etfw">2017年11月22日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-TVer なんて便利なものがあるんすãª。おかげで無事観れました。
+TVer なんて便利なものがあるんすな。おかげで無事観れました。
 
 ちなみに、落合さんの情熱大陸は今年初の視聴したいと思ったテレビ番組。去年は紅白の宇多田ヒカルだけ。まあ、別にそんなに番組の情報収集してるわけでもないのであれですが。一方、Abema にはチラホラ気になる番組が出てきている。個人的には少し悔しいんだけど、まんまとやられている感じ。でも、やられて然りだなと思う。あと、麻雀チャンネルは沼。
 
@@ -45,6 +45,6 @@ TVer なんて便利なものがあるんすãª。おかげで無事観れま
 
 ちなみに、今は Blockchain を本業としてるんですが、個人的にはこれとシナスタジアとの交差点を探っていきたいと思っていたりもする。そんな都合のいい交差点なんてあるんかいなと自分でも思ったりするけど、自分という人間の中には何かヒントくらいあるんじゃないかなと思っている。両方とも、数少ない、直感でビビッときたものなので。頼むで、わいの大脳基底核。
 
-以上、コインランドリーより、BGM は Chilly Source Radio Vol. 59 でお送りしました。
+以上、深夜のコインランドリーより、BGM は Chilly Source Radio Vol. 59 でお送りしました。
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/357143153&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
