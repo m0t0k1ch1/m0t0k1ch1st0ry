@@ -224,7 +224,7 @@ contract AnotherEther is StandardToken {
 <br />
 ## Etherscan で公開する
 
-[ここ](https://ropsten.etherscan.io/verifyContract) で必要事項を入力する。今回は以下のようになった。
+ropsten の場合、[ここ](https://ropsten.etherscan.io/verifyContract) で必要事項を入力する。今回は以下のようになった。
 
 - Contract Address：0x480d291d75a79b48bf5da25921a39cbf73fd060b
 - Contract Name：AnotherEther
