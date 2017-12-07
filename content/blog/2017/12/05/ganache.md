@@ -125,7 +125,7 @@ module.exports = {
 準備ができたら、以下を実行してデプロイします。
 
 ``` sh
-$ truffle migrate
+$ truffle migrate --network development
 ```
 
 <pre>
@@ -159,7 +159,7 @@ Saving artifacts...
 以下を実行してコンソールを起動します。
 
 ``` sh
-$ truffle console
+$ truffle console --network development
 ```
 
 コンソールが起動したら、2 日目の記事の [デプロイされたコントラクトの確認](https://qiita.com/amachino/items/8cf609f6345959ffc450#%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%95%E3%82%8C%E3%81%9F%E3%82%B3%E3%83%B3%E3%83%88%E3%83%A9%E3%82%AF%E3%83%88%E3%81%AE%E7%A2%BA%E8%AA%8D) と同様の手順でコントラクトの動作確認を行うことができます。
