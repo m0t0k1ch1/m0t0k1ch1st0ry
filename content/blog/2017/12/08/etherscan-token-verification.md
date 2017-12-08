@@ -72,7 +72,7 @@ $ solidity_flattener --solc-paths=zeppelin-solidity=$(pwd)/node_modules/zeppelin
 
 修正後の `Combined.sol` は以下のようになった。
 
-``` solidity
+```
 pragma solidity ^0.4.18;
 
 library SafeMath {
