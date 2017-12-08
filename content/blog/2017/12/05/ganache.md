@@ -6,7 +6,7 @@ title = "Ganache で始める Ðapp 開発"
 
 この記事は、[Ethereum Advent Calendar 2017](https://qiita.com/advent-calendar/2017/ethereum) の 5 日目の記事です（ちなみに、まだまだ空いている日があります！この記事を読んでいる方の中に「参加してもいいよ！」という方がいらっしゃったら是非ご参加ください！Ethereum 盛り上げましょう〜〜！！）。
 
-<!-- more -->
+<!--more-->
 
 この記事では、11 月に [Truffle Suite](https://github.com/trufflesuite) の仲間に加わったばかりのローカル開発用ツール [Ganache](http://truffleframework.com/ganache) について紹介し、これを利用した簡単な Ðapp 開発を実践してみようと思います。この記事を読んで、Ganache を利用した Ðapp 開発のイメージを掴んでいただければ幸いかなと思います。
 

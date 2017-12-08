@@ -6,7 +6,7 @@ title = "Cassandra 監視用の Zabbix template"
 
 主要項目に絞ってつくったつもり。ご自由にお使いください。
 
-<!-- more -->
+<!--more-->
 
 <br />
 ## 成果物
