@@ -64,7 +64,7 @@ $ go get -u github.com/Masterminds/glide
 バージョンを確認します。
 
 ``` sh
-$ glide version
+$ glide --version
 ```
 
 <pre>
