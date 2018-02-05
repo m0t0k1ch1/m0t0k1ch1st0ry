@@ -48,7 +48,7 @@ $ immortal -v
 0.18.0
 </pre>
 
-[immortal](https://immortal.run/post/immortal) だけでも daemonize は可能なのですが、今回は [immortaldir](https://immortal.run/post/immortaldir) を利用し、設定ファイルベースでの監視まで行ってみようと思います（daemontools の svscan のようなイメージです）。 
+[immortal](https://immortal.run/post/immortal) だけでも daemonize は可能なのですが、今回は [immortaldir](https://immortal.run/post/immortaldir) を利用し、設定ファイルベースでの監視まで行ってみようと思います（daemontools の svscan のようなイメージです）。
 
 ということで、設定ファイルを設置するディレクトリ（監視対象）を作成しておきます。
 
@@ -129,7 +129,7 @@ app       6682  0.4  0.8 178432 17684 ?        Sl   16:36   0:00  \_ /home/app/g
 immortal が supervisor となり、子プロセスの btcd を監視しているようです。念のため、btcd に対してコマンドが通るかも確認しておきます。
 
 ``` sh
-btcctl --simnet getinfo
+$ btcctl --simnet getinfo
 ```
 
 ``` json
@@ -244,7 +244,7 @@ Up が表示されなくなり、代わりに Down（停止からの経過時間
 root      6732  0.0  0.3 121192  6928 ?        Ssl  16:38   0:00 immortal -c /usr/local/etc/immortal/btcd.yml -ctl btcd
 </pre>
 
-起動するには `start` コマンドを実行します。
+もう一度 btcd を起動するには `start` コマンドを実行します。
 
 ``` sh
 $ sudo immortalctl start btcd
@@ -275,4 +275,4 @@ app       6768  0.7  1.2 186628 25952 ?        Sl   16:40   0:00  \_ /home/app/g
 ## まとめ
 
 - Golang 製の daemon 管理ツール [immortal](https://github.com/immortal/immortal) で [btcd](https://github.com/btcsuite/btcd) を daemonize してみました
-- daemon に対して基本的な管理操作を実行しつつ、その挙動を確認しました
+- [immortalctl](https://immortal.run/post/immortalctl) を用いて daemon に対して基本的な管理操作を実行しつつ、その挙動を確認しました
