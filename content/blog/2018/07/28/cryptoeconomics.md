@@ -17,7 +17,7 @@ __「cryptoeconomics」は、その名の通り、cryptography（暗号学）と
 さて。誰が流行らせたのかは知らないのですが、日本の Blockchain 界隈では「トークンエコノミー」という言葉をよく見かけるような気がしますよね。一方、世界に目を向けてみると、「token economy」という言葉を見かけない代わりに、似たような響きの「cryptoeconomics」という言葉をよく見かけます。勢いのある Ethereum 界隈について軽く調べてみるだけでも、最先端にいるプレイヤーである [Vitalik](https://twitter.com/vitalikbuterin) や [Vlad](https://twitter.com/vladzamfir) や [Karl](https://twitter.com/karl_dot_tech) などが cryptoeconomist の筆頭であり、みんな cryptoeconomics について議論している様子が見てとれます。
 
 - [Introduction to Cryptoeconomics - Vitalik Buterin](https://www.youtube.com/watch?v=pKqdjaH1dRo)
-- [What Is Cryptoeconomics - Blad Zamfir](https://www.youtube.com/watch?v=9lw3s7iGUXQ)
+- [What Is Cryptoeconomics - Vlad Zamfir](https://www.youtube.com/watch?v=9lw3s7iGUXQ)
 - [Programmable Incentives: Intro to Cryptoeconomics - Karl Floersch](https://www.youtube.com/watch?v=-alrVUv6E24)
 
 cryptoeconomics の定義はさておき、自分は昨年末 〜 今年の頭頃にかけてこの状況を認識し始めまして、そこでまず感じたことは「ん？日本、焦点ズレてる。。。？」でした。ズレていることが良いのか悪いのかはさておき、上記のような最先端のプレイヤー達が cryptoeconomics について盛んに議論しているのに、日本でそんな言葉は耳に入ってこないぞと（当時は自分の観測範囲も狭かったですが）。その代わり、トークンエコノミーという似たような言葉は耳に入ってくるぞと。今でもこの状況は大きく変化していないと感じます（とか言うと日本の数少ない cryptoeconomist 勢に怒られそうですが、、敢えて言っておきます）。
