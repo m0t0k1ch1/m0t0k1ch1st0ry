@@ -274,3 +274,20 @@ ref. [Blockchain and Smart Contract Mechanism Design Challenges](https://fc17.if
 本文中では引用しませんでしたが、cryptoeconomic なメカニズムデザインの考え方についてもっと深く知りたい方は、以下の記事に進んでいただくとよいかなと思います。ちょうど今、自分もこの記事の内容を消化しようと奮闘しているところです。
 
 ref. [A Crash Course in Mechanism Design for Cryptoeconomic Applications](https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976)
+
+---
+
+<br />
+## ※ 追記（2018-08-07）
+
+自分の cryptoeconomics の定義について
+
+__そのシステムが自律的に所望の性質を具備・維持できるような__
+
+の部分を
+
+__そのシステムが達成したい性質を自律的に具備・維持できるような__
+
+とするのはどうでしょう？というご提案をいただきました。「所望の」は、英語で言うところの desired を表現しようとした結果なのですが、確かにちょっと仰々しい表現だったかもしれません。自分も、後者の方が柔らかくてわかりやすい言い回しかなと思います。新しい概念と始めて向き合う方々にとって言葉の第一印象はとても重要だと思うので、こういうご指摘はとてもありがたいなと思います。
+
+ただ、既に SNS 上などで本文中の定義を引用してくださっている方も観測しており、後追いでこれを書き換えるのはちょっと避けたいので、ここでの追記に留めさせていただこうと思います。
