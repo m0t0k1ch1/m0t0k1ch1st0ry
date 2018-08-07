@@ -275,8 +275,6 @@ ref. [Blockchain and Smart Contract Mechanism Design Challenges](https://fc17.if
 
 ref. [A Crash Course in Mechanism Design for Cryptoeconomic Applications](https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976)
 
----
-
 <br />
 ## ※ 追記（2018-08-07）
 
