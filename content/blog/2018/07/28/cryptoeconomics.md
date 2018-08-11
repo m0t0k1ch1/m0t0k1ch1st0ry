@@ -39,3 +39,10 @@ __「cryptoeconomics」は、Blockchain が示した可能性を集約した言�
 ここまで読んで、おい！結局 cryptoeconomics って何なんだ！教えろ！と思ってくださった、あなた。ありがとうございます。あなたの存在でこの記事の目的は最低限達成です。
 
 自分が cryptoeconomics について考えていることはおいおい別でアウトプットしていこうと思いますので、お待ちください。それでは今回はこの辺で。
+
+<br />
+## ※追記（2018-08-11）
+
+2018-08-05 に続きを書きました。
+
+ref. [cryptoeconomics: crypto-backed mechanism design](https://m0t0k1ch1st0ry.com/blog/2018/08/05/cryptoeconomics)
