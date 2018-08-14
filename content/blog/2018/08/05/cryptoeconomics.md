@@ -211,7 +211,7 @@ Vlad も economist の目的をこう捉えているのであれば、しっく�
 
 確かに、cryptoeconomics をこう勘違いされたら困ります笑
 
-こういった economist 視点での解釈がズレているのは多くの同意が得られると思うので、議論の余地はほぼないと思うのですが、自分が難しいなと感じるのは、__cryptographer 視点で解釈するか、mechanism designer 視点で解釈するか__ です。前述した通り、information seculity という重要かつ明確なゴールを持った前者が極めて妥当だなとは思うのですが、、今回は敢えて以下のように呟いておきました。
+こういった economist 視点での解釈がズレているのは多くの同意が得られると思うので、議論の余地はほぼないと思うのですが、自分が難しいなと感じるのは、__cryptographer 視点で解釈するか、mechanism designer 視点で解釈するか__ です。前述した通り、information security という重要かつ明確なゴールを持った前者が極めて妥当だなとは思うのですが、、今回は敢えて以下のように呟いておきました。
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">cryptoeconomics is cryptography for mechanism designer</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1025865045056671744?ref_src=twsrc%5Etfw">August 4, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
