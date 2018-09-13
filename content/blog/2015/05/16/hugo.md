@@ -13,8 +13,8 @@ title = "Hugo ＋ wercker ＋ GitHub Pages でブログ管理"
 
 特に隠すものとかないので全部公開してます。`config.toml` や `wercker.yml` が同じことしようとしてる方の助けになれば幸いです。
 
-<div class="github-card" data-github="m0t0k1ch1/m0t0k1ch1st0ry" data-width="300" data-height="150" data-theme="default"></div>
-<script src="http://lab.lepture.com/github-cards/widget.js"></script>
+<div class="github-card" data-user="m0t0k1ch1" data-repo="m0t0k1ch1st0ry"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <br />
 ## Hugo に移行した理由

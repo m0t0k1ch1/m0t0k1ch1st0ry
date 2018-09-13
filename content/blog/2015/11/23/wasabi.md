@@ -12,8 +12,8 @@ title = "なんでもルーレットしてくれる Slack bot"
 
 名前はわさび寿司的な意味で wasabi。
 
-<div class="github-card" data-github="m0t0k1ch1/wasabi" data-width="300" data-height="150" data-theme="default"></div>
-<script src="http://lab.lepture.com/github-cards/widget.js"></script>
+<div class="github-card" data-user="m0t0k1ch1" data-repo="wasabi"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <br />
 ## 構成
