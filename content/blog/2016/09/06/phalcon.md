@@ -28,11 +28,11 @@ php のバージョンを確認。
 $ php --version
 ```
 
-<pre>
+``` txt
 PHP 7.0.10 (cli) (built: Aug 21 2016 19:14:33) ( NTS )
 Copyright (c) 1997-2016 The PHP Group
 Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
-</pre>
+```
 
 Phalcon については、以下のように `/usr/local/etc/php/7.0/conf.d/ext-phalcon.ini` が読み込まれている。
 
@@ -40,9 +40,9 @@ Phalcon については、以下のように `/usr/local/etc/php/7.0/conf.d/ext-
 $ php -i | grep ext-phalcon.ini
 ```
 
-<pre>
+``` txt
 Additional .ini files parsed => /usr/local/etc/php/7.0/conf.d/ext-phalcon.ini
-</pre>
+```
 
 中身を確認する。
 
@@ -50,10 +50,10 @@ Additional .ini files parsed => /usr/local/etc/php/7.0/conf.d/ext-phalcon.ini
 $ cat /usr/local/etc/php/7.0/conf.d/ext-phalcon.ini
 ```
 
-<pre>
+``` txt
 [phalcon]
 extension="/usr/local/opt/php70-phalcon/phalcon.so"
-</pre>
+```
 
 以下のように、`/usr/local/opt/php70-phalcon` は `../Cellar/php70-phalcon/3.0.0` への symlink なので、Phalcon のバージョンも 3.0.0 ということで大丈夫そう。
 
@@ -61,9 +61,9 @@ extension="/usr/local/opt/php70-phalcon/phalcon.so"
 $ ll /usr/local/opt | grep php70-phalcon
 ```
 
-<pre>
+``` txt
 lrwxr-xr-x   1 m0t0k1ch1  admin    29  9  1 10:23 php70-phalcon -> ../Cellar/php70-phalcon/3.0.0
-</pre>
+```
 
 ちなみに、php56 に戻したい場合は以下のようにする。逆も然り。
 
@@ -85,7 +85,7 @@ phpenv はなんかうまいこと動かなかったし、この 2 バージョ�
 $ phalcon
 ```
 
-<pre>
+``` txt
 Phalcon DevTools (3.0.0)
 
 Available commands:
@@ -98,7 +98,7 @@ Available commands:
   scaffold         (alias of: create-scaffold)
   migration        (alias of: create-migration)
   webtools         (alias of: create-webtools)
-</pre>
+```
 
 <br />
 ## プロジェクトの雛形をつくる
@@ -114,12 +114,12 @@ $ cd multi-module-phalcon
 $ php -S 127.0.0.1:8000 -t public .htrouter.php
 ```
 
-<pre>
+``` txt
 PHP 7.0.10 Development Server started at Tue Sep  6 01:02:42 2016
 Listening on http://127.0.0.1:8000
 Document root is /Users/m0t0k1ch1/.ghq/src/github.com/m0t0k1ch1/multi-module-phalcon/public
 Press Ctrl-C to quit.
-</pre>
+```
 
 ブラウザで http://127.0.0.1:8000 にアクセス。
 
@@ -139,7 +139,7 @@ Press Ctrl-C to quit.
 
 `apps` 以下はこんな感じ。
 
-<pre>
+``` txt
 apps
 ├── backend
 │   ├── Module.php
@@ -161,7 +161,7 @@ apps
 │       ├── index.volt
 │       └── layouts
 └── routes.php
-</pre>
+```
 
 `apps/routes.php` で以下のようにルーティングしている。
 

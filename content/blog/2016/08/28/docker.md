@@ -31,25 +31,25 @@ $ sudo osx/uninstall.sh
 $ docker --version
 ```
 
-<pre>
+``` txt
 Docker version 1.12.0, build 8eab29e
-</pre>
+```
 
 ``` sh
 $ docker-compose --version
 ```
 
-<pre>
+``` txt
 docker-compose version 1.8.0, build f3628c7
-</pre>
+```
 
 ``` sh
 $ docker-machine --version
 ```
 
-<pre>
+``` txt
 docker-machine version 0.8.0, build b85aac1
-</pre>
+```
 
 念を入れてきちんとインストールできているか確認。
 
@@ -57,7 +57,7 @@ docker-machine version 0.8.0, build b85aac1
 $ docker run hello-world
 ```
 
-<pre>
+``` txt
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 c04b14da8d14: Pull complete
@@ -83,7 +83,7 @@ Share images, automate workflows, and more with a free Docker Hub account:
 
 For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
-</pre>
+```
 
 > Hello from Docker!
 > This message shows that your installation appears to be working correctly.
@@ -97,7 +97,7 @@ For more examples and ideas, visit:
 $ docker run -d -p 80:80 --name webserver nginx
 ```
 
-<pre>
+``` txt
 Unable to find image 'nginx:latest' locally
 latest: Pulling from library/nginx
 357ea8c3d80b: Pull complete
@@ -106,7 +106,7 @@ latest: Pulling from library/nginx
 Digest: sha256:d33834dd25d330da75dccd8add3ae2c9d7bb97f502b421b02cecb6cb7b34a1b6
 Status: Downloaded newer image for nginx:latest
 9be7159c9c160130032598dd52b71442226be957e766c82b94d645b1703db168
-</pre>
+```
 
 http://localhost に行くと、お馴染みの nginx 画面が表示される。
 
@@ -118,7 +118,7 @@ http://localhost に行くと、お馴染みの nginx 画面が表示される�
 $ docker run docker/whalesay cowsay poyo!
 ```
 
-<pre>
+``` txt
 Unable to find image 'docker/whalesay:latest' locally
 latest: Pulling from docker/whalesay
 e190868d63f8: Pull complete
@@ -145,7 +145,7 @@ Status: Downloaded newer image for docker/whalesay:latest
        \______ o          __/
         \    \        __/
           \____\______/
-</pre>
+```
 
 poyo!
 
@@ -163,11 +163,11 @@ $ touch Dockerfile
 
 emacs が候補にないことに若干の悲しみを感じながら、emacs で以下の内容を Dockerfile に描く。
 
-<pre>
+``` txt
 FROM docker/whalesay:latest
 RUN apt-get -y update && apt-get install -y fortunes
 CMD /usr/games/fortune -a | cowsay
-</pre>
+```
 
 `docker/whalesay` をベースに、fortunes を追加でインストールしてから cowsay している。
 
@@ -177,12 +177,12 @@ Dockerfile が準備できたので、build する。
 $ docker build -t docker-whale .
 ```
 
-<pre>
+``` txt
 Sending build context to Docker daemon 2.048 kB
 ...
 Removing intermediate container 1c1754725007
 Successfully built d649997c162a
-</pre>
+```
 
 新しく `docker-whale` ができていることを確認する。
 
@@ -190,13 +190,13 @@ Successfully built d649997c162a
 $ docker images
 ```
 
-<pre>
+``` txt
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 docker-whale        latest              d649997c162a        36 seconds ago      274.9 MB
 nginx               latest              4efb2fcdb1ab        3 days ago          183.4 MB
 hello-world         latest              c54a2cc56cbb        8 weeks ago         1.848 kB
 docker/whalesay     latest              6b362a9f73eb        15 months ago       247 MB
-</pre>
+```
 
 できているようなので、run してみる。
 
@@ -204,7 +204,7 @@ docker/whalesay     latest              6b362a9f73eb        15 months ago       
 $ docker run docker-whale
 ```
 
-<pre>
+``` txt
  ________________________________________
 / The Golden Rule is of no use to you    \
 | whatever unless you realize it is your |
@@ -223,7 +223,7 @@ $ docker run docker-whale
        \______ o          __/
         \    \        __/
           \____\______/
-</pre>
+```
 
 「どんな黄金律も行動に移さなかったら何の意味もないで」って感じかな。
 
@@ -244,14 +244,14 @@ $ docker tag d649997c162a m0t0k1ch1/docker-whale:latest
 $ docker images
 ```
 
-<pre>
+``` txt
 REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
 docker-whale                latest              d649997c162a        54 minutes ago      274.9 MB
 m0t0k1ch1/docker-whale      latest              d649997c162a        54 minutes ago      274.9 MB
 nginx                       latest              4efb2fcdb1ab        3 days ago          183.4 MB
 hello-world                 latest              c54a2cc56cbb        8 weeks ago         1.848 kB
 docker/whalesay             latest              6b362a9f73eb        15 months ago       247 MB
-</pre>
+```
 
 続いて Docker Hub にログイン。
 
@@ -277,12 +277,12 @@ $ docker rmi -f d649997c162a
 $ docker images
 ```
 
-<pre>
+``` txt
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 nginx               latest              4efb2fcdb1ab        3 days ago          183.4 MB
 hello-world         latest              c54a2cc56cbb        8 weeks ago         1.848 kB
 docker/whalesay     latest              6b362a9f73eb        15 months ago       247 MB
-</pre>
+```
 
 消えてる。
 
@@ -292,7 +292,7 @@ Docker Hub にログインした状態で、ローカルに image がなくて�
 $ docker run m0t0k1ch1/docker-whale
 ```
 
-<pre>
+``` txt
 Unable to find image 'm0t0k1ch1/docker-whale:latest' locally
 latest: Pulling from m0t0k1ch1/docker-whale
 e190868d63f8: Already exists
@@ -322,6 +322,6 @@ Status: Downloaded newer image for m0t0k1ch1/docker-whale:latest
        \______ o          __/
         \    \        __/
           \____\______/
-</pre>
+```
 
 無事 run できた。おしまい。

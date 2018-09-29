@@ -56,7 +56,7 @@ Scylla が使用するポートに関しては [公式ドキュメント](http:/
 $ lsblk
 ```
 
-<pre>
+``` txt
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 fd0      2:0    1    4K  0 disk
 sda      8:0    0 29.3G  0 disk
@@ -65,7 +65,7 @@ sdb      8:16   0   28G  0 disk
 └─sdb1   8:17   0   28G  0 part /mnt
 sdc      8:32   0 1023G  0 disk
 sr0     11:0    1  1.1M  0 rom
-</pre>
+```
 
 sdc が追加したデータディスクなので、パーティションを切ってあげる。
 
@@ -73,7 +73,7 @@ sdc が追加したデータディスクなので、パーティションを切�
 $ fdisk /dev/sdc
 ```
 
-<pre>
+``` txt
 Welcome to fdisk (util-linux 2.27.1).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
@@ -107,7 +107,7 @@ Command (m for help): w
 The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
-</pre>
+```
 
 パーティションが切れてることを確認する。
 
@@ -115,7 +115,7 @@ Syncing disks.
 $ lsblk
 ```
 
-<pre>
+``` txt
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 fd0      2:0    1    4K  0 disk
 sda      8:0    0 29.3G  0 disk
@@ -125,7 +125,7 @@ sdb      8:16   0   28G  0 disk
 sdc      8:32   0 1023G  0 disk
 └─sdc1   8:33   0 1023G  0 part
 sr0     11:0    1  1.1M  0 rom
-</pre>
+```
 
 XFS でフォーマットする。
 
@@ -133,7 +133,7 @@ XFS でフォーマットする。
 $ mkfs.xfs /dev/sdc1
 ```
 
-<pre>
+``` txt
 meta-data=/dev/sdc1              isize=512    agcount=4, agsize=67043264 blks
          =                       sectsz=4096  attr=2, projid32bit=1
          =                       crc=1        finobt=1, sparse=0
@@ -143,7 +143,7 @@ naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
 log      =internal log           bsize=4096   blocks=130943, version=2
          =                       sectsz=4096  sunit=1 blks, lazy-count=1
 realtime =none                   extsz=4096   blocks=0, rtextents=0
-</pre>
+```
 
 フォーマットを確認する。
 
@@ -151,9 +151,9 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 $ file -s /dev/sdc1
 ```
 
-<pre>
+``` txt
 /dev/sdc1: SGI XFS filesystem data (blksz 4096, inosz 512, v2 dirs)
-</pre>
+```
 
 `/var/lib/scylla` にマウントする。
 
@@ -168,7 +168,7 @@ $ mount /dev/sdc1 /var/lib/scylla
 $ lsblk
 ```
 
-<pre>
+``` txt
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 fd0      2:0    1    4K  0 disk
 sda      8:0    0 29.3G  0 disk
@@ -178,7 +178,7 @@ sdb      8:16   0   28G  0 disk
 sdc      8:32   0 1023G  0 disk
 └─sdc1   8:33   0 1023G  0 part /var/lib/scylla
 sr0     11:0    1  1.1M  0 rom
-</pre>
+```
 
 ディスクの準備はこれで ok。再起動時にもディスクがマウントされるよう、`/etc/fstab` の設定もしておいた。
 
@@ -196,9 +196,9 @@ $ apt-get install scylla
 $ scylla --version
 ```
 
-<pre>
+``` txt
 1.6.0-20170202.7e1b245
-</pre>
+```
 
 <br />
 ### Scylla をセットアップをする
@@ -212,10 +212,10 @@ $ scylla --version
 
 GossipingPropertyFileSnitch にしたので、`/etc/scylla/cassandra-rackdc.properties` にも設定を追記。
 
-<pre>
+``` txt
 dc=dc1
 rack=rack1
-</pre>
+```
 
 次にセットアップ用のスクリプトを走らせる。
 
@@ -227,9 +227,9 @@ $ scylla_setup
 
 セットアップ用のスクリプトの中で、ベンチマークをかけて io 関連の設定を自動でやってくれるステップがあるので、これは 3 台ともやっておくとよいかなと思う。3 台それぞれで設定された数字を参考に、最終的には `/etc/scylla.d/io.conf` の内容を以下で揃えた。
 
-<pre>
+``` txt
 SEASTAR_IO="--max-io-requests=20"
-</pre>
+```
 
 <br />
 ### Scylla を起動してクラスタを組む
@@ -246,7 +246,7 @@ $ systemctl start scylla-server
 $ nodetool status
 ```
 
-<pre>
+``` txt
 Datacenter: dc1
 ===============
 Status=Up/Down
@@ -255,7 +255,7 @@ Status=Up/Down
 UN  10.1.1.23  276.56 KB  256     69.3%             7a208e6d-96cb-4b5e-84bb-89b64106702d  rack1
 UN  10.1.1.22  311.97 KB  256     63.8%             212c7ddc-4b63-4ace-8dc4-89eda382d5c3  rack1
 UN  10.1.1.24  187.08 KB  256     67.0%             0cd1bd68-8f00-4abd-878f-be3f8b4b96cb  rack1
-</pre>
+```
 
 無事クラスタが組めた模様。
 

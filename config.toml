@@ -5,6 +5,8 @@ languageCode = "ja-jp"
 copyright = "m0t0k1ch1"
 googleAnalytics = "UA-40447108-1"
 disqusShortname = "m0t0k1ch1st0ry"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [Author]
     name = "m0t0k1ch1"
@@ -21,4 +23,3 @@ disqusShortname = "m0t0k1ch1st0ry"
     twitter = "https://twitter.com/m0t0k1ch1"
     fbAppId = "171566516539742"
     dateFormat = "2006-01-02"
-    highlightJsLocalUrl = "js/highlight.pack.js"

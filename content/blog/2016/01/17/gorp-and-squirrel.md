@@ -204,7 +204,7 @@ func checkError(err error) {
 
 出力はこんな感じ。
 
-<pre>
+``` txt
 userNum: 2
 ---
 id: 1, name: m0t0k1ch1, age: 27, created_at: 2016-01-17 16:16:44 +0900 JST, updated_at: 2016-01-17 16:16:44 +0900 JST
@@ -213,4 +213,4 @@ id: 2, name: m0t0k1ch2, age: 28, created_at: 2016-01-17 16:16:44 +0900 JST, upda
 id: 1, name: m0t0k1ch1, age: 29, created_at: 2016-01-17 16:16:44 +0900 JST, updated_at: 2016-01-17 16:16:47 +0900 JST
 ---
 id: 2, name: m0t0k1ch2, age: 28, created_at: 2016-01-17 16:16:44 +0900 JST, updated_at: 2016-01-17 16:16:44 +0900 JST
-</pre>
+```

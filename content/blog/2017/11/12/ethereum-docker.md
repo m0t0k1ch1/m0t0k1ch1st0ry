@@ -21,7 +21,7 @@ $ geth --networkid 1234 --nodiscover --maxpeers 0 --datadir /root/.ethereum/priv
 
 正常にマイニングが開始された場合のログは以下のようになる。
 
-<pre>
+``` txt
 INFO [11-11|19:43:48] Starting peer-to-peer node               instance=Geth/v1.7.2-stable/linux-amd64/go1.9.1
 INFO [11-11|19:43:48] Allocated cache and file handles         database=/root/.ethereum/privchain/geth/chaindata cache=128 handles=1024
 WARN [11-11|19:43:48] Upgrading database to use lookup entries
@@ -73,7 +73,7 @@ INFO [11-11|19:51:00] Generating DAG in progress               epoch=1 percentag
 INFO [11-11|19:51:06] Generating DAG in progress               epoch=1 percentage=7  elapsed=50.185s
 INFO [11-11|19:51:11] Successfully sealed new block            number=3 hash=323f67…b0868f
 INFO [11-11|19:51:11] 🔨 mined potential block                  number=3 hash=323f67…b0868f
-</pre>
+```
 
 ノードが起動したら以下を実行してノードに接続し、お馴染みの JavaScript コンソールさんでよしなに動作確認などを行う。
 
@@ -81,7 +81,7 @@ INFO [11-11|19:51:11] 🔨 mined potential block                  number=3 hash=
 $ docker exec -it geth-standalone geth attach rpc:http://localhost:8545
 ```
 
-<pre>
+``` txt
 Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.7.2-stable/linux-amd64/go1.9.1
@@ -91,6 +91,6 @@ at block: 13 (Sat, 11 Nov 2017 20:14:40 UTC)
  modules: admin:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
 
 >
-</pre>
+```
 
 一旦今日はここまで。

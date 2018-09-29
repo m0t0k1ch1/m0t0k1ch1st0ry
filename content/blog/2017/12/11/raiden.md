@@ -209,7 +209,7 @@ __入札者側がダッチオークションの終了タイミングを決定す
 
 まずは入札用の `bid` function です。
 
-```
+``` solidity
 /// @notice Send `msg.value` WEI to the auction from the `msg.sender` account.
 /// @dev Allows to send a bid to the auction.
 function bid()
@@ -242,7 +242,7 @@ function bid()
 
 冒頭にある以下の処理は基本的なバリデーションです。
 
-```
+``` solidity
 require(msg.value > 0);
 require(bids[msg.sender] + msg.value <= bid_threshold || whitelist[msg.sender]);
 assert(bids[msg.sender] + msg.value >= msg.value);
@@ -252,7 +252,7 @@ assert(bids[msg.sender] + msg.value >= msg.value);
 
 基本的なバリデーションに続いて、`missingFundsToEndAuction` function が実行され、`missing_funds` が計算されています。
 
-```
+``` solidity
 // Missing funds without the current bid value
 uint missing_funds = missingFundsToEndAuction();
 
@@ -265,7 +265,7 @@ require(msg.value <= missing_funds);
 
 入札が正常であることが確認できたら、入札者のアドレスと入札額を紐づけて `bids` に保存（入札は複数回可能であるため、加算している）し、受け取った ETH の総量である `received_wei` にも入札額分を加算しています。
 
-```
+``` solidity
 bids[msg.sender] += msg.value;
 received_wei += msg.value;
 ```
@@ -274,7 +274,7 @@ received_wei += msg.value;
 
 以上が入札処理のざっくりとした解説となります。意外とシンプルでした。が、肝心のトークンの価格計算処理がまだ登場していません。これはどうなっているのでしょうか。実際のコードを見てみます。
 
-```
+``` solidity
 /*
  *  Private functions
  */
@@ -308,7 +308,7 @@ __オークション開始時からの経過時間を利用して、トークン
 
 ダッチオークションの終了後には、以下の `finalizeAuction` function が実行されます。
 
-```
+``` solidity
 /// @notice Finalize the auction - sets the final RDN token price and changes the auction
 /// stage after no bids are allowed anymore.
 /// @dev Finalize auction and set the final RDN token price.
@@ -343,7 +343,7 @@ function finalizeAuction() public atStage(Stages.AuctionStarted)
 
 Gnosis のダッチオークションで実際に使われたコントラクトは [こちら](https://etherscan.io/address/0x1d0dcc8d8bcafa8e8502beaeef6cbd49d3affcdc#code) のようです。今回も入札用の `bid` function から見ていこうと思います。
 
-```
+``` solidity
 /// @dev Allows to send a bid to the auction.
 /// @param receiver Bid will be assigned to this address if set.
 function bid(address receiver)
@@ -390,7 +390,7 @@ function bid(address receiver)
 
 そして、最後に以下のようなダッチオークションの終了判定が行われています。
 
-```
+``` solidity
 if (maxWei == amount)
     // When maxWei is equal to the big amount the auction is ended and finalizeAuction is triggered.
     finalizeAuction();
@@ -406,7 +406,7 @@ __調達額のキャップが存在する__
 
 具体的には、以下のコードの 1 つ目の if 文です。
 
-```
+``` solidity
 modifier timedTransitions() {
     if (stage == Stages.AuctionStarted && calcTokenPrice() <= calcStopPrice())
         finalizeAuction();
@@ -418,7 +418,7 @@ modifier timedTransitions() {
 
 条件式の中で呼ばれている `calcTokenPrice` function と `calcStopPrice` function の定義は以下のようになっています。Raiden の `calcTokenPrice` function とは異なるロジックで計算されているようです。
 
-```
+``` solidity
 /// @dev Calculates stop price.
 /// @return Returns stop price.
 function calcStopPrice()
@@ -444,7 +444,7 @@ function calcTokenPrice()
 
 オークションの終了条件が満たされた場合に実行される `finalizeAuction` function の内容は以下のようになっています。
 
-```
+``` solidity
 /*
  *  Private functions
  */

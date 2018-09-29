@@ -48,9 +48,9 @@ export PATH=$PATH:/usr/lib/go-1.9/bin:$GOPATH/bin
 $ go version
 ```
 
-<pre>
+``` txt
 go version go1.9.2 linux/amd64
-</pre>
+```
 
 <br />
 ### Glide のインストール
@@ -67,9 +67,9 @@ $ go get -u github.com/Masterminds/glide
 $ glide --version
 ```
 
-<pre>
+``` txt
 glide version 0.13.2-dev
-</pre>
+```
 
 <br />
 ### lnd のインストール
@@ -91,9 +91,9 @@ $ go install . ./cmd/...
 $ lnd --version
 ```
 
-<pre>
+``` txt
 lnd version 0.3.0-alpha
-</pre>
+```
 
 <br />
 ### btcd のインストール
@@ -119,9 +119,9 @@ $ go install . ./cmd/...
 $ btcd --version
 ```
 
-<pre>
+``` txt
 btcd version 0.12.0-beta
-</pre>
+```
 
 <br />
 ## 起動
@@ -144,7 +144,7 @@ testnet とのデータの同期にはそれなりに時間がかかるので、
 
 まず、共通のオプションを `~/.lnd/lnd.conf` に設定しておきます。なお、検証目的なので、macaroons による認証は無効化しています。
 
-<pre>
+``` txt
 [Application Options]
 datadir=data
 logdir=log
@@ -157,7 +157,7 @@ bitcoin.active=1
 bitcoin.testnet=1
 bitcoin.rpcuser=btcdrpc
 bitcoin.rpcpass=btcdrpc
-</pre>
+```
 
 3 匹それぞれのデータを保持するディレクトリを作成しておきます。Alice、Bob、Charlie の 3 人が lnd を起動する想定です。
 
@@ -196,7 +196,7 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons create
 
 成功するとバックエンド（btcd）との同期が始まり、各 `nohup.out` に以下のようなログが出力されるはずです。
 
-<pre>
+``` txt
 2018-01-15 23:46:45.582 [INF] LTND: Primary chain is set to: bitcoin
 2018-01-15 23:46:45.582 [INF] LTND: Initializing btcd backed fee estimator
 2018-01-15 23:46:51.336 [INF] LNWL: Opened wallet
@@ -235,7 +235,7 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons create
 2018-01-15 23:56:29.752 [INF] CMGR: Server listening on [::]:10013
 2018-01-15 23:56:29.752 [INF] DISC: Attempting to bootstrap with: Authenticated Channel Graph
 2018-01-15 23:56:29.754 [INF] DISC: Attempting to bootstrap with: BOLT-0010 DNS Seed: [[nodes.lightning.directory soa.nodes.lightning.directory]]
-</pre>
+```
 
 また、`getinfo` コマンドで基本的な情報を取得することもできます。
 

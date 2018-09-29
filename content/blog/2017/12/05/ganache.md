@@ -128,7 +128,7 @@ module.exports = {
 $ truffle migrate --network development
 ```
 
-<pre>
+``` txt
 Using network 'development'.
 
 Running migration: 1_initial_migration.js
@@ -145,7 +145,7 @@ Running migration: 2_deploy_my_token.js
 Saving successful migration to network...
   ... 0x9a573474527bea6504b9900d07c49c2962d5c64aec96780b2f2c0ba9ab6740c1
 Saving artifacts...
-</pre>
+```
 
 無事デプロイできたようです。MyToken に対応するアドレスは 0xf25186b5081ff5ce73482ad761db0eb0d25abfbf となりました。
 
