@@ -6,7 +6,7 @@ title = "脳科学の本を読んだ"
 
 普段読書はあまりしないのですが、尊敬している方が「1 回脳科学に触れてみるといいよ」と言っているのを 2 回くらい耳にしたので、こりゃ何か読んだほうがいいなあと思ってオススメを聞いたところ、こちらの本を薦めていただいたので読んでみました。結果、自分の頭では記憶容量足りないくらいおもしろい知見が多かったなという印象で、今後も意識しておきたいことについてはここに書き留めておくことにしました。
 
-<a href="http://www.amazon.co.jp/gp/product/4255004323/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4255004323&linkCode=as2&tag=k1ch1-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4255004323&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=4255004323" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a href="http://www.amazon.co.jp/gp/product/4255004323/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4255004323&linkCode=as2&tag=k1ch1-22"><img border="0" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4255004323&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=4255004323" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 <!--more-->
 
