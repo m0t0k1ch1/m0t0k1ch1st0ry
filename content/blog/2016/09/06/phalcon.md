@@ -123,7 +123,7 @@ Press Ctrl-C to quit.
 
 ブラウザで http://127.0.0.1:8000 にアクセス。
 
-![phalcon.png](/my-images/entry/phalcon.png)
+![phalcon.png](/img/entry/phalcon.png)
 
 大丈夫そう。
 

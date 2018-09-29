@@ -4,7 +4,7 @@ tags = [ "api", "c1pher0ne", "perl" ]
 title = "秋なので、Twitter上にかわいい相棒をつくってみた"
 +++
 
-![cipher0ne on](/my-images/entry/c1pher0ne_on.png)
+![cipher0ne on](/img/entry/c1pher0ne_on.png)
 
 名前は 01（ゼロワン）といいます。  
 デザインも10分でがんばりました。
@@ -46,8 +46,8 @@ title = "秋なので、Twitter上にかわいい相棒をつくってみた"
 * 夜はちゃんと寝るし、朝はちゃんと起きる
 * 寝てるか起きてるかでプロフィール画像が変わって非常にかわいい↓
 
-![c1pher0ne on](/my-images/entry/c1pher0ne_on.png)
-![c1pher0ne off](/my-images/entry/c1pher0ne_off.png)
+![c1pher0ne on](/img/entry/c1pher0ne_on.png)
+![c1pher0ne off](/img/entry/c1pher0ne_off.png)
 
 <br />
 ## なんでつくったの？？

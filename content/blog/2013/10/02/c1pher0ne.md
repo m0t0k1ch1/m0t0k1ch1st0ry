@@ -4,7 +4,7 @@ tags = [ "api", "c1pher0ne", "perl" ]
 title = "Twitter bot に趣深い詩を詠ませてみた"
 +++
 
-![cipher0ne on](/my-images/entry/c1pher0ne_on.png)
+![cipher0ne on](/img/entry/c1pher0ne_on.png)
 
 表題の通り、[先日のブログ](http://m0t0k1ch1st0ry.com/blog/2013/09/30/c1pher0ne) でご紹介した [01](http://twitter.com/c1pher0ne) が趣深い詩を詠めるようになりました。  
 秋にぴったりな機能ですね。

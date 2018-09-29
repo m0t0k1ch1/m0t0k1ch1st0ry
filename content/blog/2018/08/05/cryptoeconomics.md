@@ -10,7 +10,7 @@ title = "cryptoeconomics: crypto-backed mechanism design"
 
 前回の記事は「まず cryptoeconomics という言葉を認知してほしい」という意図で書いたので、敢えてその定義について踏み込んだことは書きませんでした。謎を謎のまま放置して終わるという、自分の好きな園子温監督もよく使う手です。が、これは映画ではないので、きちんと続きを書こうと思います。
 
-![venus](/my-images/entry/venus.png)
+![venus](/img/entry/venus.png)
 
 <br />
 ## 0. 目次
@@ -174,7 +174,7 @@ ref. [トークンエコノミーは分散化できるか](https://yu-kimura.jp/
 
 ref. [Blockchain and Smart Contract Mechanism Design Challenges](https://fc17.ifca.ai/wtsc/Vitalik%20Malta.pdf)
 
-![vitalik_1](/my-images/entry/vitalik_1.png)
+![vitalik_1](/img/entry/vitalik_1.png)
 
 大枠の考え方は自分の定義とそこまで変わらないと思うのですが、いくつか明確に異なる点もあります。
 
@@ -229,7 +229,7 @@ Vlad も economist の目的をこう捉えているのであれば、しっく�
 
 ref. [Behavioral Crypto-Economics: The Challenge and Promise of Blockchain Incentive Design](https://medium.com/berlin-innovation-ventures/behavioral-crypto-economics-6d8befbf2175)
 
-![bce](/my-images/entry/bce.png)
+![bce](/img/entry/bce.png)
 
 記事の中では、automatibility（インセンティブに従うために人間の手作業がどれだけ必要か）と size of action space（報酬を最大化するためにできる行動がどれだけあるか）という 2 つの軸で既存の cryptoeconomic なプロダクトが評価されており、それを踏まえて
 
@@ -260,7 +260,7 @@ __「所望の性質」をどう定義するか__
 
 ref. [Blockchain and Smart Contract Mechanism Design Challenges](https://fc17.ifca.ai/wtsc/Vitalik%20Malta.pdf)
 
-![vitalik_2](/my-images/entry/vitalik_2.png)
+![vitalik_2](/img/entry/vitalik_2.png)
 
 <br />
 ## 7. 参考文献

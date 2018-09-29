@@ -6,7 +6,7 @@ title = "なんでもルーレットしてくれる Slack bot"
 
 自分のプロジェクトのエンジニア間では、「誰がやるか決めようぜ！！！」みたいなことがときたま発生するので、以下のような感じのことができる Slack bot をつくった。
 
-![wasabi](/my-images/entry/wasabi.png)
+![wasabi](/img/entry/wasabi.png)
 
 <!--more-->
 

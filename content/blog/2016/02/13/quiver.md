@@ -10,7 +10,7 @@ Twitter のタイムラインで [こちらのエントリ](http://namaraii.com/
 
 <!--more-->
 
-![quiver](/my-images/entry/quiver.png)
+![quiver](/img/entry/quiver.png)
 
 <br />
 ## Quiver 移行前のメモ管理

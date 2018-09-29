@@ -8,7 +8,7 @@ title = "ISUCON3 底辺スタッフの記録"
 
 <!--more-->
 
-![isucon3 1](/my-images/entry/isucon3_1.jpg)
+![isucon3 1](/img/entry/isucon3_1.jpg)
 
 <br />
 ## スタッフとしてやったこと
@@ -49,7 +49,7 @@ PHP さん、さすがでした。
 
 本戦前日に [@acidlemon](https://twitter.com/acidlemon) さんから指示を受けて好き勝手に作成しました。ネームプレートが参加者のみなさんのツイートやブログに登場しているのを見る度、似非デザイナー気分に浸らせていただいております。
 
-![isucon3 2](/my-images/entry/isucon3_2.jpg)
+![isucon3 2](/img/entry/isucon3_2.jpg)
 
 <br />
 ## 当日
@@ -89,4 +89,4 @@ PHP さん、さすがでした。
 
 次は出場しないとあかんなと思いました。
 
-![isucon3 3](/my-images/entry/isucon3_3.jpg)
+![isucon3 3](/img/entry/isucon3_3.jpg)

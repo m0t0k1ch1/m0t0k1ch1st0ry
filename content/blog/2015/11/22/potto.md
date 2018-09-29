@@ -41,7 +41,7 @@ func main() {
 
 実際に対話すると、以下のような感じ。
 
-![potto](/my-images/entry/potto.png)
+![potto](/img/entry/potto.png)
 
 かわいい。
 

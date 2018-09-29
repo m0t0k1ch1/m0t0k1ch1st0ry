@@ -8,7 +8,7 @@ title = "cryptoeconomics の「守」"
 
 <!--more-->
 
-![dna](/my-images/entry/dna.png)
+![dna](/img/entry/dna.png)
 
 <br />
 ## はじめに

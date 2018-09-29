@@ -299,7 +299,7 @@ https://github.com/m0t0k1ch1/keras-sample/blob/master/mnist_mlp.py
 
 実行すると、以下のようなグラフが得られます。きちんと loss が減少してる。
 
-![keras history](/my-images/entry/keras_history.png)
+![keras history](/img/entry/keras_history.png)
 
 <br />
 ## 次

@@ -8,7 +8,7 @@ title = "Unity で 2D シューティング"
 
 <!--more-->
 
-![tutorial 2D](/my-images/entry/unity_2d.gif)
+![tutorial 2D](/img/entry/unity_2d.gif)
 
 プレハブ化とか、当たり判定とか、アニメーションとか、やることが想像以上に多くて勉強になった。あと、デフォルトのエディタを MonoDevelop から Atom に変えて楽しんでいた。
 

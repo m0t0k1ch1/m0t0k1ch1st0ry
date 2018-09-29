@@ -58,4 +58,4 @@ title = "ISUCON5 と chatzmers - 本戦解脱編"
 
 最後にチームメイトである [@Maco_Tasu](https://twitter.com/Maco_Tasu) と [@rg_gs](https://twitter.com/rg_gs) に感謝。諸々気負わず、来年もまた一緒にチャレンジしたいと思っております。よろしくお願い致します。
 
-![isucon5](/my-images/entry/isucon5.jpg)
+![isucon5](/img/entry/isucon5.jpg)
