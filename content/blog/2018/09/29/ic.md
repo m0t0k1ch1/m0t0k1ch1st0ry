@@ -187,7 +187,7 @@ __このように、理論的には画期的なメカニズムがあったとし
 あたりにチャレンジしていければなと考えています。
 
 <br />
-## 6. 参考文献
+## 6. 参考資料
 
 - [セカンドプライスオークション―正直者は絶対に損をしない―](http://www.toyo.ac.jp/nyushi/column/video-lecture/20160517_01.html)
 - [Learning Solidity Part 2: Commit-Reveal Voting](https://karl.tech/learning-solidity-part-2-voting)
