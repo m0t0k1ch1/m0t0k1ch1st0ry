@@ -6,7 +6,7 @@ title = "芸術実行犯"
 
 いろいろ縁があって、[SUNNY BOY BOOKS](http://www.sunnyboybooks.com) という古本屋の店主さんと話していたときに、「園さんの映画とか好きで観ますね〜」って言ったら薦めてもらったので読んだ。読んで考えたことがいくつかあったのでメモ。ちなみに、コレ読むまでは Chim↑Pom 知らなかった。。
 
-<a href="http://www.amazon.co.jp/gp/product/4255006644/ref=as_li_tf_il?ie=UTF8&camp=247&creative=1211&creativeASIN=4255006644&linkCode=as2&tag=k1ch1-22"><img border="0" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4255006644&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=4255006644" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a href="http://www.amazon.co.jp/gp/product/4255006644/ref=as_li_tf_il?ie=UTF8&camp=247&creative=1211&creativeASIN=4255006644&linkCode=as2&tag=k1ch1-22"><img border="0" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4255006644&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=4255006644" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 <!--more-->
 

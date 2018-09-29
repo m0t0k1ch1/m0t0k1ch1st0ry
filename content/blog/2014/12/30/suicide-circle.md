@@ -4,7 +4,7 @@ tags = [ "movie" ]
 title = "Suicide Circle"
 +++
 
-<a href="http://www.amazon.co.jp/gp/product/B001JE5QZ0/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B001JE5QZ0&linkCode=as2&tag=k1ch1-22"><img border="0" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B001JE5QZ0&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=B001JE5QZ0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a href="http://www.amazon.co.jp/gp/product/B001JE5QZ0/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B001JE5QZ0&linkCode=as2&tag=k1ch1-22"><img border="0" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B001JE5QZ0&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=B001JE5QZ0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 全く消化できていなかった問題児。だったんだけど、園さんの「[非道に生きる](http://www.amazon.co.jp/gp/product/4255006776/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4255006776&linkCode=as2&tag=k1ch1-22)」を読んで、やっとこさ血肉にできそうなのでメモ。若干のネタバレはあるのでご注意ください。
 
@@ -74,6 +74,6 @@ title = "Suicide Circle"
 
 「非道に生きる」、園さんの映画を何本か観た後に読むと、だいぶ霧が晴れるのでオススメです。園さんが、自分の人生を表現してるっていうのが伝わってくる感じです。
 
-<a href="http://www.amazon.co.jp/gp/product/4255006776/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4255006776&linkCode=as2&tag=k1ch1-22"><img border="0" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4255006776&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=4255006776" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a href="http://www.amazon.co.jp/gp/product/4255006776/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4255006776&linkCode=as2&tag=k1ch1-22"><img border="0" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4255006776&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=4255006776" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 ちなみに、「自殺サークル」を撮ったとき、園さんは40歳。「自転車吐息」や「東京ガガガ」を経て、アメリカでのホームレス同然の極貧生活を経て、日本に帰ってきた40歳が最初に撮った「撮りたい映画」がこの「自殺サークル」。そして、ここから「愛のむきだし」や「冷たい熱帯魚」などなどに繋がっていったと考えるとぐっとくるものがある。学んでいきたい。
