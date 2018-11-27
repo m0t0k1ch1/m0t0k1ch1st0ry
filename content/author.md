@@ -6,7 +6,13 @@ title = "Author"
 
 ![eye](/img/common/eye_256.png)
 
-- Twitter：[@m0t0k1ch1](https://twitter.com/m0t0k1ch1)
-- GitHub：[m0t0k1ch1](https://github.com/m0t0k1ch1)
-- Scrapbox：[m1dstream](https://scrapbox.io/m0t0k1ch1)
-- CHIP：[cryptribe](https://thechip.in/fanclubs/419)
+- __Twitter__
+  - [@m0t0k1ch1](https://twitter.com/m0t0k1ch1)
+- __GitHub__
+  - [m0t0k1ch1](https://github.com/m0t0k1ch1)
+- __Scrapbox__
+  - [Groundwork](https://scrapbox.io/m0t0k1ch1)
+  - [Plasma Research](https://scrapbox.io/m0t0k1ch1-plasma)
+  - [Rust Study](https://scrapbox.io/m0t0k1ch1-rust)
+- __CHIP__
+  - [cryptribe](https://thechip.in/fanclubs/419)
