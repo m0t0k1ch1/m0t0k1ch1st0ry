@@ -12,7 +12,7 @@ title = "Author"
   - [m0t0k1ch1](https://github.com/m0t0k1ch1)
 - __Scrapbox__
   - [Groundwork](https://scrapbox.io/m0t0k1ch1)
-  - [Plasma Research](https://scrapbox.io/m0t0k1ch1-plasma)
-  - [Rust Study](https://scrapbox.io/m0t0k1ch1-rust)
+  - [SIVIRA - Plasma R&D](https://scrapbox.io/sivira-plasma)
+  - [SIVIRA - Rust Dev](https://scrapbox.io/sivira-rust)
 - __CHIP__
   - [cryptribe](https://thechip.in/fanclubs/419)
