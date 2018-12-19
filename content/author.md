@@ -1,8 +1,6 @@
 +++
-title = "Author"
+title = "m0t0k1ch1"
 +++
-
-## m0t0k1ch1
 
 ![eye](/img/common/eye_256.png)
 
@@ -14,5 +12,7 @@ title = "Author"
   - [Groundwork](https://scrapbox.io/m0t0k1ch1)
   - [SIVIRA - Plasma R&D](https://scrapbox.io/sivira-plasma)
   - [SIVIRA - Rust Dev](https://scrapbox.io/sivira-rust)
+- __steemit__
+  - [@m0t0k1ch1](https://steemit.com/@m0t0k1ch1)
 - __CHIP__
   - [cryptribe](https://thechip.in/fanclubs/419)
