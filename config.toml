@@ -8,14 +8,14 @@ disqusShortname = "m0t0k1ch1st0ry"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
-[Author]
+[author]
     name = "m0t0k1ch1"
     profile = "https://github.com/m0t0k1ch1"
 
-[Taxonomies]
+[taxonomies]
     tag = "tags"
 
-[Params]
+[params]
     intro = true
     headline = "m0t0k1ch1st0ry"
     description = "since 2013"
