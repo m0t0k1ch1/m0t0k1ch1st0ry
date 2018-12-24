@@ -44,7 +44,7 @@ __この第 1 回 ex-KAYAC Advent Calendar 開催を記念して、ex-KAYAC の�
 
 正確に言うと、
 
-__Ethereum（Ropsten testnet）上にクリスマスを題材にしたある種のパズルが構築されており、このパズルを解くことができた鎖野郎諸兄姉のみ、SantaClausToken（SCT）が獲得できるようになっています。__
+__Ethereum（Ropsten testnet）上にクリスマスを題材にしたある種のパズルが構築されており、このパズルを解くことができた方のみ、SantaClausToken（SCT）が獲得できるようになっています。__
 
 パズルに関連する contract の概要を以下にまとめます。
 
