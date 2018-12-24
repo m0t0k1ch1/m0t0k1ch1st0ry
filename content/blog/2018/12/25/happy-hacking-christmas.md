@@ -71,7 +71,7 @@ __Ethereum（Ropsten testnet）上にクリスマスを題材にしたある種�
 
 Letter と ChristmasStocking と ChristmasTree がパズル要素を持った contract で、SantaClaus はパズルが解けたかどうかのチェックと報酬である SantaClausToken（SCT）の付与を担う contract です。
 
-パズルを全て解いた状態で SantaClaus contract の `requestToken()` function（下記）を実行することができれば、SantaClausToken（SCT）が獲得できます。
+パズルを全て解いた状態で SantaClaus contract の `requestToken()` function（下記）を実行することで、SantaClausToken（SCT）が獲得できます。
 
 ``` solidity
 function requestToken() public {
