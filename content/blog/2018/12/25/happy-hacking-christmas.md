@@ -62,7 +62,7 @@ __Ethereum（Ropsten testnet）上にクリスマスを題材にしたある種�
   - SantaClausToken をもらうには、たくさんたくさんお祈りをする必要があります
 - __SantaClaus__
   - 🎅[0x05d9cbee05e82d492ad66842fc7c0cb363b384ea](https://ropsten.etherscan.io/address/0x05d9cbee05e82d492ad66842fc7c0cb363b384ea#code)
-  - 自律分散型サンタクロースです
+  - 分散型サンタクロースです
   - 条件を満たした良い子にだけ、SantaClausToken をプレゼントしてくれます
 - __SantaClausToken（SCT）__
   - 💎[0xa9b76b79e3254d7835401a8b43af2fac93a83f2d](https://ropsten.etherscan.io/address/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d#code)
