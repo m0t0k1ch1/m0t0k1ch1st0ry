@@ -19,7 +19,7 @@ title = "Happy Hacking Christmas"
 
 __この第 1 回 ex-KAYAC Advent Calendar 開催を記念して、ex-KAYAC の皆さんにはちょっとイイことが起こるかもしれません。__
 
-これに関する続報は、この Advent Calendar と同時に立ち上がった ex-KAYAC な Slack チャンネルに流れると思いますので、まだチャンネルに join していない ex-KAYAC な方は [@m0t0k1ch1](https://twitter.com/m0t0k1ch1) もしくは [@ngystks](https://twitter.com/ngystks) まで気軽にお声がけください。
+これに関する続報は、この Advent Calendar と同時に立ち上がった ex-KAYAC な Slack チャンネルに流れると思いますので、チャンネルに join したい方は [@m0t0k1ch1](https://twitter.com/m0t0k1ch1) もしくは [@ngystks](https://twitter.com/ngystks) まで気軽にお声がけください。
 
 <br /><br /><br />
 ...さて、前置きはこのくらいにして、本題に移っていきたいと思います。
