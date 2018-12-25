@@ -104,7 +104,7 @@ function requestToken() public {
 <br /><br /><br />
 ...はい！ということで、鎖野郎諸兄姉の皆様、是非とも奮ってご参加いただき、分散型サンタクロースから SantaClausToken（SCT）を勝ち取ってください！！
 
-（記事前半ではそんな主旨ではなかった気がしますが、気にしない！）
+（記事前半はそんな主旨ではなかった気がしますが、気にしない！）
 
 <div style="width:100%;height:0;padding-bottom:42%;position:relative;"><iframe src="https://giphy.com/embed/3o85xAojNshmzlySyc" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/luke-skywalker-good-luck-force-be-with-you-3o85xAojNshmzlySyc">via GIPHY</a></p>
 
