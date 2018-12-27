@@ -115,7 +115,7 @@ function requestToken() public {
 
 3 人目の SCT ホルダーである yohei さんが、SCT ホルダーしか名前を刻めない contract をつくってくださいました。
 
-https://ropsten.etherscan.io/address/0x5a8b024f544ed745afc4d980e403c5e0967e62df#code
+[0x5a8b024f544ed745afc4d980e403c5e0967e62df](https://ropsten.etherscan.io/address/0x5a8b024f544ed745afc4d980e403c5e0967e62df#code)
 
 SCT を獲得した方は、是非こちらに名前を刻んでいただけたらと思います！
 
