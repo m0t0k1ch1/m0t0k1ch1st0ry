@@ -111,6 +111,17 @@ function requestToken() public {
 あ、パズルが解けた方は、[@m0t0k1ch1](https://twitter.com/m0t0k1ch1) に一声かけていただけると嬉しみです。是非、感想などお聞きしてみたいです。
 
 <br />
+## ※追記（2018-12-27）
+
+3 人目の SCT ホルダーである yohei さんが、SCT ホルダーしか名前を刻めない contract をつくってくださいました。
+
+https://ropsten.etherscan.io/address/0x5a8b024f544ed745afc4d980e403c5e0967e62df#code
+
+SCT を獲得した方は、是非こちらに名前を刻んでいただけたらと思います！
+
+自分の方でも、電子署名と Twitter の OAuth を使ってアドレスと Twitter アカウントを紐付けて、SCT ホルダーの Twitter アカウントを可視化する仕組みをつくろうかなあと思っていたりしますので、完成したあかつきには、またこのブログと GitHub repo でお知らせしようと思います。
+
+<br />
 ## 最後に
 
 最後になってしまいましたが、今回の ex-KAYAC Advent Calendar 2018 を立ち上げ（させ）た身として、参加してくださった皆さんにお礼を申し上げたいと思います。
