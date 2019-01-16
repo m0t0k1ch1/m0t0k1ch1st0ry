@@ -54,7 +54,7 @@ __そもそも Blockchain が実現する世界は、良い意味でも悪い意
 <br />
 ### Letter（低難度パズル）
 
-💌[0xbade12c0bd7943a066e77f0466d529d78d2f70db](https://ropsten.etherscan.io/address/0xbade12c0bd7943a066e77f0466d529d78d2f70db#code)
+💌[Letter contract](https://ropsten.etherscan.io/address/0xbade12c0bd7943a066e77f0466d529d78d2f70db#code)
 
 これは極めて簡単なパズルで、「基本的なトランザクション発行ができること」を要求しています。もう少し具体的には、
 
@@ -68,7 +68,7 @@ __そもそも Blockchain が実現する世界は、良い意味でも悪い意
 <br />
 ### ChristmasStocking（中難度パズル）
 
-🧦[0x408f56c4541bd00ec836102d06f7ee6a2a820678](https://ropsten.etherscan.io/address/0x408f56c4541bd00ec836102d06f7ee6a2a820678#code)
+🧦[ChristmasStocking contract](https://ropsten.etherscan.io/address/0x408f56c4541bd00ec836102d06f7ee6a2a820678#code)
 
 中難度とは言え、Letter よりはかなり難易度の高いパズルです。このパズルが要求するテクニックは「Reentrancy ができること」です。
 
@@ -83,7 +83,7 @@ ref. [Reentrancy](https://consensys.github.io/smart-contract-best-practices/know
 <br />
 ### ChristmasTree（高難度パズル）
 
-💎[0xa9b76b79e3254d7835401a8b43af2fac93a83f2d](https://ropsten.etherscan.io/address/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d#code)
+💎[ChristmasTree contract](https://ropsten.etherscan.io/address/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d#code)
 
 このパズルは、今回の企画を「鎖野郎諸兄姉への挑戦状」として恥じない問題とし、クリアしてくださった方にできるだけ大きな達成感を感じていただくための「おまけ」みたいなものですね笑
 
