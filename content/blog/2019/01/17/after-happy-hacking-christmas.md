@@ -26,7 +26,7 @@ ref. [SantaClausToken Token Holders](https://ropsten.etherscan.io/token/tokenhol
 <br />
 ## 解答
 
-<iframe src="https://giphy.com/embed/3o7TKQTr6B72IuMlfG" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/actionaliens-action-bronson-friends-watch-ancient-aliens-3o7TKQTr6B72IuMlfG">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/3o7TKQTr6B72IuMlfG" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/actionaliens-action-bronson-friends-watch-ancient-aliens-3o7TKQTr6B72IuMlfG">via GIPHY</a></p>
 
 自分が実装した「一発で全ての問題を解いて SCT を獲得するスクリプト」を公開しようかと思ったのですが、、やめました！笑
 
@@ -47,7 +47,7 @@ __そもそも Blockchain が実現する世界は、良い意味でも悪い意
 <br />
 ## 各パズルコントラクトの狙い
 
-<iframe src="https://giphy.com/embed/2wh8A9PH93Ix93b1XC" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/rdr2-arthur-morgan-arthurmorgan-2wh8A9PH93Ix93b1XC">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/2wh8A9PH93Ix93b1XC" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/rdr2-arthur-morgan-arthurmorgan-2wh8A9PH93Ix93b1XC">via GIPHY</a></p>
 
 各パズルコントラクトについて、「どんなテクニックを要求するものとしたかったのか」という観点でその狙いについてまとめます。解答ではありませんが、パズルを解くためのヒントにはなってしまいますので、「まだ見たくない！！」という方はここをスキップして、興味があれば、最後の「企画自体の狙い」に目を通していただければと思います。
 
@@ -104,7 +104,7 @@ __「伝えたいこと」にゲームという皮を被せることで、より
 
 でした。
 
-<iframe src="https://giphy.com/embed/BtX1KVvkHPp7i" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mission-impossible-ethan-hunt-freakmasks-BtX1KVvkHPp7i">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:42%;position:relative;"><iframe src="https://giphy.com/embed/BtX1KVvkHPp7i" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/mission-impossible-ethan-hunt-freakmasks-BtX1KVvkHPp7i">via GIPHY</a></p>
 
 ちょっと脱線してしまうのですが、この企画が生まれたのは、冒頭に記載した通り ex-KAYAC Advent Calendar がきっかけです。この企画を思いつく前は、
 
