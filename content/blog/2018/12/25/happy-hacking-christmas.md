@@ -34,7 +34,7 @@ __この第 1 回 ex-KAYAC Advent Calendar 開催を記念して、ex-KAYAC の�
 <br />
 ## 分散型サンタクロース（という名の [鎖野郎](https://twitter.com/leo_hio/status/1021570150888222720) 諸兄姉への挑戦状）
 
-🎅[SantaClaus contract](https://ropsten.etherscan.io/address/0x05d9cbee05e82d492ad66842fc7c0cb363b384ea#code)
+🎅 [SantaClaus contract](https://ropsten.etherscan.io/address/0x05d9cbee05e82d492ad66842fc7c0cb363b384ea#code)
 
 ^ こちらが、Ethereum（Ropsten testnet）上にデプロイされた分散型サンタクロースです。かわいいですね。
 
@@ -49,23 +49,23 @@ __Ethereum（Ropsten testnet）上にクリスマスを題材にしたある種�
 パズルに関連する contract の概要を以下にまとめます。
 
 - __Letter__（低難度パズル）
-  - 💌[Letter contract](https://ropsten.etherscan.io/address/0xbade12c0bd7943a066e77f0466d529d78d2f70db#code)
+  - 💌 [Letter contract](https://ropsten.etherscan.io/address/0xbade12c0bd7943a066e77f0466d529d78d2f70db#code)
   - SantaClaus へのお手紙です
   - SantaClausToken をもらうには、チップを包んで封をする必要があります
 - __ChristmasStocking__（中難度パズル）
-  - 🧦ChristmasStockin contractg](https://ropsten.etherscan.io/address/0x408f56c4541bd00ec836102d06f7ee6a2a820678#code)
+  - 🧦 [ChristmasStockin contractg](https://ropsten.etherscan.io/address/0x408f56c4541bd00ec836102d06f7ee6a2a820678#code)
   - SantaClaus がプレゼントを入れるための靴下です
   - SantaClausToken をもらうには、この中に賄賂を仕込む必要があります
 - __ChristmasTree__（高難度パズル）
-  - 🎄[ChristmasTree contract](https://ropsten.etherscan.io/address/0x0a97246d46703f72b5c34828f80171f005f66c60#code)
+  - 🎄 [ChristmasTree contract](https://ropsten.etherscan.io/address/0x0a97246d46703f72b5c34828f80171f005f66c60#code)
   - お祈りをしたり、飾りつけをしたりすることができる、クリスマスツリーです
   - SantaClausToken をもらうには、たくさんたくさんお祈りをする必要があります
 - __SantaClaus__
-  - 🎅[SantaClaus contract](https://ropsten.etherscan.io/address/0x05d9cbee05e82d492ad66842fc7c0cb363b384ea#code)
+  - 🎅 [SantaClaus contract](https://ropsten.etherscan.io/address/0x05d9cbee05e82d492ad66842fc7c0cb363b384ea#code)
   - 分散型サンタクロースです
   - 条件を満たした良い子にだけ、SantaClausToken（SCT）をプレゼントしてくれます
 - __SantaClausToken（SCT）__
-  - 💎[SantaClausToken contract](https://ropsten.etherscan.io/address/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d#code)
+  - 💎 [SantaClausToken contract](https://ropsten.etherscan.io/address/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d#code)
   - パズルを解いた証です
   - 中身は、SantaClaus しか transfer できない ERC20 トークンです
 
