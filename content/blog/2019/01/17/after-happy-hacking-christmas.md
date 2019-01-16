@@ -78,6 +78,8 @@ ref. [Reentrancy](https://consensys.github.io/smart-contract-best-practices/know
 
 今回は Reentrancy の中でも比較的簡単なパターンをパズルとして実装し、それを攻撃者の立場で実行してもらうことで、記事を読んで「へーなるほどねー」と思って終わりがちな Reentrancy の話に実体験を伴わせることを意図しました。
 
+また、後述する「企画自体の狙い」とも関連します。
+
 <br />
 ### ChristmasTree（高難度パズル）
 
