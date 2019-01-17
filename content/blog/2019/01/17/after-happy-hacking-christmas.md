@@ -34,7 +34,7 @@ ref. [SantaClausToken Token Holders](https://ropsten.etherscan.io/token/tokenhol
 
 ただ、あくまで「ほどよく」でよいと思っています。具体的には、「公式な解答は存在しない状態」でよいのかなと。
 
-というのは、パズルをクリアされた [@sugaret](https://twitter.com/sugaret) さんが[「聖夜のsolidityクイズ！Happy Hacking Christmas 奮闘記 〜解答と解説付き〜」](https://sugaret.hatenablog.com/entry/2018/12/31/184410) という記事を書いてくださっており、その中でかなり詳細な解説がなされているからこそ言えることでもあります。@sugaret さん、本当にありがとうございます 🙏🙏🙏
+というのは、パズルをクリアされた [@sugaret](https://twitter.com/sugaret) さんが [聖夜のsolidityクイズ！Happy Hacking Christmas 奮闘記 〜解答と解説付き〜](https://sugaret.hatenablog.com/entry/2018/12/31/184410) という記事を書いてくださっており、その中でかなり詳細な解説がなされているからこそ言えることでもあります。@sugaret さん、本当にありがとうございます 🙏🙏🙏
 
 また、「公式な解答」をつくりたくないもう 1 つの理由として
 
