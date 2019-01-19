@@ -126,7 +126,7 @@ SCT を獲得した方は、是非こちらに名前を刻んでいただけた�
 
 続きを書きました。解答について言及している部分もあるので、「まだ見たくない！」という方はご注意を。
 
-[Happy Hacking Christmasの解答と狙い](https://m0t0k1ch1st0ry.com/blog/2019/01/17/after-happy-hacking-christmas)
+[Happy Hacking Christmas の解答と狙い](https://m0t0k1ch1st0ry.com/blog/2019/01/17/after-happy-hacking-christmas)
 
 <br />
 ## 最後に
