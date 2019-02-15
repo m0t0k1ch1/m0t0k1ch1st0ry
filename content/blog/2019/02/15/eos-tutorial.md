@@ -4,7 +4,7 @@ tags = [ "eos", "c++", "blockchain" ]
 title = "EOSIO Developer Portal チュートリアルの軌跡"
 +++
 
-ここ最近、[EOSIO Developer Portal](https://developers.eos.io/eosio-home/docs) のチュートリアルをちょこちょこ進めながら [steemit](https://steemit.com/@m0t0k1ch1) にメモを投稿していたのですが、それが終わったので、全てのメモへのリンクを以下にまとめておきます。
+ここ最近、[EOSIO Developer Portal のチュートリアル](https://developers.eos.io/eosio-home/docs) をちょこちょこ進めながら [steemit](https://steemit.com/@m0t0k1ch1) にメモを投稿していたのですが、それが終わったので、全てのメモへのリンクを以下にまとめておきます。
 
 <!--more-->
 
