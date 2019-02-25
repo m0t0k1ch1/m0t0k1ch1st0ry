@@ -11,7 +11,8 @@ title = "m0t0k1ch1"
 - __Scrapbox__
   - [m1dstream](https://scrapbox.io/m0t0k1ch1)
   - [SIVIRA - Plasma R&D](https://scrapbox.io/sivira-plasma)
-  - [SIVIRA - Rust Dev](https://scrapbox.io/sivira-rust)
+- __Spotify__
+  - [m0t0k1ch1](https://open.spotify.com/user/m0t0k1ch1)
 - __steemit__
   - [@m0t0k1ch1](https://steemit.com/@m0t0k1ch1)
 - __CHIP__
