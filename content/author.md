@@ -13,7 +13,7 @@ title = "m0t0k1ch1"
   - [SIVIRA - Plasma R&D](https://scrapbox.io/sivira-plasma)
 - __steemit__
   - [@m0t0k1ch1](https://steemit.com/@m0t0k1ch1)
-- __CHIP__
-  - [cryptribe](https://thechip.in/fanclubs/419)
 - __Spotify__
   - [m0t0k1ch1](https://open.spotify.com/user/m0t0k1ch1)
+- __CHIP__
+  - [cryptribe](https://thechip.in/fanclubs/419)
