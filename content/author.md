@@ -17,3 +17,5 @@ title = "m0t0k1ch1"
   - [m0t0k1ch1](https://open.spotify.com/user/m0t0k1ch1)
 - __CHIP__
   - [cryptribe](https://thechip.in/fanclubs/419)
+- __paintory__
+  - [the c1pher](https://c1pher.paintory.com)
