@@ -21,6 +21,7 @@ pygmentsUseClasses = true
     description = "since 2013"
     github = "https://github.com/m0t0k1ch1"
     twitter = "https://twitter.com/m0t0k1ch1"
+    twitterId = "227304623"
     fbAppId = "171566516539742"
     dateFormat = "2006-01-02"
 
