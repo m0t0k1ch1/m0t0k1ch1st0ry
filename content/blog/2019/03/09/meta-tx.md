@@ -22,7 +22,7 @@ title = "meta transaction が扱える ERC20 トークンの簡易実装"
 
 今回実装した諸々は [こちら](https://github.com/m0t0k1ch1/sandbox/tree/master/ethereum/meta-tx) に置いておきましたが、そんなに量はないので、コントラクトとテストをここにも記載しておきます。説明するよりもソースコードを読んでもらった方が理解が捗ると思います。なお、実装には [truffle](https://github.com/trufflesuite/truffle) を利用しています。
 
-`from` が実行したい操作を行う transaction を `relayer` がブロードキャストして gas を負担する代わりに `from` から MT を徴収している、辺りがポイントかなと思います。
+`frm` が実行したい操作（`frm` から `to` への MT 譲渡）を行う transaction を `relayer` がブロードキャストして gas を負担する代わりに `frm` から MT を徴収している、辺りがポイントかなと思います。
 
 ``` solidity
 pragma solidity >=0.4.21 <0.6.0;
