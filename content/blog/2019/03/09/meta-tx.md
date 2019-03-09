@@ -45,33 +45,33 @@ contract MetaToken is ERC20, ERC20Detailed {
   }
 
   function metaTransfer(
-      address from,
+      address frm,
       address to,
-      uint256 value,
+      uint256 amount,
       uint256 fee,
       uint256 nonce,
       address relayer,
       bytes memory sig
   ) public returns (bool) {
     require(msg.sender == relayer, "wrong relayer");
-    require(nonceOf(from) == nonce, "invalid nonce");
-    require(balanceOf(from) >= value.add(fee), "insufficient balance");
+    require(nonceOf(frm) == nonce, "invalid nonce");
+    require(balanceOf(frm) >= amount.add(fee), "insufficient balance");
 
-    bytes32 hash = metaTransferHash(from, to, value, fee, nonce, relayer);
+    bytes32 hash = metaTransferHash(frm, to, amount, fee, nonce, relayer);
     address signer = hash.toEthSignedMessageHash().recover(sig);
-    require(signer == from, "signer != from");
+    require(signer == frm, "signer != frm");
 
-    _transfer(from, to, value);
-    _transfer(from, relayer, fee);
-    _nonces[from]++;
+    _transfer(frm, to, amount);
+    _transfer(frm, relayer, fee);
+    _nonces[frm]++;
 
     return true;
   }
 
   function metaTransferHash(
-      address from,
+      address frm,
       address to,
-      uint256 value,
+      uint256 amount,
       uint256 fee,
       uint256 nonce,
       address relayer
@@ -80,9 +80,9 @@ contract MetaToken is ERC20, ERC20Detailed {
         abi.encodePacked(
             address(this),
             "metaTransfer",
-            from,
+            frm,
             to,
-            value,
+            amount,
             fee,
             nonce,
             relayer
@@ -100,47 +100,47 @@ contract('MetaToken', async (accounts) => {
   it('transfer', async () => {
     let metaToken = await MetaToken.deployed();
 
-    let from  = accounts[0];
-    let to    = accounts[1];
-    let value = new BN('100');
+    let frm    = accounts[0];
+    let to     = accounts[1];
+    let amount = new BN('100');
 
-    let balanceOfFromBefore = await metaToken.balanceOf(from);
+    let balanceOfFromBefore = await metaToken.balanceOf(frm);
     let balanceOfToBefore   = await metaToken.balanceOf(to);
 
-    await metaToken.transfer(to, value, {from: from});
+    await metaToken.transfer(to, amount, {from: frm});
 
-    let balanceOfFromAfter = await metaToken.balanceOf(from);
+    let balanceOfFromAfter = await metaToken.balanceOf(frm);
     let balanceOfToAfter   = await metaToken.balanceOf(to);
 
-    assert.isTrue(balanceOfFromBefore.sub(value).eq(balanceOfFromAfter));
-    assert.isTrue(balanceOfToBefore.add(value).eq(balanceOfToAfter));
+    assert.isTrue(balanceOfFromBefore.sub(amount).eq(balanceOfFromAfter));
+    assert.isTrue(balanceOfToBefore.add(amount).eq(balanceOfToAfter));
   });
 
   it('metaTransfer', async () => {
     let metaToken = await MetaToken.deployed();
 
-    let from    = accounts[0];
+    let frm     = accounts[0];
     let to      = accounts[1];
-    let value   = new BN('100');
+    let amount  = new BN('100');
     let fee     = new BN('1');
     let nonce   = new BN('0');
     let relayer = accounts[2];
 
-    let hash = await metaToken.metaTransferHash(from, to, value, fee, nonce, relayer);
-    let sig  = await web3.eth.sign(hash, from);
+    let hash = await metaToken.metaTransferHash(frm, to, amount, fee, nonce, relayer);
+    let sig  = await web3.eth.sign(hash, frm);
 
-    let balanceOfFromBefore    = await metaToken.balanceOf(from);
+    let balanceOfFromBefore    = await metaToken.balanceOf(frm);
     let balanceOfToBefore      = await metaToken.balanceOf(to);
     let balanceOfRelayerBefore = await metaToken.balanceOf(relayer);
 
-    await metaToken.metaTransfer(from, to, value, fee, nonce, relayer, sig, {from: relayer});
+    await metaToken.metaTransfer(frm, to, amount, fee, nonce, relayer, sig, {from: relayer});
 
-    let balanceOfFromAfter    = await metaToken.balanceOf(from);
+    let balanceOfFromAfter    = await metaToken.balanceOf(frm);
     let balanceOfToAfter      = await metaToken.balanceOf(to);
     let balanceOfRelayerAfter = await metaToken.balanceOf(relayer);
 
-    assert.isTrue(balanceOfFromBefore.sub(value).sub(fee).eq(balanceOfFromAfter));
-    assert.isTrue(balanceOfToBefore.add(value).eq(balanceOfToAfter));
+    assert.isTrue(balanceOfFromBefore.sub(amount).sub(fee).eq(balanceOfFromAfter));
+    assert.isTrue(balanceOfToBefore.add(amount).eq(balanceOfToAfter));
     assert.isTrue(balanceOfRelayerBefore.add(fee).eq(balanceOfRelayerAfter));
   });
 });
