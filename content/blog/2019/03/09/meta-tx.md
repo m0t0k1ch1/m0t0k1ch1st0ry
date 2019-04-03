@@ -22,7 +22,7 @@ title = "meta transaction が扱える ERC20 トークンの簡易実装"
 
 今回実装した諸々は [こちら](https://github.com/m0t0k1ch1/sandbox/tree/master/ethereum/meta-tx) に置いておきましたが、そんなに量はないので、コントラクトとテストをここにも記載しておきます。説明するよりもソースコードを読んでもらった方が理解が捗ると思います。なお、実装には [truffle](https://github.com/trufflesuite/truffle) を利用しています。
 
-`frm` が実行したい操作（`frm` から `to` への MT 譲渡）を行う transaction を `relayer` がブロードキャストして gas を負担する代わりに `frm` から MT を徴収している、辺りがポイントかなと思います。
+`frm` が実行したい操作（`frm` から `to` への MT 譲渡）を行う transaction を `relayer` がブロードキャストして gas を負担する代わりに `frm` から MT を徴収している、辺りがポイントかなと思います。なお、今回は 1 contract 内で完結する固定の 1 操作だけが実行できるような実装ですが、外部コールを実行するような実装にすることも可能です。というか、どちらかと言うと本来はそうあるべきでしょう。
 
 ``` solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -151,7 +151,7 @@ contract('MetaToken', async (accounts) => {
 
 繰り返しになりますが、今回の実装はかなり単純化されたものです。[ERC1776](https://github.com/ethereum/EIPs/issues/1776) を見てもらえばわかると思いますが、実稼働を想定する場合は考えるべきことが増えます。例えば以下などです。
 
-- [ERC223](https://github.com/ethereum/EIPs/issues/223) や [ERC777](https://github.com/ethereum/EIPs/issues/777) のような fallback 機構
+- [ERC223](https://github.com/ethereum/EIPs/issues/223) や [ERC777](https://github.com/ethereum/EIPs/issues/777) のような fallback 機構を加味した外部コール
 - 柔軟なトークン手数料計算
   - transaction 実行時のトークン価格を加味した計算
   - 実際に消費した gas の量を加味した計算
