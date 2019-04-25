@@ -34,15 +34,17 @@ __`appaccount11` の `eosio.code` permission が付与された `useraccount1` �
 
 上記の問題を解決する 1 つの方法は、
 
-__`appaccount11` の `eosio.code` permission を、それが必要な action の実行時のみ付与し、その action が完了したら外す__
+__`appaccount11` の `eosio.code` permission を、それが必要な action の実行時のみ付与し、その action が完了したら即座に外す__
 
-ことである。permission の着脱を action 実行と atomic に行うことで、上述したリスクを低減することができる。これは、下図のような構成で実現できる。
+ことである。
+
+このように、action 実行と atomic に permission の着脱を行うことで、上述したリスクを低減することができる。これは、下図のような構成で実現できる。
 
 ![EOS acction permission 2](/img/entry/eos-action-permission-2.png)
 
 上図における controller contract のサンプル実装は [こちら](https://github.com/m0t0k1ch1/sandbox/tree/master/eos/action-permission/controller)。実装は非常にシンプルなので、[`controller.cpp`](https://github.com/m0t0k1ch1/sandbox/blob/master/eos/action-permission/controller/controller.cpp) を見るだけで、何をやっているかは把握できるはず。
 
-`useraccount1` に対応するユーザーは、この controller contract をあらかじめ `useraccount1` にデプロイしておき、`execute` action を通じて別の contract の action を実行すればよい。このとき、`execute` action は、
+ユーザーは、この controller contract をあらかじめ `useraccount1` にデプロイしておき、`execute` action を介して別の contract の action を実行すればよい。このとき、`execute` action は、
 
 - `update_auth(auth_before)`：`active` permission に `auth_before` を設定
 - `execute_action(acnt, act, data)`：指定した action を実行
@@ -132,7 +134,7 @@ __`appaccount11` の `eosio.code` permission を、それが必要な action の
 <br />
 ## 補足
 
-上記 controller contract の `execute` action は、実行したい action の引数を `std::vector<char>` として受け取るため、実行したい action の引数を適切にエンコードして渡す必要がある。このエンコードを行う方法はいくつかあるが、[cleos](https://developers.eos.io/eosio-cleos/docs) を利用する方法が簡単なので記載しておく。
+上記 controller contract の `execute` action の第 3 引数 `std::vector<char> data` には、実行したい action の引数を適切にエンコードして渡す必要がある。このエンコードを行う方法はいくつかあるが、[cleos](https://developers.eos.io/eosio-cleos/docs) を利用する方法が簡単なので記載しておく。
 
 例えば、`proxytest111` の `increment` action の引数をエンコードしたい場合は以下のようにすればよい。
 
