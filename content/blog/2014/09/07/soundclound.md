@@ -14,8 +14,7 @@ title = "SoundCloud と私"
 
 - いつも通り、お気に入りの曲の Recommend を垂れ流してるときに「これはっ！！」ってなる mix が流れた
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/5842592&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-<br />
+{{< soundcloud track 5842592 >}}
 
 - この mix、めちゃくちゃ良かったので、誰がアップしているのか調べてみたところ、[DJ SHARK さん](https://soundcloud.com/dj-sharkjapan) という方だった
 - これは絶対に回してるイベントがあるはずや！！！と思ってインターネットの力を駆使して調べた
@@ -42,8 +41,7 @@ title = "SoundCloud と私"
 
 （SHARK さんは頻繁に mix をアップされているわけではないし、その mix も2011年にリリースされているものなので、自分の依頼がトリガーになったと都合良く考えている）
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/166224134&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-<br />
+{{< soundcloud track 166224134 >}}
 
 ## まとめ
 

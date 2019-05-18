@@ -14,13 +14,13 @@ title = "音で振り返る2014年"
 
 東京の闇に潜む地雷を踏み荒らしてた時期の記憶が蘇って重心が低くなるやつ。
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/75868018&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+{{< soundcloud track 75868018 >}}
 
 ### ESPERANZA
 
 極まるやつ。
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/162042615&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+{{< soundcloud track 162042615 >}}
 
 ## プレイリスト部門
 
@@ -28,7 +28,7 @@ title = "音で振り返る2014年"
 
 ### 25 Nights For Nujabes
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/3245321&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+{{< soundcloud playlist 3245321 >}}
 
 ## ミックス部門
 
@@ -36,7 +36,7 @@ title = "音で振り返る2014年"
 
 ### TOKYO SUNSET
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123844154&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+{{< soundcloud track 123844154 >}}
 
 ## 最後に
 
