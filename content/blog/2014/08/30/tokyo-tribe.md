@@ -7,7 +7,6 @@ title = "TOKYO TRIBE"
 [YAPC](http://yapcasia.org/2014) 帰りに観てきました。公開日に観に行く映画とか久々〜。YAPC のブログ書いてると頭から消えそうなので先にメモ。
 
 {{< youtube 7vDSPqAA59k >}}
-<br />
 
 <!--more-->
 
