@@ -106,7 +106,7 @@ function requestToken() public {
 
 （記事前半はそんな主旨ではなかった気がしますが、気にしない！）
 
-<div style="width:100%;height:0;padding-bottom:42%;position:relative;"><iframe src="https://giphy.com/embed/3o85xAojNshmzlySyc" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/luke-skywalker-good-luck-force-be-with-you-3o85xAojNshmzlySyc">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:42%;position:relative;"><iframe src="https://giphy.com/embed/3o85xAojNshmzlySyc" width="100%" height="100%" style="width:100%;height:100%;position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/luke-skywalker-good-luck-force-be-with-you-3o85xAojNshmzlySyc">via GIPHY</a></p>
 
 あ、パズルが解けた方は、[@m0t0k1ch1](https://twitter.com/m0t0k1ch1) に一声かけていただけると嬉しみです。是非、感想などお聞きしてみたいです。
 
