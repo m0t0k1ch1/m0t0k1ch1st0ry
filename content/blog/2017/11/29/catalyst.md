@@ -8,7 +8,6 @@ Bitcoin さんに SegWit が導入されたこともあり、Lightning Network �
 
 <!--more-->
 
-<br />
 ## 前置き
 
 [Enigma プロジェクト](https://www.enigma.co) 自体は 2015 年の時点で公開されており、自分も去年 [ホワイトペーパー](https://www.enigma.co/enigma_full.pdf) をざっと読んで「ははーん」と思って放置していたのですが、今年に入って Catalyst という 1st アプリケーションの提案と併せて ENG トークンの ICO が行われるなど、新しい動きが見え始めてきました（昨今の ICO ブームに乗らねばという気持ちも少なからずあったのでしょう）し、知らない間に Medium にも情報が増えていた模様です。ということで、改めて現在の Enigma プロジェクトの動向をきちんと把握しておこうかなと思ったというわけです。
@@ -51,7 +50,6 @@ Bitcoin さんに SegWit が導入されたこともあり、Lightning Network �
 
 さらに重要なのは、我々が以前の研究の中で提案したデータ市場プロトコルの上に展開される最初のアプリケーションが Catalyst であるということである。これについては、先日 [Towards a Decentralized Data Marketplace — Part 2](https://blog.enigma.co/towards-a-decentralized-data-marketplace-part-2-1362c8e11094) にて再検討を行った。我々の最も重要な目標は、分散型でオープンかつセキュアなデータ市場プロトコルを web 上に構築することである。これにより、データの集約・共有・マネタイズ方法が変化する。
 
-<br />
 ### A. Related Work
 
 > Investing in crypto-assets, namely applications and exchanges that facilitate trading, is a fast growing area in the blockchain space. ICONOMI is a centralized crypto-investment platform, where a user invests through the service in a crypto-index-fund that tracks multiple assets. Prism, backed by Shapeshift, operates using a semi-centralized model of a similar concept. The user deposits funds into a smart contract, that replicates a Contract for Difference, and specifies the assets it wishes to simulate holding. As the market-maker, Shapeshift holds the real assets on behalf of the user, and allows the user to withdraw the assumed returns on their virtual portfolio. In both cases, custody of the true underlying assets remains in the control of a single entity users must trust.
@@ -66,7 +64,6 @@ Bitcoin さんに SegWit が導入されたこともあり、Lightning Network �
 
 最後に、暗号市場のために開発されたものではないが、Quantopian は、開発者が取引戦略を構築・テスト・実行するためのツールを提供することで、定量的なトレーダーになるにあたっての障壁を引き下げたプラットフォームの筆頭である。開発者が暗号資産取引戦略をうまく構築できるようにするため、我々は Quantopian が従来の市場でどのように成功したかを参考に、Quantopian が成したことを拡張している。
 
-<br />
 ### B. Our Contributions
 
 > Addressing the aforementioned challenges, we propose Catalyst, an investment platform that allows anyone to build their own crypto hedge-fund.

@@ -23,10 +23,8 @@ __testnet にて、Lightning Network を利用した single hop payment と mult
 
 なお、今回の検証は Ubuntu 16.04 上で行うこととします。
 
-<br />
 ## インストール
 
-<br />
 ### Golang のインストール
 
 1.8 以上が必要とのことなので、今回は 1.9 をインストールします。
@@ -52,7 +50,6 @@ $ go version
 go version go1.9.2 linux/amd64
 ```
 
-<br />
 ### Glide のインストール
 
 Golang 用のパッケージ管理ツールである [Glide](https://glide.sh) をインストールします。lnd はこれを利用してパッケージ管理されています。
@@ -71,7 +68,6 @@ $ glide --version
 glide version 0.13.2-dev
 ```
 
-<br />
 ### lnd のインストール
 
 lnd をインストールします。
@@ -95,7 +91,6 @@ $ lnd --version
 lnd version 0.3.0-alpha
 ```
 
-<br />
 ### btcd のインストール
 
 今回は lnd のバックエンドとして [btcd](https://github.com/roasbeef/btcd) を利用します。
@@ -123,10 +118,8 @@ $ btcd --version
 btcd version 0.12.0-beta
 ```
 
-<br />
 ## 起動
 
-<br />
 ### btcd の起動
 
 今回は検証目的なので、起動して雑にバックグランドに回しておきます。
@@ -137,7 +130,6 @@ $ nohup btcd --testnet --txindex --rpcuser=btcdrpc --rpcpass=btcdrpc &
 
 testnet とのデータの同期にはそれなりに時間がかかるので、完了するまでしばし放置します。
 
-<br />
 ### lnd の起動
 
 冒頭に記載した通り、multi hop payment も試したいので、lnd を 3 匹起動していきます。
@@ -177,10 +169,8 @@ $ cd ~/.lnd/charlie
 $ nohup lnd --rpcport=10003 --peerport=10013 --restport=8003 &
 ```
 
-<br />
 ## セットアップ
 
-<br />
 ### ウォレットの生成
 
 以下を実行してウォレットを生成します。パスワード（8 文字以上）の入力を求められますので、よしなに入力してください。
@@ -262,7 +252,6 @@ $ lncli --rpcserver=localhost:10001 --no-macaroons getinfo
 }
 ```
 
-<br />
 ### アドレスの生成
 
 Alice、Bob、Charlie のオンチェーンアドレスを生成します。ここで指定している np2wkh というのは nested-pay-to-witness-key-hash の略で、[P2SH でネストされた P2WPKH](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki#p2wpkh-nested-in-bip16-p2sh) のことです（ちょっと自信ないけど、たぶん合ってるはず）。
@@ -297,7 +286,6 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons newaddress np2wkh
 }
 ```
 
-<br />
 ### コインの付与
 
 コインがなくては検証できないので、今回は Alice と Charlie にコインを付与します。適当な testnet の faucet をひねってきましょう。その後、残高を確認します。
@@ -326,7 +314,6 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons walletbalance
 }
 ```
 
-<br />
 ### P2P ネットワークの構築
 
 Alice、Bob、Charlie で P2P ネットワークを構築します。
@@ -447,7 +434,6 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons listpeers
 }
 ```
 
-<br />
 ## single hop payment
 
 Alice から Bob への single hop payment を行ってみようと思います。
@@ -697,7 +683,6 @@ $$
 
 残高と計算結果が一致したので、問題なさそうです。
 
-<br />
 ## multi hop payment
 
 Alice から Charlie へ、Bob を経由して multi hop payment を行ってみようと思います。
@@ -881,7 +866,6 @@ $$
 
 残高と計算結果は全て一致したので、問題なさそうです。
 
-<br />
 ## まとめ
 
 - [Lightning Labs](https://lightning.engineering) が実装した Lightning Network ノードである [lnd](https://github.com/lightningnetwork/lnd) を用いて、プライベートな Lightning Network を構築しました
@@ -889,7 +873,6 @@ $$
 - 構築した Lightning Network を利用して、single hop payment と multi hop payment の検証を行いました
 
 
-<br />
 ## ちなみに
 
 今回は lnd のバックエンドとして btcd を用いましたが、これは切り替えることが可能なつくりとなっています。

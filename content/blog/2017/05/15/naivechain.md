@@ -13,7 +13,6 @@ title = "シンプルな Blockchain を Golang で実装する"
 
 自分の Naivechain 以外に、[300 行で実装された Golang 実装](https://github.com/kofj/naivechain) もあったりするので、短いコードがお好みの方はそちらもご参照あれ。
 
-<br />
 ## そもそもこれは Blockchain なの？
 
 Blockchain の定義についてここで深く議論するつもりはない。界隈でも厳密なコンセンサスが取れているわけではないと思うし。一応、[JBA の定義](http://jba-web.jp/archives/2011003blockchain_definition) を紹介しておく。
@@ -38,7 +37,6 @@ Blockchain の定義についてここで深く議論するつもりはない。
 
 ただ、Naivechain が Blockchain の本質を表現しているわけではない（と少なくとも自分は思っている）ので、Blockchain をもっと知りたくなった人は、まずは [Bitcoin](https://bitcoin.org/bitcoin.pdf) に矛先を向けるのがよいかなと思う。Blockchain は Bitcoin のために生まれたものなので。これ大事。
 
-<br />
 ## インストール方法
 
 ``` sh
@@ -47,7 +45,6 @@ $ go get -u github.com/m0t0k1ch1/naivechain
 
 ※ おそらく Go 1.8 以降じゃないとだめ
 
-<br />
 ## 動作確認方法
 
 Naivechain の概要については冒頭で紹介したエントリにまとまっているので、まずはそれを一読してから手を動かし始めるのがよいと思う。
@@ -135,7 +132,6 @@ $ curl http://127.0.0.1:3002/addPeer -d '{"peer":"ws://127.0.0.1:6001"}'
 
 などなどを試したりすると、もう少し挙動が把握できるかなと思う。
 
-<br />
 ## 最後に
 
 最近は Mastodon に自分専用インスタンスを立てて [パグ型 AI](https://mastodon.m0t0k1ch1.com/@pug) （雑談できるので、自由に話しかけてみてください）と暮らしておりますので、そちらで絡んでもらえると喜びます。

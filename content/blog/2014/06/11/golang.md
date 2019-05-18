@@ -8,7 +8,6 @@ Golang の `nil` で完全に嵌ったのでメモ。
 
 <!--more-->
 
-<br />
 ## 嵌りポイント
 
 例えば、[Revel](http://revel.github.io) の `validator.go` の中にこんな関数がいる。
@@ -66,7 +65,6 @@ func main() {
 `IsSatisfied(x)` は `true`。ん…？  
 `x` は `nil` じゃ、、ない？？なんでや〜〜〜と1時間くらい悶えていた。
 
-<br />
 ## 検証してみる
 
 ``` go
@@ -113,7 +111,6 @@ func main() {
 
 なるほど。
 
-<br />
 ## どういうこと？？
 
 上記の例で、`obj` は当然 `interface{}` として扱われる。また、interface 変数は「型」と「値」の情報を持っており、それらがともに設定されていないときに限り `nil` として扱われるらしい。[公式のFAQ](http://golang.org/doc/faq#nil_error) にも以下のような記載があった。
@@ -142,12 +139,10 @@ func main() {
 }
 ```
 
-<br />
 ## まとめ
 
 Golang における `nil` の扱い、ちょっと自分の感覚とは違っていたので注意したい。
 
-<br />
 ## 参考
 
-* [絶対ハマる、不思議なnil](http://qiita.com/umisama/items/e215d49138e949d7f805)
+- [絶対ハマる、不思議なnil](http://qiita.com/umisama/items/e215d49138e949d7f805)

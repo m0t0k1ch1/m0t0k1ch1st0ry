@@ -8,7 +8,6 @@ title = "MeCab のユーザー辞書に単語を追加してみる"
 
 <!--more-->
 
-<br />
 ## install
 
 ``` sh
@@ -30,7 +29,6 @@ $ mecab-config --libexecdir
 /usr/local/Cellar/mecab/0.996/libexec/mecab
 ```
 
-<br />
 ## ユーザー辞書に単語を追加する
 
 ### before

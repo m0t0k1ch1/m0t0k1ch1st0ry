@@ -8,12 +8,10 @@ Google 先生が [github.com/google/go-github/github](https://github.com/google/
 
 <!--more-->
 
-<br />
 ## たたく API
 
 [https://developer.github.com/v3/markdown](https://developer.github.com/v3/markdown)
 
-<br />
 ## たたいてみる
 
 ``` go

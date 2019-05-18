@@ -8,7 +8,6 @@ title = "Docker Toolbox をアンインストールして Docker for Mac を試�
 
 <!--more-->
 
-<br />
 ## Docker Toolbox をアンインストールする
 
 まず、以前にインストールした Docker Toolbox とさようならする。こういうとこをきちんとやっとかないと、後々「日頃の行い」起因でよからぬことが発生する。
@@ -90,7 +89,6 @@ For more examples and ideas, visit:
 
 とのこと。大丈夫そう。
 
-<br />
 ## 試しに既存のコンテナを起動してみる
 
 ``` sh
@@ -227,7 +225,6 @@ $ docker run docker-whale
 
 「どんな黄金律も行動に移さなかったら何の意味もないで」って感じかな。
 
-<br />
 ## Docker Hub を使う
 
 [Docker Hub](https://hub.docker.com) に m0t0k1ch1 というアカウントを登録済み。

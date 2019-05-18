@@ -11,7 +11,6 @@ title = "Golang で好きな画像を LGTMize する"
 
 <!--more-->
 
-<br />
 ## 使い方
 
 [README](https://github.com/m0t0k1ch1/lgtmize/blob/master/README.md) だけだとちょっとよくわからないので補足。
@@ -42,8 +41,7 @@ $ lgtmize /path/to/zushi.jpg
 
 あとはなんとかして GitHub まで持っていく。Chrome 拡張とかまでつくる元気はなかった。とはいえ、GitHub が提供してるインターフェースでコメントに画像貼るのも意外と簡単なので、とりあえずはローカルに LGTM 画像フォルダをつくってがんばろうと思う。実際にやってみてめんどくさかったらなんか考える。
 
-<br />
 ## ちなみに
 
-* フォントは大好きな [M+](http://mplus-fonts.sourceforge.jp) を使わせていただきました。こういうハイクオリティなフォントがフリーソフトウェアとして公開されてるのは本当に助かります。
-* ホントは [かなえちゃん](https://www.tumblr.com/search/%E7%A5%9E%E5%B4%8E%E3%81%8B%E3%81%AA%E3%81%88) で実践したい。著作権〜〜〜。
+- フォントは大好きな [M+](http://mplus-fonts.sourceforge.jp) を使わせていただきました。こういうハイクオリティなフォントがフリーソフトウェアとして公開されてるのは本当に助かります。
+- ホントは [かなえちゃん](https://www.tumblr.com/search/%E7%A5%9E%E5%B4%8E%E3%81%8B%E3%81%AA%E3%81%88) で実践したい。著作権〜〜〜。

@@ -12,7 +12,6 @@ title = "cryptoeconomics: crypto-backed mechanism design"
 
 ![venus](/img/entry/venus.png)
 
-<br />
 ## 0. 目次
 
 - 1. おさらい
@@ -26,7 +25,6 @@ title = "cryptoeconomics: crypto-backed mechanism design"
 - 6. 結び
 - 7. 参考文献
 
-<br />
 ## 1. おさらい
 
 前回の記事では、
@@ -57,7 +55,6 @@ ref. [トークンエコノミーと BFT エコノミーの比較](https://yu-ki
 
 少し冗長かつ基本的な説明が多く、cryptoeconomist の皆さんからすると物足りない内容となってしまうかなと思いますが、その辺りはご勘弁ください。
 
-<br />
 ## 2. 結論
 
 結論を先に書きます。自分が考える cryptoeconomics の定義を一文で表現してみると、以下のようになりました。
@@ -70,7 +67,6 @@ __あるシステムに対して、暗号学によって裏づけられた経済
 
 ref. [Making Sense of Cryptoeconomics](https://medium.com/l4-media/making-sense-of-cryptoeconomics-c6455776669)
 
-<br />
 ## 3. メカニズムデザイン
 
 前述した自分の定義について直接言及する前に、もっと大まかなイメージを掴んでいただいた方が伝わりやすいかなと思うので、まずは既存の学問分野で、自分の定義する cryptoeconomics と類似しているものについて軽く触れてみたいと思います。
@@ -107,7 +103,6 @@ __プレイヤーの合理性を仮定した場合に所望の結果が得られ
 
 この部分については、Bitcoin に目を向けるとその意味が自然と分かると思います。
 
-<br />
 ## 4. Bitcoin に学ぶ
 
 言わずもがな、Bitcoin のネットワークはマイナーが中心となって支えています。マイナーはマイニング報酬を目当てにマイニングをしています。報酬がなければマイニングに参加する人はほとんどいないでしょう。
@@ -126,10 +121,8 @@ __すなわち、Bitcoin はそのプロトコルの中核に暗号技術が複�
 
 まさに、このようなプロトコルをデザインすることが cryptoeconomics です。
 
-<br />
 ## 5. cryptoeconomics
 
-<br />
 ### 5-1. 自分の解釈
 
 もう一度、冒頭に記載した自分の定義を振り返ってみます。
@@ -165,7 +158,6 @@ ref. [トークンエコノミーは分散化できるか](https://yu-kimura.jp/
 
 所望の性質を具備・維持するにあたり、ポジティブな動機づけが要となる場合は無関心・無関与の人がいると困るわけですが、ネガティブな動機づけが要となる場合は無関心・無関与の人がいても特に困らないわけです。これは cryptoeconomic なプロトコルをデザインする上で非常に重要な視点だと思います。
 
-<br />
 ### 5-2. Vitalik と Vlad の意見
 
 さて、自分の解釈についての説明はだいたい終わったので、別の意見にも触れてみようと思います。
@@ -214,7 +206,6 @@ Vlad も economist の目的をこう捉えているのであれば、しっく�
 
 {{< tweet 1025865045056671744 >}}
 
-<br />
 ### 5-3. さらなる深みへの誘い
 
 長々とポエムのような解説を連ねてはきましたが、ここまでで言及できているのは cryptoeconomics の入口部分に過ぎません。
@@ -237,7 +228,6 @@ __図の左下に位置する Bitcoin が成功したからといって、全て
 
 と、ここだけ抜き出すとネガティブに聞こえてしまいますが、著者の cryptoeconomics に対するスタンスはどちらかと言うとポジティブです。その可能性を示唆しながらも冷静に現状整理と課題提起を行っており、個人的にも共感できる内容が多かったので、気になった方は是非記事を読んでみてほしいなと思います。
 
-<br />
 ## 6. 結び
 
 以上、メカニズムデザインの考え方をベースにして自分なりの cryptoeconomics の解釈について述べた上で、Vitalik や Vlad の意見と比較しながら考察を行ってみました。また、いくつかの発展的なトピックについて、その触りをご紹介し、cryptoeconomics の深さを伝えようと試みました。冒頭でも述べた通り、異論・違和感があれば是非教えていただければと思います。
@@ -260,7 +250,6 @@ ref. [Blockchain and Smart Contract Mechanism Design Challenges](https://fc17.if
 
 ![vitalik_2](/img/entry/vitalik_2.png)
 
-<br />
 ## 7. 参考文献
 
 - [トークンエコノミーと BFT エコノミーの比較](https://yu-kimura.jp/2018/07/29/token-bft-economy)
@@ -273,7 +262,6 @@ ref. [Blockchain and Smart Contract Mechanism Design Challenges](https://fc17.if
 
 ref. [A Crash Course in Mechanism Design for Cryptoeconomic Applications](https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976)
 
-<br />
 ## ※ 追記（2018-08-07）
 
 自分の cryptoeconomics の定義について
@@ -288,7 +276,6 @@ __そのシステムが達成したい性質を自律的に具備・維持でき
 
 ただ、既に SNS 上などで本文中の定義を引用してくださっている方も観測しており、後追いでこれを書き換えるのはちょっと避けたいので、ここでの追記に留めさせていただこうと思います。
 
-<br />
 ## ※ 追記（2018-09-15）
 
 2018-09-13 に補足的な記事を書きました。

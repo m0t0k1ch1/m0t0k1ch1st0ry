@@ -8,18 +8,16 @@ Emacs、「モダン」という言葉に誘われて flymake から flycheck �
 
 <!--more-->
 
-<br />
 ## 解決したいこと
 
 `my-project/scripts/poyo.pl` とかを編集しているとき、`my-project/lib` や `my-project/local/lib/perl5`（Carton でインストールしたモジュールが入ってる）は @INC に含まれていないので、例えば自分のプロジェクト内のモジュールを `use MyApp;` という具合で読み込もうとすると flycheck さんに怒られてしまう。これを解決したい。
 
-<br />
 ## 解決策
 
 解決策を探してみても、flymake の話が少々出てくるくらい。flycheck の話はなかなか出てこなかった。それでもめげずに探したところ、以下のリンクに辿り着いた。
 
-* [良い感じで flycheck する](https://gist.github.com/co-me/7363369)
-* [flycheck で C/C++ のエラーチェック定義を追加する](http://qiita.com/akisute3@github/items/6fb94c30f92dae2a24ee)
+- [良い感じで flycheck する](https://gist.github.com/co-me/7363369)
+- [flycheck で C/C++ のエラーチェック定義を追加する](http://qiita.com/akisute3@github/items/6fb94c30f92dae2a24ee)
 
 どうやら、`flycheck-define-checker` というのを使うことで、エラーチェックの定義を追加することができる模様。見よう見まねで、できるだけシンプルに以下のような設定を書いてみた。
 

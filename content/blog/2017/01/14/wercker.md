@@ -8,7 +8,6 @@ title = "最近の Hugo + wercker + GitHub pages で嵌ったこと"
 
 <!--memo-->
 
-<br />
 ## 嵌ったこと
 
 大きくは 2 つ。
@@ -23,7 +22,6 @@ title = "最近の Hugo + wercker + GitHub pages で嵌ったこと"
 
 ignore branch 的な設定ができないと、gh-pages branch への push（deploy）にも反応して、無駄に build が実行されてしまう。で、`public` 以下には `wercker.yml` が存在しないので、その build がこけてしまうという。つらい。
 
-<br />
 ## 解決策
 
 無理やり感は否めないが、

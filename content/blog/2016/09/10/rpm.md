@@ -6,12 +6,10 @@ title = "Golang で書いた何かを RPM パッケージにして yum install �
 
 表題のようなことをやる必要が出てきたので、その検証をした。
 
-<br />
 ## 事前調査
 
 「rpm package つくり方」でググるとこから始めるレベルの知識しかなく、先行きがだいぶ怪しまれたので、きちんと動いてる目指すべき状態を明確にしたいなと思った。で、身近に同じようなことやってるプロダクトはないだろうかと考えたとき、[mackerel-agent](https://github.com/mackerelio/mackerel-agent) が真っ先に頭に浮かんだので、迷う度に参考にさせていただきました。ありがとうございます🙏
 
-<br />
 ## 下準備
 
 クロスコンパイルできる環境が整っていない場合、整えておく。例えば macbook で homebrew を使っているような場合は、以下のようにオプションをつけて go をインストールすればいける。
@@ -22,7 +20,6 @@ $ brew install go --cross-compile-common
 
 一旦はさくっと検証だけしたかったので `--cross-compile-common` にしたが、全部入りの `--cross-compile-all` もあるので、それはお好きな方でどうぞ。
 
-<br />
 ## rpmbuild するための準備
 
 ### SOURCES
@@ -103,7 +100,6 @@ package
     └── go-rpm-sample.spec
 ```
 
-<br />
 ## CentOS 6 で rpmbuild する
 
 まずは必要なものを yum で入れる。
@@ -169,7 +165,6 @@ Stopping go-rpm-sample:                                    [  OK  ]
 
 大丈夫そう。
 
-<br />
 ## yum install できるようにする
 
 yum 用の repo をつくって、先ほどこしらえた RPM パッケージを yum install できるようにするところまでやってみる。

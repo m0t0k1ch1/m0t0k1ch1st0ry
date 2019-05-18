@@ -8,7 +8,6 @@ title = "truffle で書いたコントラクトを solidity-flattener でがっ�
 
 <!--more-->
 
-<br />
 ## ※追記
 
 [Hi-Ether](https://qiita.com/amachino/items/605ff76209d7193dc92c) コミュニティにて、[truffle-flattener](https://github.com/alcuadrado/truffle-flattener) の存在を教えていただきました。これを使うと、簡単にがっちゃんこしたコードを生成することができます。
@@ -23,7 +22,6 @@ https://ropsten.etherscan.io/address/0x1514e87adb657288060d820c6bffa86b70382f6e#
 
 このとき、solidity-flattener でがっちゃんこした際に発生した「`pragma solidity ^0.4.18;` が `pragma solidity ^0.4.13;` に書き換わってしまう問題」も発生しませんでした。また、後から気づいたのですが、solidity-flattener でがっちゃんこした場合、contract 定義の直上に記載されていたコメントも消えてしまっていたようで。。truffle-flattener の場合は、これも発生しませんでした。総じて、現状では truffle-flattener を使うのがよさそうです。
 
-<br />
 ## 準備
 
 まず、truffle 自体にがっちゃんこする機能はなさそう。[Feature request: Export code for etherscan verification #564](https://github.com/trufflesuite/truffle/issues/564) という issue が立ってはいたが、執筆時点ではまだ未実装。
@@ -52,7 +50,6 @@ $ pip3 install solidity-flattener
 
 これで準備完了。
 
-<br />
 ## がっちゃんこする
 
 今回のターゲットはこちら。[既に ropsten にデプロイ済みの ERC20 トークン](https://ropsten.etherscan.io/token/0x480d291d75a79b48bf5da25921a39cbf73fd060b) である。
@@ -236,7 +233,6 @@ contract AnotherEther is StandardToken {
 }
 ```
 
-<br />
 ## Etherscan で公開する
 
 ropsten の場合、[ここ](https://ropsten.etherscan.io/verifyContract) で必要事項を入力する。今回は以下のようになった。

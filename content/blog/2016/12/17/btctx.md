@@ -8,7 +8,6 @@ Golang で Bitcoin の transaction のバイト列をちまちま読む package 
 
 <!--more-->
 
-<br />
 ## つくったもの
 
 <div class="github-card" data-user="m0t0k1ch1" data-repo="btc"></div>
@@ -16,7 +15,6 @@ Golang で Bitcoin の transaction のバイト列をちまちま読む package 
 
 Bitcoin の transaction は [こういう構造](https://en.bitcoin.it/wiki/Protocol_documentation#tx) になっているので、これを愚直に読んだり書いたりしている。エンディアンが揃っていないところがあったりで嵌ったりした。近くに有識者がいたので助かったけど、1 人でやってたら諦めてたかもしれない。
 
-<br />
 ## できること
 
 ざっくりとは以下の 2 つ。
@@ -26,7 +24,6 @@ Bitcoin の transaction は [こういう構造](https://en.bitcoin.it/wiki/Prot
 
 txid がわかってれば、RPC 叩いて getrawtransaction して decoderawtransaction すればいい感じに返ってくるんだけど、ちょっとこみ入ったことをしようと思うと、こっちでバイト列から Golang の struct に変換できたり、そこから hex に戻せると便利ではある。
 
-<br />
 ## 使い方
 
 [Testnet に取り込まれた実際の transaction](http://tbtc.blockr.io/tx/info/d7a4684b71776c8c96edd670a9d0c61d03c293f4c6266b70ff5030b2c4f0bdfe) に対して使ってみる。
@@ -103,7 +100,6 @@ func main() {
 }
 ```
 
-<br />
 ## 今後
 
 直近だと、txout のスクリプトの中に入ってる公開鍵のハッシュを address として解釈するのはやっときたい。また、今は標準的な P2PKH しか解釈できないので、少なくとも P2SH な multisig くらいは対応しておきたい。あとは解釈するだけじゃなくて生成・バリデーションするのもラクにできたら嬉しい。以前に Testnet で以下のようなこみ入ったスクリプトの実験をしたりしていて、そんときのデバッグがしんどかったというのがある。

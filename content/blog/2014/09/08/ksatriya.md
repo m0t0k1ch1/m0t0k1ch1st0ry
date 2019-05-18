@@ -8,13 +8,12 @@ title = "ksatriya update log"
 
 <!--more-->
 
-<br />
 ## 追加した機能
 
 結果として、
 
-* before / after hook を controller ごとに定義可能
-* HTML をレンダリングする際にベースとなるテンプレートを controller ごとに定義可能
+- before / after hook を controller ごとに定義可能
+- HTML をレンダリングする際にベースとなるテンプレートを controller ごとに定義可能
 
 になった。
 
@@ -22,7 +21,6 @@ title = "ksatriya update log"
 
 あと、せっかくなので [https://github.com/unrolled/render](https://github.com/unrolled/render) に頼っていたレンダリング部分も自前で実装してみた。結果、標準パッケージ以外への依存が1つ減って幸せになれた。
 
-<br />
 ## 使い方
 
 現状の ksatriya を使ったサンプルアプリケーションは [ここ](https://github.com/m0t0k1ch1/ksatriya-sample) に置いてあるけれど、今後も仕様は変わっていくと思うので、現状の `ksatriya.Controller` の使い方だけ以下にメモしておこうと思う。後で見なおして思い出に浸ったりしたい。
@@ -83,7 +81,6 @@ k.Run(":8080")
 
 以上。
 
-<br />
 ## 今後
 
 自分がほしいな〜と思っていた最低限の機能は揃った気がするので、そろそろテストを書いていきたい。

@@ -12,35 +12,32 @@ Twitter のタイムラインで [こちらのエントリ](http://namaraii.com/
 
 ![quiver](/img/entry/quiver.png)
 
-<br />
 ## Quiver 移行前のメモ管理
 
-* Dropbox に markdown 形式で保存
-* emacs で編集
-* [Marked 2](http://marked2app.com) を emacs から起動して閲覧
+- Dropbox に markdown 形式で保存
+- emacs で編集
+- [Marked 2](http://marked2app.com) を emacs から起動して閲覧
 
 という感じで落ち着いていた。
 
 が、いまいちしっくりきてなかったというか。メモ管理に最適化されてる感じは薄かった。シェルの世界から出ないでよいのでラクだなあというくらい。
 
-<br />
 ## Quiver の特徴
 
 最たる特徴は以下。
 
-* 1つの Note は複数の Cell で構成されている
-* 現状、Cell は以下の5種類
-  * Text Cell
-  * Code Cell
-  * Markdown Cell
-  * LaTex Cell
-  * Diagram Cell
+- 1つの Note は複数の Cell で構成されている
+- 現状、Cell は以下の5種類
+  - Text Cell
+  - Code Cell
+  - Markdown Cell
+  - LaTex Cell
+  - Diagram Cell
 
 その他の特徴・機能については以下で自分のニーズと対応させながら。
 
 また、以下には書いていないが、プレゼンテーションモードもあるらしい。機会があれば是非使ってみたい。
 
-<br />
 ## 自分のニーズと Quiver
 
 メモ帳に対する自分のニーズとそれを実現している Quiver のスペックを対応させて書いていこうと思う。同じようなニーズを持っている方は是非使ってみてほしい。
@@ -73,7 +70,6 @@ Preferences >> Cells から、各 Cell に対してキーバインディング�
 
 必要最小限、シンプルであってほしい。贅沢言ってるのは承知の上。が、個人的な感覚として、Quiver には不必要な設定項目・拡張機能がほとんどなく、Preferences がとてもシンプルでわかりやすかった。
 
-<br />
 ## まとめ
 
 Quiver、すごくいい。現状のメモ管理に納得できていない方（特にエンジニア）は是非。

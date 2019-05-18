@@ -10,7 +10,6 @@ title = "cryptoeconomics の「守」"
 
 ![dna](/img/entry/dna.png)
 
-<br />
 ## はじめに
 
 現在進行形で cryptoeconomics 沼に嵌りながら奮闘する中でですね、もちろん消化できていないことは盛り沢山なのですが、「これは脳内整理も兼ねてブログにアウトプットしてもよかろう」と思うこともポツポツ出てきました。インプット偏重状態は不健全なので、これからしばらくは少しずつアウトプットも進捗させてバランスをとっていこうと思います。
@@ -19,14 +18,12 @@ title = "cryptoeconomics の「守」"
 
 注：[前回の記事](https://m0t0k1ch1st0ry.com/blog/2018/08/05/cryptoeconomics) の内容を前提として書きますので、まだ読まれていない方はこの記事を読む前に是非ご一読ください🙏
 
-<br />
 ## 重要な気づき
 
 前回の記事を書いてからどんなインプットをしていたのかについては、[Scrapbox](https://scrapbox.io/m0t0k1ch1/cryptoeconomics) や [日々のツイート](https://twitter.com/m0t0k1ch1) からお察しいただければと思うのですが、その中でも重要な気づきに繋がったインプットを 2 つピックアップして、内容と感想を軽くまとめてみます。深堀りに関しては今後のアウトプットの中で進めていければと思います。
 
 双方、cryptoeconomist を名乗りたいのであれば必読と言える記事だと思いますので、cryptoeconomics に興味がある方は一読されることを強くオススメします。
 
-<br />
 ### A Crash Course in Mechanism Design for Cryptoeconomic Applications
 
 ref. https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976
@@ -64,7 +61,6 @@ __cryptoeconomic なプロトコルについて考える際、プレイヤーの
 
 が、記事の中でも書かれているように、既存のメカニズムデザインや協力ゲーム理論の知見が全く使えないわけではありません。むしろ、これまで数々の研究者が積み上げてきた知見が既に存在するわけです。適当に車輪の再発明をするのではなく、まずはこれらの知見と素直に向き合うのが「守」の姿勢と言えるのではないでしょうか。
 
-<br />
 ### The History of Casper — Chapter 4
 
 ref. https://medium.com/@Vlad_Zamfir/the-history-of-casper-chapter-4-3855638b5f0e
@@ -87,7 +83,6 @@ The History of Casper は、（現時点では）全 5 chapter で構成され�
 
 こんな感じで、cryptoeconomics の源流は Caspter（PoS）の歴史にあるということが改めて認識できました。そういう意味では、これも「守」の物語と言えるかなと思います。
 
-<br />
 ## 最後に
 
 以上、前回の記事を執筆した時点では気づいていなかった、cryptoeconomics の「守」に関する重要な気づきを簡単にまとめてみました。
@@ -98,17 +93,14 @@ The History of Casper は、（現時点では）全 5 chapter で構成され�
 
 ということで、自戒の意も込めたプロローグでした。おしまい。
 
-<br />
 ## 次回予告
 
 さて、ここまでの記事は抽象的な話が中心となってしまっているので、今後のアウトプットでは、できるだけ具体的な理論や事例を絡めていこうと考えています。
 
 気が変わらなければ、次回は、メカニズムデザインにおいて重要な概念である incentive compatibility について、具体的な事例を交えながら整理する予定です。cryptoeconomics というよりは、まずはその土台となるミクロ経済学（市場理論、ゲーム理論、メカニズムデザインなど）に寄り添っていこうというスタンスです。
 
-<br />
 ## おまけ
 
-<br />
 ### 「cryptribe」の宣伝
 
 CHIP で月額 100 円のファンクラブ「[cryptribe](http://thechip.in/fanclubs/419)」をつくりまして、ご加入いただいた方を「自分が日々のインプットにコメントをつけてを垂れ流すだけの個人進捗空間 Slack workspace」にご招待しております。
@@ -117,7 +109,6 @@ CHIP で月額 100 円のファンクラブ「[cryptribe](http://thechip.in/fanc
 
 ありがたいことに「Android 版がリリースされたら加入します」とおっしゃってくださっている方も数人いらっしゃいますので、とりあえずは継続を重視してムリせず運用していく予定です。
 
-<br />
 ### この記事のもう 1 つの目的
 
 これにて一旦封印解除じゃ👴

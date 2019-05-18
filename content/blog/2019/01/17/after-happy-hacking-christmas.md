@@ -8,7 +8,6 @@ title = "Happy Hacking Christmas の解答と狙い"
 
 <!--more-->
 
-<br />
 ## はじめに
 
 本題に入る前に、パズルをプレイしてくださった皆さんに心からお礼申し上げます。
@@ -23,7 +22,6 @@ ref. [SantaClausToken Token Holders](https://ropsten.etherscan.io/token/tokenhol
 
 クリアされた方々の中にははじめましての方もいらっしゃいましたし、なんと、普段は Solidity をあまり書いていないような方までいらっしゃいました。そういった、普段自分やクリプト界隈と強い関わりのない方々にもパズルに取り組んでいただけたことをとても嬉しく思います（後述しますが、この企画自体、そういった状況を生むことが狙いの 1 つでもありました）。
 
-<br />
 ## 解答
 
 <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/3o7TKQTr6B72IuMlfG" width="100%" height="100%" style="width:100%;height:100%;position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/actionaliens-action-bronson-friends-watch-ancient-aliens-3o7TKQTr6B72IuMlfG">via GIPHY</a></p>
@@ -46,14 +44,12 @@ __そもそも Blockchain が実現する世界は、良い意味でも悪い意
 
 もちろん、解答を見ようが見まいが、自分で手を動かしながらパズルを解くことに十分意味はあると思いますので、「チャレンジしたけどクリアできなかった。。。もう潔く諦めます！」という方は、是非 @sugaret さんの記事を読みながら再チャレンジしていただければと思います。
 
-<br />
 ## 各パズルコントラクトの狙い
 
 <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/2wh8A9PH93Ix93b1XC" width="100%" height="100%" style="width:100%;height:100%;position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/rdr2-arthur-morgan-arthurmorgan-2wh8A9PH93Ix93b1XC">via GIPHY</a></p>
 
 各パズルコントラクトについて、「どんなテクニックを要求するものとしたかったのか」という観点でその狙いについてまとめます。解答ではありませんが、パズルを解くためのヒントにはなってしまいますので、「まだ見たくない！！」という方はここをスキップして、興味があれば、最後の「企画自体の狙い」に目を通していただければと思います。
 
-<br />
 ### Letter（低難度パズル）
 
 💌 [Letter contract](https://ropsten.etherscan.io/address/0xbade12c0bd7943a066e77f0466d529d78d2f70db#code)
@@ -67,7 +63,6 @@ __そもそも Blockchain が実現する世界は、良い意味でも悪い意
 
 最初から高難度の問題にしてしまうとそもそもの参加ハードルが上がってしまい、後述する「企画自体の狙い」と逆行してしまうので、ここはできるだけ門戸を広く開くことを意識しました。
 
-<br />
 ### ChristmasStocking（中難度パズル）
 
 🧦 [ChristmasStocking contract](https://ropsten.etherscan.io/address/0x408f56c4541bd00ec836102d06f7ee6a2a820678#code)
@@ -82,7 +77,6 @@ ref. [Reentrancy](https://consensys.github.io/smart-contract-best-practices/know
 
 また、後述する「企画自体の狙い」とも関連します。
 
-<br />
 ### ChristmasTree（高難度パズル）
 
 💎 [ChristmasTree contract](https://ropsten.etherscan.io/address/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d#code)
@@ -95,7 +89,6 @@ ref. [Storage Manipulation](https://consensys.github.io/smart-contract-best-prac
 
 素直な Storage Manipulation は上記リンク先を辿って見よう見まねでやれば成功してしまってつまらないなあと思ったので、少し手を加えて、攻撃対象を array ではなく mapping にしています。こうすることで、storage の構造やハッシュ関数の扱いをきちんと理解していないと解けないパズルにできたかなと思っています。
 
-<br />
 ## 企画自体の狙い
 
 最後に、この企画自体の狙いについて述べて締めくくろうと思います。

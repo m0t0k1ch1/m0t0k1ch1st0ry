@@ -8,7 +8,6 @@ title = "WORLD FASTEST NoSQL DATABASE な Scylla のクラスタを組んでみ�
 
 <!--more-->
 
-<br />
 ## Scylla についてもう少し
 
 公式サイトを読めば書いてあることだけど、気になった文言をいくつか。
@@ -21,15 +20,12 @@ Cassandra コンパチでスループットは 10 倍、さらに jaw dropping �
 
 レイテンシの低さは Redis 級とのこと。
 
-<br />
 ## サクッと動かすだけ動かしてみる
 
 カジュアルに動かしたい場合は、Docker で試してみるのが簡単そう。自分は [Docker Hub の公式 repo](https://hub.docker.com/r/scylladb/scylla) の通りにやったら特に問題なく動いた。今回の目的は Azure でクラスタを組んでみることなので、詳しくは書かない。
 
-<br />
 ## Azure でクラスタを組む
 
-<br />
 ### VM の準備
 
 今回は以下のような VM 3 台でクラスタを組むことにした。最近は Ubuntu しか触ってないので Ubuntu で。
@@ -43,7 +39,6 @@ Scylla が使用するポートに関しては [公式ドキュメント](http:/
 
 ちなみに、VM のディスクについては、つい先日リリースされた [Managed Disk](https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets) を利用している。便利。
 
-<br />
 ### Scylla をインストールする
 
 基本的には [公式ドキュメント](http://docs.scylladb.com/getting-started/ubuntu-16-04) を参考に進めていけばよいが、[Scylla production recommendation](https://github.com/scylladb/scylla/wiki/Scylla-production-recommendation) に以下の記載があることに注意。
@@ -200,7 +195,6 @@ $ scylla --version
 1.6.0-20170202.7e1b245
 ```
 
-<br />
 ### Scylla をセットアップをする
 
 まず、`/etc/scylla/scylla.yaml` の調整。これも基本的には公式ドキュメント参照。今回は以下の項目について設定を変更した。
@@ -231,7 +225,6 @@ $ scylla_setup
 SEASTAR_IO="--max-io-requests=20"
 ```
 
-<br />
 ### Scylla を起動してクラスタを組む
 
 `seed_provider.parameters.seeds` に設定した VM から順番に起動していく。
@@ -259,7 +252,6 @@ UN  10.1.1.24  187.08 KB  256     67.0%             0cd1bd68-8f00-4abd-878f-be3f
 
 無事クラスタが組めた模様。
 
-<br />
 ## cassandra-stress をかけてみる
 
 cassandra-stress を実行する VM は以下。
@@ -275,7 +267,6 @@ $ apt-get update
 $ apt-get install scylla-tools
 ```
 
-<br />
 ### 手順
 
 まずは以下を実行して keyspace を作成する。
@@ -298,7 +289,6 @@ $ cassandra-stress read cl=QUORUM n=1000000 -mode native cql3 -rate threads=512 
 
 再測定する場合は keyspace を drop してから最初に戻る。
 
-<br />
 ### 結果
 
 op rate と latency mean だけ抜き出して表にしてみる。

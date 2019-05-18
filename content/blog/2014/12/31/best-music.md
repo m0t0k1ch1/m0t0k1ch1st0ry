@@ -8,7 +8,6 @@ title = "音で振り返る2014年"
 
 <!--more-->
 
-<br />
 ## シングル部門
 
 ### White Noise
@@ -23,7 +22,6 @@ title = "音で振り返る2014年"
 
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/162042615&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
-<br />
 ## プレイリスト部門
 
 瀬葉さん、生きていらっしゃる間にリアルにハコで聴きたかった。合掌。
@@ -32,7 +30,6 @@ title = "音で振り返る2014年"
 
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/3245321&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
-<br />
 ## ミックス部門
 
 [DJ KRO](https://soundcloud.com/dj-kro) さんの TOKYO シリーズ。繋ぎがホントに秀逸。シリーズ全部いいんだけど、聴いた回数で言うとやっぱり SUNSET。来年の新作に期待高まりまくってる。
@@ -41,7 +38,6 @@ title = "音で振り返る2014年"
 
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123844154&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
-<br />
 ## 最後に
 
 来年も暗い感じで地味に渋くアンダーグラウンドから湧き出るエネルギーみたいに生きたい。

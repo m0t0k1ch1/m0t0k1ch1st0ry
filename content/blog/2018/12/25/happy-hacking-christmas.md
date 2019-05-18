@@ -10,7 +10,6 @@ title = "Happy Hacking Christmas"
 
 ![santa claus](/img/entry/santa-claus.jpg)
 
-<br />
 ## はじめに
 
 とりあえず、軽く自己紹介を。自分は 2013 新卒としてカヤックに入社し、ソーシャルゲーム事業部で 3 年ほどサーバーサイドエンジニア「ダンゲル」としてお世話になりました。カヤックに在籍していたときのことは [退職してしばらく経った後で書いたブログ](https://m0t0k1ch1st0ry.com/blog/2017/01/30/kayac) でも触れていますので、今回はこの辺で。現在は大阪で Blockchain をベースとした [cryptoeconomic](https://m0t0k1ch1st0ry.com/blog/2018/08/05/cryptoeconomics) なプロトコルの R&D に取り組んでいます。技術的なトピックとしては特に [Plasma](https://scrapbox.io/sivira-plasma) を中心にリサーチしていますが、来年は R だけではなく D でも成果を出していきたい所存です。その際はよろしくお願い致します。
@@ -30,7 +29,6 @@ __この第 1 回 ex-KAYAC Advent Calendar 開催を記念して、ex-KAYAC の�
 
 ということで、今日は、自分もそんなサンタクロース達の力になるべく、分散型サンタクロースを使ってプレゼント配りのお手伝いをしようと思います。
 
-<br />
 ## 分散型サンタクロース（という名の [鎖野郎](https://twitter.com/leo_hio/status/1021570150888222720) 諸兄姉への挑戦状）
 
 🎅 [SantaClaus contract](https://ropsten.etherscan.io/address/0x05d9cbee05e82d492ad66842fc7c0cb363b384ea#code)
@@ -109,7 +107,6 @@ function requestToken() public {
 
 あ、パズルが解けた方は、[@m0t0k1ch1](https://twitter.com/m0t0k1ch1) に一声かけていただけると嬉しみです。是非、感想などお聞きしてみたいです。
 
-<br />
 ## ※追記（2018-12-27）
 
 3 人目の SCT ホルダーである yohei さんが、SCT ホルダーしか名前を刻めない contract をつくってくださいました。
@@ -120,14 +117,12 @@ SCT を獲得した方は、是非こちらに名前を刻んでいただけた�
 
 自分の方でも、電子署名と Twitter の OAuth を使ってアドレスと Twitter アカウントを紐付けて、SCT ホルダーの Twitter アカウントを可視化する仕組みをつくろうかなあと思っていたりしますので、完成したあかつきには、またこのブログと GitHub repo でお知らせしようと思います。
 
-<br />
 ## ※追記（2019-01-17）
 
 続きを書きました。解答について言及している部分もあるので、「まだ見たくない！」という方はご注意を。
 
 [Happy Hacking Christmas の解答と狙い](https://m0t0k1ch1st0ry.com/blog/2019/01/17/after-happy-hacking-christmas)
 
-<br />
 ## 最後に
 
 最後になってしまいましたが、今回の ex-KAYAC Advent Calendar 2018 を立ち上げ（させ）た身として、参加してくださった皆さんにお礼を申し上げたいと思います。

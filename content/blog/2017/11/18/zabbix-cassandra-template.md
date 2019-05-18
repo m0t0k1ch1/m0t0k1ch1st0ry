@@ -8,7 +8,6 @@ title = "Cassandra 監視用の Zabbix template"
 
 <!--more-->
 
-<br />
 ## 成果物
 
 <div class="github-card" data-user="m0t0k1ch1" data-repo="zabbix-cassandra-template"></div>
@@ -28,14 +27,12 @@ title = "Cassandra 監視用の Zabbix template"
 - Cassandra: throughput
 - Cassandra: write latency
 
-<br />
 ## 参考にしたもの・利用したもの
 
 JMX 経由で取得できる項目を [公式サイト](http://cassandra.apache.org/doc/latest/operating/metrics.html) で調べて、Zabbix に登録する前に [Command-line JMX Client](http://crawler.archive.org/cmdline-jmxclient) を利用して本当に値が取得できるか確かめた。
 
 シュッと値が欲しいときに Command-line JMX Client は便利。
 
-<br />
 ## ややこしかったこと
 
 TotalLatency と Latency。
@@ -62,7 +59,6 @@ $ java -jar cmdline-jmxclient-0.10.3.jar - 127.0.0.1:7199 org.apache.cassandra.m
 
 これはどっちがどっちかわかんなくなる人が多いのでは。。？上記は Write に関してだが、当然 Read でも同様。もう少し直感的にわかりやすい命名にできなかったのだろうか。
 
-<br />
 ## やり残し
 
 Table Metrics を discovery 使っていい感じに取得したい。

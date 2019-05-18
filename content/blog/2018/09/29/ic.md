@@ -8,7 +8,6 @@ title = "Vickrey auction に見る incentive compatibility"
 
 <!--more-->
 
-<br />
 ## 0. 目次
 
 - 1. はじめに
@@ -18,7 +17,6 @@ title = "Vickrey auction に見る incentive compatibility"
 - 5. 次回予告
 - 6. 参考文献
 
-<br />
 ## 1. はじめに
 
 [前回の記事](https://m0t0k1ch1st0ry.com/blog/2018/09/13/cryptoeconomics) で、
@@ -27,7 +25,6 @@ title = "Vickrey auction に見る incentive compatibility"
 
 と書きましたが、気が変わらなかったので、この通りの内容でいこうと思います。ここで言っている「具体的な事例」としては、記事タイトルにもある通り、簡単化した Vickrey auction を用います。Vickrey auction については [以前の記事でもさらりと触れました](https://m0t0k1ch1st0ry.com/blog/2018/08/05/cryptoeconomics) が、今回はもっとわかりやすく具体的な説明を試みます。
 
-<br />
 ## 2. incentive compatibility
 
 まず、そもそも incentive compatibility（誘因両立性）ってなんぞや？という方も多いと思うので、これについて軽く説明したいと思います（よりフォーマルな定義については今後のアウトプットの中で突っ込んでいければと思います）。
@@ -64,7 +61,6 @@ __強い incentive compatibility が dominant strategy incentive compatibility�
 
 さて。今回の目的は Vickrey auction の仕組みを通じて、incentive compatibility（厳密には strategyproofness）を「より直感的に」理解することなので、小難しい文章と戯れるのはここまでにして、早速、具体的な Vickrey auction の話に移ります。
 
-<br />
 ## 3. simplified Vickrey auction
 
 今回は、簡単化した Vickrey auction を用いて解説します。まず、そのルールについて説明します。
@@ -139,7 +135,6 @@ __アリスは「あのクマさんになら 3 ETH 支払ってもいいワ」�
 
 以上、（簡単化はしていますが）Vickrey auction を通じて、「正直者が一番得するようなルールになっている（前述した strategyproofness を満たしている）」とはどういうことかを理解していただけたかと思います。
 
-<br />
 ## 4. おまけ：Vickrey auction on Blockchain
 
 せっかくなので、Vickrey auction をブロックチェーン上で（例えば、Ethereum のスマートコントラクトで）実装することについても検討してみます。
@@ -176,7 +171,6 @@ __アリスは「あのクマさんになら 3 ETH 支払ってもいいワ」�
 
 __このように、理論的には画期的なメカニズムがあったとしても、理想的な性質を保ったまま分散型の世界で機能させることは予想以上に難しいわけです。裏を返せば、この難しさが cryptoeconomics を新しい学問足らしめているとも言えるのではないでしょうか。__
 
-<br />
 ## 5. 次回予告
 
 実は、今回取り上げた Vickrey auction は、グローヴスメカニズムと呼ばれるメカニズムの一例に過ぎません。すなわち、より抽象的なグローヴスメカニズムというスキームを理解することで、Vickrey auction のような strategyproofness を満たした別のゲームを設計できるというわけです。凄いですね。ということで、次回以降は、
@@ -186,7 +180,6 @@ __このように、理論的には画期的なメカニズムがあったとし
 
 あたりにチャレンジしていければなと考えています。
 
-<br />
 ## 6. 参考資料
 
 - [セカンドプライスオークション―正直者は絶対に損をしない―](http://www.toyo.ac.jp/nyushi/column/video-lecture/20160517_01.html)

@@ -8,7 +8,6 @@ title = "はじめての Deep Learning - Keras で MLP for MNIST"
 
 <!--more-->
 
-<br />
 ## Keras
 
 http://keras.io/ja
@@ -17,7 +16,6 @@ http://keras.io/ja
 
 日本語のドキュメントもあって、コンセプトも共感できる。Google 先生の [TensorFlow](https://www.tensorflow.org)（こちらも触ってみたかった）をバックエンドというカタチでラッピングしているらしい。なお、Keras 自体の作者も Google の方の模様。
 
-<br />
 ## 準備
 
 ``` sh
@@ -33,7 +31,6 @@ $ pip list | grep Keras
 Keras (1.0.5)
 ```
 
-<br />
 ## サンプルコードを愚直に実行
 
 GitHub にある [サンプルコード](https://github.com/fchollet/keras/blob/master/examples/mnist_mlp.py) を落としてきて実行してみると、以下のような感じになる。学習している雰囲気が出ていて、眺めているだけで楽しい。
@@ -80,7 +77,6 @@ Test score: 0.11935520198
 Test accuracy: 0.9816
 ```
 
-<br />
 ## バックエンドを TensorFlow に切り替える
 
 デフォルトのバックエンドは [Theano](http://deeplearning.net/software/theano) なので、これを TensorFlow に切り替えてみる。といっても、やることは `~/.keras/keras.json`（上記のサンプルコードを実行した際にできているはず）の中の `backend` を `theano` から `tensorflow` に書き換えるだけ。
@@ -92,7 +88,6 @@ $ pip list | grep tensorflow
 tensorflow (0.9.0)
 ```
 
-<br />
 ## サンプルコードを読み解きつつ、整理してみる
 
 とりあえず、初っ端からわからない。まずは以下の部分。
@@ -184,10 +179,10 @@ first sample is 5
 
 ということで、これ以外にもいろいろ中身を出力してみてわかったことを整理すると、どうやら以下のような感じらしい。
 
-* `X_train`：訓練データ（入力）
-* `X_test`：テストデータ（入力）
-* `Y_train`：訓練データ（出力）
-* `Y_test`：テストデータ（出力）
+- `X_train`：訓練データ（入力）
+- `X_test`：テストデータ（入力）
+- `Y_train`：訓練データ（出力）
+- `Y_test`：テストデータ（出力）
 
 ``` python
 # MNIST データセットを取り込む
@@ -301,7 +296,6 @@ https://github.com/m0t0k1ch1/keras-sample/blob/master/mnist_mlp.py
 
 ![keras history](/img/entry/keras_history.png)
 
-<br />
 ## 次
 
 [DeepMind](https://deepmind.com) の思想に近づいていきたいので、[DQNをKerasとTensorFlowとOpenAI Gymで実装する](https://elix-tech.github.io/ja/2016/06/29/dqn-ja.html) っぽいことをやってみたい。

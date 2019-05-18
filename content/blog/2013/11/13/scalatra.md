@@ -8,7 +8,6 @@ title = "Scalatra のアクションで Int が返らなくてはまった"
 
 <!--more-->
 
-<br />
 ## はまりポイント
 
 ``` scala
@@ -21,13 +20,11 @@ get("/") {
 
 ^ みたいな、Slick を使って insert するだけの簡単なお仕事をするアクションをブラウザから叩くと、データは挿入されるのにページのロードが全然終わらない。。[公式](http://www.scalatra.org/2.2/guides/persistence/slick.html) にサンプルとして載ってるレベルなのに。。つらい。
 
-<br />
 ## insert の返り値ってなんなの？？
 
 当然ここを疑います。  
 [こちらの記事](http://xerial.org/scala-cookbook/recipes/2013/02/01/reflection) を参考にして xerial-lens で返り値の型を出力してみると、`Int` の 1 でした。
 
-<br />
 ## どういうこと？？
 
 公式の [Actions](http://www.scalatra.org/2.2/guides/http/actions.html) の Default behavior によると、`Int` は `Any` に該当するはずで、その `Any` はどうなるかというと、、

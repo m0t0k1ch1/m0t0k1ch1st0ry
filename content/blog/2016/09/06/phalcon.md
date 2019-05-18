@@ -6,7 +6,6 @@ title = "PHP 7 で multi module な Phalcon 3.0.0 を動かしてみる"
 
 [Phalcon](https://phalconphp.com) は普段から使っているけれど、まだ 3.0.0 を触ってなかったので触ってみることにした。ついでに、view として HTML を返すエンドポイント群と js から叩かれる API エンドポイント群の切り分けを意識した multi module な構成の雛形をつくってみる。
 
-<br />
 ## PHP と Phalcon をインストールする
 
 もともと brew で php56 を入れていたので、とりあえず unlink しておく。もとに戻したいときの手順は後述。
@@ -74,7 +73,6 @@ $ brew link php56
 
 phpenv はなんかうまいこと動かなかったし、この 2 バージョン以外は触る予定ないし、そんなに頻繁に切り替えることはないので、これでいいかという感じ。
 
-<br />
 ## phalcon-devtools をインストールする
 
 自分は [ここ](https://github.com/phalcon/phalcon-devtools#installation-via-git) に書いてあるように git で落としてきてパスを通した。
@@ -100,7 +98,6 @@ Available commands:
   webtools         (alias of: create-webtools)
 ```
 
-<br />
 ## プロジェクトの雛形をつくる
 
 ``` sh
@@ -127,7 +124,6 @@ Press Ctrl-C to quit.
 
 大丈夫そう。
 
-<br />
 ## multi module な感じにする
 
 公式の [ドキュメント](https://docs.phalconphp.com/ja/latest/reference/applications.html) や [GitHub repo](https://github.com/phalcon/mvc) を参考に、えいやっと最低限な状態をつくってみる。

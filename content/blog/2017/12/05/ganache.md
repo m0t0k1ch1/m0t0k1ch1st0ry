@@ -10,7 +10,6 @@ title = "Ganache で始める Ðapp 開発"
 
 この記事では、11 月に [Truffle Suite](https://github.com/trufflesuite) の仲間に加わったばかりのローカル開発用ツール [Ganache](http://truffleframework.com/ganache) について紹介し、これを利用した簡単な Ðapp 開発を実践してみようと思います。この記事を読んで、Ganache を利用した Ðapp 開発のイメージを掴んでいただければ幸いかなと思います。
 
-<br />
 ## Ganache について簡単に紹介
 
 [公式サイト](http://truffleframework.com/ganache) から、紹介文を引用します。
@@ -34,7 +33,6 @@ GUI ベースで諸々の情報閲覧や簡単なマイニング制御が行え�
 
 実際に触ってみた感じとしても、「Ethereum 詳しくないけど気になるな、ちょっと触ってみたいな」という開発者が Ethereum の挙動を把握するにはうってつけなツールかなと思いました。もちろん、[Truffle](http://truffleframework.com) とともに、ローカル環境での本格的なスマートコントラクト開発の強い味方になってくれるとも思います。
 
-<br />
 ## ダウンロードして起動してみる
 
 まず、[公式サイト](http://truffleframework.com/ganache) から Ganache をダウンロードして起動します。執筆時点でのバージョンは 1.0.1 でした。
@@ -43,7 +41,6 @@ GUI ベースで諸々の情報閲覧や簡単なマイニング制御が行え�
 
 ![ganache_1](/img/entry/ganache_1.png)
 
-<br />
 ## JSON-RPC で送金してみる
 
 初期設定だと、JSON-RPC サーバーが 7545 番ポートで起動しています。ここに HTTP 経由でリクエストを送信し、簡単な動作確認をしてみます。
@@ -96,7 +93,6 @@ $ curl -X POST http://127.0.0.1:7545 --data '{"jsonrpc":"2.0","method":"eth_getB
 
 0x0de0b6b3a7640000 は 1 ETH（1,000,000,000,000,000,000 wei）に相当するので、送金は正常に完了したようです。
 
-<br />
 ## コントラクトをデプロイしてみる
 
 Advent Calendar の 2 日目の記事「[Truffle で始める Ethereum 入門 - ERC20 トークンを作ってみよう](https://qiita.com/amachino/items/8cf609f6345959ffc450)」で紹介された ERC20 トークンをそのまま Ganache にデプロイしてみようと思います。
@@ -153,7 +149,6 @@ Saving artifacts...
 
 ![ganache_4](/img/entry/ganache_4.png)
 
-<br />
 ## コントラクトを実行してみる
 
 以下を実行してコンソールを起動します。
@@ -166,14 +161,12 @@ $ truffle console --network development
 
 もちろん、transfer などの各種 function 実行時に発行されたトランザクションも Ganache の GUI から確認することができます。
 
-<br />
 ## まとめ
 
 - Ethereum のローカル開発用ツール [Ganache](http://truffleframework.com/ganache) を紹介しました
 - 簡単な動作確認として、JSON-RPC による送金を行ってみました
 - Ganache を利用した Ðapp 開発のイメージを掴んでいただくべく、[Truffle](http://truffleframework.com) を利用したコントラクトのデプロイと動作確認を行ってみました
 
-<br />
 ## 豆知識
 
 この記事のタイトルでもそうですが、「なぜ Dapp（Decentralized Application）を Ðapp と表記するのだろう？」と疑問に思った方は以下をご覧ください。
@@ -185,7 +178,6 @@ $ truffle console --network development
 > it's because that letter is called ETH in greek. Technically Ðapp can be read as Ethapp.
 > Also it looks cool.
 
-<br />
 ## 参考
 
 - [Truffle で始める Ethereum 入門 - ERC20 トークンを作ってみよう](https://qiita.com/amachino/items/8cf609f6345959ffc450)

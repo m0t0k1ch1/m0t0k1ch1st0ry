@@ -8,7 +8,6 @@ title = "Golang 製の daemon 管理ツール immortal を試してみる"
 
 <!--more-->
 
-<br />
 ## immortal について
 
 [公式ドキュメント](https://immortal.run/post/how-it-works) には以下のように記載されています。
@@ -25,7 +24,6 @@ __immortal は、コマンドやスクリプトを制御中のターミナルか
 
 それでは以下、実際に触りつつ基本的な挙動を把握していきます。基本的には [公式ドキュメント](https://immortal.run) を参考にしているので、詳細な説明はそちらをご覧ください。
 
-<br />
 ## インストールする
 
 今回は Ubuntu 16.04 にインストールしてみます。
@@ -82,7 +80,6 @@ $ sudo systemctl start immortaldir
 $ sudo systemctl enable immortaldir
 ```
 
-<br />
 ## btcd を daemonize してみる
 
 試しに [btcd](https://github.com/btcsuite/btcd) を daemonize してみます。
@@ -271,7 +268,6 @@ root      6732  0.0  0.3 121192  6928 ?        Ssl  16:38   0:00 immortal -c /us
 app       6768  0.7  1.2 186628 25952 ?        Sl   16:40   0:00  \_ /home/app/go/bin/btcd --configfile=/home/app/.btcd/btcd.conf
 ```
 
-<br />
 ## まとめ
 
 - Golang 製の daemon 管理ツール [immortal](https://github.com/immortal/immortal) で [btcd](https://github.com/btcsuite/btcd) を daemonize してみました

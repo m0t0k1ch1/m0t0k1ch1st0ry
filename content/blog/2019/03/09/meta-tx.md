@@ -8,14 +8,12 @@ title = "meta transaction が扱える ERC20 トークンの簡易実装"
 
 <!--more-->
 
-<br />
 ## meta transaction とは？
 
 端的に言うと、ETH（gas）を保有していなくても Ethereum 上で transaction を発行できるようにするための仕組みです。この仕組みが [ERC1776](https://github.com/ethereum/EIPs/issues/1776) によって標準化されて普及すると、ユーザーが Dapps とやりとりするために必須なのは秘密鍵だけとなるので、Dapps の利用ハードルがグッと下がります。また、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) はトークンに関する meta transaction インターフェースの標準規格なので、例えば DEX などはその恩恵を大きく受けることになると予想されます。
 
 より詳細に知りたい方は、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) や、そこに記載されているリンクを辿るとよいかなと思います。また、meta transaction 自体は数年前から議論されているアイデアなので、ググると色々情報は出てきます。
 
-<br />
 ## 実装
 
 [ERC1776](https://github.com/ethereum/EIPs/issues/1776) は複数の ERC が絡んでいて少し複雑かつまだドラフト段階なので、meta transaction の基本原理を把握したいだけの人（数日前の自分）が軽い気持ちで首を突っ込むと、それなりに骨が折れます。ということで、今回は meta transaction の基本原理の把握に特化して、表題の通りのものを実装してみました（[ERC1776](https://github.com/ethereum/EIPs/issues/1776) に準拠しているわけではないのでご注意を）。数日前の自分のような方の手助けとなれば幸いです。
@@ -146,7 +144,6 @@ contract('MetaToken', async (accounts) => {
 });
 ```
 
-<br />
 ## 補足
 
 繰り返しになりますが、今回の実装はかなり単純化されたものです。[ERC1776](https://github.com/ethereum/EIPs/issues/1776) を見てもらえばわかると思いますが、実稼働を想定する場合は考えるべきことが増えます。例えば以下などです。

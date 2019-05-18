@@ -10,7 +10,6 @@ title = "Unity 始めました"
 
 ![tutorial 3D](/img/entry/unity_3d.gif)
 
-<br />
 ## ※追記
 
 {{< tweet 485370987341307904 >}}
