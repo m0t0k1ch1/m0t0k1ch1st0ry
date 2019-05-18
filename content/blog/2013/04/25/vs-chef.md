@@ -209,5 +209,5 @@ $ ~/knife-solo/bin/knife solo cook host-name
 ## 参考
 
 - [Chef Solo の正しい始め方](http://tsuchikazu.net/chef_solo_start/)
-- [macにknife-soloをインストール](http://devlog.mitsugeek.net/entry/2013/03/25/mac%E3%81%ABknife-solo%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB(prepare%E3%81%BE%E3%81%A7%E7%A2%BA%E8%AA%8D%EF%BC%89)
+- [macにknife-soloをインストール](http://devlog.mitsugeek.net/entry/2013/03/25/mac%E3%81%ABknife-solo%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB\(prepare%E3%81%BE%E3%81%A7%E7%A2%BA%E8%AA%8D%EF%BC%89)
 - [[Mac]『入門Chef Solo』を読んで試してみた](http://blog.hello-world.jp.net/?p=461)
