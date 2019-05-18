@@ -17,11 +17,13 @@ title = "Tokyo"
 
 で、本題の2つの作品について。1つがリオ五輪の閉会式のパフォーマンス。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sk6uU8gb8PA" frameborder="0" allowfullscreen></iframe>
+{{< youtube sk6uU8gb8PA >}}
+<br />
 
 もう1つが「LOST YOUTH」。
 
-<iframe src="https://player.vimeo.com/video/178076392" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{{< vimeo 178076392 >}}
+<br />
 
 どっちも好き。
 

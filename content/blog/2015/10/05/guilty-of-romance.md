@@ -6,9 +6,8 @@ title = "Guilty of Romance"
 
 最近いろいろ一段落して精神的に安定していたので、久々に園さんの映画でも観て不安定になっておこうと思い、「恋の罪」を観た。ということで、考えたことをメモ。園さんの映画はこれで確か6本目。
 
-<div class="max-width-content">
-<iframe width="420" height="315" src="https://www.youtube.com/embed/jIH34pJLyL8" frameborder="0" allowfullscreen></iframe>
-</div>
+{{< youtube jIH34pJLyL8 >}}
+<br />
 
 <!--more-->
 
@@ -17,9 +16,8 @@ title = "Guilty of Romance"
 
 「ヒミズ」「希望の国」あたりを観たい観たいと思いながらも観れていない中で「恋の罪」を優先した理由は、水曜日のカンパネラの「ミツコ」。
 
-<div class="max-width-content">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CpLgEQig1AE" frameborder="0" allowfullscreen></iframe>
-</div>
+{{< youtube CpLgEQig1AE >}}
+<br />
 
 この曲が soundcloud でよく聴く mix の中で流れてて、だいぶ耳残りしていたのでちょこっと調べてみたら [この記事](http://ototoy.jp/feature/2013112004) に辿り着いて、これは観るしかないと思った。この記事を読むまでは「恋の罪」がベースになってることは全然知らなかったので、自分の気になってるアーティストと映画監督が繋がって、うっひゃ〜〜〜ってなってた。
 

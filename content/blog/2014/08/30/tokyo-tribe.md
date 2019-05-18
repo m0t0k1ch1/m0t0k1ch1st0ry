@@ -6,12 +6,12 @@ title = "TOKYO TRIBE"
 
 [YAPC](http://yapcasia.org/2014) 帰りに観てきました。公開日に観に行く映画とか久々〜。YAPC のブログ書いてると頭から消えそうなので先にメモ。
 
-<div class="max-width-content">
-<iframe width="560" height="315" src="//www.youtube.com/embed/7vDSPqAA59k" frameborder="0" allowfullscreen></iframe>
-</div>
+{{< youtube 7vDSPqAA59k >}}
+<br />
 
 <!--more-->
 
+<br />
 ## 深く考えずに思ったことをどばーっと
 
 若干のネタバレはあるかもなのでご注意ください。

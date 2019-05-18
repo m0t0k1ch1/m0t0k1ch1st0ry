@@ -4,9 +4,8 @@ tags = [ "others" ]
 title = "蜂と蝶"
 +++
 
-<div class="max-width-content">
-<iframe width="420" height="315" src="https://www.youtube.com/embed/ACvShCb7KSQ" frameborder="0" allowfullscreen></iframe>
-</div>
+{{< youtube ACvShCb7KSQ >}}
+<br />
 
 <!--more-->
 
@@ -15,9 +14,8 @@ title = "蜂と蝶"
 
 最近フリースタイルダンジョンを #1 から #18 までぶっ通しで見るなどしてどはまりしてしまい、その中でも #18 R-指定 vs DOTAMA の round 2 で R-指定が「蜂と蝶の上で〜」って言ってて、なんだろうと思って調べてみたら、そのとき後ろでかかってた曲だった。
 
-<div class="max-width-content">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ifokddNy2Ls" frameborder="0" allowfullscreen></iframe>
-</div>
+{{< youtube ifokddNy2Ls >}}
+<br />
 
 錯誤帰属もあるだろうけど、かっけー曲だなあと思ってミーハーらしくめっちゃリピートして聴いていたら、
 
