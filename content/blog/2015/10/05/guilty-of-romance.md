@@ -100,5 +100,4 @@ title = "Guilty of Romance"
 * 「魔女っ子クラブ」然り、美津子以外にも東電 OL 殺人事件を意識してる部分が意外と多いみたい
 * 「恋の罪」を観て「ミツコ」の歌詞の謎が解けてしまったがゆえに曲の魔力が少し弱まった気がするので、謎であることの価値について考えさせられた
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">今まで観た園さんの映画の中ではだいぶ咀嚼しやすい方だったけど、男には消化できませんすわ</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/650325500284407808">October 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 650325500284407808 >}}

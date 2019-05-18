@@ -6,13 +6,9 @@ title = "ブログを書くまでが YAPC::Asia Tokyo 2014"
 
 去年は実力不足でいろいろバタバタしててまともに参加できなかったので、今年は気合入ってた。
 
-<blockquote class="twitter-tweet" lang="ja"><p>YAPC、聴くやつ全部キメた</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/statuses/504636484888956930">2014, 8月 27</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 504636484888956930 >}}
+{{< tweet 504636681295626240 >}}
 
-<blockquote class="twitter-tweet" lang="ja"><p>去年きちんと参加できなかった分気合入ってる</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/statuses/504636681295626240">2014, 8月 27</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<br />
 実際、1日目の午前中は多目的教室2の最右前端にポジショニングしてどやってた（視力クソなのに眼鏡忘れたせい）。
 
 <!--more-->
@@ -39,10 +35,8 @@ http://yapcasia.org/2014/talk/show/2276d7b2-eba7-11e3-bd6d-c7a06aeab6a4
 
 最近、仕事の中でも Golang を書かせていただけていることもあって、これは絶対に外せなかった。
 
-<blockquote class="twitter-tweet" lang="ja"><p>Go For Perl Mongers、ホントはオフィスいた方がよいのですが、これ聴きに半ば無理やり来ました <a href="https://twitter.com/hashtag/yapcasia?src=hash">#yapcasia</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/statuses/505174520244625408">2014, 8月 29</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 505174520244625408 >}}
 
-<br />
 基本的には [@lestrrat](https://twitter.com/lestrrat) さんが自分の嵌ったポイントをベースに解説していくスタイルだった。で、その中に [自分が書いてて嵌ってブログにまとめてたこと](http://m0t0k1ch1st0ry.com/blog/2014/06/11/golang) とかも混じっていて、「あ、これに嵌るの自分だけじゃないんだ」と少しほっとしたりもした。YAPC でトークを採択されるレベルの方々が新しい技術を学ぶ過程の一部を見れたような感じで、それを自分の学習姿勢と比較すると考えることが多かったし、Golang に関する知見として覚えておきたい内容が40分に詰まっていたと思う。少し偏った表現もあった気はするけど、それはそれで「そういう見方もあるんだ」と勉強になった。
 
 <br />

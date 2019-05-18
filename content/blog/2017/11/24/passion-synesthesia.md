@@ -10,8 +10,7 @@ title = "落合陽一と情熱大陸とシナスタジア"
 
 諸々のきっかけは、テレビ持ってないけど落合さんの情熱大陸観たいなと思ってたところに流れてきた [@tabbata](https://twitter.com/tabbata) さんのツイート。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">とても面白かったです。＞情熱大陸<br>＃978「科学者・落合陽一」<a href="https://twitter.com/hashtag/TVer?src=hash&amp;ref_src=twsrc%5Etfw">#TVer</a> <a href="https://twitter.com/hashtag/%E6%83%85%E7%86%B1%E5%A4%A7%E9%99%B8?src=hash&amp;ref_src=twsrc%5Etfw">#情熱大陸</a><br> <a href="https://t.co/UCU6iyi6pa">https://t.co/UCU6iyi6pa</a></p>&mdash; 田端　信太郎 (@tabbata) <a href="https://twitter.com/tabbata/status/933460560057790464?ref_src=twsrc%5Etfw">2017年11月22日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 933460560057790464 >}}
 
 TVer なんて便利なものがあるんすな。おかげで無事観れました。
 

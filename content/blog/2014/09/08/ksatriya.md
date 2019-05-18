@@ -88,9 +88,6 @@ k.Run(":8080")
 
 自分がほしいな〜と思っていた最低限の機能は揃った気がするので、そろそろテストを書いていきたい。
 
-<blockquote class="twitter-tweet" lang="ja"><p>ちょっと tiny とは言えなくなってきたこともあって週末にテスト書いたりしたいけど、どうせ例の Gunosy のやつの後に全部書き直したくなる気がするので我慢</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/507920947249049600">2014, 9月 5</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 507920947249049600 >}}
 
-<br />
 「例の Gunosy のやつ」っていうのは [こちら](http://gunosygo.connpass.com/event/8485)。楽しみ。
-

@@ -43,8 +43,7 @@ title = "Tokyo"
 
 1回見終わった後、無心で再生ボタンをもっかい押してた。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">LOST YOUTH、無心で2回続けて見てもうた  &gt;&gt; 日本の美大生なんて死んだほうがいいー映画監督・木村太一インタビュー <a href="https://t.co/1cJkXMPIke">https://t.co/1cJkXMPIke</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/768852130480263169">2016年8月25日</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 768852130480263169 >}}
 
 で、どちらかというと、自分の好きな表現て「LOST YOUTH」の方なんだなと。表現の裏に人間というか、生き様があるもの。綺麗なもの、汚いもの含めて誰かのありのままがあるもの。理由はわからないけど、そういうものに惹かれるんだなと。カタルシスなんだろうか。自分の身体には、世界レベルの第一線で活躍している自分の好みのアーティストの大合作より、「LOST YOUTH」の方が強く刻まれるんだなと（そもそも比べるようなものでもないとは思うけど）。
 

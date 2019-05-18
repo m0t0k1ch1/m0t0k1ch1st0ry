@@ -103,8 +103,7 @@ __ICO の意義や必然性ではなく、クラウドセールのスキーム�
 
 実際、Vitalik は「反対した」というよりも、[「自身の立場を明確にした」](https://twitter.com/VitalikButerin/status/911217371158683649) という印象です。以下のツイートで、do not blame them とも言っています。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="en" dir="ltr">I wish they didn&#39;t but I totally understand why they did and do not blame them. Hence (ii) as my small part in providing alternatives</p>&mdash; Vitalik Buterin (@VitalikButerin) <a href="https://twitter.com/VitalikButerin/status/911300771819352064?ref_src=twsrc%5Etfw">2017年9月22日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 911300771819352064 >}}
 
 ref. [Vitalik Buterin Responds To Raiden ICO](https://www.ethnews.com/vitalik-buterin-responds-to-raiden-ico)
 

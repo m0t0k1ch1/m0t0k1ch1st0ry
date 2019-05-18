@@ -10,11 +10,8 @@ title = "Not Goodbye Happiness"
 
 <!--more-->
 
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">あ〜〜〜自分で remix つくれるようになりて〜〜〜</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/625491928692318208">2015, 7月 27</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">goodbye happiness のイントロだけ聴き続けたい</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/625695916662460417">2015, 7月 27</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 625491928692318208 >}}
+{{< tweet 625695916662460417 >}}
 
 ということで、[indiloop](https://www.indiloop.com) という便利なうぇっぶサービスを利用してつくってみた。
 

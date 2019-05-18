@@ -41,11 +41,8 @@ title = "ISUCON5 と chatzmers - 予選4位通過編"
 
 ただひたすらに精神統一。事情があってオフィスに宿泊していたので、6時起きしてサウナに行って帰ってきてトイレの個室で事変の [能動的三分間](https://soundcloud.com/amanojack18/4min-mix-1) をただひたすらリピート。
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">スカイスパで精神統一してきます <a href="https://twitter.com/hashtag/isucon?src=hash">#isucon</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/647889420553613313">September 26, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">事変聴いて精神統一 <a href="https://twitter.com/hashtag/isucon?src=hash">#isucon</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/647919294932619265">September 26, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 647889420553613313 >}}
+{{< tweet 647919294932619265 >}}
 
 ### 午前
 
@@ -100,8 +97,7 @@ title = "ISUCON5 と chatzmers - 予選4位通過編"
 
 このあたり、スコアはちょいちょい上がるものの爆上がりはしない低迷期だったのですが、@Maco_Tasu の「神対応」というコミットメッセージつきの修正でスコアが一気に 16,927 まで伸びて暫定トップに。さすがに叫びました。
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">おっしゃああああああああああああああああああああああああああああ！！！！！！！！！！！！</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/648013751925391360">September 27, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 648013751925391360 >}}
 
 ここで @Maco_Tasu がやっていたことは [彼のエントリ](http://macotasu.hatenablog.jp/entry/2015/09/28/190442) をご参照ください。
 

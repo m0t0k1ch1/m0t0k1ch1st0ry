@@ -81,14 +81,9 @@ The History of Casper は、（現時点では）全 5 chapter で構成され�
 
 読んで感じたことは、「A Crash Course in Mechanism Design for Cryptoeconomic Applications」のパートで書いた気づきとほぼ同じなので、付け加えて書くことはほとんどないのですが、現実の事象をベースにして綴られているので「あー、そんなことあったのね〜」「あー、だからそうなったのね〜」みたいな発見はあり、それは単純におもしろかったです。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">こんなことあったのね。どの程度の &quot;lightly trolled&quot; だったのかは分からないけど笑、Vlad の気持ち察するわ &gt;&gt; &quot;The History of Casper - Chapter 3&quot; - Vlad Zamfir <a href="https://t.co/W7Mv5e73rk">https://t.co/W7Mv5e73rk</a> <a href="https://t.co/BYjoFADPPD">pic.twitter.com/BYjoFADPPD</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1036953921577738240?ref_src=twsrc%5Etfw">2018年9月4日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="en" dir="ltr">I totally agree &gt;&gt; &quot;The History of Casper - Chapter 4&quot; - Vlad Zamfir <a href="https://t.co/golrO4Il9m">https://t.co/golrO4Il9m</a> <a href="https://t.co/I3wRXJwleu">pic.twitter.com/I3wRXJwleu</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1036965168335532032?ref_src=twsrc%5Etfw">2018年9月4日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">初期の Casper は、寡占市場すなわちコンセンサスが協力ゲームであることを仮定し、カルテルに対する検閲耐性を考慮することで形作られていったと。この辺りのことを知らずして cryptoeconomics は語れないな。。。反省である。</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1037017153352790018?ref_src=twsrc%5Etfw">2018年9月4日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 1036953921577738240 >}}
+{{< tweet 1036965168335532032 >}}
+{{< tweet 1037017153352790018 >}}
 
 こんな感じで、cryptoeconomics の源流は Caspter（PoS）の歴史にあるということが改めて認識できました。そういう意味では、これも「守」の物語と言えるかなと思います。
 
@@ -127,7 +122,6 @@ CHIP で月額 100 円のファンクラブ「[cryptribe](http://thechip.in/fanc
 
 これにて一旦封印解除じゃ👴
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">最近アマいので、次何か公に対して cryptoeconomic なブログ書くまで音についてのツイートを禁止とする。巧みなメタファーも禁止。like と RT も禁止。最後に言わせてください。S.W. × ジメサギのアルバム楽しみです。うっ。。。</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1037735916423372800?ref_src=twsrc%5Etfw">2018年9月6日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 1037735916423372800 >}}
 
 我慢できず、既にこの記事の中に意味不明な記述を盛り込んでしまったことをお許しください。

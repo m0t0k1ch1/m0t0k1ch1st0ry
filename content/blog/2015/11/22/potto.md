@@ -49,8 +49,6 @@ func main() {
 
 ksatriya も、これ以上は仕様レベルでアップデートすることないなあという感じになってきたので、テスト書いていきたい（遅い）。と思ったら、
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">ksatriya、きちんとテスト書くかあと思ったけど HTML 吐いてるとこめんどくさそう。。。と思ったし、golang で HTML 吐くのつらそうなので text と json だけ吐くようにしよ</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/668300561863675904">November 22, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 668300561863675904 >}}
 
 という気持ちになったので、HTML のレンダリング機能とはさようならした。合掌。
-

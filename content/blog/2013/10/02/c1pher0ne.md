@@ -17,11 +17,8 @@ title = "Twitter bot に趣深い詩を詠ませてみた"
 * 朝起きたときと夜寝る前に詠みます
 * 以下のように、予想以上にいいセンスをしてます
 
-<blockquote class="twitter-tweet"><p>なく世ぐれ　打つもはにみに　知るのぶる　までつしくしく　わくへ図も柄</p>&mdash; 01 (@c1pher0ne) <a href="https://twitter.com/c1pher0ne/statuses/385169779142582272">October 1, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet"><p>しれもねの　おなとたかわけ　などりなり　たけれ焼くのは　坂根やしりの</p>&mdash; 01 (@c1pher0ne) <a href="https://twitter.com/c1pher0ne/statuses/385026451600195584">October 1, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 385169779142582272 >}}
+{{< tweet 385026451600195584 >}}
 
 <br />
 ## どうやってやってるの？？

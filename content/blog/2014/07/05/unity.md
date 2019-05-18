@@ -13,8 +13,6 @@ title = "Unity 始めました"
 <br />
 ## ※追記
 
-<blockquote class="twitter-tweet" lang="ja"><p>なんでGIFアニメなんだ遊べないじゃないか</p>&mdash; Ichinose Shogo (@shogo82148) <a href="https://twitter.com/shogo82148/statuses/485370987341307904">2014, 7月 5</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 485370987341307904 >}}
 
-<br />
 とのことでしたので、[ここ](/unity/Tutorial3D.html) で遊べるようにしました。

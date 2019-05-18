@@ -35,10 +35,9 @@ title = "SoundCloud と私"
 * 図々しいのは百も承知で、その mix の CD を来月のイベントに持ってきていただけないか聞いてみた
 * 快諾していただけた（感動）
 
-<blockquote class="twitter-tweet" lang="ja"><p>来月の Routine のときに soundcloud にはあがってない Back in da Days の vol. 2 持ってきていただけるとのこと。。ホント今日行ってよかった。。</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/501027219766902784">2014, 8月 17</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 501027219766902784 >}}
 
-<br /><br />
+<br />
 #### 数日後…
 
 * 次回のイベントに持ってきていただくことになってた mix が SoundCloud にアップされてた（感動）
@@ -63,5 +62,4 @@ SoundCloud という1サービスから始まったユーザー体験、がん�
 
 [Luther](http://www.luther-yokohama.jp) が気になった方は是非お声がけを。一緒に行きましょう！！
 
-<blockquote class="twitter-tweet" lang="ja"><p>こういう old かかる素晴らしい箱知るともうわざわざ業の深いとこ行く必要なくなって解脱</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/501016536379695104">2014, 8月 17</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 501016536379695104 >}}

@@ -24,8 +24,7 @@ __この第 1 回 ex-KAYAC Advent Calendar 開催を記念して、ex-KAYAC の�
 <br /><br /><br />
 ...さて、前置きはこのくらいにして、本題に移っていきたいと思います。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">街でかかるクリスマスソングが全てこれに変われば解脱が捗るのに、と毎年思う &gt;&gt; Utada / Merry Christmas Mr. Lawrence - FYI <a href="https://t.co/38IUI9EFmG">https://t.co/38IUI9EFmG</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1073265831847485442?ref_src=twsrc%5Etfw">2018年12月13日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 1073265831847485442 >}}
 
 そうです、今日はクリスマスです。自分がこのブログを書いている今この瞬間（12/24 深夜）も、世界中のサンタクロース達は大忙しでしょう。
 

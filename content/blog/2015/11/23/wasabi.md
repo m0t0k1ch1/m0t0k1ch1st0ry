@@ -60,5 +60,4 @@ itamae はシンプルで好き。最近趣味でなんかするときはよく�
 
 wasabi は練習台なので、年末焦燥感駆動でもうちょいがんばる🙏
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">最近、アルーナ・フランシスの声かわいいな。。ってずっと思ってる</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/668673216928309248">November 23, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 668673216928309248 >}}

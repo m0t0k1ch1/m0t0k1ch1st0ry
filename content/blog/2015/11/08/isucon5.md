@@ -51,8 +51,7 @@ title = "ISUCON5 と chatzmers - 本戦解脱編"
 <br />
 ## 感想
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">まぁ思うところはいろいろあるけど、出場した方が確実によかったと断言はできる</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/660456689318006784">October 31, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 660456689318006784 >}}
 
 と思います。予選と本戦、その対策、この2ヶ月はかなりの密度で経験と知識を蓄積することができたので、単純に楽しかったです。今後に活かします。
 
