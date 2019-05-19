@@ -84,7 +84,7 @@ func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Re
 }
 ```
 
-ここで `handler` が強制的に `HandlerFunc` に変換されている。これは [以前のエントリ]({{< ref "blog/2014/06/01/golang.md" >}}) にも書いた。
+ここで `handler` が強制的に `HandlerFunc` に変換されている。これは [以前のエントリ]({{< ref "/blog/2014/06/01/golang.md" >}}) にも書いた。
 
 ### 1-2. http.ServeMux.Handle
 

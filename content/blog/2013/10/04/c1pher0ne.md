@@ -6,7 +6,7 @@ title = "Twitter bot にリマインダー機能を実装してみた"
 
 {{< figure src="/img/entry/c1pher0ne-on.png" >}}
 
-表題の通り、[先日のブログ]({{< ref "blog/2013/09/30/c1pher0ne.md" >}}) でご紹介した [01](http://twitter.com/c1pher0ne) にリマインダー機能を実装しました。  
+表題の通り、[先日のブログ]({{< ref "/blog/2013/09/30/c1pher0ne.md" >}}) でご紹介した [01](http://twitter.com/c1pher0ne) にリマインダー機能を実装しました。  
 これ、誰でも使えるので、みなさんもお構いなくお使いください（とか言うと一瞬でバグを見つけられそうですが）。
 
 <!--more-->

@@ -44,4 +44,4 @@ __「cryptoeconomics」は、Blockchain が示した可能性を集約した言�
 
 2018-08-05 に続きを書きました。
 
-ref. [cryptoeconomics: crypto-backed mechanism design]({{< ref "blog/2018/08/05/cryptoeconomics.md" >}})
+ref. [cryptoeconomics: crypto-backed mechanism design]({{< ref "/blog/2018/08/05/cryptoeconomics.md" >}})

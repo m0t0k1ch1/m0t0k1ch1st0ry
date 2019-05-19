@@ -19,11 +19,11 @@ title = "Vickrey auction に見る incentive compatibility"
 
 ## 1. はじめに
 
-[前回の記事]({{< ref "blog/2018/09/13/cryptoeconomics.md" >}}) で、
+[前回の記事]({{< ref "/blog/2018/09/13/cryptoeconomics.md" >}}) で、
 
 > 気が変わらなければ、次回は、メカニズムデザインにおいて重要な概念である incentive compatibility について、具体的な事例を交えながら整理する予定です。cryptoeconomics というよりは、まずはその土台となるミクロ経済学（市場理論、ゲーム理論、メカニズムデザインなど）に寄り添っていこうというスタンスです。
 
-と書きましたが、気が変わらなかったので、この通りの内容でいこうと思います。ここで言っている「具体的な事例」としては、記事タイトルにもある通り、簡単化した Vickrey auction を用います。Vickrey auction については [以前の記事でもさらりと触れました]({{< ref "blog/2018/08/05/cryptoeconomics.md" >}}) が、今回はもっとわかりやすく具体的な説明を試みます。
+と書きましたが、気が変わらなかったので、この通りの内容でいこうと思います。ここで言っている「具体的な事例」としては、記事タイトルにもある通り、簡単化した Vickrey auction を用います。Vickrey auction については [以前の記事でもさらりと触れました]({{< ref "/blog/2018/08/05/cryptoeconomics.md" >}}) が、今回はもっとわかりやすく具体的な説明を試みます。
 
 ## 2. incentive compatibility
 

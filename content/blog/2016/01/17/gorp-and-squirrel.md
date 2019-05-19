@@ -4,7 +4,7 @@ tags = [ "golang", "mysql" ]
 title = "gorp と squirrel で CRUD"
 +++
 
-[これ]({{< ref "blog/2016/01/15/january.md" >}}) の2つ目のやつの API サーバーを Golang で書くので、DB 周りどうしようかなあと考えながら [gorp](https://github.com/go-gorp/gorp) ＋ [squirrel](https://github.com/Masterminds/squirrel) でサンプルコードを書いたのでメモ。
+[これ]({{< ref "/blog/2016/01/15/january.md" >}}) の2つ目のやつの API サーバーを Golang で書くので、DB 周りどうしようかなあと考えながら [gorp](https://github.com/go-gorp/gorp) ＋ [squirrel](https://github.com/Masterminds/squirrel) でサンプルコードを書いたのでメモ。
 
 <!--more-->
 

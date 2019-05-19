@@ -20,7 +20,7 @@ title = "Scalatra + Slick + Scalate でつくるサンプルうぇっぶアプ�
 
 - 公式は [こちら](http://www.scalatra.org)
 - Scala 版 Sinatra
-- 前に書いた [Scalatra を Jetty で standalone deploy してみる]({{< ref "blog/2013/10/14/scalatra.md" >}}) で雰囲気伝わるかと
+- 前に書いた [Scalatra を Jetty で standalone deploy してみる]({{< ref "/blog/2013/10/14/scalatra.md" >}}) で雰囲気伝わるかと
 
 ### Slick（ORM）
 
