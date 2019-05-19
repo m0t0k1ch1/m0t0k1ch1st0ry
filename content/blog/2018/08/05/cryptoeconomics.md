@@ -4,7 +4,7 @@ tags = [ "cryptoeconomics", "economics", "blockchain" ]
 title = "cryptoeconomics: crypto-backed mechanism design"
 +++
 
-[これ](https://m0t0k1ch1st0ry.com/blog/2018/07/28/cryptoeconomics) の続きです。
+[これ]({{< ref "blog/2018/07/28/cryptoeconomics.md" >}}) の続きです。
 
 <!--more-->
 
@@ -280,4 +280,4 @@ __そのシステムが達成したい性質を自律的に具備・維持でき
 
 2018-09-13 に補足的な記事を書きました。
 
-ref. [cryptoeconomics の「守」](https://m0t0k1ch1st0ry.com/blog/2018/09/13/cryptoeconomics)
+ref. [cryptoeconomics の「守」]({{< ref "blog/2018/09/13/cryptoeconomics.md" >}})

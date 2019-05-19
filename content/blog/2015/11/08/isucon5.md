@@ -8,7 +8,7 @@ title = "ISUCON5 と chatzmers - 本戦解脱編"
 
 <!--more-->
 
-※予選の振り返りエントリは [こちら](http://m0t0k1ch1st0ry.com/blog/2015/09/29/isucon5)。
+※予選の振り返りエントリは [こちら]({{< ref "blog/2015/09/29/isucon5.md" >}})。
 
 ## 結果
 

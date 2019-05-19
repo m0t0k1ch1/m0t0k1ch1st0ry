@@ -4,13 +4,13 @@ tags = [ "python", "word2vec" ]
 title = "Python で「老人と海」を word2vec する"
 +++
 
-[これ](http://m0t0k1ch1st0ry.com/blog/2016/07/30/nlp) の続き。今回は [gensim](http://radimrehurek.com/gensim) を使って word2vec できるようにするまで。さくっと試せるよう、wikipedia とかではなくて青空文庫のデータをコーパスにする。ちなみに前回 CaboCha も準備したけど、今回は使わない。
+[これ]({{< ref "blog/2016/07/30/nlp.md" >}}) の続き。今回は [gensim](http://radimrehurek.com/gensim) を使って word2vec できるようにするまで。さくっと試せるよう、wikipedia とかではなくて青空文庫のデータをコーパスにする。ちなみに前回 CaboCha も準備したけど、今回は使わない。
 
 <!--more-->
 
 ## 環境
 
-[ここまで](http://m0t0k1ch1st0ry.com/blog/2016/07/30/nlp) やってある前提。
+[ここまで]({{< ref "blog/2016/07/30/nlp.md" >}}) やってある前提。
 
 ## 下準備
 

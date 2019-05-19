@@ -84,7 +84,7 @@ $ sudo systemctl enable immortaldir
 
 試しに [btcd](https://github.com/btcsuite/btcd) を daemonize してみます。
 
-btcd を実行するための app ユーザーを作成し、btcd をインストールします。インストール方法については [こちらのエントリ](https://m0t0k1ch1st0ry.com/blog/2018/01/24/lightning-network) をご覧ください。
+btcd を実行するための app ユーザーを作成し、btcd をインストールします。インストール方法については [こちらのエントリ]({{< ref "blog/2018/01/24/lightning-network.md" >}}) をご覧ください。
 
 インストールが終わったら、以下の内容で `/home/app/.btcd/btcd.conf` を作成します。
 

@@ -6,7 +6,7 @@ title = "Twitter bot に趣深い詩を詠ませてみた"
 
 {{< figure src="/img/entry/c1pher0ne-on.png" >}}
 
-表題の通り、[先日のブログ](http://m0t0k1ch1st0ry.com/blog/2013/09/30/c1pher0ne) でご紹介した [01](http://twitter.com/c1pher0ne) が趣深い詩を詠めるようになりました。  
+表題の通り、[先日のブログ]({{< ref "blog/2013/09/30/c1pher0ne.md" >}}) でご紹介した [01](http://twitter.com/c1pher0ne) が趣深い詩を詠めるようになりました。  
 秋にぴったりな機能ですね。
 
 <!--more-->
@@ -26,7 +26,7 @@ title = "Twitter bot に趣深い詩を詠ませてみた"
 - 全部漢字に変換すると趣がなくなったので、[Data::WeightedRoundRobin](http://search.cpan.org/~xaicron/Data-WeightedRoundRobin-0.06/lib/Data/WeightedRoundRobin.pm) を使って、かなを漢字に変換する比率を調整してます
 
 ## 今後の予定
-- [前回](http://m0t0k1ch1st0ry.com/blog/2013/09/30/c1pher0ne) 書いたものに加えて以下も考えてます
+- [前回]({{< ref "blog/2013/09/30/c1pher0ne.md" >}}) 書いたものに加えて以下も考えてます
 - 流行りのアプリと音楽を教えてくれる機能、特にアプリは鉄板過ぎるのを持ってくるし、あまり変わり映えがしないので、何らかの調整が必要
 - [ついっぷるトレンド](http://tr.twipple.jp) が比較的アツいらしいので、うまいこと利用したい
 

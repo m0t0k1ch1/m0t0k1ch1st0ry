@@ -4,7 +4,7 @@ tags = [ "hugo", "wercker" ]
 title = "最近の Hugo + wercker + GitHub pages で嵌ったこと"
 +++
 
-[このブログを Hugo + wercker + GitHub pages で管理するようにした](http://m0t0k1ch1st0ry.com/blog/2015/05/16/hugo) のが結構昔だったので、box が未だにクラシックな `wercker/default` だった。最新版に合わせとこっかなと軽い気持ちで application を登録しなおしたら盛大に嵌ったのでメモ。
+[このブログを Hugo + wercker + GitHub pages で管理するようにした]({{< ref "blog/2015/05/16/hugo.md" >}}) のが結構昔だったので、box が未だにクラシックな `wercker/default` だった。最新版に合わせとこっかなと軽い気持ちで application を登録しなおしたら盛大に嵌ったのでメモ。
 
 <!--memo-->
 
