@@ -1,5 +1,5 @@
 +++
-title = "author"
+title = "Author"
 +++
 
 {{< figure src="/img/common/eye_256.png" >}}
