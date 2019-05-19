@@ -8,7 +8,7 @@ title = "Unity 始めました"
 
 <!--more-->
 
-![tutorial 3D](/img/entry/unity_3d.gif)
+{{< figure src="/img/entry/unity-3d.gif" >}}
 
 ## ※追記
 

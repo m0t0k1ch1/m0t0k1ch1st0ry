@@ -16,7 +16,7 @@ __ありがとうございました 🙏__
 
 内心、出題直後は「つくったはいいが、、果たしてこの面倒な問題に取り組んでくださる方はいるのだろうか。。。？」と、かなり心配していたのですが、その心配もすぐさま流石の [@nakajo](https://twitter.com/nakajo) さんによってかき消され、結果的には（この記事の執筆時点で）見事 7 人の方がパズルをクリアしてくださいました（以下、8 人の SCT ホルダーのうち 1 人は自分）。
 
-![SCT holders](/img/entry/sct-holders.png)
+{{< figure src="/img/entry/sct-holders.png" >}}
 
 ref. [SantaClausToken Token Holders](https://ropsten.etherscan.io/token/tokenholderchart/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d)
 
@@ -123,7 +123,7 @@ ref. [The DAO 事件から１年 — 熱狂する ICO バブルと、これ�
 
 今回の企画で、少しでも興味を持ってもらえたら幸いです。
 
-![matchstick](/img/entry/matchstick.jpg)
+{{< figure src="/img/entry/matchstick.jpg" >}}
 
 __2016 年、Reentrancy ハックが起こらず、The DAO という灯火が今も燃え続けていたら、どうなっていただろうか？__
 

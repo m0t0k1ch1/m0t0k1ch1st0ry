@@ -39,7 +39,7 @@ GUI ベースで諸々の情報閲覧や簡単なマイニング制御が行え�
 
 起動すると、以下のような感じです。100 ETH 保有しているアカウントが 10 匹登録されていました。
 
-![ganache_1](/img/entry/ganache_1.png)
+{{< figure src="/img/entry/ganache_1.png" >}}
 
 ## JSON-RPC で送金してみる
 
@@ -75,8 +75,8 @@ $ curl -X POST http://127.0.0.1:7545 --data '{"jsonrpc":"2.0","method":"eth_send
 
 マイニングされたブロックや、それに含まれるトランザクションは GUI からも確認することができます。便利ですね。
 
-![ganache_2](/img/entry/ganache_2.png)
-![ganache_3](/img/entry/ganache_3.png)
+{{< figure src="/img/entry/ganache_2.png" >}}
+{{< figure src="/img/entry/ganache_3.png" >}}
 
 JSON-RPC で送信先のアカウントの残高も確認してみます。
 
@@ -147,7 +147,7 @@ Saving artifacts...
 
 実行されたトランザクションは Ganache の GUI からも確認することができます。
 
-![ganache_4](/img/entry/ganache_4.png)
+{{< figure src="/img/entry/ganache_4.png" >}}
 
 ## コントラクトを実行してみる
 

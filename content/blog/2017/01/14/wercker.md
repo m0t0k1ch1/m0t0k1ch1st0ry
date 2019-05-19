@@ -32,7 +32,7 @@ ignore branch 的な設定ができないと、gh-pages branch への push（dep
 
 ようにして、gh-pages branch に反応した場合は build の手前で workflow が終了するようにした。wercker 上では以下のような感じ。
 
-![wercker.png](/img/entry/wercker.png)
+{{< figure src="/img/entry/wercker.png" >}}
 
 そもそも workflow が走ってること自体がもやっとするのは変わらないけど、こけなくはなった。
 

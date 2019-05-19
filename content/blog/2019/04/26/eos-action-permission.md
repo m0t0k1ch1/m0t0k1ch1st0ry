@@ -14,7 +14,7 @@ EOS 上で複数の contract をまたいだシステムを実装したい場合
 
 このような場合、基本的には下図のような構成になる。
 
-![EOS acction permission 1](/img/entry/eos-action-permission-1.png)
+{{< figure src="/img/entry/eos-action-permission_1.png" >}}
 
 ここで注意する必要があるのは、
 
@@ -38,7 +38,7 @@ __`appaccount11` の `eosio.code` permission を、それが必要な action の
 
 このように、action 実行と atomic に permission の着脱を行うことで、上述したリスクを低減することができる。これは、下図のような構成で実現できる。
 
-![EOS acction permission 2](/img/entry/eos-action-permission-2.png)
+{{< figure src="/img/entry/eos-action-permission_2.png" >}}
 
 上図における controller contract のサンプル実装は [こちら](https://github.com/m0t0k1ch1/sandbox/tree/master/eos/action-permission/controller)。実装は非常にシンプルなので、[`controller.cpp`](https://github.com/m0t0k1ch1/sandbox/blob/master/eos/action-permission/controller/controller.cpp) を見るだけで、何をやっているかは把握できるはず。
 

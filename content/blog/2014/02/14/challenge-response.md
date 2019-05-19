@@ -8,6 +8,6 @@ title = "かんたん図解！チャレンジレスポンス認証"
 
 <!--more-->
 
-![challenge response](/img/entry/challenge_response.jpg)
+{{< figure src="/img/entry/challenge-response.jpg" >}}
 
 あんまわかってないけどわかったフリしてるようなこと、結構ある。そろそろそういうの積極的に潰していかないとエンジニアとしてつらい感じがしている。

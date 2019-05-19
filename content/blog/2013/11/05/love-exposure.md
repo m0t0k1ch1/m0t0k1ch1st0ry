@@ -101,4 +101,4 @@ title = "Love Exposure"
 - まとまらないけど、とりあえずむきだせるものむきだしていこうと思った
 - 単純に知識足りなくて表現についていけてないとこがいくつかあったのはつらかったので、勉強する
 
-![love exposure](/img/entry/love_exposure.jpg)
+{{< figure src="/img/entry/love-exposure.jpg" >}}

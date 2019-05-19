@@ -25,7 +25,7 @@ $ go get github.com/m0t0k1ch1/lgtmize
 
 [LGTM.in/g](http://www.lgtm.in) 然り、インターネット上にカジュアルにアップされてる LGTM 画像みたいなことをしてしまうと著作権的にアウトな気がするので、今回は自分で撮った逗子の写真で試してみる。
 
-![zushi](/img/entry/zushi.jpg)
+{{< figure src="/img/entry/zushi.jpg" >}}
 
 まさに涅槃。住みたい。
 
@@ -37,7 +37,7 @@ $ lgtmize /path/to/zushi.jpg
 
 すると、同じディレクトリに `zushi-lgtm.jpg` という名前で、以下のような画像が生成される。
 
-![zushi](/img/entry/zushi_lgtm.jpg)
+{{< figure src="/img/entry/zushi-lgtm.jpg" >}}
 
 あとはなんとかして GitHub まで持っていく。Chrome 拡張とかまでつくる元気はなかった。とはいえ、GitHub が提供してるインターフェースでコメントに画像貼るのも意外と簡単なので、とりあえずはローカルに LGTM 画像フォルダをつくってがんばろうと思う。実際にやってみてめんどくさかったらなんか考える。
 

@@ -65,7 +65,7 @@ __強い incentive compatibility が dominant strategy incentive compatibility�
 
 今回は、簡単化した Vickrey auction を用いて解説します。まず、そのルールについて説明します。
 
-![vickrey auciton 1](/img/entry/vickrey-auction-1.png)
+{{< figure src="/img/entry/vickrey-auction_1.png" >}}
 
 登場人物はアリスとボブの 2 人です。2 人は商品（クマさん）に対して入札額を決め、入札します。そして、入札額が高かった方が落札します。と、これだけ聞くと、一般的なファーストプライス・オークションと同じように思えますが、Vickrey auction では、これに加えて、さらに以下のようなルールが追加されます。
 
@@ -107,13 +107,13 @@ __「あのクマさんになら 3 ETH 支払ってもいいワ」__
 
 さて。利得の計算方法はイメージできたと思うので、全てのパターンにおけるアリスの利得を表で整理してみます。
 
-![vickrey auction 2](/img/entry/vickrey-auction-2.png)
+{{< figure src="/img/entry/vickrey-auction_2.png" >}}
 
 この表を見ながら、「あのクマさんになら 3 ETH 支払ってもいいワ」と考えているアリスが、いくらで入札すべきなのか考えてみます。ここで注意すべきは、ボブがいくらで入札してくるのかはまったく分からないということです。
 
 まず、2 ETH で入札するときと 3 ETH で入札するときを比べてみます。
 
-![vickrey auction 3](/img/entry/vickrey-auction-3.png)
+{{< figure src="/img/entry/vickrey-auction_3.png" >}}
 
 ボブの入札額が 1 ETH or 3 ETH or 4 ETH or 5 ETH の場合、アリスは 2 ETH で入札しようが 3 ETH で入札しようが利得は変わりません。しかし、ボブの入札額が 2 ETH の場合、アリスは 2 ETH で入札するよりも 3 ETH で入札するときの方が利得が大きくなります。よって、アリスは 2 ETH で入札するよりも 3 ETH で入札すべきでしょう。
 
@@ -121,7 +121,7 @@ __「あのクマさんになら 3 ETH 支払ってもいいワ」__
 
 次に、3 ETH で入札するときと 4 ETH で入札するときを比べてみます。
 
-![vickrey auction 4](/img/entry/vickrey-auction-4.png)
+{{< figure src="/img/entry/vickrey-auction_4.png" >}}
 
 ボブの入札額が 1 ETH or 2 ETH or 3 ETH or 5 ETH の場合、アリスは 3 ETH で入札しようが 4 ETH で入札しようが利得は変わりません。しかし、ボブの入札額が 4 ETH の場合、アリスは 4 ETH で入札するよりも 3 ETH で入札するときの方が利得が大きくなります。よって、アリスは 4 ETH で入札するよりも 3 ETH で入札すべきでしょう。
 

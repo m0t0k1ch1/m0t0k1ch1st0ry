@@ -4,7 +4,7 @@ tags = [ "api", "c1pher0ne", "perl" ]
 title = "Twitter bot にリマインダー機能を実装してみた"
 +++
 
-![c1pher0ne on](/img/entry/c1pher0ne_on.png)
+{{< figure src="/img/entry/c1pher0ne-on.png" >}}
 
 表題の通り、[先日のブログ](http://m0t0k1ch1st0ry.com/blog/2013/09/30/c1pher0ne) でご紹介した [01](http://twitter.com/c1pher0ne) にリマインダー機能を実装しました。  
 これ、誰でも使えるので、みなさんもお構いなくお使いください（とか言うと一瞬でバグを見つけられそうですが）。

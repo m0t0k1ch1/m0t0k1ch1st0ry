@@ -8,7 +8,7 @@ title = "大人の事情には目を瞑って、Raiden の ICO について考�
 
 <!--more-->
 
-![raiden_1](/img/entry/raiden_1.png)
+{{< figure src="/img/entry/raiden_1.png" >}}
 
 ※この記事は ICO について取り扱いますが、ICO に関する詳しい説明は省きます。ICO に関して知識の浅い方は、現状、各メディアから発行されている記事の海に飛び込むよりも、まずは [増島先生の考察](https://www.scribd.com/document/362902074/Initial-Coin-Offering-from-Japanese-legal-and-practical-perspectives) にしっかりと目を通すのがよいかと思います。
 
@@ -147,7 +147,7 @@ __ダッチオークションコントラクト：一定数のトークンをオ
 
 [Raiden のクラウドセール用サイト](https://token.raiden.network) に表示されている、ダッチオークションの結果を示す図のスクショを撮ってきました。これをベースに説明していこうと思います。
 
-![raiden_2](/img/entry/raiden_2.png)
+{{< figure src="/img/entry/raiden_2.png" >}}
 
 図の各軸は以下を表しています。
 
@@ -517,7 +517,7 @@ __不当なトークン価格になり難い__
 
 実際、執筆時点における [CoinMarketCap](https://coinmarketcap.com/currencies/raiden-network-token) のチャートを見る限り、RDN トークンの価格変動は比較的落ち着いているように思えます。
 
-![raiden_3](/img/entry/raiden_3.png)
+{{< figure src="/img/entry/raiden_3.png" >}}
 
 民主的なプロセスやそれによって生まれるこのような性質は、今後の ICO にも活かされていくべきと考えています。
 

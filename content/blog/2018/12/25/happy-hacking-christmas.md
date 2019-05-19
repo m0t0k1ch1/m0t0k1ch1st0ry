@@ -8,7 +8,7 @@ title = "Happy Hacking Christmas"
 
 <!--more-->
 
-![santa claus](/img/entry/santa-claus.jpg)
+{{< figure src="/img/entry/santa-claus.jpg" >}}
 
 ## はじめに
 

@@ -16,7 +16,7 @@ title = "Stylish で GitHub と SoundCloud を dark にする"
 
 とりあえず、GitHub と SoundCloud を dark にしてみた。やはり、ヘビーユーズしてるものは自分色にカスタマイズしたくなっちゃう。
 
-![github-dark](/img/entry/github-dark.png)
-![soundcloud-dark](/img/entry/soundcloud-dark.png)
+{{< figure src="/img/entry/github-dark.png" >}}
+{{< figure src="/img/entry/soundcloud-dark.png" >}}
 
 いい感じ。
