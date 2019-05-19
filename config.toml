@@ -1,29 +1,14 @@
-baseurl = "https://m0t0k1ch1st0ry.com/"
-title = "m0t0k1ch1st0ry"
-theme = "ghostwriter"
-languageCode = "ja-jp"
-copyright = "m0t0k1ch1"
-googleAnalytics = "UA-40447108-1"
-disqusShortname = "m0t0k1ch1st0ry"
+baseURL            = "https://m0t0k1ch1st0ry.com/"
+title              = "m0t0k1ch1st0ry"
+copyright          = "© 2013 m0t0k1ch1"
+theme              = "h1st0ry"
+googleAnalytics    = "UA-40447108-1"
+disqusShortname    = "m0t0k1ch1st0ry"
 pygmentsCodeFences = true
-pygmentsUseClasses = true
-
-[author]
-    name = "m0t0k1ch1"
-    profile = "https://m0t0k1ch1st0ry.com/author"
+pygmentsStyle      = "monokai"
 
 [taxonomies]
     tag = "tags"
-
-[params]
-    intro = true
-    headline = "m0t0k1ch1st0ry"
-    description = "since 2013"
-    github = "https://github.com/m0t0k1ch1"
-    twitter = "https://twitter.com/m0t0k1ch1"
-    twitterId = "@m0t0k1ch1"
-    fbAppId = "171566516539742"
-    dateFormat = "2006-01-02"
 
 [blackfriday]
     hrefTargetBlank = true
