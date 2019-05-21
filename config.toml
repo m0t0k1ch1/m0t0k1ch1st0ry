@@ -1,15 +1,15 @@
-baseURL            = "https://m0t0k1ch1st0ry.com/"
-title              = "m0t0k1ch1st0ry"
-copyright          = "© 2013 m0t0k1ch1"
-theme              = "h1st0ry"
+baseURL            = 'https://m0t0k1ch1st0ry.com/'
+title              = 'm0t0k1ch1st0ry'
+copyright          = '© 2013 <a href="/author" class="has-text-grey has-text-weight-bold">m0t0k1ch1</a>'
+theme              = 'h1st0ry'
 paginate           = 10
-googleAnalytics    = "UA-40447108-1"
-disqusShortname    = "m0t0k1ch1st0ry"
+googleAnalytics    = 'UA-40447108-1'
+disqusShortname    = 'm0t0k1ch1st0ry'
 pygmentsCodeFences = true
-pygmentsStyle      = "monokai"
+pygmentsStyle      = 'monokai'
 
 [taxonomies]
-    tag = "tags"
+    tag = 'tags'
 
 [blackfriday]
     hrefTargetBlank = true
