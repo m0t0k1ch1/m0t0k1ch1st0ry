@@ -13,3 +13,6 @@ pygmentsStyle      = 'monokai'
 
 [blackfriday]
     hrefTargetBlank = true
+
+[params]
+    mainPageType = "blog"
