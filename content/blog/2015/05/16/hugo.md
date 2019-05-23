@@ -1,22 +1,19 @@
 +++
-date = "2015-05-15T23:18:39+09:00"
-tags = [ "hugo", "wercker" ]
-title = "Hugo ＋ wercker ＋ GitHub Pages でブログ管理"
+title = 'Hugo ＋ wercker ＋ GitHub Pages でブログ管理'
+tags = ['hugo', 'wercker']
+date = '2015-05-15T23:18:39+09:00'
 +++
 
 [Octopress](http://octopress.org) ＋ [GitHub Pages](https://pages.github.com) で管理してた当ブログを [Hugo](http://gohugo.io) ＋ [wercker](http://wercker.com) ＋ [GitHub Pages](https://pages.github.com/) で管理するようにしましたメモ。最近プライベートで新しいもの触れてなかったので結構楽しかった。
 
 <!--more-->
 
-<br />
 ## 移行後のソース
 
 特に隠すものとかないので全部公開してます。`config.toml` や `wercker.yml` が同じことしようとしてる方の助けになれば幸いです。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="m0t0k1ch1st0ry"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "m0t0k1ch1st0ry" >}}
 
-<br />
 ## Hugo に移行した理由
 
 他のエントリでも言われてることがほとんどだけど、一応。
@@ -60,7 +57,6 @@ $ tree -L 1
 
 いざとなればソースコード読んでがんばれる。
 
-<br />
 ## 移行作業
 
 既にいろんな人がエントリ書いてるし公式のドキュメントも十分揃ってるので、あんまり詳しくは書かない。
@@ -79,10 +75,10 @@ $ find . -type f | xargs sed -i '' -e 's/date: \([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\
 
 あとは、これと同じ手法を使って地味にいろいろ記事フォーマットを調整した。具体的には、
 
-* 記事のメタデータ部分を調整
- * 要らない要素を削除
- * YAML 形式から TOML 形式（Hugo のデフォルト）にがんばって置換（`MetaDataFormat` を指定することはできるので、別に TOML 形式にこだわる必要はないけど、郷に入っては郷に従え思想なので）
-* `<!-- more -->` だと automatic summary split が動かなかったので `more` の左右のスペースを削除
+- 記事のメタデータ部分を調整
+  - 要らない要素を削除
+  - YAML 形式から TOML 形式（Hugo のデフォルト）にがんばって置換（`MetaDataFormat` を指定することはできるので、別に TOML 形式にこだわる必要はないけど、郷に入っては郷に従え思想なので）
+- `<!-- more -->` だと automatic summary split が動かなかったので `more` の左右のスペースを削除
 
 などなど。
 
@@ -123,7 +119,6 @@ ERROR: 2015/05/15 Site's .BaseUrl is deprecated and will be removed in Hugo 0.15
 
 こんなエラーがいくつか出たのでなおしたかったけど、なおしちゃうと wercker で [hugo-build](https://app.wercker.com/#applications/54a7744c6b3ba8733de4dcde/tab/details) がコケて死ぬので、なおさずにそのままにしておいた。
 
-<br />
 ## wercker で build ＋ deploy
 
 Octopress 時代は `bundle exec rake gen_deploy` で build ＋ deploy してたけど、Hugo 自体にはそういう仕組みはないので、wercker を使ってみることにした。
@@ -131,7 +126,6 @@ Octopress 時代は `bundle exec rake gen_deploy` で build ＋ deploy してた
 [公式で紹介されてるやり方](http://gohugo.io/tutorials/automated-deployments) の通りにセットアップすると、GitHub への push にフックして自動的に build ＋ deploy が走るようになる。便利。
 
 
-<br />
 ## 結果
 
 エントリを公開する手順は以下のような感じになった。

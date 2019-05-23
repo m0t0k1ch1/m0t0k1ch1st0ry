@@ -1,7 +1,7 @@
 +++
-date = "2014-06-09"
-tags = [ "golang" ]
-title = "net/http の動きを少しだけ追ってみた - Golang"
+title = 'net/http の動きを少しだけ追ってみた - Golang'
+tags = ['golang']
+date = '2014-06-09'
 +++
 
 Golang の標準パッケージである net/http を使えば簡単に HTTP サーバーを立てることができる。とは言うものの、自分はそのへんが実際どうなってるのか全然わかってない。つらい。ということで、Golang の勉強も兼ねて net/http の動きを少しだけ追ってみることにした。
@@ -33,7 +33,6 @@ func main() {
 
 やっていることはシンプルで、`http.HandleFunc` と `http.ListenAndServe` だけ。今回はこれらについてコードを追ってみることにした。
 
-<br />
 ## 1. http.HandleFunc
 
 最初に呼んでるのがこれ。
@@ -77,7 +76,7 @@ var DefaultServeMux = NewServeMux()
 
 適当に訳すと、「入力された URL にマッチするパターンを登録されているパターン群の中から探して、それに対応する handler を呼び出す」という感じだと思う。
 
-#### 1-1. http.ServeMux.HandleFunc
+### 1-1. http.ServeMux.HandleFunc
 
 ``` go
 func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Request)) {
@@ -85,9 +84,9 @@ func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Re
 }
 ```
 
-ここで `handler` が強制的に `HandlerFunc` に変換されている。これは [以前のエントリ](http://m0t0k1ch1st0ry.com/blog/2014/06/01/golang) にも書いた。
+ここで `handler` が強制的に `HandlerFunc` に変換されている。これは [以前のエントリ]({{< ref "/blog/2014/06/01/golang.md" >}}) にも書いた。
 
-#### 1-2. http.ServeMux.Handle
+### 1-2. http.ServeMux.Handle
 
 ルーティングルールを追加している。
 
@@ -129,7 +128,6 @@ func (mux *ServeMux) Handle(pattern string, handler Handler) {
 
 実際にどうやってるかはもっと後で出てくる。
 
-<br />
 ## 2. http.ListenAndServe
 
 次に呼んでいるのがこれ。
@@ -149,7 +147,7 @@ func ListenAndServe(addr string, handler Handler) error {
 
 もうちょい先の話だけど、`handler` が `nil` のときは、`DefaultServeMux` が `handler` として使われる。
 
-#### 2-1. http.Server.ListenAndServe
+### 2-1. http.Server.ListenAndServe
 
 `net.Listen` で指定したポートを監視し、`http.Server.Serve` を呼んでいる。
 
@@ -167,7 +165,7 @@ func (srv *Server) ListenAndServe() error {
 }
 ```
 
-#### 2-2. http.Server.Serve
+### 2-2. http.Server.Serve
 
 `for` ループを起動して、リクエストを待ち受けている。リクエストが来ると `net.Listener.Accept` がそれを受けてコネクションを設立し、リクエストに対して goroutine を1つ立ち上げるようになっている。
 
@@ -203,7 +201,7 @@ func (srv *Server) Serve(l net.Listener) error {
 }
 ```
 
-#### 2-3. http.conn.serve
+### 2-3. http.conn.serve
 
 こいつはちょっと長かったので「う。。」ってなった。ということで、わかりやすくするためにいろいろ省きまくってみた。
 
@@ -221,7 +219,7 @@ func (c *conn) serve() {
 
 `http.conn.readRequest` でリクエストの内容を読み込み、`http.serverHandler.ServeHTTP` を呼んでいることがわかる。
 
-#### 2-4. http.serverHandler.ServeHTTP
+### 2-4. http.serverHandler.ServeHTTP
 
 ``` go
 type serverHandler struct {
@@ -242,7 +240,7 @@ func (sh serverHandler) ServeHTTP(rw ResponseWriter, req *Request) {
 
 上にもちらっと書いたように、`handler` が `nil` のときは `DefaultServeMux` が使われる。
 
-#### 2-5. http.ServeMux.ServeHTTP
+### 2-5. http.ServeMux.ServeHTTP
 
 最初に登録した `handler` の中からリクエストに対応するものを探して、そいつの `ServeHTTP` を呼んでいる。　
 
@@ -262,7 +260,7 @@ func (mux *ServeMux) ServeHTTP(w ResponseWriter, r *Request) {
 
 これで終わり。
 
-#### 2-6. おまけ
+### 2-6. おまけ
 
 URL に対応する `handler` を探す過程は以下のような感じ。`http.PathMatch` の中で、上にもちらっと書いた以下のルールが適用されている。
 
@@ -331,12 +329,10 @@ func pathMatch(pattern, path string) bool {
 }
 ```
 
-<br />
 ## まとめ
 
 今回はさらっと表面を舐めただけっぽいので、時間があるときにもう少し深入りしてみたい。で、ゆくゆくは俺々 WAF を思い描けるくらいになりたい。
 
-<br />
 ## 参考
 
-* [https://github.com/astaxie/build-web-application-with-golang](https://github.com/astaxie/build-web-application-with-golang)
+- [https://github.com/astaxie/build-web-application-with-golang](https://github.com/astaxie/build-web-application-with-golang)

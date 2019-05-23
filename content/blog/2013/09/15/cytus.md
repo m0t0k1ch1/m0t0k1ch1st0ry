@@ -1,7 +1,7 @@
 +++
-date = "2013-09-15"
-tags = [ "others" ]
-title = "ありがとう Cytus"
+title = 'ありがとう Cytus'
+tags = ['others']
+date = '2013-09-15'
 +++
 
 ずっと気になってたアプリ [Cytus](http://www.rayark.com/g/cytus) を昨日インストールしました。

@@ -1,7 +1,7 @@
 +++
-date = "2016-09-09T00:53:03+09:00"
-tags = [ "others" ]
-title = "Tokyo"
+title = 'Tokyo'
+tags = ['others']
+date = '2016-09-09T00:53:03+09:00'
 +++
 
 ちょっと前、東京を象徴するような作品を同じくらいのタイミングで2つくらい観て、刺激をもらったのでメモ。
@@ -17,19 +17,19 @@ title = "Tokyo"
 
 で、本題の2つの作品について。1つがリオ五輪の閉会式のパフォーマンス。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sk6uU8gb8PA" frameborder="0" allowfullscreen></iframe>
+{{< youtube sk6uU8gb8PA >}}
 
 もう1つが「LOST YOUTH」。
 
-<iframe src="https://player.vimeo.com/video/178076392" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{{< vimeo 178076392 >}}
 
 どっちも好き。
 
 リオ五輪の方は個人的にもともと好きだったアーティストの方々（椎名林檎や Rhizomatiks）が関わっていて、
 
-* 今、世界に対して東京（日本）を表現しようとした場合にこの人達に声がかかるんやなふむふむ
-* その表現の方向性は自分の趣向とある程度一致してるんやなふむふむ
-* 未来を考えたら、ここでの一致は遅れとも考えられる（なんとなく、ある波が大きくうねっているときには、次の波はもう産声を上げてる気がする）のではふむふむ
+- 今、世界に対して東京（日本）を表現しようとした場合にこの人達に声がかかるんやなふむふむ
+- その表現の方向性は自分の趣向とある程度一致してるんやなふむふむ
+- 未来を考えたら、ここでの一致は遅れとも考えられる（なんとなく、ある波が大きくうねっているときには、次の波はもう産声を上げてる気がする）のではふむふむ
 
 というふむふむ含め、うおー！ふむふむ。。うおー！！ふむふむ。。。ってなってた。
 
@@ -41,8 +41,7 @@ title = "Tokyo"
 
 1回見終わった後、無心で再生ボタンをもっかい押してた。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">LOST YOUTH、無心で2回続けて見てもうた  &gt;&gt; 日本の美大生なんて死んだほうがいいー映画監督・木村太一インタビュー <a href="https://t.co/1cJkXMPIke">https://t.co/1cJkXMPIke</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/768852130480263169">2016年8月25日</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 768852130480263169 >}}
 
 で、どちらかというと、自分の好きな表現て「LOST YOUTH」の方なんだなと。表現の裏に人間というか、生き様があるもの。綺麗なもの、汚いもの含めて誰かのありのままがあるもの。理由はわからないけど、そういうものに惹かれるんだなと。カタルシスなんだろうか。自分の身体には、世界レベルの第一線で活躍している自分の好みのアーティストの大合作より、「LOST YOUTH」の方が強く刻まれるんだなと（そもそも比べるようなものでもないとは思うけど）。
 

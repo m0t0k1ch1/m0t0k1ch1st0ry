@@ -1,19 +1,17 @@
 +++
-date = "2014-08-18"
-tags = [ "golang" ]
-title = "Golang で RSA 署名"
+title = 'Golang で RSA 署名'
+tags = ['golang']
+date = '2014-08-18'
 +++
 
 暗号化と署名の違いを最近知った若輩者なのですが、、ちょっと仕事でこのあたりのことを扱う必要が出てきたので、表題の通りのことをやってみました。
 
 <!--more-->
 
-<br />
 ## 暗号化と署名について
 
 [暗号化と署名は対称じゃないよという話](http://www.machu.jp/diary/20080302.html#p01) あたりに目を通すとよいかと思います。こちらのエントリは結構前のものですが、とてもわかりやすかったです。
 
-<br />
 ## 秘密鍵と公開鍵を準備する
 
 ``` sh
@@ -21,7 +19,6 @@ $ openssl genrsa 1024 > private-key.pem
 $ openssl rsa -pubout < private-key.pem > public-key.pem
 ```
 
-<br />
 ## 実際に署名をつくって検証してみる
 
 以下のコードで署名の作成と検証が実行できます。key へのパスはよしなに置換してください。

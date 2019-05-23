@@ -1,7 +1,7 @@
 +++
-date = "2014-12-30"
-tags = [ "movie" ]
-title = "Suicide Circle"
+title = 'Suicide Circle'
+tags = ['movie']
+date = '2014-12-30'
 +++
 
 <a href="http://www.amazon.co.jp/gp/product/B001JE5QZ0/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B001JE5QZ0&linkCode=as2&tag=k1ch1-22"><img border="0" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B001JE5QZ0&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=B001JE5QZ0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
@@ -12,7 +12,6 @@ title = "Suicide Circle"
 
 この作品自体は去年に「地獄でなぜ悪い」を観た後あたりからずっと観たいなと思ってて、観たのも数ヶ月前のこと。Hulu にも近くの TSUTAYA にもなかったので、深夜、その近くの TSUTAYA に行って「取り寄せてください」って頼んだんだけど、店員さんからしたらちょっとこわかっただろうな。。ごめんなさい。
 
-<br />
 ## はじめに
 
 いろんなレビューを読んでると、「意味を求めてはいけない」「意味がわからなくて正解」というものがちらほらある。園さん自身も [ここ](http://www.geocities.jp/anchorsline/film/jisatsu/index.html) で
@@ -22,7 +21,6 @@ title = "Suicide Circle"
 と言っちゃってるので、それは然りであって、自殺そのものや園さんの映画のつくり方（「自殺サークル」に限らず）にフォーカスした場合は自分もそうだと思う。が、この作品はそれで終わらせていいものでもないと思うので以下に続きます、という感じ。
 
 
-<br />
 ## あなたはあなたの関係者ですか？
  これが、作中で最も強烈に頭に焼きついたフレーズ。かつ、園さんがこの映画に込めた最大のメッセージだと認識している。
 
@@ -64,12 +62,10 @@ title = "Suicide Circle"
 
 作品のかなり終盤で子ども達がミツコに言い放ったフレーズ。正直これは今でもよくわかんないけど、「雨」と「雲」が、自分の中にいる「本能的・個人的な自分」と「理性的・社会的な自分」あたりを比喩しているのかなと思ったりはした。「雨」も「雲」も「水」であることには変わりないんだけど、どちらにでもなり得るんだよっていう可能性を示唆することによって、観客に向けて「で、お前はどうなの？」って問いかけているような感じ。このシーンでミツコがわけもわからず舞台の上に立たされていたのも、観客の代役としてこのフレーズを投げかけられているのだということを強調するためなのかなと思う。
 
-<br />
 ## まとめ
 
-* 勝手に生きよう
+- 勝手に生きよう
 
-<br />
 ## 最後に
 
 「非道に生きる」、園さんの映画を何本か観た後に読むと、だいぶ霧が晴れるのでオススメです。園さんが、自分の人生を表現してるっていうのが伝わってくる感じです。

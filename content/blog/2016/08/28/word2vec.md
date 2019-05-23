@@ -1,26 +1,23 @@
 +++
-date = "2016-08-28T01:52:33+09:00"
-tags = [ "python", "word2vec" ]
-title = "Python で「老人と海」を word2vec する"
+title = 'Python で「老人と海」を word2vec する'
+tags = ['python', 'word2vec']
+date = '2016-08-28T01:52:33+09:00'
 +++
 
-[これ](http://m0t0k1ch1st0ry.com/blog/2016/07/30/nlp) の続き。今回は [gensim](http://radimrehurek.com/gensim) を使って word2vec できるようにするまで。さくっと試せるよう、wikipedia とかではなくて青空文庫のデータをコーパスにする。ちなみに前回 CaboCha も準備したけど、今回は使わない。
+[これ]({{< ref "/blog/2016/07/30/nlp.md" >}}) の続き。今回は [gensim](http://radimrehurek.com/gensim) を使って word2vec できるようにするまで。さくっと試せるよう、wikipedia とかではなくて青空文庫のデータをコーパスにする。ちなみに前回 CaboCha も準備したけど、今回は使わない。
 
 <!--more-->
 
-<br />
 ## 環境
 
-[ここまで](http://m0t0k1ch1st0ry.com/blog/2016/07/30/nlp) やってある前提。
+[ここまで]({{< ref "/blog/2016/07/30/nlp.md" >}}) やってある前提。
 
-<br />
 ## 下準備
 
 ``` sh
 $ yum install nkf unzip
 ```
 
-<br />
 ## gensim をインストール
 
 ``` sh
@@ -37,7 +34,6 @@ $ pip list | grep gensim
 gensim (0.13.1)
 ```
 
-<br />
 ## 青空文庫からデータを持ってくる
 
 [青空文庫](http://www.aozora.gr.jp) から好きなデータを持ってくる。自分はヘミングウェイの [「老人と海」](http://www.aozora.gr.jp/cards/001847/card57347.html) が好きなので、迷いはない。
@@ -87,7 +83,6 @@ UTF-8 (CR)
 
 なお、ファイルの頭とケツについてる物語と関係ない説明っぽい部分は消しておいた。
 
-<br />
 ## MeCab で分かち書きする
 
 日本語は分かち書きしないと word2vec できないので、MeCab を使って分かち書きする。
@@ -127,7 +122,6 @@ $ python wakati.py rojinto_umi.txt rojinto_umi_wakati.txt
 
 >　 彼 は 老いる て いる た 。 小さな 船 で メキシコ 湾流 に 漕ぐ 出す 、 独り で 漁 を する て いる た 。 一 匹 も 釣れる ない 日 が 、 既に 八 四 日 も 続く て いる た 。 最初 の 四 〇 日 は 少年 と 一緒 だ た 。 しかし 、 獲物 の 無い まま に 四 〇 日 が 過ぎる と 、 少年 に 両親 が 告げる た 。 あの 老人 は もう 完全 に 「 サラオ 」 だ ん だ よ 、 と 。 サラオ と は 、 すっかり 運 に 見放す れる た という こと だ 。 少年 は 両親 の 言いつける 通り に 別 の ボート に 乗り換える 、 一 週間 で 三 匹 も 立派 だ 魚 を 釣り上げる た 。 老人 が 毎日 空っぽ の 船 で 帰る て くる の を 見る たび に 、 少年 の 心 は 痛む だ 。 彼 は いつも 老人 を 迎える に 行く て 、 巻く た ロープ 、 手鉤 《 ギャフ 》 、 銛 《 もる 》 、 帆 を 巻く つける た マスト など を 運ぶ 手伝い を する の だ た 。 粉 袋 で 継ぎ あて する れる た 帆 は 、 巻き上げる られる て 、 永遠 の 敗北 を 示す 旗印 の よう に 見える た 。
 
-<br />
 ## word2vec する
 
 分かち書きできたので、word2vec する。
@@ -193,7 +187,6 @@ $ python train.py rojinto_umi_wakati.txt rojinto_umi.model
 
 ちなみに、gensim の word2vec の学習部分のコードには Python 実装と Cython 実装があって、デフォルトで Cython 実装の方が使われる。Cython 実装では、GIL をリリースして並列化されていたりするので、Python 実装に比べるとかなり速い。
 
-<br />
 ## word2vec の結果を確認
 
 とりあえず、指定した単語とコサイン類似度の高い単語をリストアップするスクリプトを描いて実行してみる。

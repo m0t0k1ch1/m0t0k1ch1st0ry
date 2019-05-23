@@ -1,11 +1,10 @@
 +++
-date = "2016-08-28T02:32:24+09:00"
-tags = [ "others" ]
-title = "Stylish で GitHub と SoundCloud を dark にする"
+title = 'Stylish で GitHub と SoundCloud を dark にする'
+tags = ['others']
+date = '2016-08-28T02:32:24+09:00'
 +++
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">たしかに、AndroidStudioとか色変えれるやつは全部黒にしてる→GitHub Dark - GitHubのデザインを黒ベースに <a href="https://t.co/9RIBdMyVob">https://t.co/9RIBdMyVob</a></p>&mdash; デニール (@ryusukefuda) <a href="https://twitter.com/ryusukefuda/status/769059623009673218">2016年8月26日</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 769059623009673218 >}}
 
 ドレッドの友人がこんなリツイートしてたのを見て、[Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=ja) っていう Chrome プラグインの存在を知った。
 
@@ -17,7 +16,7 @@ title = "Stylish で GitHub と SoundCloud を dark にする"
 
 とりあえず、GitHub と SoundCloud を dark にしてみた。やはり、ヘビーユーズしてるものは自分色にカスタマイズしたくなっちゃう。
 
-![github-dark](/img/entry/github-dark.png)
-![soundcloud-dark](/img/entry/soundcloud-dark.png)
+{{< figure src="/img/entry/github-dark.png" >}}
+{{< figure src="/img/entry/soundcloud-dark.png" >}}
 
 いい感じ。

@@ -1,7 +1,7 @@
 +++
-date = "2014-06-01"
-tags = [ "golang" ]
-title = "クロージャにメソッドを実装してみる - Golang"
+title = 'クロージャにメソッドを実装してみる - Golang'
+tags = ['golang']
+date = '2014-06-01'
 +++
 
 そろそろスピリチュアルなエントリから脱却して Golang について書こうと思います。最近仕事で少し触っていたり、昨日「[Go Conference 2014 spring](http://connpass.com/event/6370) 」にも参加してきたりで Golang に対するモチベーションが上がっているので、少しずつアウトプットしていこうかと。
@@ -10,10 +10,9 @@ title = "クロージャにメソッドを実装してみる - Golang"
 
 今回はクロージャ周りで「お。。そうか〜こんなこともできるんか〜」っと思ったことについてメモ。
 
-<br />
 ## 実際にやってみる
 
-* クロージャもカスタム定義型にキャストしたりすればメソッド（インターフェース）を実装することができる
+- クロージャもカスタム定義型にキャストしたりすればメソッド（インターフェース）を実装することができる
 
 ``` go
 package main
@@ -41,8 +40,8 @@ func main() {
 }
 ```
 
-* 上記の例ではクロージャを `fmt.Stringer` インターフェースを実装した `MyFunction` にキャストすることで、`fmt.Println` で出力できるようにしている
-* こんなパターンどこで使うの…？と思ったりもするけれど、net/http の `http.HandleFunc` がそれっぽいことをしている
+- 上記の例ではクロージャを `fmt.Stringer` インターフェースを実装した `MyFunction` にキャストすることで、`fmt.Println` で出力できるようにしている
+- こんなパターンどこで使うの…？と思ったりもするけれど、net/http の `http.HandleFunc` がそれっぽいことをしている
 
 ``` go
 package main
@@ -60,10 +59,9 @@ func main() {
 }
 ```
 
-* 上記の例では `http.HandleFunc` の第二引数としてクロージャを渡しているが、これはさらに `http.ServeMux.HandlerFunc` に渡されて `http.HandlerFunc` にキャストされる
-* `http.HandlerFunc` は `ServeHTTP` というメソッドを実装しているので、渡したクロージャは結果的に `ServeHTTP` を実装したことになる
+- 上記の例では `http.HandleFunc` の第二引数としてクロージャを渡しているが、これはさらに `http.ServeMux.HandlerFunc` に渡されて `http.HandlerFunc` にキャストされる
+- `http.HandlerFunc` は `ServeHTTP` というメソッドを実装しているので、渡したクロージャは結果的に `ServeHTTP` を実装したことになる
 
-<br />
 ## まとめ
 
 絶対使いこなせないけど、知ってるといいことあってほしい

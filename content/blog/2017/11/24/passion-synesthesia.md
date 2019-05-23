@@ -1,7 +1,7 @@
 +++
-date = "2017-11-24T03:25:45+09:00"
-tags = [ "others" ]
-title = "落合陽一と情熱大陸とシナスタジア"
+title = '落合陽一と情熱大陸とシナスタジア'
+tags = ['others']
+date = '2017-11-24T03:25:45+09:00'
 +++
 
 たまには深夜のノリで思ったことをつらつらと。
@@ -10,8 +10,7 @@ title = "落合陽一と情熱大陸とシナスタジア"
 
 諸々のきっかけは、テレビ持ってないけど落合さんの情熱大陸観たいなと思ってたところに流れてきた [@tabbata](https://twitter.com/tabbata) さんのツイート。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">とても面白かったです。＞情熱大陸<br>＃978「科学者・落合陽一」<a href="https://twitter.com/hashtag/TVer?src=hash&amp;ref_src=twsrc%5Etfw">#TVer</a> <a href="https://twitter.com/hashtag/%E6%83%85%E7%86%B1%E5%A4%A7%E9%99%B8?src=hash&amp;ref_src=twsrc%5Etfw">#情熱大陸</a><br> <a href="https://t.co/UCU6iyi6pa">https://t.co/UCU6iyi6pa</a></p>&mdash; 田端　信太郎 (@tabbata) <a href="https://twitter.com/tabbata/status/933460560057790464?ref_src=twsrc%5Etfw">2017年11月22日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 933460560057790464 >}}
 
 TVer なんて便利なものがあるんすな。おかげで無事観れました。
 
@@ -29,7 +28,7 @@ TVer なんて便利なものがあるんすな。おかげで無事観れまし
 
 これと同様の現象、結構起こる（よね？）。というか、「起こせる」と言えるくらい再現性が高いものもある。例えば FFT のイントロ。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2Im6eT9dQB8?rel=0" frameborder="0" allowfullscreen></iframe>
+{{< youtube 2Im6eT9dQB8 >}}
 
 これは音楽聴くだけでもブワッとくる。音楽を聴いて、音楽以外の何かを感じ取っている。この現象、すごく気持ちいいんだけど不思議だなあと思っていた。この感覚を生み出せるようなものがつくれたらおもしろいだろうなと思いつつも、「この感覚」をなんと呼べばよいものやら。自分はこの現象を表現する言葉を持っていなかったので、ずっとモヤモヤしていた。
 
@@ -47,4 +46,4 @@ TVer なんて便利なものがあるんすな。おかげで無事観れまし
 
 以上、深夜のコインランドリーより、BGM は Chilly Source Radio Vol. 59 でお送りしました。
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/357143153&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+{{< soundcloud track 357143153 >}}

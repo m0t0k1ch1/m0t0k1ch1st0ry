@@ -1,13 +1,12 @@
 +++
-date = "2015-11-22T17:32:45+09:00"
-tags = [ "golang" ]
-title = "Slack の Outgoing WebHook をハンドリングするくん"
+title = 'Slack の Outgoing WebHook をハンドリングするくん'
+tags = ['golang']
+date = '2015-11-22T17:32:45+09:00'
 +++
 
 Golang で API サーバー立てる練習として、Slack の Outgoing WebHook を捕まえる対話式の bot をつくっていて、その bot 固有の機能でない部分は切り離せるわ〜〜〜と思って、えいやっと書いた。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="potto"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "potto" >}}
 
 <!--more-->
 
@@ -41,7 +40,7 @@ func main() {
 
 実際に対話すると、以下のような感じ。
 
-![potto](/img/entry/potto.png)
+{{< figure src="/img/entry/potto.png" >}}
 
 かわいい。
 
@@ -49,8 +48,6 @@ func main() {
 
 ksatriya も、これ以上は仕様レベルでアップデートすることないなあという感じになってきたので、テスト書いていきたい（遅い）。と思ったら、
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">ksatriya、きちんとテスト書くかあと思ったけど HTML 吐いてるとこめんどくさそう。。。と思ったし、golang で HTML 吐くのつらそうなので text と json だけ吐くようにしよ</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/668300561863675904">November 22, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 668300561863675904 >}}
 
 という気持ちになったので、HTML のレンダリング機能とはさようならした。合掌。
-

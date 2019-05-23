@@ -1,20 +1,17 @@
 +++
-date = "2014-07-05"
-tags = [ "unity" ]
-title = "Unity 始めました"
+title = 'Unity 始めました'
+tags = ['unity']
+date = '2014-07-05'
 +++
 
 冷やし中華始める前に [Unity](http://japan.unity3d.com) 始めてしまった。Golang と合わせて勉強時間しっかり確保していきたい。とりあえずチュートリアル通りブロック崩しをつくってみた。思ってたより簡単にできていい感じ。
 
 <!--more-->
 
-![tutorial 3D](/img/entry/unity_3d.gif)
+{{< figure src="/img/entry/unity-3d.gif" >}}
 
-<br />
 ## ※追記
 
-<blockquote class="twitter-tweet" lang="ja"><p>なんでGIFアニメなんだ遊べないじゃないか</p>&mdash; Ichinose Shogo (@shogo82148) <a href="https://twitter.com/shogo82148/statuses/485370987341307904">2014, 7月 5</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 485370987341307904 >}}
 
-<br />
 とのことでしたので、[ここ](/unity/Tutorial3D.html) で遊べるようにしました。

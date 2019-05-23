@@ -1,14 +1,13 @@
 +++
-date = "2017-01-14T12:29:55+09:00"
-tags = [ "hugo", "wercker" ]
-title = "最近の Hugo + wercker + GitHub pages で嵌ったこと"
+title = '最近の Hugo + wercker + GitHub pages で嵌ったこと'
+tags = ['hugo', 'wercker']
+date = '2017-01-14T12:29:55+09:00'
 +++
 
-[このブログを Hugo + wercker + GitHub pages で管理するようにした](http://m0t0k1ch1st0ry.com/blog/2015/05/16/hugo) のが結構昔だったので、box が未だにクラシックな `wercker/default` だった。最新版に合わせとこっかなと軽い気持ちで application を登録しなおしたら盛大に嵌ったのでメモ。
+[このブログを Hugo + wercker + GitHub pages で管理するようにした]({{< ref "/blog/2015/05/16/hugo.md" >}}) のが結構昔だったので、box が未だにクラシックな `wercker/default` だった。最新版に合わせとこっかなと軽い気持ちで application を登録しなおしたら盛大に嵌ったのでメモ。
 
 <!--memo-->
 
-<br />
 ## 嵌ったこと
 
 大きくは 2 つ。
@@ -23,7 +22,6 @@ title = "最近の Hugo + wercker + GitHub pages で嵌ったこと"
 
 ignore branch 的な設定ができないと、gh-pages branch への push（deploy）にも反応して、無駄に build が実行されてしまう。で、`public` 以下には `wercker.yml` が存在しないので、その build がこけてしまうという。つらい。
 
-<br />
 ## 解決策
 
 無理やり感は否めないが、
@@ -34,7 +32,7 @@ ignore branch 的な設定ができないと、gh-pages branch への push（dep
 
 ようにして、gh-pages branch に反応した場合は build の手前で workflow が終了するようにした。wercker 上では以下のような感じ。
 
-![wercker.png](/img/entry/wercker.png)
+{{< figure src="/img/entry/wercker.png" >}}
 
 そもそも workflow が走ってること自体がもやっとするのは変わらないけど、こけなくはなった。
 

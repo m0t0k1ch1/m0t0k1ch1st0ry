@@ -1,18 +1,18 @@
 +++
-date = "2017-12-11T03:47:23+09:00"
-tags = [ "ico", "raiden", "ethereum", "solidity", "blockchain" ]
-title = "大人の事情には目を瞑って、Raiden の ICO について考える"
+title = '大人の事情には目を瞑って、Raiden の ICO について考える'
+tags = ['ico', 'raiden', 'ethereum', 'solidity', 'blockchain']
+date = '2017-12-11T03:47:23+09:00'
+images = ['img/entry/raiden_1.png']
 +++
 
 この記事は [Ethereum Advent Calendar 2017](https://qiita.com/advent-calendar/2017/ethereum) の 11 日目の記事です。表題の通り、この記事では、今年行われた [Raiden](https://raiden.network) の ICO と向き合います。敢えて Raiden そのものとも向き合いません。ご承知ください。
 
 <!--more-->
 
-![raiden_1](/img/entry/raiden_1.png)
+{{< figure src="/img/entry/raiden_1.png" >}}
 
 ※この記事は ICO について取り扱いますが、ICO に関する詳しい説明は省きます。ICO に関して知識の浅い方は、現状、各メディアから発行されている記事の海に飛び込むよりも、まずは [増島先生の考察](https://www.scribd.com/document/362902074/Initial-Coin-Offering-from-Japanese-legal-and-practical-perspectives) にしっかりと目を通すのがよいかと思います。
 
-<br />
 ## 0. 目次
 
 - 1. 前置き
@@ -31,10 +31,8 @@ title = "大人の事情には目を瞑って、Raiden の ICO について考�
 - 6. 最後に
 - 7. 参考
 
-<br />
 ## 1. 前置き
 
-<br />
 ### 1-1. なぜこの記事を書こうと思ったか
 
 この質問に答える前に、まず、ICO に対する自分のスタンスをある程度明確にしておこうかなと思います（とは言え、これが本題ではないので、ほどほどに）。
@@ -75,7 +73,6 @@ __今年行われた ICO の中で、そのクラウドセール形式が最も�
 
 もちろん、Raiden のクラウドセールが自分の理想形というわけではないのですが、テーマとして扱う価値は十分にあると考えています。
 
-<br />
 ### 1-2. Raiden の ICO に着目した理由
 
 自分にとって、なぜ Raiden のクラウドセールが最も印象的なスキームだったのかと言うと、
@@ -88,7 +85,6 @@ __民主的なトークン価値（時価総額）決定プロセスとして、
 
 なお、Raiden よりも前にダッチオークション形式のクラウドセールを実施したプロジェクトとしては [Gnosis](https://gnosis.pm) が挙げられますが、こちらは開始 10 分で終了、売れ残った大量のトークンが Gnosis チームに引き渡されたということもあり、結果的にはうまく機能しなかったという認識です（自分が知らないだけで他にも事例があるかもしれませんので、知っている方は是非教えてください）。
 
-<br />
 ### 1-3. 大人の事情に目を瞑った理由
 
 本題に入る前にもう 1 つ。表題に入れた「大人の事情には目を瞑って」というフレーズの意図についても言及しておこうと思います。
@@ -103,8 +99,7 @@ __ICO の意義や必然性ではなく、クラウドセールのスキーム�
 
 実際、Vitalik は「反対した」というよりも、[「自身の立場を明確にした」](https://twitter.com/VitalikButerin/status/911217371158683649) という印象です。以下のツイートで、do not blame them とも言っています。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="en" dir="ltr">I wish they didn&#39;t but I totally understand why they did and do not blame them. Hence (ii) as my small part in providing alternatives</p>&mdash; Vitalik Buterin (@VitalikButerin) <a href="https://twitter.com/VitalikButerin/status/911300771819352064?ref_src=twsrc%5Etfw">2017年9月22日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 911300771819352064 >}}
 
 ref. [Vitalik Buterin Responds To Raiden ICO](https://www.ethnews.com/vitalik-buterin-responds-to-raiden-ico)
 
@@ -112,7 +107,6 @@ ref. [Vitalik Buterin Responds To Raiden ICO](https://www.ethnews.com/vitalik-bu
 
 前置きが長くなりましたが、以下、本題に入っていきます。
 
-<br />
 ## 2. そもそもダッチオークションとは？
 
 [Wikipedia](https://ja.wikipedia.org/wiki/%E7%AB%B6%E5%A3%B2) によると、
@@ -129,7 +123,6 @@ __通常のオークションとは逆に、価格が順番に下がっていく
 
 Gnosis や Raiden は、この仕組みをトークンのクラウドセールに応用したというわけです。しかし、トークンのクラウドセールの場合、誰か 1 人が入札したら終了というわけではないので、少し異なる性質も持ち合わせていると言えるでしょう。以下でその仕組みを詳しく見ていきます。
 
-<br />
 ## 3. Raiden のダッチオークションの仕組み
 
 何はともあれ、Raiden のダッチオークションがどのような仕組みなのかを正しく把握するところから始めようと思います。
@@ -149,14 +142,13 @@ __ダッチオークションコントラクト：一定数のトークンをオ
 
 以下、このコメントを前半部分と後半部分に分け、それぞれ詳しく説明していきたいと思います。
 
-<br />
 ### 3-1. Raiden のダッチオークションそのものについて
 
 「一定数のトークンをオークションを利用して分配する」とさらっと書かれていましたが、これはどういうことでしょうか？
 
 [Raiden のクラウドセール用サイト](https://token.raiden.network) に表示されている、ダッチオークションの結果を示す図のスクショを撮ってきました。これをベースに説明していこうと思います。
 
-![raiden_2](/img/entry/raiden_2.png)
+{{< figure src="/img/entry/raiden_2.png" >}}
 
 図の各軸は以下を表しています。
 
@@ -336,7 +328,6 @@ function finalizeAuction() public atStage(Stages.AuctionStarted)
 
 分配処理を行う function についての説明は割愛しますが、詳しく知りたい方は、是非 [実際のコントラクト](https://etherscan.io/address/0xb5e5585d0057501c91c48094029a6f4fb10b5a01#code)を見てみてください。なお、コントラクトで実際にどのような値が使われたかも [こちら](https://etherscan.io/address/0xb5e5585d0057501c91c48094029a6f4fb10b5a01#readContract) から確認できます。例えば `final_price` は 2190632199853296 となっていますので、最終的な RDN トークンの価格は約 0.0022 ETH/RDN だったということがわかります。
 
-<br />
 ### 3-2. Gnosis のダッチオークションとの違いについて
 
 `DutchAuction` コントラクトの冒頭には、「一定数のトークンが売れた時点でオークションが終了すること」が、Gnosis のダッチオークションとの主な違いであると記載されていましたが、Gnosis のダッチオークションの終了条件はどうなっていたのでしょうか？実際にコントラクトを見て確認してみようと思います。
@@ -502,7 +493,6 @@ $$
 
 なお、前述した通り、Raiden のダッチオークションでは総トークン販売量が全て入札者に対して分配されるため、この売れ残り問題は発生しません。これは大きな違いと言えるでしょう。
 
-<br />
 ## 4. Raiden のダッチオークションについて考える
 
 ここまでで見てきた仕組みを踏まえつつ、一般的なクラウドセールと比較しながら、Raiden が実施したダッチオークション形式のクラウドセールの性質について考えてみようと思います。なお、ここで言う「一般的なクラウドセール」は、以下のようなものを指すこととします。
@@ -514,7 +504,6 @@ $$
 
 それでは、以下、ダッチオークション形式のクラウドセールの性質について、自分が重要だと感じたポイントを 3 つに分けて説明しながら、自分の考えを述べていこうと思います。
 
-<br />
 ### 4-1. 民主的なトークンの価値決定プロセス
 
 前述した通り、ダッチオークションは入札者側が終了タイミングを決定する権利を持っており、終了した時点でトークンの価格が決定します。これは、一般的なクラウドセールと比較すると、
@@ -529,7 +518,7 @@ __不当なトークン価格になり難い__
 
 実際、執筆時点における [CoinMarketCap](https://coinmarketcap.com/currencies/raiden-network-token) のチャートを見る限り、RDN トークンの価格変動は比較的落ち着いているように思えます。
 
-![raiden_3](/img/entry/raiden_3.png)
+{{< figure src="/img/entry/raiden_3.png" >}}
 
 民主的なプロセスやそれによって生まれるこのような性質は、今後の ICO にも活かされていくべきと考えています。
 
@@ -547,7 +536,6 @@ __不当なトークン価格になり難い__
 
 ref. [GnosisのICOモデルは伝説を残すのか？](http://coinandpeace.hatenablog.com/entry/gnosis_ICO)
 
-<br />
 ### 4-2. 難解な仕組み
 
 うん。難しいですよね。この記事の説明に対して「へ？」ってなっている方も多いと思いますが、自分も最初に [Raiden チームの説明](https://medium.com/@raiden_network/the-raiden-token-auction-explained-1cc0c7946b26) を読んだとき、「へ？」ってなりました。
@@ -572,7 +560,6 @@ __どれだけトークンの時価総額決定プロセスに高尚な民主性
 
 個人的には、4-1. で述べたような民主性を保ちながらも、よりシンプルな仕組みで稼働するスキームが必要なのではないかと考えています。
 
-<br />
 ### 4-3. 重要な要素の不確定性
 
 重要な要素とは、最終的なトークンの価格のことです。これは参加者にとって「気になる」値でしょう。ダッチオークションが終了するまでこれが不確定であるということは、
@@ -594,14 +581,12 @@ __この不確定性は、エンターテイメント性と言い換えること
 
 この辺りのことを加味すると、巨額の資金調達だけに留まらない ICO の在り方というのも見えてくるのではないでしょうか。
 
-<br />
 ## 5. まとめ
 
 - 自分の ICO に対するスタンスを踏まえつつ、Raiden の ICO（特にそのクラウドセールのスキーム）に着目した理由について説明しました
 - 実際のスマートコントラクトの内容を踏まえつつ、Raiden が実施したダッチオークション形式のクラウドセールの仕組みについて説明し、Gnosis のそれと比較することで理解を深めました
 - ダッチオークション形式のクラウドセールについて、自分が重要だと感じた 3 つの性質について説明するとともに、自分の考えを述べました
 
-<br />
 ## 6. 最後に
 
 詐欺的なプロジェクトであっても巨額の資金調達が行えてしまう、そんな異常な ICO バブルも各国における規制の影響などによって落ち着きを見せ始めている昨今、ICO を取り巻く状況は刻々と変化しています。しかし、ICO がイノベーションであるということに変わりはないと思います。
@@ -610,7 +595,6 @@ __この不確定性は、エンターテイメント性と言い換えること
 
 中国のリープフロッグをきちんと受け止めつつ、次は日本がリープフロッグする番です。イノベーションの芽を枯らせてしまわぬよう、自分も 1 プレイヤーとして、引き続き ICO と向き合っていこうと思います。
 
-<br />
 ## 7. 参考
 
 - [Initial Coin Offering - from Japanese legal and practical perspectives](https://www.scribd.com/document/362902074/Initial-Coin-Offering-from-Japanese-legal-and-practical-perspectives)

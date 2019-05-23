@@ -1,7 +1,7 @@
 +++
-date = "2013-04-30"
-tags = [ "emacs", "perl" ]
-title = "Emacs で Perl 描きたい"
+title = 'Emacs で Perl 描きたい'
+tags = ['emacs', 'perl']
+date = '2013-04-30'
 +++
 
 Vim と Emacs どっちも触れないのにエンジニアなんですか？へっ？とか言われるのは心にぐさっとくるので、Emacs でなんとか Perl を書けるようにしてみました。
@@ -12,52 +12,48 @@ Vim と Emacs どっちも触れないのにエンジニアなんですか？へ
 
 あ、Vim じゃなくて Emacs を選んだ理由は特にないです。気分です。
 
-<br />
 ## 方針
 
-#### 余分な設定書きたくない
+### 余分な設定書きたくない
 
-* よくわかんない他人の設定はコピペしたくない
-* とりあえず最低限でシンプルな感じが良い
+- よくわかんない他人の設定はコピペしたくない
+- とりあえず最低限でシンプルな感じが良い
 
-#### ELPA 使ってみたい
+### ELPA 使ってみたい
 
-* ELPA にあるものは ELPA でインストール
-* ELPA にないものは auto-install でインストール
+- ELPA にあるものは ELPA でインストール
+- ELPA にないものは auto-install でインストール
 
-#### Perl と Markdown は書きたい
+### Perl と Markdown は書きたい
 
-* 仕事柄、Perl は必須
-* Markdown はこのブログ執筆用
+- 仕事柄、Perl は必須
+- Markdown はこのブログ執筆用
 
-<br />
 ## インストールした Elisp
 
-* init-loader
+- init-loader
 
-#### auto-install でインストール
+### auto-install でインストール
 
-* perl-completion
+- perl-completion
 
-#### ELPA でインストール
+### ELPA でインストール
 
-* anything
-* auto-complete
-* auto-install
-* flymake
-* markdown-mode
+- anything
+- auto-complete
+- auto-install
+- flymake
+- markdown-mode
 
-<br />
 ## できあがった設定
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="dotfiles"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "dotfiles" >}}
 
-#### 設定概要
+### 設定概要
 
-* 設定ファイルは分割して init-loader で読み込む
-* cperl-mode の hook として、auto-complete + perl-completion + flymake
-* .md と .markdown は markdown-mode で開く
+- 設定ファイルは分割して init-loader で読み込む
+- cperl-mode の hook として、auto-complete + perl-completion + flymake
+- .md と .markdown は markdown-mode で開く
 
 ``` lisp
 (defalias 'perl-mode 'cperl-mode)
@@ -98,18 +94,16 @@ Vim と Emacs どっちも触れないのにエンジニアなんですか？へ
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 ```
 
-<br />
 ## まとめ
 
-* 目的通り、最低限のものがにシンプルにまとまった気がする
-* 次はキーバインドちゃんと覚えます←
-* 開発環境は仕事の効率に大きく影響するし、月1くらいで見直していきたい
+- 目的通り、最低限のものがにシンプルにまとまった気がする
+- 次はキーバインドちゃんと覚えます←
+- 開発環境は仕事の効率に大きく影響するし、月1くらいで見直していきたい
 
-<br />
 ## 参考
 
-* [Perl Hacks on Emacs](http://typester.stfuawsc.com/slides/perlcasual2/start.html)
-  * インストールする Elisp を決める際に参考になりました
-  * 基本的な設定の部分も [typesterさんのもの](https://github.com/typester/emacs-config/blob/master/conf/init.el) を参考にさせていただきました
-* [perl-completion をインストールした](http://d.hatena.ne.jp/a666666/20100524/1274634774)
-  * auto-complete と perl-completion がうまく動かなかったときに現れた救世主
+- [Perl Hacks on Emacs](http://typester.stfuawsc.com/slides/perlcasual2/start.html)
+  - インストールする Elisp を決める際に参考になりました
+  - 基本的な設定の部分も [typesterさんのもの](https://github.com/typester/emacs-config/blob/master/conf/init.el) を参考にさせていただきました
+- [perl-completion をインストールした](http://d.hatena.ne.jp/a666666/20100524/1274634774)
+  - auto-complete と perl-completion がうまく動かなかったときに現れた救世主

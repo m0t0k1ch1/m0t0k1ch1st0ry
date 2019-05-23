@@ -1,18 +1,16 @@
 +++
-date = "2017-11-18T21:00:45+09:00"
-tags = [ "zabbix", "cassandra" ]
-title = "Cassandra 監視用の Zabbix template"
+title = 'Cassandra 監視用の Zabbix template'
+tags = ['zabbix', 'cassandra']
+date = '2017-11-18T21:00:45+09:00'
 +++
 
 主要項目に絞ってつくったつもり。ご自由にお使いください。
 
 <!--more-->
 
-<br />
 ## 成果物
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="zabbix-cassandra-template"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "zabbix-cassandra-template" >}}
 
 細かい解説はしないが、用意したグラフ名を以下に列挙。名前からお察しください。
 
@@ -28,14 +26,12 @@ title = "Cassandra 監視用の Zabbix template"
 - Cassandra: throughput
 - Cassandra: write latency
 
-<br />
 ## 参考にしたもの・利用したもの
 
 JMX 経由で取得できる項目を [公式サイト](http://cassandra.apache.org/doc/latest/operating/metrics.html) で調べて、Zabbix に登録する前に [Command-line JMX Client](http://crawler.archive.org/cmdline-jmxclient) を利用して本当に値が取得できるか確かめた。
 
 シュッと値が欲しいときに Command-line JMX Client は便利。
 
-<br />
 ## ややこしかったこと
 
 TotalLatency と Latency。
@@ -62,7 +58,6 @@ $ java -jar cmdline-jmxclient-0.10.3.jar - 127.0.0.1:7199 org.apache.cassandra.m
 
 これはどっちがどっちかわかんなくなる人が多いのでは。。？上記は Write に関してだが、当然 Read でも同様。もう少し直感的にわかりやすい命名にできなかったのだろうか。
 
-<br />
 ## やり残し
 
 Table Metrics を discovery 使っていい感じに取得したい。

@@ -1,14 +1,14 @@
 +++
-date = "2018-09-29T03:43:35+09:00"
-tags = [ "cryptoeconomics", "economics", "blockchain" ]
-title = "Vickrey auction に見る incentive compatibility"
+title = 'Vickrey auction に見る incentive compatibility'
+tags = ['cryptoeconomics', 'economics', 'blockchain']
+date = '2018-09-29T03:43:35+09:00'
+images = ['img/entry/vickrey-auction_1.png']
 +++
 
 タイトルからは小難しそうな感が漂っていますが、見かけ倒しです。
 
 <!--more-->
 
-<br />
 ## 0. 目次
 
 - 1. はじめに
@@ -18,16 +18,14 @@ title = "Vickrey auction に見る incentive compatibility"
 - 5. 次回予告
 - 6. 参考文献
 
-<br />
 ## 1. はじめに
 
-[前回の記事](https://m0t0k1ch1st0ry.com/blog/2018/09/13/cryptoeconomics) で、
+[前回の記事]({{< ref "/blog/2018/09/13/cryptoeconomics.md" >}}) で、
 
 > 気が変わらなければ、次回は、メカニズムデザインにおいて重要な概念である incentive compatibility について、具体的な事例を交えながら整理する予定です。cryptoeconomics というよりは、まずはその土台となるミクロ経済学（市場理論、ゲーム理論、メカニズムデザインなど）に寄り添っていこうというスタンスです。
 
-と書きましたが、気が変わらなかったので、この通りの内容でいこうと思います。ここで言っている「具体的な事例」としては、記事タイトルにもある通り、簡単化した Vickrey auction を用います。Vickrey auction については [以前の記事でもさらりと触れました](https://m0t0k1ch1st0ry.com/blog/2018/08/05/cryptoeconomics) が、今回はもっとわかりやすく具体的な説明を試みます。
+と書きましたが、気が変わらなかったので、この通りの内容でいこうと思います。ここで言っている「具体的な事例」としては、記事タイトルにもある通り、簡単化した Vickrey auction を用います。Vickrey auction については [以前の記事でもさらりと触れました]({{< ref "/blog/2018/08/05/cryptoeconomics.md" >}}) が、今回はもっとわかりやすく具体的な説明を試みます。
 
-<br />
 ## 2. incentive compatibility
 
 まず、そもそも incentive compatibility（誘因両立性）ってなんぞや？という方も多いと思うので、これについて軽く説明したいと思います（よりフォーマルな定義については今後のアウトプットの中で突っ込んでいければと思います）。
@@ -64,12 +62,11 @@ __強い incentive compatibility が dominant strategy incentive compatibility�
 
 さて。今回の目的は Vickrey auction の仕組みを通じて、incentive compatibility（厳密には strategyproofness）を「より直感的に」理解することなので、小難しい文章と戯れるのはここまでにして、早速、具体的な Vickrey auction の話に移ります。
 
-<br />
 ## 3. simplified Vickrey auction
 
 今回は、簡単化した Vickrey auction を用いて解説します。まず、そのルールについて説明します。
 
-![vickrey auciton 1](/img/entry/vickrey-auction-1.png)
+{{< figure src="/img/entry/vickrey-auction_1.png" >}}
 
 登場人物はアリスとボブの 2 人です。2 人は商品（クマさん）に対して入札額を決め、入札します。そして、入札額が高かった方が落札します。と、これだけ聞くと、一般的なファーストプライス・オークションと同じように思えますが、Vickrey auction では、これに加えて、さらに以下のようなルールが追加されます。
 
@@ -111,13 +108,13 @@ __「あのクマさんになら 3 ETH 支払ってもいいワ」__
 
 さて。利得の計算方法はイメージできたと思うので、全てのパターンにおけるアリスの利得を表で整理してみます。
 
-![vickrey auction 2](/img/entry/vickrey-auction-2.png)
+{{< figure src="/img/entry/vickrey-auction_2.png" >}}
 
 この表を見ながら、「あのクマさんになら 3 ETH 支払ってもいいワ」と考えているアリスが、いくらで入札すべきなのか考えてみます。ここで注意すべきは、ボブがいくらで入札してくるのかはまったく分からないということです。
 
 まず、2 ETH で入札するときと 3 ETH で入札するときを比べてみます。
 
-![vickrey auction 3](/img/entry/vickrey-auction-3.png)
+{{< figure src="/img/entry/vickrey-auction_3.png" >}}
 
 ボブの入札額が 1 ETH or 3 ETH or 4 ETH or 5 ETH の場合、アリスは 2 ETH で入札しようが 3 ETH で入札しようが利得は変わりません。しかし、ボブの入札額が 2 ETH の場合、アリスは 2 ETH で入札するよりも 3 ETH で入札するときの方が利得が大きくなります。よって、アリスは 2 ETH で入札するよりも 3 ETH で入札すべきでしょう。
 
@@ -125,7 +122,7 @@ __「あのクマさんになら 3 ETH 支払ってもいいワ」__
 
 次に、3 ETH で入札するときと 4 ETH で入札するときを比べてみます。
 
-![vickrey auction 4](/img/entry/vickrey-auction-4.png)
+{{< figure src="/img/entry/vickrey-auction_4.png" >}}
 
 ボブの入札額が 1 ETH or 2 ETH or 3 ETH or 5 ETH の場合、アリスは 3 ETH で入札しようが 4 ETH で入札しようが利得は変わりません。しかし、ボブの入札額が 4 ETH の場合、アリスは 4 ETH で入札するよりも 3 ETH で入札するときの方が利得が大きくなります。よって、アリスは 4 ETH で入札するよりも 3 ETH で入札すべきでしょう。
 
@@ -139,7 +136,6 @@ __アリスは「あのクマさんになら 3 ETH 支払ってもいいワ」�
 
 以上、（簡単化はしていますが）Vickrey auction を通じて、「正直者が一番得するようなルールになっている（前述した strategyproofness を満たしている）」とはどういうことかを理解していただけたかと思います。
 
-<br />
 ## 4. おまけ：Vickrey auction on Blockchain
 
 せっかくなので、Vickrey auction をブロックチェーン上で（例えば、Ethereum のスマートコントラクトで）実装することについても検討してみます。
@@ -176,7 +172,6 @@ __アリスは「あのクマさんになら 3 ETH 支払ってもいいワ」�
 
 __このように、理論的には画期的なメカニズムがあったとしても、理想的な性質を保ったまま分散型の世界で機能させることは予想以上に難しいわけです。裏を返せば、この難しさが cryptoeconomics を新しい学問足らしめているとも言えるのではないでしょうか。__
 
-<br />
 ## 5. 次回予告
 
 実は、今回取り上げた Vickrey auction は、グローヴスメカニズムと呼ばれるメカニズムの一例に過ぎません。すなわち、より抽象的なグローヴスメカニズムというスキームを理解することで、Vickrey auction のような strategyproofness を満たした別のゲームを設計できるというわけです。凄いですね。ということで、次回以降は、
@@ -186,7 +181,6 @@ __このように、理論的には画期的なメカニズムがあったとし
 
 あたりにチャレンジしていければなと考えています。
 
-<br />
 ## 6. 参考資料
 
 - [セカンドプライスオークション―正直者は絶対に損をしない―](http://www.toyo.ac.jp/nyushi/column/video-lecture/20160517_01.html)

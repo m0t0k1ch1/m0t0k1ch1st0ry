@@ -1,15 +1,14 @@
 +++
-date = "2017-11-12"
-tags = [ "ethereum", "blockchain", "docker" ]
-title = "Docker で private かつ standalone な Ethereum ノードを立てる"
+title = 'Docker で private かつ standalone な Ethereum ノードを立てる'
+tags = ['ethereum', 'blockchain', 'docker']
+date = '2017-11-12'
 +++
 
 手元の環境で表題の通りのことがやりたいと思ったのだが、要望を満たすような最小限お手軽ツールが見当たらなかったので自分で書いてみた。
 
 <!--more-->
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="ethereum-docker"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "ethereum-docker" >}}
 
 README に書いてある通り、`docker-compose up -d` するだけで private かつ standalone な Ethereum ノードが立ち上がり、マイニングが始まる。なお、起動コマンドは以下。
 

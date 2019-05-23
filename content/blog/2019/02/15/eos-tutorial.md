@@ -1,7 +1,7 @@
 +++
-date = "2019-02-15T11:20:33+09:00"
-tags = [ "eos", "c++", "blockchain" ]
-title = "EOSIO Developer Portal チュートリアルの軌跡"
+title = 'EOSIO Developer Portal チュートリアルの軌跡'
+tags = ['eos', 'cpp', 'blockchain']
+date = '2019-02-15T11:20:33+09:00'
 +++
 
 ここ最近、[EOSIO Developer Portal のチュートリアル](https://developers.eos.io/eosio-home/docs) をちょこちょこ進めながら [steemit](https://steemit.com/@m0t0k1ch1) にメモを投稿していたのですが、それが終わったので、全てのメモへのリンクを以下にまとめておきます。
@@ -25,7 +25,6 @@ title = "EOSIO Developer Portal チュートリアルの軌跡"
 
 チュートリアルには、contract 全体のコードが載っていないパート（例えば、custom dispatcher に関するパートなど）もあるため、そういうパートに関しては contract として成立しているサンプルコードを書くことを意識しました。書いたサンプルコードは以下にまとめてあります。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="eos-tutorial"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "eos-tutorial" >}}
 
 英語に抵抗がなく、本家チュートリアルをスラスラ進められるような方に上記メモ群は不要かなと思いますが、サンプルコードに関しては、前述した事情を踏まえると、多少の手助けになるかなとは思います。同じ道を辿る方のお役に立てれば幸いです。

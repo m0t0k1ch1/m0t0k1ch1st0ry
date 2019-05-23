@@ -1,17 +1,15 @@
 +++
-date = "2016-09-10T01:23:35+09:00"
-tags = [ "rpm", "golang" ]
-title = "Golang で書いた何かを RPM パッケージにして yum install したい"
+title = 'Golang で書いた何かを RPM パッケージにして yum install したい'
+tags = ['rpm', 'golang']
+date = '2016-09-10T01:23:35+09:00'
 +++
 
 表題のようなことをやる必要が出てきたので、その検証をした。
 
-<br />
 ## 事前調査
 
 「rpm package つくり方」でググるとこから始めるレベルの知識しかなく、先行きがだいぶ怪しまれたので、きちんと動いてる目指すべき状態を明確にしたいなと思った。で、身近に同じようなことやってるプロダクトはないだろうかと考えたとき、[mackerel-agent](https://github.com/mackerelio/mackerel-agent) が真っ先に頭に浮かんだので、迷う度に参考にさせていただきました。ありがとうございます🙏
 
-<br />
 ## 下準備
 
 クロスコンパイルできる環境が整っていない場合、整えておく。例えば macbook で homebrew を使っているような場合は、以下のようにオプションをつけて go をインストールすればいける。
@@ -22,7 +20,6 @@ $ brew install go --cross-compile-common
 
 一旦はさくっと検証だけしたかったので `--cross-compile-common` にしたが、全部入りの `--cross-compile-all` もあるので、それはお好きな方でどうぞ。
 
-<br />
 ## rpmbuild するための準備
 
 ### SOURCES
@@ -103,7 +100,6 @@ package
     └── go-rpm-sample.spec
 ```
 
-<br />
 ## CentOS 6 で rpmbuild する
 
 まずは必要なものを yum で入れる。
@@ -169,7 +165,6 @@ Stopping go-rpm-sample:                                    [  OK  ]
 
 大丈夫そう。
 
-<br />
 ## yum install できるようにする
 
 yum 用の repo をつくって、先ほどこしらえた RPM パッケージを yum install できるようにするところまでやってみる。
@@ -196,8 +191,7 @@ $ createrepo repo
 
 で、今回はこの repo を GitHub に置いて、gh-pages ブランチを切っておいた。gh-pages ブランチを切っておくと、https://m0t0k1ch1.github.io/rpm/centos/latest/x86_64/go-rpm-sample-0.1.0-1.x86_64.rpm という URL で wget したりできる。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="yum-repo"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "yum-repo" >}}
 
 で、例えばまっさらな別 CentOS 6 に `/etc/yum.repos.d/m0t0k1ch1.repo` を設置する。内容は以下。
 

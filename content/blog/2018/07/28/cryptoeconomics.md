@@ -1,7 +1,7 @@
 +++
-date = "2018-07-28T00:59:36+09:00"
-tags = [ "cryptoeconomics", "blockchain" ]
-title = "トークンエコノミーとの関係性から考える cryptoeconomics"
+title = 'トークンエコノミーとの関係性から考える cryptoeconomics'
+tags = ['cryptoeconomics', 'blockchain']
+date = '2018-07-28T00:59:36+09:00'
 +++
 
 最近は [Scrapbox](https://scrapbox.io/m0t0k1ch1) に引きこもってインプットに特化しがちだったので、、そろそろ日向に出て、少しずつ cryptoeconomist 的なアウトプットを出していこうかなと思います。
@@ -40,9 +40,8 @@ __「cryptoeconomics」は、Blockchain が示した可能性を集約した言�
 
 自分が cryptoeconomics について考えていることはおいおい別でアウトプットしていこうと思いますので、お待ちください。それでは今回はこの辺で。
 
-<br />
 ## ※追記（2018-08-11）
 
 2018-08-05 に続きを書きました。
 
-ref. [cryptoeconomics: crypto-backed mechanism design](https://m0t0k1ch1st0ry.com/blog/2018/08/05/cryptoeconomics)
+ref. [cryptoeconomics: crypto-backed mechanism design]({{< ref "/blog/2018/08/05/cryptoeconomics.md" >}})

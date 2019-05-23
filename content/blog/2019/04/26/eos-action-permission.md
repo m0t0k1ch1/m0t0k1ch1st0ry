@@ -1,21 +1,21 @@
 +++
-date = "2019-04-26T01:44:37+09:00"
-tags = [ "eos", "cpp", "blockchain" ]
-title = "EOS における、action 単位の permission 制御の必要性とその実現方法"
+title = 'EOS における、action 単位の permission 制御の必要性とその実現方法'
+tags = ['eos', 'cpp', 'blockchain']
+date = '2019-04-26T01:44:37+09:00'
+images = ['img/entry/eos-action-permission_2.png']
 +++
 
 EOS 上で複数の contract をまたいだシステムを実装したい場合にぶつかる課題とその解決方法についてのメモ。
 
 <!--more-->
 
-<br />
 ## 課題
 
 横断的（ex. [猫](https://www.cryptokitties.co)を食う[ゾンビ](https://cryptozombies.io)）・縦断的（ex. レイヤー構造化）なニーズの下、別の contract とやりとりする contract を実装したいシーンは往々にして存在する。また、こういった contract は、ユーザーの permission で別の contract の action を実行したい（プロキシのような役割を担いたい）ことが多いと思われる。
 
 このような場合、基本的には下図のような構成になる。
 
-![EOS acction permission 1](/img/entry/eos-action-permission-1.png)
+{{< figure src="/img/entry/eos-action-permission_1.png" >}}
 
 ここで注意する必要があるのは、
 
@@ -29,7 +29,6 @@ __`appaccount11` の `eosio.code` permission が付与された `useraccount1` �
 
 すなわち、この状況下では、`appaccount11` の管理者に `useraccount1` の permission を濫用されてしまう可能性がある。また、`appaccount11` の管理者に悪意がなくとも、デプロイされた contract に脆弱性があった場合の被害拡大に繋がる可能性がある。冒頭で述べたようなニーズを満たすためとはいえ、こういったリスクは極力低減したい。
 
-<br />
 ## 解決方法
 
 上記の問題を解決する 1 つの方法は、
@@ -40,7 +39,7 @@ __`appaccount11` の `eosio.code` permission を、それが必要な action の
 
 このように、action 実行と atomic に permission の着脱を行うことで、上述したリスクを低減することができる。これは、下図のような構成で実現できる。
 
-![EOS acction permission 2](/img/entry/eos-action-permission-2.png)
+{{< figure src="/img/entry/eos-action-permission_2.png" >}}
 
 上図における controller contract のサンプル実装は [こちら](https://github.com/m0t0k1ch1/sandbox/tree/master/eos/action-permission/controller)。実装は非常にシンプルなので、[`controller.cpp`](https://github.com/m0t0k1ch1/sandbox/blob/master/eos/action-permission/controller/controller.cpp) を見るだけで、何をやっているかは把握できるはず。
 
@@ -120,7 +119,6 @@ __`appaccount11` の `eosio.code` permission を、それが必要な action の
 
 もちろん、直接お目当ての action を実行する場合と比べると実行コストが増大していることに注意する必要はある。
 
-<br />
 ## 検証
 
 実際に testnet で検証してみた結果が [こちら](https://kylin.eosx.io/tx/fe1e0fbc4091d8151e53ce1d18ace3b63722150b5afd6e64bccb8961076e0774?listView=traces)。
@@ -131,7 +129,6 @@ __`appaccount11` の `eosio.code` permission を、それが必要な action の
 - `proxytest111`：`appaccount11`
 - `countertest1`：`appaccount12`
 
-<br />
 ## 補足
 
 上記 controller contract の `execute` action の第 3 引数 `std::vector<char> data` には、実行したい action の引数を適切にエンコードして渡す必要がある。このエンコードを行う方法はいくつかあるが、[cleos](https://developers.eos.io/eosio-cleos/docs) を利用する方法が簡単なので記載しておく。

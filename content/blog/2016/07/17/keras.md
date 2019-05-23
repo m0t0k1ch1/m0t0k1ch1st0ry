@@ -1,14 +1,13 @@
 +++
-date = "2016-07-17T01:38:01+09:00"
-tags = [ "keras", "python" ]
-title = "Keras のモデルと学習結果を保存して利用する"
+title = 'Keras のモデルと学習結果を保存して利用する'
+tags = ['keras', 'python']
+date = '2016-07-17T01:38:01+09:00'
 +++
 
 [Keras を使った簡単な Deep Learning](m0t0k1ch1st0ry.com/blog/2016/07/15/keras) はできたものの、そういえば学習結果は保存してなんぼなのでは、、、と思ったのでやってみた。
 
 <!--more-->
 
-<br />
 ## 準備
 
 [公式の FAQ](http://keras.io/ja/getting-started/faq/#how-can-i-save-a-keras-model) に以下のような記載があるので、h5py を入れておく。
@@ -20,7 +19,6 @@ title = "Keras のモデルと学習結果を保存して利用する"
 $ pip install h5py
 ```
 
-<br />
 ## モデルと学習結果を保存する
 
 [前回描いたコード](https://github.com/m0t0k1ch1/keras-sample/blob/master/mnist_mlp.py) に以下を追加して、モデルを `mnist_mlp_model.json` に、学習結果を `mnist_mlp_weights.h5` に保存する。
@@ -31,7 +29,6 @@ open('mnist_mlp_model.json', 'w').write(model_json_str)
 model.save_weights('mnist_mlp_weights.h5');
 ```
 
-<br />
 ## 保存したモデルと学習結果を利用する
 
 ``` python

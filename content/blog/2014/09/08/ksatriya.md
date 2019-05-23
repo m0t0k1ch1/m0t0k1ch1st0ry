@@ -1,20 +1,19 @@
 +++
-date = "2014-09-08"
-tags = [ "golang" ]
-title = "ksatriya update log"
+title = 'ksatriya update log'
+tags = ['golang']
+date = '2014-09-08'
 +++
 
-前に勢いで書いちゃった [ksatriya](https://github.com/m0t0k1ch1/ksatriya)（[こちら](http://m0t0k1ch1st0ry.com/blog/2014/08/16/ksatriya) をご参照ください）、自分で使うにあたってちょっと機能追加したくなったので追加した。
+前に勢いで書いちゃった [ksatriya](https://github.com/m0t0k1ch1/ksatriya)（[こちら]({{< ref "/blog/2014/08/16/ksatriya.md" >}}) をご参照ください）、自分で使うにあたってちょっと機能追加したくなったので追加した。
 
 <!--more-->
 
-<br />
 ## 追加した機能
 
 結果として、
 
-* before / after hook を controller ごとに定義可能
-* HTML をレンダリングする際にベースとなるテンプレートを controller ごとに定義可能
+- before / after hook を controller ごとに定義可能
+- HTML をレンダリングする際にベースとなるテンプレートを controller ごとに定義可能
 
 になった。
 
@@ -22,7 +21,6 @@ title = "ksatriya update log"
 
 あと、せっかくなので [https://github.com/unrolled/render](https://github.com/unrolled/render) に頼っていたレンダリング部分も自前で実装してみた。結果、標準パッケージ以外への依存が1つ減って幸せになれた。
 
-<br />
 ## 使い方
 
 現状の ksatriya を使ったサンプルアプリケーションは [ここ](https://github.com/m0t0k1ch1/ksatriya-sample) に置いてあるけれど、今後も仕様は変わっていくと思うので、現状の `ksatriya.Controller` の使い方だけ以下にメモしておこうと思う。後で見なおして思い出に浸ったりしたい。
@@ -83,14 +81,10 @@ k.Run(":8080")
 
 以上。
 
-<br />
 ## 今後
 
 自分がほしいな〜と思っていた最低限の機能は揃った気がするので、そろそろテストを書いていきたい。
 
-<blockquote class="twitter-tweet" lang="ja"><p>ちょっと tiny とは言えなくなってきたこともあって週末にテスト書いたりしたいけど、どうせ例の Gunosy のやつの後に全部書き直したくなる気がするので我慢</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/507920947249049600">2014, 9月 5</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 507920947249049600 >}}
 
-<br />
 「例の Gunosy のやつ」っていうのは [こちら](http://gunosygo.connpass.com/event/8485)。楽しみ。
-

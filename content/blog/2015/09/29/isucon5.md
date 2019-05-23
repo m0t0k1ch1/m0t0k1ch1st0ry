@@ -1,7 +1,7 @@
 +++
-date = "2015-09-29T01:46:40+09:00"
-tags = [ "isucon", "perl" ]
-title = "ISUCON5 と chatzmers - 予選4位通過編"
+title = 'ISUCON5 と chatzmers - 予選4位通過編'
+tags = ['isucon', 'perl']
+date = '2015-09-29T01:46:40+09:00'
 +++
 
 [ISUCON5](http://isucon.net/archives/44132090.html) の予選2日目にチーム「__chatzmers__」として参加し、[予選2日目2位・総合4位通過](http://isucon.net/archives/45532743.html) という結果を残すことができました。
@@ -12,25 +12,23 @@ title = "ISUCON5 と chatzmers - 予選4位通過編"
 
 ということで、せっかくなので予選当日までの期間も含めてどう ISUCON5 に立ち向かったのかを自分視点で書こうと思います。不足している点についてはチームメイトのエントリをご参照いただければと思います。
 
-* [「ISUCON5 予選4位通過でした」](http://macotasu.hatenablog.jp/entry/2015/09/28/190442)@Maco_Tasu
-* [「ISUCON5 総合4位で予選突破！」](http://t1macrggs.hatenablog.jp/entry/2015/09/30/015143)@rg_gs
+- [「ISUCON5 予選4位通過でした」](http://macotasu.hatenablog.jp/entry/2015/09/28/190442)@Maco_Tasu
+- [「ISUCON5 総合4位で予選突破！」](http://t1macrggs.hatenablog.jp/entry/2015/09/30/015143)@rg_gs
 
-<br />
 ## 当日までにやったこと
 
 まず、予選当日の1ヶ月くらい前に決起会を行い、チーム名（最後に詳しく書きました）と予選当日までどういうスケジュールで動くかを決めました。あとは、Slack の team や GitHub の private repo なども準備しました。
 
 一般的にシルバーウィークと呼ばれていた期間は浮世の輪廻から解脱して ISUCON4 の復習と準備に捧げました。やったことをざっくり並べると以下のような感じです。
 
-* [ISUCON の勝ち方](https://www.youtube.com/watch?t=2&v=vl1mYTq1ZYI) を何回か見て頭に入れる
-* kataribe や pt-query-digest などの解析系ツールの基本的な扱い方を把握して、実際に手を動かして使ってみる
-* 実際に ISUCON4 の予選問題を GCP に立てて、50,000 くらいのスコアを出せるまで地道にチューニング
-* 予選前日に公開された tkuchiki さんの [alp](https://github.com/tkuchiki/alp) も基本的な扱い方を把握して、実際に手を動かして使ってみる（本当にお世話になりました）
-* 上記のやったことを予選当日にロスタイムなく再現できるようにドキュメント化
+- [ISUCON の勝ち方](https://www.youtube.com/watch?t=2&v=vl1mYTq1ZYI) を何回か見て頭に入れる
+- kataribe や pt-query-digest などの解析系ツールの基本的な扱い方を把握して、実際に手を動かして使ってみる
+- 実際に ISUCON4 の予選問題を GCP に立てて、50,000 くらいのスコアを出せるまで地道にチューニング
+- 予選前日に公開された tkuchiki さんの [alp](https://github.com/tkuchiki/alp) も基本的な扱い方を把握して、実際に手を動かして使ってみる（本当にお世話になりました）
+- 上記のやったことを予選当日にロスタイムなく再現できるようにドキュメント化
 
 振り返ってみると、予選当日に練習でチューニングしきったインスタンスの中身やまとめたドキュメントを参照する機会が多々あったので、そういったものをシュッと参照できるような環境を事前に用意できていたのはよかったなあと思います。
 
-<br />
 ## 当日やったこと
 
 正直、自分が予選当日にやったことは全部 ISUCON4 の予選問題の復習でやったことといっても過言ではないので、あまり面白くはないと思います。
@@ -41,44 +39,41 @@ title = "ISUCON5 と chatzmers - 予選4位通過編"
 
 ただひたすらに精神統一。事情があってオフィスに宿泊していたので、6時起きしてサウナに行って帰ってきてトイレの個室で事変の [能動的三分間](https://soundcloud.com/amanojack18/4min-mix-1) をただひたすらリピート。
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">スカイスパで精神統一してきます <a href="https://twitter.com/hashtag/isucon?src=hash">#isucon</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/647889420553613313">September 26, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">事変聴いて精神統一 <a href="https://twitter.com/hashtag/isucon?src=hash">#isucon</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/647919294932619265">September 26, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 647889420553613313 >}}
+{{< tweet 647919294932619265 >}}
 
 ### 午前
 
 開始前に決めていた役割分担に基づいて作業開始。
 
-* @Maco_Tasu：コードを読んでアプリケーションを把握する
-* @rg_gs：事前に準備してくれていた GitHub への push にフックして自動 deploy するくんを動かす
-* @m0t0k1ch1：Perl の初期実装でベンチマークを回してアクセスログとクエリログを解析する
+- @Maco_Tasu：コードを読んでアプリケーションを把握する
+- @rg_gs：事前に準備してくれていた GitHub への push にフックして自動 deploy するくんを動かす
+- @m0t0k1ch1：Perl の初期実装でベンチマークを回してアクセスログとクエリログを解析する
 
 ただ、全員 systemd 初体験だったので、、@rg_gs に使い方を調べてもらうことに。ここで Slack に #systemd チャンネルが生まれ、よく使うコマンドをメモる用に使ったりしました。
 
 アクセスログとクエリログを解析して、コードを読んでいた @Maco_Tasu の見解と照らし合わせた結果、ボトルネックになっているエンドポイントとつらいクエリがざっくりと把握できたので、
 
-* @Maco_Tasu：`/` を地道になんとかする担当
-* @rg_gs：`/footprints` の group by をなんとかする担当
-* @m0t0k1ch1：`/friends` の or をなんとかする担当
+- @Maco_Tasu：`/` を地道になんとかする担当
+- @rg_gs：`/footprints` の group by をなんとかする担当
+- @m0t0k1ch1：`/friends` の or をなんとかする担当
 
 という感じで担当を決めました。確か、もうこれでお昼くらい。。
 
 ここで結構大事だったのが、以下のような branch の運用ルールも決めてしまったことかなと思います。
 
-* 担当箇所ごとに作業 branch を切る
-* 作業 branch には必ずベンチをかけてスコアが上がることを確認してから master に merge する（master の品質を保証し続ける）
-* 上記の merge はできるだけ細かい単位で行う
-* スコアが伸びなかった作業 branch は master には merge せずに待機させておく
+- 担当箇所ごとに作業 branch を切る
+- 作業 branch には必ずベンチをかけてスコアが上がることを確認してから master に merge する（master の品質を保証し続ける）
+- 上記の merge はできるだけ細かい単位で行う
+- スコアが伸びなかった作業 branch は master には merge せずに待機させておく
 
 これは結構うまく回った感じがします。
 
 あと、午前中に自分が他にやれたことは以下くらいでした。
 
-* Starman を Gazelle（unix domain socket）に変更
-* nginx.conf を最低限調整
-* 静的ファイルは nginx で捌くようにする
+- Starman を Gazelle（unix domain socket）に変更
+- nginx.conf を最低限調整
+- 静的ファイルは nginx で捌くようにする
 
 ボトルネックへの直接的なアプローチではないですが、やっておいて損はない類のことだろうと思ってシュッとやりました。スコアも地味に伸びてくれていたと思います。
 
@@ -86,22 +81,21 @@ title = "ISUCON5 と chatzmers - 予選4位通過編"
 
 自分は `/friends` をなんとかする担当だったので、とりあえず関連するコードを読むところからスタート。比較的早い段階で `one` と `another` の双方に対する条件を where 句に含める必要がないことに気づけたので、
 
-* `one` だけに対して条件を指定するように修正して、インデックスが効くことを確認
-* ループクエリを join に修正
+- `one` だけに対して条件を指定するように修正して、インデックスが効くことを確認
+- ループクエリを join に修正
 
 しました。
 
 修正後のアクセスログを alp で解析したところ、レスポンスタイムはだいぶ下がっていたので、一旦 `/friends` の修正はここまでにして、
 
-* `users` をアプリケーション起動時にプロセスメモリにのせる
-* @rg_gs と一緒に `/footprints` を修正（`user_id` で group by する必要はないのでしないようにする ＋ `user_id` にインデックスを貼る）
+- `users` をアプリケーション起動時にプロセスメモリにのせる
+- @rg_gs と一緒に `/footprints` を修正（`user_id` で group by する必要はないのでしないようにする ＋ `user_id` にインデックスを貼る）
 
 という感じで手を動かしながら、「細かく修正を入れる、ベンチをかける、アクセスログを alp で解析」というルーチンを繰り返していました。
 
 このあたり、スコアはちょいちょい上がるものの爆上がりはしない低迷期だったのですが、@Maco_Tasu の「神対応」というコミットメッセージつきの修正でスコアが一気に 16,927 まで伸びて暫定トップに。さすがに叫びました。
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">おっしゃああああああああああああああああああああああああああああ！！！！！！！！！！！！</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/648013751925391360">September 27, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 648013751925391360 >}}
 
 ここで @Maco_Tasu がやっていたことは [彼のエントリ](http://macotasu.hatenablog.jp/entry/2015/09/28/190442) をご参照ください。
 
@@ -109,15 +103,15 @@ title = "ISUCON5 と chatzmers - 予選4位通過編"
 
 alp の解析結果を見る限り、明らかなボトルネックは潰せてきていたので、
 
-* @Maco_Tasu：プロセスメモリにのせてある `users` を活用できるところは活用する
-* @rg_gs：`comments` の count を Redis で管理する（これは結局 `/initialize` がうまく回り切らず断念。。。無念）
+- @Maco_Tasu：プロセスメモリにのせてある `users` を活用できるところは活用する
+- @rg_gs：`comments` の count を Redis で管理する（これは結局 `/initialize` がうまく回り切らず断念。。。無念）
 
 といった修正を入れてもらいながら、自分は ISUCON4 の復習でやったけれどまだ今日やれていないことを順番に潰していくことに。具体的には、
 
-* 思い切って試しに MyISAM にしてみる（なんとスコアが 2,000 〜 3,000 上がって、このあたりで 20,000 を超えました。。本戦までに要検証）
-* `base.tx` を使わない（スコア微増）
-* `/login` は GET のときだけ nginx で捌く（ほぼスコア変わらず）
-* ログイン判定もプロセスメモリ上だけで完結させる（これは正直スコア上がるやろ！！！と思っていましたが変わらず。。。）
+- 思い切って試しに MyISAM にしてみる（なんとスコアが 2,000 〜 3,000 上がって、このあたりで 20,000 を超えました。。本戦までに要検証）
+- `base.tx` を使わない（スコア微増）
+- `/login` は GET のときだけ nginx で捌く（ほぼスコア変わらず）
+- ログイン判定もプロセスメモリ上だけで完結させる（これは正直スコア上がるやろ！！！と思っていましたが変わらず。。。）
 
 など。とにかく「まだできることはあるのに手は止めまい」という想いでした。
 
@@ -125,7 +119,6 @@ alp の解析結果を見る限り、明らかなボトルネックは潰せて�
 
 結果、最終スコア 21,242 を記録し、予選2日目2位・総合4位。無事、本戦に出場できることになりました。正直ここまでいけるとは思っていなかったので、結果が確定したときは相当量の喜びを噛みしめました。
 
-<br />
 ## 最後に
 
 ### チーム名「chatzmers」の由来
@@ -134,9 +127,7 @@ alp の解析結果を見る限り、明らかなボトルネックは潰せて�
 
 あとは一発屋っぽい名前にしたくなかったこと。「茶柱 in the house」というチーム名が先に候補として挙がっていたのですが、「予選敗退してそう」ということでボツにしました。
 
-<div class="max-width-content">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OfqjIlgSaAg" frameborder="0" allowfullscreen></iframe>
-</div>
+{{< youtube OfqjIlgSaAg >}}
 
 ### チームメイトについて
 

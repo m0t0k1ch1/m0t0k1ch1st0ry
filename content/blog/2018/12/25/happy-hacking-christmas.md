@@ -1,19 +1,19 @@
 +++
-date = "2018-12-25T01:54:05+09:00"
-tags = [ "ethereum", "solidity", "blockchain" ]
-title = "Happy Hacking Christmas"
+title = 'Happy Hacking Christmas'
+tags = ['ethereum', 'solidity', 'blockchain']
+date = '2018-12-25T01:54:05+09:00'
+images = ['img/entry/santa-claus.jpg']
 +++
 
 この記事は [ex-KAYAC Advent Calendar 2018](https://qiita.com/advent-calendar/2018/ex-kayac) の 25 日目の記事です。恐縮ですが、私 [@m0t0k1ch1](https://twitter.com/m0t0k1ch1) が大トリを務めさせていただきます。メリークリスマス。
 
 <!--more-->
 
-![santa claus](/img/entry/santa-claus.jpg)
+{{< figure src="/img/entry/santa-claus.jpg" >}}
 
-<br />
 ## はじめに
 
-とりあえず、軽く自己紹介を。自分は 2013 新卒としてカヤックに入社し、ソーシャルゲーム事業部で 3 年ほどサーバーサイドエンジニア「ダンゲル」としてお世話になりました。カヤックに在籍していたときのことは [退職してしばらく経った後で書いたブログ](https://m0t0k1ch1st0ry.com/blog/2017/01/30/kayac) でも触れていますので、今回はこの辺で。現在は大阪で Blockchain をベースとした [cryptoeconomic](https://m0t0k1ch1st0ry.com/blog/2018/08/05/cryptoeconomics) なプロトコルの R&D に取り組んでいます。技術的なトピックとしては特に [Plasma](https://scrapbox.io/sivira-plasma) を中心にリサーチしていますが、来年は R だけではなく D でも成果を出していきたい所存です。その際はよろしくお願い致します。
+とりあえず、軽く自己紹介を。自分は 2013 新卒としてカヤックに入社し、ソーシャルゲーム事業部で 3 年ほどサーバーサイドエンジニア「ダンゲル」としてお世話になりました。カヤックに在籍していたときのことは [退職してしばらく経った後で書いたブログ]({{< ref "/blog/2017/01/30/kayac.md" >}}) でも触れていますので、今回はこの辺で。現在は大阪で Blockchain をベースとした [cryptoeconomic]({{< ref "/blog/2018/08/05/cryptoeconomics.md" >}}) なプロトコルの R&D に取り組んでいます。技術的なトピックとしては特に [Plasma](https://scrapbox.io/sivira-plasma) を中心にリサーチしていますが、来年は R だけではなく D でも成果を出していきたい所存です。その際はよろしくお願い致します。
 
 あ、あと、最初にお伝えしておきたいことがもう 1 つ。
 
@@ -24,14 +24,12 @@ __この第 1 回 ex-KAYAC Advent Calendar 開催を記念して、ex-KAYAC の�
 <br /><br /><br />
 ...さて、前置きはこのくらいにして、本題に移っていきたいと思います。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">街でかかるクリスマスソングが全てこれに変われば解脱が捗るのに、と毎年思う &gt;&gt; Utada / Merry Christmas Mr. Lawrence - FYI <a href="https://t.co/38IUI9EFmG">https://t.co/38IUI9EFmG</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1073265831847485442?ref_src=twsrc%5Etfw">2018年12月13日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 1073265831847485442 >}}
 
 そうです、今日はクリスマスです。自分がこのブログを書いている今この瞬間（12/24 深夜）も、世界中のサンタクロース達は大忙しでしょう。
 
 ということで、今日は、自分もそんなサンタクロース達の力になるべく、分散型サンタクロースを使ってプレゼント配りのお手伝いをしようと思います。
 
-<br />
 ## 分散型サンタクロース（という名の [鎖野郎](https://twitter.com/leo_hio/status/1021570150888222720) 諸兄姉への挑戦状）
 
 🎅 [SantaClaus contract](https://ropsten.etherscan.io/address/0x05d9cbee05e82d492ad66842fc7c0cb363b384ea#code)
@@ -87,8 +85,7 @@ function requestToken() public {
 
 なお、全 contract のソースコードはこちらに置いておきました。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="happy-hacking-christmas"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "happy-hacking-christmas" >}}
 
 パズルに関連する contract は、全て数十行程度でとてもシンプルなので、Solidity 初心者の方でも問題なく理解できるレベルかと思います。
 
@@ -106,11 +103,10 @@ function requestToken() public {
 
 （記事前半はそんな主旨ではなかった気がしますが、気にしない！）
 
-<div style="width:100%;height:0;padding-bottom:42%;position:relative;"><iframe src="https://giphy.com/embed/3o85xAojNshmzlySyc" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/luke-skywalker-good-luck-force-be-with-you-3o85xAojNshmzlySyc">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:42%;position:relative;"><iframe src="https://giphy.com/embed/3o85xAojNshmzlySyc" width="100%" height="100%" style="width:100%;height:100%;position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/luke-skywalker-good-luck-force-be-with-you-3o85xAojNshmzlySyc">via GIPHY</a></p>
 
 あ、パズルが解けた方は、[@m0t0k1ch1](https://twitter.com/m0t0k1ch1) に一声かけていただけると嬉しみです。是非、感想などお聞きしてみたいです。
 
-<br />
 ## ※追記（2018-12-27）
 
 3 人目の SCT ホルダーである yohei さんが、SCT ホルダーしか名前を刻めない contract をつくってくださいました。
@@ -121,14 +117,12 @@ SCT を獲得した方は、是非こちらに名前を刻んでいただけた�
 
 自分の方でも、電子署名と Twitter の OAuth を使ってアドレスと Twitter アカウントを紐付けて、SCT ホルダーの Twitter アカウントを可視化する仕組みをつくろうかなあと思っていたりしますので、完成したあかつきには、またこのブログと GitHub repo でお知らせしようと思います。
 
-<br />
 ## ※追記（2019-01-17）
 
 続きを書きました。解答について言及している部分もあるので、「まだ見たくない！」という方はご注意を。
 
-[Happy Hacking Christmas の解答と狙い](https://m0t0k1ch1st0ry.com/blog/2019/01/17/after-happy-hacking-christmas)
+[Happy Hacking Christmas の解答と狙い]({{< ref "/blog/2019/01/17/after-happy-hacking-christmas.md" >}})
 
-<br />
 ## 最後に
 
 最後になってしまいましたが、今回の ex-KAYAC Advent Calendar 2018 を立ち上げ（させ）た身として、参加してくださった皆さんにお礼を申し上げたいと思います。

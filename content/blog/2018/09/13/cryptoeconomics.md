@@ -1,32 +1,30 @@
 +++
-date = "2018-09-13T03:39:01+09:00"
-tags = [ "cryptoeconomics", "economics", "blockchain" ]
-title = "cryptoeconomics の「守」"
+title = 'cryptoeconomics の「守」'
+tags = ['cryptoeconomics', 'economics', 'blockchain']
+date = '2018-09-13T03:39:01+09:00'
+images = ['img/entry/dna.png']
 +++
 
-[この記事](https://m0t0k1ch1st0ry.com/blog/2018/08/05/cryptoeconomics) を書いてから気づけば早 1 ヶ月。お久しぶりな cryptoeconomics 記事です。なお、タイトルにある「守」は、守破離の「守」です。
+[この記事]({{< ref "/blog/2018/08/05/cryptoeconomics.md" >}}) を書いてから気づけば早 1 ヶ月。お久しぶりな cryptoeconomics 記事です。なお、タイトルにある「守」は、守破離の「守」です。
 
 <!--more-->
 
-![dna](/img/entry/dna.png)
+{{< figure src="/img/entry/dna.png" >}}
 
-<br />
 ## はじめに
 
 現在進行形で cryptoeconomics 沼に嵌りながら奮闘する中でですね、もちろん消化できていないことは盛り沢山なのですが、「これは脳内整理も兼ねてブログにアウトプットしてもよかろう」と思うこともポツポツ出てきました。インプット偏重状態は不健全なので、これからしばらくは少しずつアウトプットも進捗させてバランスをとっていこうと思います。
 
 で、今回はまず、そのプロローグ的な位置付けとして、この 1 ヶ月の中で新しく気づいたことの概要を軽くまとめておこうと思います。これらの気づきは、この記事のタイトルに書いた通り、cryptoeconomics の「守」として認識しておくべき内容だと考えており、今後のアウトプットの前提知識としても重要になってくると思うので、先にざっくり整理しておこう、という感じです。
 
-注：[前回の記事](https://m0t0k1ch1st0ry.com/blog/2018/08/05/cryptoeconomics) の内容を前提として書きますので、まだ読まれていない方はこの記事を読む前に是非ご一読ください🙏
+注：[前回の記事]({{< ref "/blog/2018/08/05/cryptoeconomics.md" >}}) の内容を前提として書きますので、まだ読まれていない方はこの記事を読む前に是非ご一読ください🙏
 
-<br />
 ## 重要な気づき
 
 前回の記事を書いてからどんなインプットをしていたのかについては、[Scrapbox](https://scrapbox.io/m0t0k1ch1/cryptoeconomics) や [日々のツイート](https://twitter.com/m0t0k1ch1) からお察しいただければと思うのですが、その中でも重要な気づきに繋がったインプットを 2 つピックアップして、内容と感想を軽くまとめてみます。深堀りに関しては今後のアウトプットの中で進めていければと思います。
 
 双方、cryptoeconomist を名乗りたいのであれば必読と言える記事だと思いますので、cryptoeconomics に興味がある方は一読されることを強くオススメします。
 
-<br />
 ### A Crash Course in Mechanism Design for Cryptoeconomic Applications
 
 ref. https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976
@@ -64,7 +62,6 @@ __cryptoeconomic なプロトコルについて考える際、プレイヤーの
 
 が、記事の中でも書かれているように、既存のメカニズムデザインや協力ゲーム理論の知見が全く使えないわけではありません。むしろ、これまで数々の研究者が積み上げてきた知見が既に存在するわけです。適当に車輪の再発明をするのではなく、まずはこれらの知見と素直に向き合うのが「守」の姿勢と言えるのではないでしょうか。
 
-<br />
 ### The History of Casper — Chapter 4
 
 ref. https://medium.com/@Vlad_Zamfir/the-history-of-casper-chapter-4-3855638b5f0e
@@ -81,18 +78,12 @@ The History of Casper は、（現時点では）全 5 chapter で構成され�
 
 読んで感じたことは、「A Crash Course in Mechanism Design for Cryptoeconomic Applications」のパートで書いた気づきとほぼ同じなので、付け加えて書くことはほとんどないのですが、現実の事象をベースにして綴られているので「あー、そんなことあったのね〜」「あー、だからそうなったのね〜」みたいな発見はあり、それは単純におもしろかったです。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">こんなことあったのね。どの程度の &quot;lightly trolled&quot; だったのかは分からないけど笑、Vlad の気持ち察するわ &gt;&gt; &quot;The History of Casper - Chapter 3&quot; - Vlad Zamfir <a href="https://t.co/W7Mv5e73rk">https://t.co/W7Mv5e73rk</a> <a href="https://t.co/BYjoFADPPD">pic.twitter.com/BYjoFADPPD</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1036953921577738240?ref_src=twsrc%5Etfw">2018年9月4日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="en" dir="ltr">I totally agree &gt;&gt; &quot;The History of Casper - Chapter 4&quot; - Vlad Zamfir <a href="https://t.co/golrO4Il9m">https://t.co/golrO4Il9m</a> <a href="https://t.co/I3wRXJwleu">pic.twitter.com/I3wRXJwleu</a></p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1036965168335532032?ref_src=twsrc%5Etfw">2018年9月4日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">初期の Casper は、寡占市場すなわちコンセンサスが協力ゲームであることを仮定し、カルテルに対する検閲耐性を考慮することで形作られていったと。この辺りのことを知らずして cryptoeconomics は語れないな。。。反省である。</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1037017153352790018?ref_src=twsrc%5Etfw">2018年9月4日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 1036953921577738240 >}}
+{{< tweet 1036965168335532032 >}}
+{{< tweet 1037017153352790018 >}}
 
 こんな感じで、cryptoeconomics の源流は Caspter（PoS）の歴史にあるということが改めて認識できました。そういう意味では、これも「守」の物語と言えるかなと思います。
 
-<br />
 ## 最後に
 
 以上、前回の記事を執筆した時点では気づいていなかった、cryptoeconomics の「守」に関する重要な気づきを簡単にまとめてみました。
@@ -103,17 +94,14 @@ The History of Casper は、（現時点では）全 5 chapter で構成され�
 
 ということで、自戒の意も込めたプロローグでした。おしまい。
 
-<br />
 ## 次回予告
 
 さて、ここまでの記事は抽象的な話が中心となってしまっているので、今後のアウトプットでは、できるだけ具体的な理論や事例を絡めていこうと考えています。
 
 気が変わらなければ、次回は、メカニズムデザインにおいて重要な概念である incentive compatibility について、具体的な事例を交えながら整理する予定です。cryptoeconomics というよりは、まずはその土台となるミクロ経済学（市場理論、ゲーム理論、メカニズムデザインなど）に寄り添っていこうというスタンスです。
 
-<br />
 ## おまけ
 
-<br />
 ### 「cryptribe」の宣伝
 
 CHIP で月額 100 円のファンクラブ「[cryptribe](http://thechip.in/fanclubs/419)」をつくりまして、ご加入いただいた方を「自分が日々のインプットにコメントをつけてを垂れ流すだけの個人進捗空間 Slack workspace」にご招待しております。
@@ -122,12 +110,10 @@ CHIP で月額 100 円のファンクラブ「[cryptribe](http://thechip.in/fanc
 
 ありがたいことに「Android 版がリリースされたら加入します」とおっしゃってくださっている方も数人いらっしゃいますので、とりあえずは継続を重視してムリせず運用していく予定です。
 
-<br />
 ### この記事のもう 1 つの目的
 
 これにて一旦封印解除じゃ👴
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">最近アマいので、次何か公に対して cryptoeconomic なブログ書くまで音についてのツイートを禁止とする。巧みなメタファーも禁止。like と RT も禁止。最後に言わせてください。S.W. × ジメサギのアルバム楽しみです。うっ。。。</p>&mdash; m0t0k1ch1 (@m0t0k1ch1) <a href="https://twitter.com/m0t0k1ch1/status/1037735916423372800?ref_src=twsrc%5Etfw">2018年9月6日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 1037735916423372800 >}}
 
 我慢できず、既にこの記事の中に意味不明な記述を盛り込んでしまったことをお許しください。

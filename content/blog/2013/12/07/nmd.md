@@ -1,13 +1,12 @@
 +++
-date = "2013-12-07"
-tags = [ "music" ]
-title = "NMD"
+title = 'NMD'
+tags = ['music']
+date = '2013-12-07'
 +++
 
 最近聴いて電撃が疾走った曲。
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/26211881&amp;color=8c8c8c&amp;auto_play=false&amp;show_artwork=true"></iframe>
-<br />
+{{< soundcloud track 26211881 >}}
 
 <!--more-->
 

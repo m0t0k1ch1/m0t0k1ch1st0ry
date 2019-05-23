@@ -1,14 +1,13 @@
 +++
-date = "2016-07-30T02:23:32+09:00"
-tags = [ "python", "mecab", "cabocha" ]
-title = "CentOS で Python から MeCab と CaboCha を使えるようにする"
+title = 'CentOS で Python から MeCab と CaboCha を使えるようにする'
+tags = ['python', 'mecab', 'cabocha']
+date = '2016-07-30T02:23:32+09:00'
 +++
 
 手順が無駄なく綺麗にまとまってるとこをなかなか見つけられなくてごにゃごにゃしたので、最終的に自分が辿り着いた手順を後々のためにメモ。
 
 <!--more-->
 
-<br />
 ## 環境
 
 ``` sh
@@ -18,14 +17,12 @@ $ arch
 x86_64
 ```
 
-<br />
 ## 下準備
 
 ``` sh
 $ yum install bzip2 bzip2-devel gcc gcc-c++ git make openssl-devel readline-devel sqlite sqlite-devel zlib-devel
 ```
 
-<br />
 ## pyenv
 
 ``` sh
@@ -77,7 +74,6 @@ $ pip list | grep pip
 pip (8.1.2)
 ```
 
-<br />
 ## MeCab
 
 まず本体。
@@ -111,7 +107,6 @@ $ pip list | grep mecab-python3
 mecab-python3 (0.7)
 ```
 
-<br />
 ## CaboCha
 
 まず、CRF++ をインストールする。
