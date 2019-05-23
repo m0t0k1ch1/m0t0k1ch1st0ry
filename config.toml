@@ -17,3 +17,5 @@ pygmentsStyle      = 'monokai'
 [params]
     description  = 'Since 2013'
     mainPageType = 'blog'
+    images       = ['img/common/eye_256.png']
+    addthisID    = 'ra-5ce6ac411a98e6f0'
