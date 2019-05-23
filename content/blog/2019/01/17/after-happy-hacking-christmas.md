@@ -1,7 +1,7 @@
 +++
-date = "2019-01-17T03:29:24+09:00"
-tags = [ "dao", "ethereum", "solidity", "blockchain" ]
 title = "Happy Hacking Christmas の解答と狙い"
+tags = [ "dao", "ethereum", "solidity", "blockchain" ]
+date = "2019-01-17T03:29:24+09:00"
 +++
 
 昨年末、[ex-KAYAC Advent Calendar 2018](https://qiita.com/advent-calendar/2018/ex-kayac) の大トリとして執筆した [Happy Hacking Christmas]({{< ref "/blog/2018/12/25/happy-hacking-christmas.md" >}}) という記事の中で出題したスマートコントラクトパズルについて、出題からしばらく時間も経ったので、解答と狙いをまとめておこうと思います。

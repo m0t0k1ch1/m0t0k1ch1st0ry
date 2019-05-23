@@ -1,7 +1,7 @@
 +++
-date = "2014-06-01"
-tags = [ "golang" ]
 title = "クロージャにメソッドを実装してみる - Golang"
+tags = [ "golang" ]
+date = "2014-06-01"
 +++
 
 そろそろスピリチュアルなエントリから脱却して Golang について書こうと思います。最近仕事で少し触っていたり、昨日「[Go Conference 2014 spring](http://connpass.com/event/6370) 」にも参加してきたりで Golang に対するモチベーションが上がっているので、少しずつアウトプットしていこうかと。

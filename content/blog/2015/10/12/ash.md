@@ -1,7 +1,7 @@
 +++
-date = "2015-10-12T11:17:19+09:00"
-tags = [ "others" ]
 title = "渋いい感じの Keynote テーマ「ash」"
+tags = [ "others" ]
+date = "2015-10-12T11:17:19+09:00"
 +++
 
 [Azusa Colors](http://sanographix.github.io/azusa-colors) を参考にして、表題の通りのものをつくってみました。実際に「ash」を使ってつくった紹介プレゼンがこちら。

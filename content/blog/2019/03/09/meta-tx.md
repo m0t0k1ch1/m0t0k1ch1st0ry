@@ -1,7 +1,7 @@
 +++
-date = "2019-03-09T18:02:51+09:00"
-tags = [ "ethereum", "solidity", "blockchain" ]
 title = "meta transaction が扱える ERC20 トークンの簡易実装"
+tags = [ "ethereum", "solidity", "blockchain" ]
+date = "2019-03-09T18:02:51+09:00"
 +++
 
 ここ最近話題になっている [ERC1776](https://github.com/ethereum/EIPs/issues/1776) で標準化されようとしている meta transaction について把握するため、meta transaction が扱える ERC20 トークンの簡易実装までやってみましたメモ。

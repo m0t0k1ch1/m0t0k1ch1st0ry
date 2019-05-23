@@ -1,7 +1,7 @@
 +++
-date = "2018-12-25T01:54:05+09:00"
-tags = [ "ethereum", "solidity", "blockchain" ]
 title = "Happy Hacking Christmas"
+tags = [ "ethereum", "solidity", "blockchain" ]
+date = "2018-12-25T01:54:05+09:00"
 +++
 
 この記事は [ex-KAYAC Advent Calendar 2018](https://qiita.com/advent-calendar/2018/ex-kayac) の 25 日目の記事です。恐縮ですが、私 [@m0t0k1ch1](https://twitter.com/m0t0k1ch1) が大トリを務めさせていただきます。メリークリスマス。

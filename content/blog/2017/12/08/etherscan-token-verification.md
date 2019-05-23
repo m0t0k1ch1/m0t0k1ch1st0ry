@@ -1,7 +1,7 @@
 +++
-date = "2017-12-08T04:45:34+09:00"
-tags = [ "ethereum", "truffle", "solidity", "blockchain" ]
 title = "truffle で書いたコントラクトを solidity-flattener でがっちゃんこして Etherscan で公開する"
+tags = [ "ethereum", "truffle", "solidity", "blockchain" ]
+date = "2017-12-08T04:45:34+09:00"
 +++
 
 現状、`import` を利用して truffle で書いたコントラクトを [Etherscan](https://etherscan.io) で公開するためには、依存関係にあるコントラクトを全部がっちゃんこしたコードを用意しないといけないのだが、これをつくるのにちょっと手こずったのでメモ。もっとイケてる方法をご存知の方がいらっしゃいましたら何卒ご教示ください。

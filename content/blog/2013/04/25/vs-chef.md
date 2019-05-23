@@ -1,7 +1,7 @@
 +++
-date = "2013-04-25"
-tags = [ "chef", "ruby" ]
 title = "vs Chef 第1回戦"
+tags = [ "chef", "ruby" ]
+date = "2013-04-25"
 +++
 
 二流シェフ目指してがんばるぞう。

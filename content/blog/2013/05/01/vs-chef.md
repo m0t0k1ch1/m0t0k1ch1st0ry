@@ -1,7 +1,7 @@
 +++
-date = "2013-05-01"
-tags = [ "chef", "perl", "ruby" ]
 title = "vs Chef 第2回戦"
+tags = [ "chef", "perl", "ruby" ]
+date = "2013-05-01"
 +++
 
 Chef と戯れ始めてはや1週間。  

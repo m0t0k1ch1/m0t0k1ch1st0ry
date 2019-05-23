@@ -1,7 +1,7 @@
 +++
-date = "2017-12-11T03:47:23+09:00"
-tags = [ "ico", "raiden", "ethereum", "solidity", "blockchain" ]
 title = "大人の事情には目を瞑って、Raiden の ICO について考える"
+tags = [ "ico", "raiden", "ethereum", "solidity", "blockchain" ]
+date = "2017-12-11T03:47:23+09:00"
 +++
 
 この記事は [Ethereum Advent Calendar 2017](https://qiita.com/advent-calendar/2017/ethereum) の 11 日目の記事です。表題の通り、この記事では、今年行われた [Raiden](https://raiden.network) の ICO と向き合います。敢えて Raiden そのものとも向き合いません。ご承知ください。

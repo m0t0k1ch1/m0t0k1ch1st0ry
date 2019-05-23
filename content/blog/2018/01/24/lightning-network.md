@@ -1,7 +1,7 @@
 +++
-date = "2018-01-24T04:30:44+09:00"
-tags = [ "bitcoin", "lightning network", "blockchain" ]
 title = "lnd ＋ btcd を使って testnet で Lightning Network 体験"
+tags = [ "bitcoin", "lightning network", "blockchain" ]
+date = "2018-01-24T04:30:44+09:00"
 +++
 
 Bitcoin に限らず、今年はオフチェーンなテクノロジーが多々実用段階に突入しそうですねということで、把握必須であろう Lightning Network について手を動かしながら勉強していこうかと。Lightning Network ノードの実装はいくつかありますが、今回は [Lightning Labs](https://lightning.engineering) の [lnd](https://github.com/lightningnetwork/lnd) をチョイスしました。

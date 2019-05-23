@@ -1,7 +1,7 @@
 +++
-date = "2014-09-07"
-tags = [ "others" ]
 title = "SoundCloud と私"
+tags = [ "others" ]
+date = "2014-09-07"
 +++
 
 ここ1年くらい、音楽はほとんど [SoundCloud](https://soundcloud.com) で聴いている。ゾッコンである。最近、そんな [SoundCloud](https://soundcloud.com) にさらにゾッコンになってしまうような、学びのあるユーザー体験ができたのでメモ。

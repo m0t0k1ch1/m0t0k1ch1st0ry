@@ -1,7 +1,7 @@
 +++
-date = "2014-12-07"
-tags = [ "others" ]
 title = "ブログリニューアル"
+tags = [ "others" ]
+date = "2014-12-07"
 +++
 
 徐ろにテーマを [HPSTR](https://github.com/Z1MM32M4N/hpstr-theme) にしてみた。ナウい感じでよい。

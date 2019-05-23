@@ -1,7 +1,7 @@
 +++
-date = "2016-02-13T19:11:50+09:00"
-tags = [ "others" ]
 title = "Quiver でメモ管理改善"
+tags = [ "others" ]
+date = "2016-02-13T19:11:50+09:00"
 +++
 
 [Quiver: The Programmer's Notebook](https://itunes.apple.com/jp/app/quiver-programmers-notebook/id866773894?mt=12)

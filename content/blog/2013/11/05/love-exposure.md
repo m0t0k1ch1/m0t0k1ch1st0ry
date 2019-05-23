@@ -1,7 +1,7 @@
 +++
-date = "2013-11-05"
-tags = [ "movie" ]
 title = "Love Exposure"
+tags = [ "movie" ]
+date = "2013-11-05"
 +++
 
 念願の TSUTAYA デビューをキメ、観たい観たいとずっと主張しておきながら全然観れてなかった「[愛のむきだし](http://www.phantom-film.jp/library/site/ainomukidashi)」を借りて観たので、感じたことを書き留めておきたい所存です。完全に、こないだ「[地獄でなぜ悪い](http://play-in-hell.com)」を観た影響です。ミーハーです。

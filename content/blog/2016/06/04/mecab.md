@@ -1,7 +1,7 @@
 +++
-date = "2016-06-05T00:29:34+09:00"
-tags = [ "mecab" ]
 title = "MeCab のユーザー辞書に単語を追加してみる"
+tags = [ "mecab" ]
+date = "2016-06-05T00:29:34+09:00"
 +++
 
 いろいろあって、とりあえず [MeCab](http://taku910.github.io/mecab) を触ってみるかという気持ちになったので、[こちらのエントリ](https://blog.apar.jp/linux/2748) を参考にして触ってみた。

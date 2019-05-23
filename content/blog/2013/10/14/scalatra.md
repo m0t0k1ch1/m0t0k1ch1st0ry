@@ -1,7 +1,7 @@
 +++
-date = "2013-10-14"
-tags = [ "scala", "scalatra" ]
 title = "Scalatra を Jetty で standalone deploy してみる"
+tags = [ "scala", "scalatra" ]
+date = "2013-10-14"
 +++
 
 しばらくの間、ポケモンとともにカロス地方に旅立つことになりそうなので、帰って来れなくなる前に途中書きだった [Scalatra](http://www.scalatra.org) の話をまとめました。

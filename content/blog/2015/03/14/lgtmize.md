@@ -1,7 +1,7 @@
 +++
-date = "2015-03-14"
-tags = [ "golang" ]
 title = "Golang で好きな画像を LGTMize する"
+tags = [ "golang" ]
+date = "2015-03-14"
 +++
 
 {{< github "m0t0k1ch1" "lgtmize" >}}

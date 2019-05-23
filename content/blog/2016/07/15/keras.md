@@ -1,7 +1,7 @@
 +++
-date = "2016-07-15T04:38:39+09:00"
-tags = [ "keras", "tensorflow", "python" ]
 title = "はじめての Deep Learning - Keras で MLP for MNIST"
+tags = [ "keras", "tensorflow", "python" ]
+date = "2016-07-15T04:38:39+09:00"
 +++
 
 動機はさておき、[こちらのエントリ](http://aidiary.hatenablog.com/entry/20160328/1459174455) を読んで気になっていた Keras を触ってみたのでメモ。自分は機械学習にも Python にも触れたことはないので、とりあえず、サンプルコードを読み解きながら、誰しもが通るであろう（？）MNIST データセットの識字をやってみた。表題の通り、用いたモデルは MLP（Multi-Layer Perceptron）。また、今回描いたコードには丁寧にコメントをつけたつもりなので、同じことをやろうとしている方の手助けになれば幸いです🙏

@@ -1,7 +1,7 @@
 +++
-date = "2017-01-15T04:11:05+09:00"
-tags = [ "openssl", "bitcoin" ]
 title = "OpenSSL を使って Bitcoin 用の鍵ペアを生成する"
+tags = [ "openssl", "bitcoin" ]
+date = "2017-01-15T04:11:05+09:00"
 +++
 
 Bitcoin 用の鍵ペアをローカルでシュッとつくりたくなって有識者に話してみたら、openssl でつくれるのではという話を聞いたのでやってみた。

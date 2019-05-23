@@ -1,7 +1,7 @@
 +++
-date = "2014-08-16"
-tags = [ "golang" ]
 title = "Golang で ksatriya という薄い WAF を書いてみた"
+tags = [ "golang" ]
+date = "2014-08-16"
 +++
 
 {{< github "m0t0k1ch1" "ksatriya" >}}

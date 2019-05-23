@@ -1,7 +1,7 @@
 +++
-date = "2014-09-08"
-tags = [ "golang" ]
 title = "ksatriya update log"
+tags = [ "golang" ]
+date = "2014-09-08"
 +++
 
 前に勢いで書いちゃった [ksatriya](https://github.com/m0t0k1ch1/ksatriya)（[こちら]({{< ref "/blog/2014/08/16/ksatriya.md" >}}) をご参照ください）、自分で使うにあたってちょっと機能追加したくなったので追加した。

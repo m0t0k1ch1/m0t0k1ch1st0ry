@@ -1,7 +1,7 @@
 +++
-date = "2015-08-01T08:13:09+09:00"
-tags = [ "music" ]
 title = "Not Goodbye Happiness"
+tags = [ "music" ]
+date = "2015-08-01T08:13:09+09:00"
 +++
 
 処女作です。

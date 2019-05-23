@@ -1,7 +1,7 @@
 +++
-date = "2013-11-28"
-tags = [ "isucon", "scala", "scalatra", "slick" ]
 title = "ISUCON3 本戦のお題アプリを Scala に移植しました"
+tags = [ "isucon", "scala", "scalatra", "slick" ]
+date = "2013-11-28"
 +++
 
 あのアツい闘いから早3週間。。底辺スタッフとして運営に関わらせていただいた m0t0k1ch1 です（[ISUCON3 底辺スタッフの記録]({{< ref "/blog/2013/11/10/isucon3.md" >}})）。勉強目的でこそこそ進めていた本戦お題アプリの Scala 移植がとりあえず終わったので、学んだことを簡単にまとめるついでにソースコードを公開したいと思います。

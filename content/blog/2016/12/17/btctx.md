@@ -1,7 +1,7 @@
 +++
-date = "2016-12-17T02:08:17+09:00"
-tags = [ "bitcoin", "blockchain", "golang" ]
 title = "Bitcoin の transaction を Golang で解読する"
+tags = [ "bitcoin", "blockchain", "golang" ]
+date = "2016-12-17T02:08:17+09:00"
 +++
 
 Golang で Bitcoin の transaction のバイト列をちまちま読む package を結構前に勉強も兼ねて描き始めていたのだが、これが普段ちょこちょこ使うようになって整ってきた。最近筆不精になってるし、せっかくなのでブログのエントリというカタチでも整えてみることにした。

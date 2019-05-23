@@ -1,7 +1,7 @@
 +++
-date = "2017-05-15T03:38:15+09:00"
-tags = [ "blockchain", "golang" ]
 title = "シンプルな Blockchain を Golang で実装する"
+tags = [ "blockchain", "golang" ]
+date = "2017-05-15T03:38:15+09:00"
 +++
 
 以前に [200行のコードへのブロックチェーンの実装](http://postd.cc/a-blockchain-in-200-lines-of-code) というエントリを読み、たった 200 行の Javascript で実装された Blockchain である [Naivechain](https://github.com/lhartikk/naivechain) の存在を知った。本エントリは、その Naivechain の Golang 版を実装してみたので、本家 Naivechain と合わせてご紹介しますという話。ちなみに、コードの短さは求めずになるべく構造化してわかりやすさ重視で書いた（つもり）なので、200 行ではない。
