@@ -2,6 +2,7 @@
 title = 'ISUCON5 と chatzmers - 本戦解脱編'
 tags = ['isucon']
 date = '2015-11-08T14:01:43+09:00'
+images = ['img/entry/isucon5.jpg']
 +++
 
 予選に引き続き、[ISUCON5](http://isucon.net/archives/45869121.html) 本戦にチーム「__chatzmers__」として参加してきました。運営の皆さんへの感謝と今の想いを来年の自分に伝えるためにメモ。

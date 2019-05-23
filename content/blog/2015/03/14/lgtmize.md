@@ -2,6 +2,7 @@
 title = 'Golang で好きな画像を LGTMize する'
 tags = ['golang']
 date = '2015-03-14'
+images = ['img/entry/zushi-lgtm.jpg']
 +++
 
 {{< github "m0t0k1ch1" "lgtmize" >}}

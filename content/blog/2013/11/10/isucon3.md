@@ -2,6 +2,7 @@
 title = 'ISUCON3 底辺スタッフの記録'
 tags = ['isucon', 'others']
 date = '2013-11-10'
+images = ['img/entry/isucon3_1.jpg']
 +++
 
 [ISUCON3](http://isucon.net) 本戦にスタッフとして参加させていただきました。準備期間と当日にやったこと、それを通して感じたことをまとめます。

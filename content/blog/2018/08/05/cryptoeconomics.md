@@ -2,6 +2,7 @@
 title = 'cryptoeconomics: crypto-backed mechanism design'
 tags = ['cryptoeconomics', 'economics', 'blockchain']
 date = '2018-08-05T00:26:07+09:00'
+images = ['img/entry/venus.png']
 +++
 
 [これ]({{< ref "/blog/2018/07/28/cryptoeconomics.md" >}}) の続きです。

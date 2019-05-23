@@ -2,6 +2,7 @@
 title = 'Vickrey auction に見る incentive compatibility'
 tags = ['cryptoeconomics', 'economics', 'blockchain']
 date = '2018-09-29T03:43:35+09:00'
+images = ['img/entry/vickrey-auction_1.png']
 +++
 
 タイトルからは小難しそうな感が漂っていますが、見かけ倒しです。
