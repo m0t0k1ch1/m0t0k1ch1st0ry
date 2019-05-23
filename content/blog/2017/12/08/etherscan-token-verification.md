@@ -54,8 +54,7 @@ $ pip3 install solidity-flattener
 
 今回のターゲットはこちら。[既に ropsten にデプロイ済みの ERC20 トークン](https://ropsten.etherscan.io/token/0x480d291d75a79b48bf5da25921a39cbf73fd060b) である。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="another-ether"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "another-ether" >}}
 
 時は満ちたり。以下を実行してがっちゃんこする。`--solc-paths` オプションの使い方がポイント。
 

@@ -79,5 +79,4 @@ title = "秋なので、Twitter上にかわいい相棒をつくってみた"
 
 とりあえず GitHub に置きました。興味のある方はどうぞ。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="c1pher0ne"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "c1pher0ne" >}}

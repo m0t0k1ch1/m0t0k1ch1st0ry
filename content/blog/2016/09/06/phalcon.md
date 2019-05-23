@@ -130,8 +130,7 @@ Press Ctrl-C to quit.
 
 できあがったのがこちら。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="multi-module-phalcon"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "multi-module-phalcon" >}}
 
 `apps` 以下はこんな感じ。
 

@@ -84,8 +84,7 @@ function requestToken() public {
 
 なお、全 contract のソースコードはこちらに置いておきました。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="happy-hacking-christmas"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "happy-hacking-christmas" >}}
 
 パズルに関連する contract は、全て数十行程度でとてもシンプルなので、Solidity 初心者の方でも問題なく理解できるレベルかと思います。
 

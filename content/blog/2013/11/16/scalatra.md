@@ -44,8 +44,7 @@ title = "Scalatra + Slick + Scalate でつくるサンプルうぇっぶアプ�
 
 ## ソースコード
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="scalatra-slick"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "scalatra-slick" >}}
 
 ## どんなうぇっぶアプリケーションなんです？？
 

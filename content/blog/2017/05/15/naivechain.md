@@ -8,8 +8,7 @@ title = "シンプルな Blockchain を Golang で実装する"
 
 <!--more-->
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="naivechain"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "naivechain" >}}
 
 自分の Naivechain 以外に、[300 行で実装された Golang 実装](https://github.com/kofj/naivechain) もあったりするので、短いコードがお好みの方はそちらもご参照あれ。
 

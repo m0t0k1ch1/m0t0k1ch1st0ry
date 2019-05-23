@@ -26,8 +26,7 @@ Scalatra ？ Slick ？という方は [こちらのエントリ]({{< ref "/blog/
 
 ## ソースコード
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="isucon3-scala"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "isucon3-scala" >}}
 
 `src/main/scala/com/github/m0t0k1ch1/isucon/Isucon.scala` にほとんどの実装が書いてあります。
 

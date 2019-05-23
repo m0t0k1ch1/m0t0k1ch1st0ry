@@ -47,8 +47,7 @@ Vim と Emacs どっちも触れないのにエンジニアなんですか？へ
 
 ## できあがった設定
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="dotfiles"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "dotfiles" >}}
 
 ### 設定概要
 

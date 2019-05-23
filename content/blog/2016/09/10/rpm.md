@@ -191,8 +191,7 @@ $ createrepo repo
 
 で、今回はこの repo を GitHub に置いて、gh-pages ブランチを切っておいた。gh-pages ブランチを切っておくと、https://m0t0k1ch1.github.io/rpm/centos/latest/x86_64/go-rpm-sample-0.1.0-1.x86_64.rpm という URL で wget したりできる。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="yum-repo"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "yum-repo" >}}
 
 で、例えばまっさらな別 CentOS 6 に `/etc/yum.repos.d/m0t0k1ch1.repo` を設置する。内容は以下。
 

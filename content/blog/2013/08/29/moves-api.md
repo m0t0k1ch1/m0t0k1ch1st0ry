@@ -58,5 +58,4 @@ title = "moves の API で遊んでみた"
 
 大変見苦しいコードですが、GitHub で公開しました。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="labor-time"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "labor-time" >}}

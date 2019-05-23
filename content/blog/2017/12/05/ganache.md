@@ -99,8 +99,7 @@ Advent Calendar の 2 日目の記事「[Truffle で始める Ethereum 入門 - 
 
 実際のコードは GitHub に置いておきましたので、必要であればご参照ください。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="ERC20-token-sample"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "ERC20-token-sample" >}}
 
 [マイグレーションファイルの作成](https://qiita.com/amachino/items/8cf609f6345959ffc450#%E3%83%9E%E3%82%A4%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E4%BD%9C%E6%88%90) までは 2 日目の記事と同じですが、次の手順である「コントラクトのデプロイ」が異なります。
 

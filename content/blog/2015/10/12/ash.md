@@ -14,8 +14,7 @@ title = "渋いい感じの Keynote テーマ「ash」"
 
 GitHub で公開しているので、ご自由にお使いください。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="ash"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "ash" >}}
 
 ちなみに、配色は [Adobe Color CC](https://color.adobe.com/ja/explore/most-popular/?time=all) からいい感じのものをいただきました。
 

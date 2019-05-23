@@ -4,8 +4,7 @@ tags = [ "golang" ]
 title = "Golang で好きな画像を LGTMize する"
 +++
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="lgtmize"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "lgtmize" >}}
 
 普段から多用している `:ok_woman:` に少し飽きてきたので、そろそろしめやかに LGTM 童貞を卒業しようと思い、つくってみた。
 

@@ -6,8 +6,7 @@ title = "Slack の Outgoing WebHook をハンドリングするくん"
 
 Golang で API サーバー立てる練習として、Slack の Outgoing WebHook を捕まえる対話式の bot をつくっていて、その bot 固有の機能でない部分は切り離せるわ〜〜〜と思って、えいやっと書いた。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="potto"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "potto" >}}
 
 <!--more-->
 

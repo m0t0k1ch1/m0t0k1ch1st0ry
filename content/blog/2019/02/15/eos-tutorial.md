@@ -25,7 +25,6 @@ title = "EOSIO Developer Portal チュートリアルの軌跡"
 
 チュートリアルには、contract 全体のコードが載っていないパート（例えば、custom dispatcher に関するパートなど）もあるため、そういうパートに関しては contract として成立しているサンプルコードを書くことを意識しました。書いたサンプルコードは以下にまとめてあります。
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="eos-tutorial"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "eos-tutorial" >}}
 
 英語に抵抗がなく、本家チュートリアルをスラスラ進められるような方に上記メモ群は不要かなと思いますが、サンプルコードに関しては、前述した事情を踏まえると、多少の手助けになるかなとは思います。同じ道を辿る方のお役に立てれば幸いです。

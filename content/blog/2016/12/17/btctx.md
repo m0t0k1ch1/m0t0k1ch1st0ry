@@ -10,8 +10,7 @@ Golang で Bitcoin の transaction のバイト列をちまちま読む package 
 
 ## つくったもの
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="btc"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "btc" >}}
 
 Bitcoin の transaction は [こういう構造](https://en.bitcoin.it/wiki/Protocol_documentation#tx) になっているので、これを愚直に読んだり書いたりしている。エンディアンが揃っていないところがあったりで嵌ったりした。近くに有識者がいたので助かったけど、1 人でやってたら諦めてたかもしれない。
 

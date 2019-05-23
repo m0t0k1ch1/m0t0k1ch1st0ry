@@ -8,8 +8,7 @@ title = "Docker で private かつ standalone な Ethereum ノードを立てる
 
 <!--more-->
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="ethereum-docker"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "ethereum-docker" >}}
 
 README に書いてある通り、`docker-compose up -d` するだけで private かつ standalone な Ethereum ノードが立ち上がり、マイニングが始まる。なお、起動コマンドは以下。
 

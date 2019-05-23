@@ -10,8 +10,7 @@ title = "Cassandra 監視用の Zabbix template"
 
 ## 成果物
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="zabbix-cassandra-template"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "zabbix-cassandra-template" >}}
 
 細かい解説はしないが、用意したグラフ名を以下に列挙。名前からお察しください。
 

@@ -4,8 +4,7 @@ tags = [ "golang" ]
 title = "Golang で ksatriya という薄い WAF を書いてみた"
 +++
 
-<div class="github-card" data-user="m0t0k1ch1" data-repo="ksatriya"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+{{< github "m0t0k1ch1" "ksatriya" >}}
 
 気分転換も兼ねて、Golang で薄い WAF を書いてみた。「書いた」というより「つぎはぎした」と表現した方が正しい感じのものですが、そこはご了承ください。
 
