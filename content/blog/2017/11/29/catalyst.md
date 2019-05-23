@@ -1,6 +1,6 @@
 +++
 title = "Catalyst から紐解く Enigma ①"
-tags = [ "blockchain", "enigma" ]
+tags = ["blockchain", "enigma"]
 date = "2017-11-29T01:59:10+09:00"
 +++
 

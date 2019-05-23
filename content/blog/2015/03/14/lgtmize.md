@@ -1,6 +1,6 @@
 +++
 title = "Golang で好きな画像を LGTMize する"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2015-03-14"
 +++
 

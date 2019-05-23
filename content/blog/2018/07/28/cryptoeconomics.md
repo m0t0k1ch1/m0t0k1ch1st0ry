@@ -1,6 +1,6 @@
 +++
 title = "トークンエコノミーとの関係性から考える cryptoeconomics"
-tags = [ "cryptoeconomics", "blockchain" ]
+tags = ["cryptoeconomics", "blockchain"]
 date = "2018-07-28T00:59:36+09:00"
 +++
 

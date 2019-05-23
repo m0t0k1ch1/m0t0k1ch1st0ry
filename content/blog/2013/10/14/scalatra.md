@@ -1,6 +1,6 @@
 +++
 title = "Scalatra を Jetty で standalone deploy してみる"
-tags = [ "scala", "scalatra" ]
+tags = ["scala", "scalatra"]
 date = "2013-10-14"
 +++
 

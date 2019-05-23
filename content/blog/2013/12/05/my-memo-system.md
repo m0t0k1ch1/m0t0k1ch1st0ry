@@ -1,6 +1,6 @@
 +++
 title = "Evetnote から脱却して Kobito + Nocs + Dropbox でメモ管理"
-tags = [ "others" ]
+tags = ["others"]
 date = "2013-12-05"
 +++
 

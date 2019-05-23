@@ -1,6 +1,6 @@
 +++
 title = "弱い参照で循環参照を解決する - Perl"
-tags = [ "perl" ]
+tags = ["perl"]
 date = "2013-08-17"
 +++
 

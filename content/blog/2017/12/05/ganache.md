@@ -1,6 +1,6 @@
 +++
 title = "Ganache で始める Ðapp 開発"
-tags = [ "ethereum", "truffle", "ganache", "solidity", "blockchain" ]
+tags = ["ethereum", "truffle", "ganache", "solidity", "blockchain"]
 date = "2017-12-05"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Keras のモデルと学習結果を保存して利用する"
-tags = [ "keras", "python" ]
+tags = ["keras", "python"]
 date = "2016-07-17T01:38:01+09:00"
 +++
 

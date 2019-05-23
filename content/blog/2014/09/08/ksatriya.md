@@ -1,6 +1,6 @@
 +++
 title = "ksatriya update log"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2014-09-08"
 +++
 

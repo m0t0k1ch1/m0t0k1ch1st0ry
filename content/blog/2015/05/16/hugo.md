@@ -1,6 +1,6 @@
 +++
 title = "Hugo ＋ wercker ＋ GitHub Pages でブログ管理"
-tags = [ "hugo", "wercker" ]
+tags = ["hugo", "wercker"]
 date = "2015-05-15T23:18:39+09:00"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Scala で config ファイルを使う"
-tags = [ "scala" ]
+tags = ["scala"]
 date = "2014-02-04"
 +++
 

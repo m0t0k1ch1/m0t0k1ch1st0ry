@@ -1,6 +1,6 @@
 +++
 title = "net/http の動きを少しだけ追ってみた - Golang"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2014-06-09"
 +++
 

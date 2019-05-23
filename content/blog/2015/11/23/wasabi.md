@@ -1,6 +1,6 @@
 +++
 title = "なんでもルーレットしてくれる Slack bot"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2015-11-23T19:06:57+09:00"
 +++
 

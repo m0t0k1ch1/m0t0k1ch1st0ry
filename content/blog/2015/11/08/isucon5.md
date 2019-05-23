@@ -1,6 +1,6 @@
 +++
 title = "ISUCON5 と chatzmers - 本戦解脱編"
-tags = [ "isucon" ]
+tags = ["isucon"]
 date = "2015-11-08T14:01:43+09:00"
 +++
 

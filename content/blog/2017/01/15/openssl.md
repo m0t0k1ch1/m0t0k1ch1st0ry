@@ -1,6 +1,6 @@
 +++
 title = "OpenSSL を使って Bitcoin 用の鍵ペアを生成する"
-tags = [ "openssl", "bitcoin" ]
+tags = ["openssl", "bitcoin"]
 date = "2017-01-15T04:11:05+09:00"
 +++
 

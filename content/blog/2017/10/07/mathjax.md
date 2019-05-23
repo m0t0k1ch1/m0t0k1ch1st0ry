@@ -1,6 +1,6 @@
 +++
 title = "Hugo に MathJax を導入して数式を書けるようにする"
-tags = [ "math" ]
+tags = ["math"]
 date = "2017-10-07"
 +++
 

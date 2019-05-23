@@ -1,6 +1,6 @@
 +++
 title = "はじめての Deep Learning - Keras で MLP for MNIST"
-tags = [ "keras", "tensorflow", "python" ]
+tags = ["keras", "tensorflow", "python"]
 date = "2016-07-15T04:38:39+09:00"
 +++
 

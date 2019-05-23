@@ -1,6 +1,6 @@
 +++
 title = "Vickrey auction に見る incentive compatibility"
-tags = [ "cryptoeconomics", "economics", "blockchain" ]
+tags = ["cryptoeconomics", "economics", "blockchain"]
 date = "2018-09-29T03:43:35+09:00"
 +++
 

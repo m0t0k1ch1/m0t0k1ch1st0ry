@@ -1,6 +1,6 @@
 +++
 title = "vs Chef 第2回戦"
-tags = [ "chef", "perl", "ruby" ]
+tags = ["chef", "perl", "ruby"]
 date = "2013-05-01"
 +++
 

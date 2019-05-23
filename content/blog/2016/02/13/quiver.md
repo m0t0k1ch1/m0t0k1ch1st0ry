@@ -1,6 +1,6 @@
 +++
 title = "Quiver でメモ管理改善"
-tags = [ "others" ]
+tags = ["others"]
 date = "2016-02-13T19:11:50+09:00"
 +++
 

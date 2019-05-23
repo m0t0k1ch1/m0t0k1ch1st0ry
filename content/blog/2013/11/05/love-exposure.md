@@ -1,6 +1,6 @@
 +++
 title = "Love Exposure"
-tags = [ "movie" ]
+tags = ["movie"]
 date = "2013-11-05"
 +++
 

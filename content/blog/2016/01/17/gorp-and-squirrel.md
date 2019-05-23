@@ -1,6 +1,6 @@
 +++
 title = "gorp と squirrel で CRUD"
-tags = [ "golang", "mysql" ]
+tags = ["golang", "mysql"]
 date = "2016-01-17T15:50:42+09:00"
 +++
 

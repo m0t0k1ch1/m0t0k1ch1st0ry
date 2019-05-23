@@ -1,6 +1,6 @@
 +++
 title = "Docker Toolbox をアンインストールして Docker for Mac を試してみる"
-tags = [ "docker" ]
+tags = ["docker"]
 date = "2016-08-28T02:08:15+09:00"
 +++
 

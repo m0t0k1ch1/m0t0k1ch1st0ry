@@ -1,6 +1,6 @@
 +++
 title = "ISUCON3 底辺スタッフの記録"
-tags = [ "isucon", "others" ]
+tags = ["isucon", "others"]
 date = "2013-11-10"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Golang で IRC bot をつくりやすくする"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2015-07-26T21:36:12+09:00"
 +++
 

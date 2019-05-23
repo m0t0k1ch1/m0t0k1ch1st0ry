@@ -1,6 +1,6 @@
 +++
 title = "ブログを書くまでが YAPC::Asia Tokyo 2014"
-tags = [ "yapc" ]
+tags = ["yapc"]
 date = "2014-08-31"
 +++
 

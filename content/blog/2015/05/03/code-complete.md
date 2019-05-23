@@ -1,6 +1,6 @@
 +++
 title = "CODE COMPLETE 上 - 第5章まで"
-tags = [ "book" ]
+tags = ["book"]
 date = "2015-05-03"
 +++
 

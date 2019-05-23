@@ -1,6 +1,6 @@
 +++
 title = "渋いい感じの Keynote テーマ「ash」"
-tags = [ "others" ]
+tags = ["others"]
 date = "2015-10-12T11:17:19+09:00"
 +++
 

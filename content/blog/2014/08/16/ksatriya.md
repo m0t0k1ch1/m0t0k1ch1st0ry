@@ -1,6 +1,6 @@
 +++
 title = "Golang で ksatriya という薄い WAF を書いてみた"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2014-08-16"
 +++
 

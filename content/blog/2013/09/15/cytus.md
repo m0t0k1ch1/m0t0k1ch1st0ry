@@ -1,6 +1,6 @@
 +++
 title = "ありがとう Cytus"
-tags = [ "others" ]
+tags = ["others"]
 date = "2013-09-15"
 +++
 

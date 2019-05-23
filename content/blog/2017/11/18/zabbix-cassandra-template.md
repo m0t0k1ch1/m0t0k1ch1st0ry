@@ -1,6 +1,6 @@
 +++
 title = "Cassandra 監視用の Zabbix template"
-tags = [ "zabbix", "cassandra" ]
+tags = ["zabbix", "cassandra"]
 date = "2017-11-18T21:00:45+09:00"
 +++
 

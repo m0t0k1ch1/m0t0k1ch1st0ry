@@ -1,6 +1,6 @@
 +++
 title = "ISUCON3 本戦のお題アプリを Scala に移植しました"
-tags = [ "isucon", "scala", "scalatra", "slick" ]
+tags = ["isucon", "scala", "scalatra", "slick"]
 date = "2013-11-28"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "音で振り返る2014年"
-tags = [ "music" ]
+tags = ["music"]
 date = "2014-12-31"
 +++
 

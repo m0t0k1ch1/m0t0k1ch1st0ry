@@ -1,6 +1,6 @@
 +++
 title = "2016 如月"
-tags = [ "others" ]
+tags = ["others"]
 date = "2016-02-07T18:13:15+09:00"
 +++
 

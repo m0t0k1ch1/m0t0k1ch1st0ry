@@ -1,6 +1,6 @@
 +++
 title = "お 1 人様用 Mastodon を立てながら Mastodon について想うこと"
-tags = [ "mastodon", "blockchain" ]
+tags = ["mastodon", "blockchain"]
 date = "2017-04-21T00:21:40+09:00"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Twitter bot に趣深い詩を詠ませてみた"
-tags = [ "api", "c1pher0ne", "perl" ]
+tags = ["api", "c1pher0ne", "perl"]
 date = "2013-10-02"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Unity で 2D シューティング"
-tags = [ "unity" ]
+tags = ["unity"]
 date = "2014-07-06"
 +++
 

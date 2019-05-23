@@ -1,6 +1,6 @@
 +++
 title = "芸術実行犯"
-tags = [ "book" ]
+tags = ["book"]
 date = "2014-12-21"
 +++
 

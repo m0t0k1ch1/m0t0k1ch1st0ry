@@ -1,6 +1,6 @@
 +++
 title = "Golang のルーンリテラル"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2014-06-08"
 +++
 

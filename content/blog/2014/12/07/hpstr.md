@@ -1,6 +1,6 @@
 +++
 title = "ブログリニューアル"
-tags = [ "others" ]
+tags = ["others"]
 date = "2014-12-07"
 +++
 

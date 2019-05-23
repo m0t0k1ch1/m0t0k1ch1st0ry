@@ -1,6 +1,6 @@
 +++
 title = "Golang で GitHub の Markdown API をたたく"
-tags = [ "api", "golang" ]
+tags = ["api", "golang"]
 date = "2014-06-03"
 +++
 

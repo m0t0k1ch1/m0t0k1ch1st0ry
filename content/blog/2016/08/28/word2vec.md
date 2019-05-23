@@ -1,6 +1,6 @@
 +++
 title = "Python で「老人と海」を word2vec する"
-tags = [ "python", "word2vec" ]
+tags = ["python", "word2vec"]
 date = "2016-08-28T01:52:33+09:00"
 +++
 

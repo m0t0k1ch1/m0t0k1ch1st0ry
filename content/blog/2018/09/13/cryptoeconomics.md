@@ -1,6 +1,6 @@
 +++
 title = "cryptoeconomics の「守」"
-tags = [ "cryptoeconomics", "economics", "blockchain" ]
+tags = ["cryptoeconomics", "economics", "blockchain"]
 date = "2018-09-13T03:39:01+09:00"
 +++
 

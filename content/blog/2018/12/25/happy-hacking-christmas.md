@@ -1,6 +1,6 @@
 +++
 title = "Happy Hacking Christmas"
-tags = [ "ethereum", "solidity", "blockchain" ]
+tags = ["ethereum", "solidity", "blockchain"]
 date = "2018-12-25T01:54:05+09:00"
 +++
 

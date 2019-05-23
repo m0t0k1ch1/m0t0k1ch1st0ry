@@ -1,6 +1,6 @@
 +++
 title = "Unity 始めました"
-tags = [ "unity" ]
+tags = ["unity"]
 date = "2014-07-05"
 +++
 

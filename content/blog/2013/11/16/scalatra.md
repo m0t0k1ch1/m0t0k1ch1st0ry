@@ -1,6 +1,6 @@
 +++
 title = "Scalatra + Slick + Scalate でつくるサンプルうぇっぶアプリケーション"
-tags = [ "scala", "scalatra", "slick" ]
+tags = ["scala", "scalatra", "slick"]
 date = "2013-11-16"
 +++
 

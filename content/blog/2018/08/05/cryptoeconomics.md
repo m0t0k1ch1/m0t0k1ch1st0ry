@@ -1,6 +1,6 @@
 +++
 title = "cryptoeconomics: crypto-backed mechanism design"
-tags = [ "cryptoeconomics", "economics", "blockchain" ]
+tags = ["cryptoeconomics", "economics", "blockchain"]
 date = "2018-08-05T00:26:07+09:00"
 +++
 

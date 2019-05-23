@@ -1,6 +1,6 @@
 +++
 title = "最近の Hugo + wercker + GitHub pages で嵌ったこと"
-tags = [ "hugo", "wercker" ]
+tags = ["hugo", "wercker"]
 date = "2017-01-14T12:29:55+09:00"
 +++
 

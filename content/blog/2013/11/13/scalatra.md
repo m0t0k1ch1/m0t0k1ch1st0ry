@@ -1,6 +1,6 @@
 +++
 title = "Scalatra のアクションで Int が返らなくてはまった"
-tags = [ "scala", "scalatra", "slick" ]
+tags = ["scala", "scalatra", "slick"]
 date = "2013-11-13"
 +++
 

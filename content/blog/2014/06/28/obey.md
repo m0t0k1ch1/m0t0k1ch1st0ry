@@ -1,6 +1,6 @@
 +++
 title = "obey"
-tags = [ "others" ]
+tags = ["others"]
 date = "2014-06-28"
 +++
 

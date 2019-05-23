@@ -1,6 +1,6 @@
 +++
 title = "tatoo"
-tags = [ "movie" ]
+tags = ["movie"]
 date = "2014-06-22"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Docker で private かつ standalone な Ethereum ノードを立てる"
-tags = [ "ethereum", "blockchain", "docker" ]
+tags = ["ethereum", "blockchain", "docker"]
 date = "2017-11-12"
 +++
 

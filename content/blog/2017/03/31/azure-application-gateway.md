@@ -1,6 +1,6 @@
 +++
 title = "Azure で Application Gateway 下の Healthy なホスト数を取得する"
-tags = [ "azure" ]
+tags = ["azure"]
 date = "2017-03-31T01:24:20+09:00"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "大人の事情には目を瞑って、Raiden の ICO について考える"
-tags = [ "ico", "raiden", "ethereum", "solidity", "blockchain" ]
+tags = ["ico", "raiden", "ethereum", "solidity", "blockchain"]
 date = "2017-12-11T03:47:23+09:00"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "おみくじ"
-tags = [ "others" ]
+tags = ["others"]
 date = "2016-01-03T23:50:54+09:00"
 +++
 

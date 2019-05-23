@@ -1,6 +1,6 @@
 +++
 title = "ISUCON5 と chatzmers - 予選4位通過編"
-tags = [ "isucon", "perl" ]
+tags = ["isucon", "perl"]
 date = "2015-09-29T01:46:40+09:00"
 +++
 

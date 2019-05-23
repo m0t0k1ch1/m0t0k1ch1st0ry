@@ -1,6 +1,6 @@
 +++
 title = "脳科学の本を読んだ"
-tags = [ "book" ]
+tags = ["book"]
 date = "2014-05-12"
 +++
 

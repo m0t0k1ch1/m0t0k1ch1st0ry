@@ -1,6 +1,6 @@
 +++
 title = "Slack の Outgoing WebHook をハンドリングするくん"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2015-11-22T17:32:45+09:00"
 +++
 

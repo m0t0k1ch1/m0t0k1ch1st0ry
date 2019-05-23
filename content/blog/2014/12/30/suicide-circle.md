@@ -1,6 +1,6 @@
 +++
 title = "Suicide Circle"
-tags = [ "movie" ]
+tags = ["movie"]
 date = "2014-12-30"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "smart match の smart さに物申す - Perl"
-tags = [ "perl" ]
+tags = ["perl"]
 date = "2013-05-09"
 +++
 

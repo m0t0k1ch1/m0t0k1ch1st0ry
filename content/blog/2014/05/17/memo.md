@@ -1,6 +1,6 @@
 +++
 title = "memo"
-tags = [ "others" ]
+tags = ["others"]
 date = "2014-05-17"
 +++
 

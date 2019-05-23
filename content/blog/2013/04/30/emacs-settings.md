@@ -1,6 +1,6 @@
 +++
 title = "Emacs で Perl 描きたい"
-tags = [ "emacs", "perl" ]
+tags = ["emacs", "perl"]
 date = "2013-04-30"
 +++
 

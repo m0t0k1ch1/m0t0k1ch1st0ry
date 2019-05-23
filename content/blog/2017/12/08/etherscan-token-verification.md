@@ -1,6 +1,6 @@
 +++
 title = "truffle で書いたコントラクトを solidity-flattener でがっちゃんこして Etherscan で公開する"
-tags = [ "ethereum", "truffle", "solidity", "blockchain" ]
+tags = ["ethereum", "truffle", "solidity", "blockchain"]
 date = "2017-12-08T04:45:34+09:00"
 +++
 

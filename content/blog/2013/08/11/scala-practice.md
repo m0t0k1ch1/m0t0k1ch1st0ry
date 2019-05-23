@@ -1,6 +1,6 @@
 +++
 title = "第1回 Scala で遊ぼ☆ 「関数型のスタイル -基礎-」"
-tags = [ "scala" ]
+tags = ["scala"]
 date = "2013-08-11"
 +++
 

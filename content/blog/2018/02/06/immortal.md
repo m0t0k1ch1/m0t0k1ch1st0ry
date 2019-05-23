@@ -1,6 +1,6 @@
 +++
 title = "Golang 製の daemon 管理ツール immortal を試してみる"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2018-02-06T01:43:28+09:00"
 +++
 

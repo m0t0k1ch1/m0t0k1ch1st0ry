@@ -1,6 +1,6 @@
 +++
 title = "moves の API で遊んでみた"
-tags = [ "api", "perl" ]
+tags = ["api", "perl"]
 date = "2013-08-29"
 +++
 

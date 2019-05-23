@@ -1,6 +1,6 @@
 +++
 title = "Guilty of Romance"
-tags = [ "movie" ]
+tags = ["movie"]
 date = "2015-10-05T00:02:26+09:00"
 +++
 

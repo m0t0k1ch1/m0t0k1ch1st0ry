@@ -1,6 +1,6 @@
 +++
 title = "flycheck しながら Perl を描くときに"
-tags = [ "emacs", "perl" ]
+tags = ["emacs", "perl"]
 date = "2014-07-07"
 +++
 

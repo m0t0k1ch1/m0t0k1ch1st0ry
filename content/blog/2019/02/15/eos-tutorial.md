@@ -1,6 +1,6 @@
 +++
 title = "EOSIO Developer Portal チュートリアルの軌跡"
-tags = [ "eos", "cpp", "blockchain" ]
+tags = ["eos", "cpp", "blockchain"]
 date = "2019-02-15T11:20:33+09:00"
 +++
 

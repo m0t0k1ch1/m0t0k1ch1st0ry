@@ -1,6 +1,6 @@
 +++
 title = "クロージャにメソッドを実装してみる - Golang"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2014-06-01"
 +++
 

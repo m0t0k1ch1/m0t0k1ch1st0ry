@@ -1,6 +1,6 @@
 +++
 title = "NMD"
-tags = [ "music" ]
+tags = ["music"]
 date = "2013-12-07"
 +++
 

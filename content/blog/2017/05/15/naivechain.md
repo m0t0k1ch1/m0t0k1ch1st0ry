@@ -1,6 +1,6 @@
 +++
 title = "シンプルな Blockchain を Golang で実装する"
-tags = [ "blockchain", "golang" ]
+tags = ["blockchain", "golang"]
 date = "2017-05-15T03:38:15+09:00"
 +++
 

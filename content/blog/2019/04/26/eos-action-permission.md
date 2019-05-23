@@ -1,6 +1,6 @@
 +++
 title = "EOS における、action 単位の permission 制御の必要性とその実現方法"
-tags = [ "eos", "cpp", "blockchain" ]
+tags = ["eos", "cpp", "blockchain"]
 date = "2019-04-26T01:44:37+09:00"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "SoundCloud と私"
-tags = [ "others" ]
+tags = ["others"]
 date = "2014-09-07"
 +++
 

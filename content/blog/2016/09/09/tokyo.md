@@ -1,6 +1,6 @@
 +++
 title = "Tokyo"
-tags = [ "others" ]
+tags = ["others"]
 date = "2016-09-09T00:53:03+09:00"
 +++
 

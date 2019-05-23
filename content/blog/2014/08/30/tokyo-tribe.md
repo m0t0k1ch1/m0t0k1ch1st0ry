@@ -1,6 +1,6 @@
 +++
 title = "TOKYO TRIBE"
-tags = [ "movie" ]
+tags = ["movie"]
 date = "2014-08-30"
 +++
 

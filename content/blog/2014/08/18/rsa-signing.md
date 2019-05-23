@@ -1,6 +1,6 @@
 +++
 title = "Golang で RSA 署名"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2014-08-18"
 +++
 

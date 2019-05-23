@@ -1,6 +1,6 @@
 +++
 title = "かんたん図解！チャレンジレスポンス認証"
-tags = [ "others" ]
+tags = ["others"]
 date = "2014-02-14"
 +++
 

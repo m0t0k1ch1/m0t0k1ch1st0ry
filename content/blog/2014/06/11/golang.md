@@ -1,6 +1,6 @@
 +++
 title = "nil だと思ってやつが nil じゃなかった - Golang"
-tags = [ "golang" ]
+tags = ["golang"]
 date = "2014-06-11"
 +++
 

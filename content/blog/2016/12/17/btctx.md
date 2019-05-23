@@ -1,6 +1,6 @@
 +++
 title = "Bitcoin の transaction を Golang で解読する"
-tags = [ "bitcoin", "blockchain", "golang" ]
+tags = ["bitcoin", "blockchain", "golang"]
 date = "2016-12-17T02:08:17+09:00"
 +++
 
