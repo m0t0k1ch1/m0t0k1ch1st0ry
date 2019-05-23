@@ -15,4 +15,5 @@ pygmentsStyle      = 'monokai'
     hrefTargetBlank = true
 
 [params]
+    description  = "Since 2013"
     mainPageType = 'blog'
