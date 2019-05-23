@@ -1,7 +1,7 @@
 +++
-title = "ISUCON3 底辺スタッフの記録"
-tags = ["isucon", "others"]
-date = "2013-11-10"
+title = 'ISUCON3 底辺スタッフの記録'
+tags = ['isucon', 'others']
+date = '2013-11-10'
 +++
 
 [ISUCON3](http://isucon.net) 本戦にスタッフとして参加させていただきました。準備期間と当日にやったこと、それを通して感じたことをまとめます。

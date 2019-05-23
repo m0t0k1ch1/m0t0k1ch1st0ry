@@ -1,7 +1,7 @@
 +++
-title = "NMD"
-tags = ["music"]
-date = "2013-12-07"
+title = 'NMD'
+tags = ['music']
+date = '2013-12-07'
 +++
 
 最近聴いて電撃が疾走った曲。

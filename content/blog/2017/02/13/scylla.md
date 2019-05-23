@@ -1,7 +1,7 @@
 +++
-title = "WORLD FASTEST NoSQL DATABASE な Scylla のクラスタを組んでみる on Azure"
-tags = ["scylla", "azure"]
-date = "2017-02-13T02:35:40+09:00"
+title = 'WORLD FASTEST NoSQL DATABASE な Scylla のクラスタを組んでみる on Azure'
+tags = ['scylla', 'azure']
+date = '2017-02-13T02:35:40+09:00'
 +++
 
 最近、[Scylla](http://www.scylladb.com) という C++ で書かれた Cassandra コンパチな NoSQL データベースを触っている。マスコットのおばけがかわいい。gopher くんと遊ばせたい。という話はさておき、Scylla 公式サイトのトップには「WORLD FASTEST NoSQL DATABASE」という一文。この星の一等賞とのこと。なんだけど、日本語の情報はまだ全然落ちてないので、今回はとりあえず Azure でクラスタを組んで、動作確認くらいのつもりで cassandra-stress を使って軽くベンチマーキングするところまでやってみましたメモを残してみようと思う。日本でも知見がもっと増えるといいな。

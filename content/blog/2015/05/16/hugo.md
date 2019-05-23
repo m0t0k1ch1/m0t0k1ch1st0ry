@@ -1,7 +1,7 @@
 +++
-title = "Hugo ＋ wercker ＋ GitHub Pages でブログ管理"
-tags = ["hugo", "wercker"]
-date = "2015-05-15T23:18:39+09:00"
+title = 'Hugo ＋ wercker ＋ GitHub Pages でブログ管理'
+tags = ['hugo', 'wercker']
+date = '2015-05-15T23:18:39+09:00'
 +++
 
 [Octopress](http://octopress.org) ＋ [GitHub Pages](https://pages.github.com) で管理してた当ブログを [Hugo](http://gohugo.io) ＋ [wercker](http://wercker.com) ＋ [GitHub Pages](https://pages.github.com/) で管理するようにしましたメモ。最近プライベートで新しいもの触れてなかったので結構楽しかった。

@@ -1,7 +1,7 @@
 +++
-title = "Evetnote から脱却して Kobito + Nocs + Dropbox でメモ管理"
-tags = ["others"]
-date = "2013-12-05"
+title = 'Evetnote から脱却して Kobito + Nocs + Dropbox でメモ管理'
+tags = ['others']
+date = '2013-12-05'
 +++
 
 日常生活・仕事ともに、メモツールとしてはずっと [Evernote](http://evernote.com) を使っていたのですが、近頃の自分のニーズとマッチしなくなってきたのでさようなら〜して新しいメモ管理システムを整えました。大したことではありませんが、それなりに納得しているのでさらりとご紹介させていただきます。同じニーズをお持ちの方の参考になれば幸いです。

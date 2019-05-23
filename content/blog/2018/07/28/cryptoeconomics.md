@@ -1,7 +1,7 @@
 +++
-title = "トークンエコノミーとの関係性から考える cryptoeconomics"
-tags = ["cryptoeconomics", "blockchain"]
-date = "2018-07-28T00:59:36+09:00"
+title = 'トークンエコノミーとの関係性から考える cryptoeconomics'
+tags = ['cryptoeconomics', 'blockchain']
+date = '2018-07-28T00:59:36+09:00'
 +++
 
 最近は [Scrapbox](https://scrapbox.io/m0t0k1ch1) に引きこもってインプットに特化しがちだったので、、そろそろ日向に出て、少しずつ cryptoeconomist 的なアウトプットを出していこうかなと思います。

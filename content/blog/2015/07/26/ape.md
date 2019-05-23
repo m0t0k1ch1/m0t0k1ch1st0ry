@@ -1,7 +1,7 @@
 +++
-title = "Golang で IRC bot をつくりやすくする"
-tags = ["golang"]
-date = "2015-07-26T21:36:12+09:00"
+title = 'Golang で IRC bot をつくりやすくする'
+tags = ['golang']
+date = '2015-07-26T21:36:12+09:00'
 +++
 
 Perl で IRC bot を書くとき、[UnazuSan](https://github.com/Songmu/p5-UnazuSan) の `on_command` を使うのに慣れちゃっていたので、Golang でも同じ雰囲気で書きたいなあと思って、とりあえず骨組みだけ書いてみた。誰か既に似たようなのを書いていそうな気もする。。

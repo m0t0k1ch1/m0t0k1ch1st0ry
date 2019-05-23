@@ -1,7 +1,7 @@
 +++
-title = "cryptoeconomics の「守」"
-tags = ["cryptoeconomics", "economics", "blockchain"]
-date = "2018-09-13T03:39:01+09:00"
+title = 'cryptoeconomics の「守」'
+tags = ['cryptoeconomics', 'economics', 'blockchain']
+date = '2018-09-13T03:39:01+09:00'
 +++
 
 [この記事]({{< ref "/blog/2018/08/05/cryptoeconomics.md" >}}) を書いてから気づけば早 1 ヶ月。お久しぶりな cryptoeconomics 記事です。なお、タイトルにある「守」は、守破離の「守」です。

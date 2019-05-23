@@ -1,7 +1,7 @@
 +++
-title = "Hugo に MathJax を導入して数式を書けるようにする"
-tags = ["math"]
-date = "2017-10-07"
+title = 'Hugo に MathJax を導入して数式を書けるようにする'
+tags = ['math']
+date = '2017-10-07'
 +++
 
 数式を入れたエントリを書こうとしたけど、数式書けないやんってなったので [MathJax](https://www.mathjax.org) を導入することに。

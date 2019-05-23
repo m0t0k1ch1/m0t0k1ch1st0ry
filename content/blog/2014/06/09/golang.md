@@ -1,7 +1,7 @@
 +++
-title = "net/http の動きを少しだけ追ってみた - Golang"
-tags = ["golang"]
-date = "2014-06-09"
+title = 'net/http の動きを少しだけ追ってみた - Golang'
+tags = ['golang']
+date = '2014-06-09'
 +++
 
 Golang の標準パッケージである net/http を使えば簡単に HTTP サーバーを立てることができる。とは言うものの、自分はそのへんが実際どうなってるのか全然わかってない。つらい。ということで、Golang の勉強も兼ねて net/http の動きを少しだけ追ってみることにした。

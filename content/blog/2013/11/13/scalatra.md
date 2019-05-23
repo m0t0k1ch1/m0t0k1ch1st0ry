@@ -1,7 +1,7 @@
 +++
-title = "Scalatra のアクションで Int が返らなくてはまった"
-tags = ["scala", "scalatra", "slick"]
-date = "2013-11-13"
+title = 'Scalatra のアクションで Int が返らなくてはまった'
+tags = ['scala', 'scalatra', 'slick']
+date = '2013-11-13'
 +++
 
 表題の通りです。[Scalatra](http://www.scalatra.org) で [Slick](http://slick.typesafe.com) を使っててはまりました。

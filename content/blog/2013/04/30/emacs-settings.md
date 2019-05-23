@@ -1,7 +1,7 @@
 +++
-title = "Emacs で Perl 描きたい"
-tags = ["emacs", "perl"]
-date = "2013-04-30"
+title = 'Emacs で Perl 描きたい'
+tags = ['emacs', 'perl']
+date = '2013-04-30'
 +++
 
 Vim と Emacs どっちも触れないのにエンジニアなんですか？へっ？とか言われるのは心にぐさっとくるので、Emacs でなんとか Perl を書けるようにしてみました。

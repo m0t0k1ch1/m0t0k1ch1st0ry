@@ -1,7 +1,7 @@
 +++
-title = "Docker Toolbox をアンインストールして Docker for Mac を試してみる"
-tags = ["docker"]
-date = "2016-08-28T02:08:15+09:00"
+title = 'Docker Toolbox をアンインストールして Docker for Mac を試してみる'
+tags = ['docker']
+date = '2016-08-28T02:08:15+09:00'
 +++
 
 そろそろ Docker の使いドコロだなというタイミングが来そうなので、表題の通り、以前にインストールしていた [Docker Toolbox](https://www.docker.com/products/docker-toolbox) をアンインストールして [Docker for Mac](https://www.docker.com/products/docker) を試してみることにした。

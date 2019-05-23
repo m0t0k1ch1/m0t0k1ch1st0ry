@@ -1,7 +1,7 @@
 +++
-title = "最近の Hugo + wercker + GitHub pages で嵌ったこと"
-tags = ["hugo", "wercker"]
-date = "2017-01-14T12:29:55+09:00"
+title = '最近の Hugo + wercker + GitHub pages で嵌ったこと'
+tags = ['hugo', 'wercker']
+date = '2017-01-14T12:29:55+09:00'
 +++
 
 [このブログを Hugo + wercker + GitHub pages で管理するようにした]({{< ref "/blog/2015/05/16/hugo.md" >}}) のが結構昔だったので、box が未だにクラシックな `wercker/default` だった。最新版に合わせとこっかなと軽い気持ちで application を登録しなおしたら盛大に嵌ったのでメモ。

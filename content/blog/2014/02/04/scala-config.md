@@ -1,7 +1,7 @@
 +++
-title = "Scala で config ファイルを使う"
-tags = ["scala"]
-date = "2014-02-04"
+title = 'Scala で config ファイルを使う'
+tags = ['scala']
+date = '2014-02-04'
 +++
 
 最近ブログ更新が滞っていてよろしくないので、地味なことでもアウトプットしていこうと思います。

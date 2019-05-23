@@ -1,7 +1,7 @@
 +++
-title = "Unity で 2D シューティング"
-tags = ["unity"]
-date = "2014-07-06"
+title = 'Unity で 2D シューティング'
+tags = ['unity']
+date = '2014-07-06'
 +++
 
 引き続き、チュートリアル通りに 2D シューティングをつくってみた。[こちら](/unity/Tutorial2D.html) で遊べます。

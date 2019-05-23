@@ -1,7 +1,7 @@
 +++
-title = "moves の API で遊んでみた"
-tags = ["api", "perl"]
-date = "2013-08-29"
+title = 'moves の API で遊んでみた'
+tags = ['api', 'perl']
+date = '2013-08-29'
 +++
 
 [fitbit](http://www.fitbit.com/jp) か [moves](http://www.moves-app.com) の API、どっちか触ってみたいなーと思ってたんですが、僕の周りでは fitbit の時代が終わりを告げようとしているので、moves の API で遊んでみることにしました。

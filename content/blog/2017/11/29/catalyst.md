@@ -1,7 +1,7 @@
 +++
-title = "Catalyst から紐解く Enigma ①"
-tags = ["blockchain", "enigma"]
-date = "2017-11-29T01:59:10+09:00"
+title = 'Catalyst から紐解く Enigma ①'
+tags = ['blockchain', 'enigma']
+date = '2017-11-29T01:59:10+09:00'
 +++
 
 Bitcoin さんに SegWit が導入されたこともあり、Lightning Network や Raiden に代表されるような Layer 2 関連のトピックはもちろんのこと、atomic swap 関連のトピックも盛り上がりを見せている今日この頃。DEX なども含め、来年はオフチェーンなソリューションやクロスチェーンなソリューションが一気に加速する年になりそうな雰囲気がプンプンですね。理由はさておき、このエントリでは数あるトピックの中から Enigma プロジェクトをピックアップし、Enigma プロトコルを実装する最初のアプリケーションである Catalyst から Enigma を紐解いていこうかなと思います。

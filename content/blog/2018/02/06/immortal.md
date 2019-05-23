@@ -1,7 +1,7 @@
 +++
-title = "Golang 製の daemon 管理ツール immortal を試してみる"
-tags = ["golang"]
-date = "2018-02-06T01:43:28+09:00"
+title = 'Golang 製の daemon 管理ツール immortal を試してみる'
+tags = ['golang']
+date = '2018-02-06T01:43:28+09:00'
 +++
 
 表題の通り、以前に見つけていてずっと触りたかった [immortal](https://github.com/immortal/immortal) という Golang 製の daemon 管理ツールをやっとこさ試すことができたのでメモ。名前がエモくて良いですね。

@@ -1,7 +1,7 @@
 +++
-title = "Golang で GitHub の Markdown API をたたく"
-tags = ["api", "golang"]
-date = "2014-06-03"
+title = 'Golang で GitHub の Markdown API をたたく'
+tags = ['api', 'golang']
+date = '2014-06-03'
 +++
 
 Google 先生が [github.com/google/go-github/github](https://github.com/google/go-github) なるものを提供してくれていたのでものすごく簡単にできましたメモ。

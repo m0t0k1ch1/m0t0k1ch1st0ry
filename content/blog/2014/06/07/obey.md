@@ -1,7 +1,7 @@
 +++
-title = "obey"
-tags = ["others"]
-date = "2014-06-07"
+title = 'obey'
+tags = ['others']
+date = '2014-06-07'
 +++
 
 いい言葉。OBEY 好き。

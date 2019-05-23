@@ -1,7 +1,7 @@
 +++
-title = "nil だと思ってやつが nil じゃなかった - Golang"
-tags = ["golang"]
-date = "2014-06-11"
+title = 'nil だと思ってやつが nil じゃなかった - Golang'
+tags = ['golang']
+date = '2014-06-11'
 +++
 
 Golang の `nil` で完全に嵌ったのでメモ。

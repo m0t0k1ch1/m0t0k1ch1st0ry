@@ -1,7 +1,7 @@
 +++
-title = "EOS における、action 単位の permission 制御の必要性とその実現方法"
-tags = ["eos", "cpp", "blockchain"]
-date = "2019-04-26T01:44:37+09:00"
+title = 'EOS における、action 単位の permission 制御の必要性とその実現方法'
+tags = ['eos', 'cpp', 'blockchain']
+date = '2019-04-26T01:44:37+09:00'
 +++
 
 EOS 上で複数の contract をまたいだシステムを実装したい場合にぶつかる課題とその解決方法についてのメモ。
