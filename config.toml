@@ -1,5 +1,5 @@
 baseURL            = 'https://m0t0k1ch1st0ry.com/'
-title              = 'm0t0k1ch1st0ry'
+title              = '#m0t0k1ch1st0ry'
 copyright          = '© 2013 <a href="/author" class="has-text-grey has-text-weight-bold">m0t0k1ch1</a>'
 theme              = 'h1st0ry'
 paginate           = 10
