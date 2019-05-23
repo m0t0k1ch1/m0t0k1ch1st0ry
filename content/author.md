@@ -2,7 +2,7 @@
 title = "Author"
 +++
 
-{{< figure src="/img/common/eye_256.png" >}}
+{{< figure src="/img/common/eye_256_t.png" >}}
 
 {{< author-title "m0t0k1ch1" >}}
 
