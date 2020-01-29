@@ -1,5 +1,5 @@
 +++
-title = '1 日本語ラップ好きから観た 映画『花と雨』'
+title = '1 人の日本語ラップ好きから観た 映画『花と雨』'
 tags = ['music','movie']
 date = '2020-01-30T02:58:46+09:00'
 images = ['img/entry/higanbana.jpg']
