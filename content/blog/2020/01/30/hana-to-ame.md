@@ -159,7 +159,7 @@ I-DeA × BES だと、他にも、アルバム『self expression』に収録さ�
 
 eia の押韻が、このフックに留まらず、ある重要な言葉と接続しているのは言うまでもないことですが、映画によって、この押韻の深みが増したように思います。
 
-{{< figure src="/img/entry/higanbana.jpg" >}}
+{{< youtube J2cJdA-XydU >}}
 
 ## 参照
 
