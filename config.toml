@@ -11,9 +11,6 @@ pygmentsStyle      = 'monokai'
 [taxonomies]
     tag = 'tags'
 
-[blackfriday]
-    hrefTargetBlank = true
-
 [params]
     description  = 'Since 2013'
     mainPageType = 'blog'
