@@ -11,7 +11,11 @@ images = ['img/entry/higanbana.jpg']
 
 <!--more-->
 
+{{< br >}}
+
 {{< youtube XIueLQRcd6g >}}
+
+{{< br >}}
 
 ## 前提
 
@@ -159,7 +163,11 @@ I-DeA × BES だと、他にも、アルバム『self expression』に収録さ�
 
 eia の押韻が、このフックに留まらず、ある重要な言葉と接続しているのは言うまでもないことですが、映画によって、この押韻の深みが増したように思います。
 
+{{< br >}}
+
 {{< youtube J2cJdA-XydU >}}
+
+{{< br >}}
 
 ## 参照
 
