@@ -263,7 +263,7 @@ ref. [Blockchain and Smart Contract Mechanism Design Challenges](https://fc17.if
 
 ref. [A Crash Course in Mechanism Design for Cryptoeconomic Applications](https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976)
 
-## ※ 追記（2018-08-07）
+## ※ 追記（2018.08.07）
 
 自分の cryptoeconomics の定義について
 
@@ -277,7 +277,7 @@ __そのシステムが達成したい性質を自律的に具備・維持でき
 
 ただ、既に SNS 上などで本文中の定義を引用してくださっている方も観測しており、後追いでこれを書き換えるのはちょっと避けたいので、ここでの追記に留めさせていただこうと思います。
 
-## ※ 追記（2018-09-15）
+## ※ 追記（2018.09.15）
 
 2018-09-13 に補足的な記事を書きました。
 
