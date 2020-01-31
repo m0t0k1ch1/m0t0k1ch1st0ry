@@ -178,3 +178,15 @@ eia の押韻が、このフックに留まらず、ある重要な言葉と接�
 - [『ユリイカ 2016 年 6 月号』](http://www.seidosha.co.jp/book/index.php?id=2924)
 - [SEEDA について誰もが知っている二、三の事柄　あるいは語り草の束](http://bobdeema.hatenablog.com/entry/2017/01/08/224853)
 - [日本の名盤・基本の定番 ⑲（GREEN by SEEDA）](http://pto6hiphop.blog.fc2.com/blog-entry-66.html)
+
+{{< br >}}
+
+## ※追記（2020.01.31）
+
+本日、SEEDA 本人へのインタビュー映像 by [HIPHOP DNA](https://www.youtube.com/channel/UCDCN-aOOkLrDVUKp8lnPiQQ) の前後半が揃いました。当事者の言葉に耳を傾けるのは非常に大切だと思うので、ここにも両方貼っておきます。
+
+{{< br >}}
+
+{{< youtube 0gxb7dLR8Kw >}}
+
+{{< youtube bHk1ANSHBpc >}}
