@@ -14,7 +14,7 @@ date = '2015-10-12T11:17:19+09:00'
 
 GitHub で公開しているので、ご自由にお使いください。
 
-{{< github "m0t0k1ch1" "ash" >}}
+{{< github "m0t0k1ch1" "ash.kth" >}}
 
 ちなみに、配色は [Adobe Color CC](https://color.adobe.com/ja/explore/most-popular/?time=all) からいい感じのものをいただきました。
 
