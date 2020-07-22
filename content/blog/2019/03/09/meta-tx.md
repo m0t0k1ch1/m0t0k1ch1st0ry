@@ -10,15 +10,15 @@ date = '2019-03-09T18:02:51+09:00'
 
 ## meta transaction とは？
 
-端的に言うと、ETH（gas）を保有していなくても Ethereum 上で transaction を発行できるようにするための仕組みです。これを実現する際、一般的には、利用するエンドユーザーが meta transaction 対応したコントラクトアカウントを保有している必要がありますが、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) は、EOA しか保有していないエンドユーザーでも meta transaction を実行できるようにするための標準規格です。これが標準化されて普及すると、EOA しか保有していないエンドユーザーであっても、transaction 手数料を支払うことなく Dapps とやりとりすることが可能となるため、Dapps の利用ハードルがグッと下がります。
+端的に言うと、ETH（gas）を保有していなくても Ethereum 上で transaction を発行できるようにするための仕組みです。これを実現する際、一般的には、利用するエンドユーザーが meta transaction 対応したコントラクトアカウントを保有している必要がありますが、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) は、EOA しか保有していないエンドユーザーでも meta transaction を実行できるようにするための標準規格です。これが標準化されて普及すると、EOA しか保有していないエンドユーザーであっても transaction 手数料を支払うことなく Dapps とやりとりすることが可能となるため、Dapps の利用ハードルがグッと下がります。
 
-ただ、1 つ注意点があります。native meta transaction の場合、エンドユーザーが保有しているアカウントは EOA なので、コントラクトアカウントを活用した meta transaction のように、アカウントを経由してトランザクションを実行することはできません。よって、そのトランザクションの実行先であるコントラクトの `msg.sender` が EOA のアドレスにならないので、`msg.sender` を用いて認証を行うようなコントラクトの実行を目的とした場合、役に立ちません。
+ただ、1 つ注意点があります。native meta transaction の場合、エンドユーザーが保有しているアカウントは EOA なので、コントラクトアカウントを活用した meta transaction のように、アカウントを経由して transaction を実行することはできません。よって、その transaction の実行先であるコントラクトの `msg.sender` が EOA のアドレスにならないので、`msg.sender` を用いて認証を行うようなコントラクトの実行を目的とした場合、役に立ちません。まあ、EOA ベースなので当たり前と言えば当たり前なのですが。
 
 より詳細に知りたい方は、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) や、そこに記載されているリンクを辿るとよいかなと思います。また、meta transaction 自体は数年前から議論されているアイデアなので、ググると色々情報は出てきます。
 
 ## 実装
 
-[ERC1776](https://github.com/ethereum/EIPs/issues/1776) は複数の ERC が絡んでいて少し複雑かつまだドラフト段階なので、meta transaction の基本原理を把握したいだけの人（数日前の自分）が軽い気持ちで首を突っ込むと、それなりに骨が折れます。ということで、今回は meta transaction の基本原理の把握に特化して、表題の通りのものを実装してみました（[ERC1776](https://github.com/ethereum/EIPs/issues/1776) に準拠しているわけではないのでご注意を）。数日前の自分のような方の手助けとなれば幸いです。
+[ERC1776](https://github.com/ethereum/EIPs/issues/1776) は複数の ERC が絡んでいて少し複雑かつまだドラフト段階なので、native meta transaction の基本原理を把握したいだけの人（数日前の自分）が軽い気持ちで首を突っ込むと、それなりに骨が折れます。ということで、今回は native meta transaction の基本原理の把握に特化して、表題の通りのものを実装してみました（[ERC1776](https://github.com/ethereum/EIPs/issues/1776) に準拠しているわけではないのでご注意を）。数日前の自分のような方の手助けとなれば幸いです。
 
 今回実装した諸々は [こちら](https://github.com/m0t0k1ch1/sandbox/tree/master/ethereum/native-meta-transfer) に置いておきましたが、そんなに量はないので、コントラクトとテストをここにも記載しておきます。説明するよりもソースコードを読んでもらった方が理解が捗ると思います。なお、実装には [truffle](https://github.com/trufflesuite/truffle) を利用しています。
 
@@ -150,7 +150,7 @@ contract('MetaToken', async (accounts) => {
 
 繰り返しになりますが、今回の実装はかなり単純化されたものです。[ERC1776](https://github.com/ethereum/EIPs/issues/1776) を見てもらえばわかると思いますが、実稼働を想定する場合は考えるべきことが増えます。例えば以下などです。
 
-- [ERC223](https://github.com/ethereum/EIPs/issues/223) や [ERC777](https://github.com/ethereum/EIPs/issues/777) の場合、received hook 機構の考慮
+- [ERC223](https://github.com/ethereum/EIPs/issues/223) や [ERC777](https://github.com/ethereum/EIPs/issues/777) の場合、received hook 機構を考慮した実装
 - 柔軟なトークン手数料計算
   - transaction 実行時のトークン価格を加味した計算
   - 実際に消費した gas の量を加味した計算
