@@ -12,7 +12,7 @@ date = '2019-03-09T18:02:51+09:00'
 
 端的に言うと、ETH（gas）を保有していなくても Ethereum 上で transaction を発行できるようにするための仕組みです。これを実現する際、一般的には、利用するエンドユーザーが meta transaction 対応したコントラクトアカウントを保有している必要がありますが、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) は、EOA しか保有していないエンドユーザーでも meta transaction を実行できるようにするための標準規格です。これが標準化されて普及すると、EOA しか保有していないエンドユーザーであっても transaction 手数料を支払うことなく Dapps とやりとりすることが可能となるため、Dapps の利用ハードルがグッと下がります。
 
-ただ、1 つ注意点があります。native meta transaction の場合、エンドユーザーが保有しているアカウントは EOA なので、コントラクトアカウントを活用した meta transaction のように、アカウントを経由して transaction を実行することはできません。よって、その transaction の実行先であるコントラクトの `msg.sender` が EOA のアドレスにならないので、`msg.sender` を用いて認証を行うようなコントラクトの実行を目的とした場合、役に立ちません。まあ、EOA ベースなので当たり前と言えば当たり前なのですが。
+ただ、1 つ注意点があります。native meta transaction の場合、エンドユーザーが保有しているアカウントは EOA なので、コントラクトアカウントを活用した meta transaction のように、エンドユーザーが保有するアカウントを経由して transaction を実行することはできません。つまり、native meta transaction を処理するコントラクトが外部コールをしたとしても、その実行先であるコントラクトの `msg.sender` が EOA のアドレスになることはないので、`msg.sender` を用いて認証を行うようなコントラクトの実行を目的とした場合、役に立ちません。まあ、EOA ベースなので当たり前と言えば当たり前なのですが。
 
 より詳細に知りたい方は、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) や、そこに記載されているリンクを辿るとよいかなと思います。また、meta transaction 自体は数年前から議論されているアイデアなので、ググると色々情報は出てきます。
 
@@ -22,7 +22,7 @@ date = '2019-03-09T18:02:51+09:00'
 
 今回実装した諸々は [こちら](https://github.com/m0t0k1ch1/sandbox/tree/master/ethereum/native-meta-transfer) に置いておきましたが、そんなに量はないので、コントラクトとテストをここにも記載しておきます。説明するよりもソースコードを読んでもらった方が理解が捗ると思います。なお、実装には [truffle](https://github.com/trufflesuite/truffle) を利用しています。
 
-`frm` が実行したい操作（`frm` から `to` への MT 譲渡）を行う transaction を `relayer` がブロードキャストして gas を負担する代わりに `frm` から MT を徴収している、辺りがポイントかなと思います。なお、今回は 1 contract 内で完結する固定の 1 操作（transfer）だけが実行できるような実装ですが、ここをより汎用的に実装することは可能です。というか、どちらかと言うと本来はそうあるべきでしょう。
+`frm` が実行したい操作（`frm` から `to` への MT 譲渡）を行う transaction を `relayer` がブロードキャストして gas を負担する代わりに `frm` から MT を徴収している、辺りがポイントかなと思います。なお、今回は 1 contract 内で完結する固定の 1 操作（`transfer`）だけが実行できるような実装ですが、ここをより汎用的に実装することは可能です。というか、どちらかと言うと本来はそうあるべきでしょう。
 
 ``` solidity
 pragma solidity >=0.4.21 <0.6.0;
