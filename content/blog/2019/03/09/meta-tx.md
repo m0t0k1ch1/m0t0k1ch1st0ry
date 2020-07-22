@@ -1,5 +1,5 @@
 +++
-title = 'meta transaction が扱える ERC20 トークンの簡易実装'
+title = 'native meta transaction が扱える ERC20 トークンの簡易実装'
 tags = ['ethereum', 'solidity', 'blockchain']
 date = '2019-03-09T18:02:51+09:00'
 +++
