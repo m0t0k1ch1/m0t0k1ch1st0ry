@@ -4,13 +4,15 @@ tags = ['ethereum', 'solidity', 'blockchain']
 date = '2019-03-09T18:02:51+09:00'
 +++
 
-ここ最近話題になっている [ERC1776](https://github.com/ethereum/EIPs/issues/1776) で標準化されようとしている meta transaction について把握するため、meta transaction が扱える ERC20 トークンの簡易実装までやってみましたメモ。
+ここ最近話題になっている [ERC1776](https://github.com/ethereum/EIPs/issues/1776) で標準化されようとしている native meta transaction について把握するため、native meta transaction が扱える ERC20 トークンの簡易実装までやってみましたメモ。
 
 <!--more-->
 
 ## meta transaction とは？
 
-端的に言うと、ETH（gas）を保有していなくても Ethereum 上で transaction を発行できるようにするための仕組みです。この仕組みが [ERC1776](https://github.com/ethereum/EIPs/issues/1776) によって標準化されて普及すると、ユーザーが Dapps とやりとりするために必須なのは秘密鍵だけとなるので、Dapps の利用ハードルがグッと下がります。また、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) はトークンに関する meta transaction インターフェースの標準規格なので、例えば DEX などはその恩恵を大きく受けることになると予想されます。
+端的に言うと、ETH（gas）を保有していなくても Ethereum 上で transaction を発行できるようにするための仕組みです。これを実現する際、一般的には、利用するエンドユーザーが meta transaction 対応したコントラクトアカウントを保有している必要がありますが、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) は、EOA しか保有していないエンドユーザーでも meta transaction を実行できるようにするための標準規格です。これが標準化されて普及すると、EOA しか保有していないエンドユーザーであっても、transaction 手数料を支払うことなく Dapps とやりとりすることが可能となるため、Dapps の利用ハードルがグッと下がります。
+
+ただ、1 つ注意点があります。native meta transaction の場合、エンドユーザーが保有しているアカウントは EOA なので、コントラクトアカウントを活用した meta transaction のように、アカウントを経由してトランザクションを実行することはできません。よって、そのトランザクションの実行先であるコントラクトの `msg.sender` が EOA のアドレスにならないので、`msg.sender` を用いて認証を行うようなコントラクトの実行を目的とした場合、役に立ちません。
 
 より詳細に知りたい方は、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) や、そこに記載されているリンクを辿るとよいかなと思います。また、meta transaction 自体は数年前から議論されているアイデアなので、ググると色々情報は出てきます。
 
@@ -18,9 +20,9 @@ date = '2019-03-09T18:02:51+09:00'
 
 [ERC1776](https://github.com/ethereum/EIPs/issues/1776) は複数の ERC が絡んでいて少し複雑かつまだドラフト段階なので、meta transaction の基本原理を把握したいだけの人（数日前の自分）が軽い気持ちで首を突っ込むと、それなりに骨が折れます。ということで、今回は meta transaction の基本原理の把握に特化して、表題の通りのものを実装してみました（[ERC1776](https://github.com/ethereum/EIPs/issues/1776) に準拠しているわけではないのでご注意を）。数日前の自分のような方の手助けとなれば幸いです。
 
-今回実装した諸々は [こちら](https://github.com/m0t0k1ch1/sandbox/tree/master/ethereum/meta-tx) に置いておきましたが、そんなに量はないので、コントラクトとテストをここにも記載しておきます。説明するよりもソースコードを読んでもらった方が理解が捗ると思います。なお、実装には [truffle](https://github.com/trufflesuite/truffle) を利用しています。
+今回実装した諸々は [こちら](https://github.com/m0t0k1ch1/sandbox/tree/master/ethereum/native-meta-transfer) に置いておきましたが、そんなに量はないので、コントラクトとテストをここにも記載しておきます。説明するよりもソースコードを読んでもらった方が理解が捗ると思います。なお、実装には [truffle](https://github.com/trufflesuite/truffle) を利用しています。
 
-`frm` が実行したい操作（`frm` から `to` への MT 譲渡）を行う transaction を `relayer` がブロードキャストして gas を負担する代わりに `frm` から MT を徴収している、辺りがポイントかなと思います。なお、今回は 1 contract 内で完結する固定の 1 操作だけが実行できるような実装ですが、外部コールを実行するような実装にすることも可能です。というか、どちらかと言うと本来はそうあるべきでしょう。
+`frm` が実行したい操作（`frm` から `to` への MT 譲渡）を行う transaction を `relayer` がブロードキャストして gas を負担する代わりに `frm` から MT を徴収している、辺りがポイントかなと思います。なお、今回は 1 contract 内で完結する固定の 1 操作（transfer）だけが実行できるような実装ですが、ここをより汎用的に実装することは可能です。というか、どちらかと言うと本来はそうあるべきでしょう。
 
 ``` solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -148,7 +150,7 @@ contract('MetaToken', async (accounts) => {
 
 繰り返しになりますが、今回の実装はかなり単純化されたものです。[ERC1776](https://github.com/ethereum/EIPs/issues/1776) を見てもらえばわかると思いますが、実稼働を想定する場合は考えるべきことが増えます。例えば以下などです。
 
-- [ERC223](https://github.com/ethereum/EIPs/issues/223) や [ERC777](https://github.com/ethereum/EIPs/issues/777) のような fallback 機構を加味した外部コール
+- [ERC223](https://github.com/ethereum/EIPs/issues/223) や [ERC777](https://github.com/ethereum/EIPs/issues/777) の場合、received hook 機構の考慮
 - 柔軟なトークン手数料計算
   - transaction 実行時のトークン価格を加味した計算
   - 実際に消費した gas の量を加味した計算
