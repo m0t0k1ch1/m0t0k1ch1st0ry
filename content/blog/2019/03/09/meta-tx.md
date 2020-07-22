@@ -10,7 +10,7 @@ date = '2019-03-09T18:02:51+09:00'
 
 ## meta transaction とは？
 
-端的に言うと、ETH（gas）を保有していなくても Ethereum 上で transaction を発行できるようにするための仕組みです。これを実現する際、一般的には、利用するエンドユーザーが meta transaction 対応したコントラクトアカウントを保有している必要がありますが、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) は、EOA しか保有していないエンドユーザーでも meta transaction を実行できるようにするための標準規格です。これが標準化されて普及すると、EOA しか保有していないエンドユーザーであっても transaction 手数料を支払うことなく Dapps とやりとりすることが可能となるため、Dapps の利用ハードルがグッと下がります。
+端的に言うと、ETH（gas）を保有していなくても Ethereum 上で transaction を発行できるようにするための仕組みです。これを実現する際、一般的には、利用するエンドユーザーが meta transaction 対応したコントラクトアカウントを保有している必要がありますが、[ERC1776](https://github.com/ethereum/EIPs/issues/1776) は、EOA しか保有していないエンドユーザーでも meta transaction を実行できるようにするための標準規格です。これが標準化されて普及すると、EOA しか保有していないエンドユーザーであっても transaction 手数料を支払うことなくコントラクトを実行することが可能となるため、DApps の利用ハードルがグッと下がります。
 
 ただ、1 つ注意点があります。native meta transaction の場合、エンドユーザーが保有しているアカウントは EOA なので、コントラクトアカウントを活用した meta transaction のように、エンドユーザーが保有するアカウントを経由して transaction を実行することはできません。つまり、native meta transaction を処理するコントラクトが外部コールをしたとしても、その実行先であるコントラクトの `msg.sender` が EOA のアドレスになることはないので、`msg.sender` を用いて認証を行うようなコントラクトの実行を目的とした場合、役に立ちません。まあ、EOA ベースなので当たり前と言えば当たり前なのですが。
 
