@@ -72,4 +72,4 @@ date = '2014-12-30'
 
 <a href="http://www.amazon.co.jp/gp/product/4255006776/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4255006776&linkCode=as2&tag=k1ch1-22"><img border="0" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4255006776&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=k1ch1-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=k1ch1-22&l=as2&o=9&a=4255006776" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-ちなみに、「自殺サークル」を撮ったとき、園さんは40歳。「自転車吐息」や「東京ガガガ」を経て、アメリカでのホームレス同然の極貧生活を経て、日本に帰ってきた40歳が最初に撮った「撮りたい映画」がこの「自殺サークル」。そして、ここから「愛のむきだし」や「冷たい熱帯魚」などなどに繋がっていったと考えるとぐっとくるものがある。学んでいきたい。
+ちなみに、「自殺サークル」を撮ったとき、園さんは 40 歳。「自転車吐息」や「東京ガガガ」を経て、アメリカでのホームレス同然の極貧生活を経て、日本に帰ってきた 40 歳が最初に撮った「撮りたい映画」がこの「自殺サークル」。そして、ここから「愛のむきだし」や「冷たい熱帯魚」などなどに繋がっていったと考えるとぐっとくるものがある。学んでいきたい。
