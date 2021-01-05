@@ -25,7 +25,7 @@ __testnet にて、Lightning Network を利用した single hop payment と mult
 
 ## インストール
 
-### Golang のインストール
+### Go のインストール
 
 1.8 以上が必要とのことなので、今回は 1.9 をインストールします。
 
@@ -52,7 +52,7 @@ go version go1.9.2 linux/amd64
 
 ### Glide のインストール
 
-Golang 用のパッケージ管理ツールである [Glide](https://glide.sh) をインストールします。lnd はこれを利用してパッケージ管理されています。
+Go 用のパッケージ管理ツールである [Glide](https://glide.sh) をインストールします。lnd はこれを利用してパッケージ管理されています。
 
 ``` sh
 $ go get -u github.com/Masterminds/glide

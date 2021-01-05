@@ -1,6 +1,6 @@
 +++
-title = 'Golang で書いた何かを RPM パッケージにして yum install したい'
-tags = ['rpm', 'golang']
+title = 'Go で書いた何かを RPM パッケージにして yum install したい'
+tags = ['rpm', 'go']
 date = '2016-09-10T01:23:35+09:00'
 +++
 
@@ -24,7 +24,7 @@ $ brew install go --cross-compile-common
 
 ### SOURCES
 
-Golang で [こんな感じのコード](https://github.com/m0t0k1ch1/go-rpm-sample/blob/master/main.go) を描いた。
+Go で [こんな感じのコード](https://github.com/m0t0k1ch1/go-rpm-sample/blob/master/main.go) を描いた。
 
 最終的にはデーモンっぽい状態で起動する予定なので、最低限の挙動だけを実装してみた。ざっくりとは
 

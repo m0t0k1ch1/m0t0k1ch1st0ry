@@ -1,6 +1,6 @@
 +++
-title = 'Golang で RSA 署名'
-tags = ['golang']
+title = 'Go で RSA 署名'
+tags = ['go']
 date = '2014-08-18'
 +++
 

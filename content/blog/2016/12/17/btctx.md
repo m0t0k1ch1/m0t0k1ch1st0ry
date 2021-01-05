@@ -1,10 +1,10 @@
 +++
-title = 'Bitcoin の transaction を Golang で解読する'
-tags = ['bitcoin', 'blockchain', 'golang']
+title = 'Bitcoin の transaction を Go で解読する'
+tags = ['bitcoin', 'blockchain', 'go']
 date = '2016-12-17T02:08:17+09:00'
 +++
 
-Golang で Bitcoin の transaction のバイト列をちまちま読む package を結構前に勉強も兼ねて描き始めていたのだが、これが普段ちょこちょこ使うようになって整ってきた。最近筆不精になってるし、せっかくなのでブログのエントリというカタチでも整えてみることにした。
+Go で Bitcoin の transaction のバイト列をちまちま読む package を結構前に勉強も兼ねて描き始めていたのだが、これが普段ちょこちょこ使うようになって整ってきた。最近筆不精になってるし、せっかくなのでブログのエントリというカタチでも整えてみることにした。
 
 <!--more-->
 
@@ -21,7 +21,7 @@ Bitcoin の transaction は [こういう構造](https://en.bitcoin.it/wiki/Prot
 - hex な transaction をいい感じの struct に変換する
 - struct を hex な transaction として書き出す
 
-txid がわかってれば、RPC 叩いて getrawtransaction して decoderawtransaction すればいい感じに返ってくるんだけど、ちょっとこみ入ったことをしようと思うと、こっちでバイト列から Golang の struct に変換できたり、そこから hex に戻せると便利ではある。
+txid がわかってれば、RPC 叩いて getrawtransaction して decoderawtransaction すればいい感じに返ってくるんだけど、ちょっとこみ入ったことをしようと思うと、こっちでバイト列から Go の struct に変換できたり、そこから hex に戻せると便利ではある。
 
 ## 使い方
 

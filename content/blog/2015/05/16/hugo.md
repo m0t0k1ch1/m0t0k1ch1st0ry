@@ -53,7 +53,7 @@ $ tree -L 1
 
 自分は `content/blog` 以下に記事を配置して、`static/my-images` 以下に画像を配置してる（`static/images` だと theme が使ってるディレクトリ名と被っちゃうので）。
 
-### Golang で書かれてる
+### Go で書かれてる
 
 いざとなればソースコード読んでがんばれる。
 

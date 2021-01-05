@@ -1,6 +1,6 @@
 +++
-title = 'Golang で好きな画像を LGTMize する'
-tags = ['golang']
+title = 'Go で好きな画像を LGTMize する'
+tags = ['go']
 date = '2015-03-14'
 images = ['img/entry/zushi-lgtm.jpg']
 +++

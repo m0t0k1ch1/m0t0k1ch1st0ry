@@ -1,10 +1,10 @@
 +++
-title = 'Golang 製の daemon 管理ツール immortal を試してみる'
-tags = ['golang']
+title = 'Go 製の daemon 管理ツール immortal を試してみる'
+tags = ['go']
 date = '2018-02-06T01:43:28+09:00'
 +++
 
-表題の通り、以前に見つけていてずっと触りたかった [immortal](https://github.com/immortal/immortal) という Golang 製の daemon 管理ツールをやっとこさ試すことができたのでメモ。名前がエモくて良いですね。
+表題の通り、以前に見つけていてずっと触りたかった [immortal](https://github.com/immortal/immortal) という Go 製の daemon 管理ツールをやっとこさ試すことができたのでメモ。名前がエモくて良いですね。
 
 <!--more-->
 
@@ -270,5 +270,5 @@ app       6768  0.7  1.2 186628 25952 ?        Sl   16:40   0:00  \_ /home/app/g
 
 ## まとめ
 
-- Golang 製の daemon 管理ツール [immortal](https://github.com/immortal/immortal) で [btcd](https://github.com/btcsuite/btcd) を daemonize してみました
+- Go 製の daemon 管理ツール [immortal](https://github.com/immortal/immortal) で [btcd](https://github.com/btcsuite/btcd) を daemonize してみました
 - [immortalctl](https://immortal.run/post/immortalctl) を用いて daemon に対して基本的な管理操作を実行しつつ、その挙動を確認しました

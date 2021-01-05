@@ -1,10 +1,10 @@
 +++
 title = 'gorp と squirrel で CRUD'
-tags = ['golang', 'mysql']
+tags = ['go', 'mysql']
 date = '2016-01-17T15:50:42+09:00'
 +++
 
-[これ]({{< ref "/blog/2016/01/15/january.md" >}}) の2つ目のやつの API サーバーを Golang で書くので、DB 周りどうしようかなあと考えながら [gorp](https://github.com/go-gorp/gorp) ＋ [squirrel](https://github.com/Masterminds/squirrel) でサンプルコードを書いたのでメモ。
+[これ]({{< ref "/blog/2016/01/15/january.md" >}}) の2つ目のやつの API サーバーを Go で書くので、DB 周りどうしようかなあと考えながら [gorp](https://github.com/go-gorp/gorp) ＋ [squirrel](https://github.com/Masterminds/squirrel) でサンプルコードを書いたのでメモ。
 
 <!--more-->
 

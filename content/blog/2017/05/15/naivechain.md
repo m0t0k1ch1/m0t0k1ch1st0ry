@@ -1,16 +1,16 @@
 +++
-title = 'シンプルな Blockchain を Golang で実装する'
-tags = ['blockchain', 'golang']
+title = 'シンプルな Blockchain を Go で実装する'
+tags = ['blockchain', 'go']
 date = '2017-05-15T03:38:15+09:00'
 +++
 
-以前に [200行のコードへのブロックチェーンの実装](http://postd.cc/a-blockchain-in-200-lines-of-code) というエントリを読み、たった 200 行の Javascript で実装された Blockchain である [Naivechain](https://github.com/lhartikk/naivechain) の存在を知った。本エントリは、その Naivechain の Golang 版を実装してみたので、本家 Naivechain と合わせてご紹介しますという話。ちなみに、コードの短さは求めずになるべく構造化してわかりやすさ重視で書いた（つもり）なので、200 行ではない。
+以前に [200行のコードへのブロックチェーンの実装](http://postd.cc/a-blockchain-in-200-lines-of-code) というエントリを読み、たった 200 行の Javascript で実装された Blockchain である [Naivechain](https://github.com/lhartikk/naivechain) の存在を知った。本エントリは、その Naivechain の Go 版を実装してみたので、本家 Naivechain と合わせてご紹介しますという話。ちなみに、コードの短さは求めずになるべく構造化してわかりやすさ重視で書いた（つもり）なので、200 行ではない。
 
 <!--more-->
 
 {{< github "m0t0k1ch1" "naivechain" >}}
 
-自分の Naivechain 以外に、[300 行で実装された Golang 実装](https://github.com/kofj/naivechain) もあったりするので、短いコードがお好みの方はそちらもご参照あれ。
+自分の Naivechain 以外に、[300 行で実装された Go 実装](https://github.com/kofj/naivechain) もあったりするので、短いコードがお好みの方はそちらもご参照あれ。
 
 ## そもそもこれは Blockchain なの？
 
