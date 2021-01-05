@@ -56,7 +56,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	hashed := hash((buf.Bytes()))
+	hashed := hash(buf.Bytes())
 
 	fmt.Println(hex.EncodeToString(hashed))
 }
