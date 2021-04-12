@@ -1,6 +1,6 @@
 baseURL            = 'https://m0t0k1ch1st0ry.com/'
 title              = '#m0t0k1ch1st0ry'
-copyright          = '© 2013 <a href="/author" class="has-text-grey has-text-weight-bold">m0t0k1ch1</a>'
+copyright          = '© 2013 <a href="https://linktr.ee/m0t0k1ch1" class="has-text-grey has-text-weight-bold">m0t0k1ch1</a>'
 theme              = 'h1st0ry'
 paginate           = 10
 googleAnalytics    = 'UA-40447108-1'
@@ -14,5 +14,5 @@ pygmentsStyle      = 'monokai'
 [params]
     description  = 'Since 2013'
     mainPageType = 'blog'
-    images       = ['img/common/eye_256.png']
+    images       = ['img/common/author_256.jpg']
     addthisID    = 'ra-5ce6ac411a98e6f0'
