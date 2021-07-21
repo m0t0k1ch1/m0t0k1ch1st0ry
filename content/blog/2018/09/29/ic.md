@@ -11,12 +11,12 @@ images = ['img/entry/vickrey-auction_1.png']
 
 ## 0. 目次
 
-- 1. はじめに
-- 2. incentive compatibility
-- 3. simplified Vickrey auction
-- 4. おまけ：Vickrey auction on Blockchain
-- 5. 次回予告
-- 6. 参考文献
+1. はじめに
+2. incentive compatibility
+3. simplified Vickrey auction
+4. おまけ：Vickrey auction on Blockchain
+5. 次回予告
+6. 参考文献
 
 ## 1. はじめに
 
