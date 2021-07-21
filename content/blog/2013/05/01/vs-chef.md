@@ -4,12 +4,12 @@ tags = ['chef', 'perl', 'ruby']
 date = '2013-05-01'
 +++
 
-Chef と戯れ始めてはや1週間。  
+Chef と戯れ始めてはや 1 週間。  
 先輩方の手厚いサポートもあり、少しずつ敵の姿をとらえつつあります m0t0k1ch1 です。
 
 <!--more-->
 
-ちなみに、この記事は [第1回戦]({{< ref "/blog/2013/04/25/vs-chef.md" >}}) の続編的なノリでお届けさせていただいております。
+ちなみに、この記事は [第 1 回戦]({{< ref "/blog/2013/04/25/vs-chef.md" >}}) の続編的なノリでお届けさせていただいております。
 
 ## 今回の課題
 
@@ -19,7 +19,7 @@ Chef と戯れ始めてはや1週間。
 
 - いつも通り repository の中に入って cookbook の雛形をつくる、ただそれだけ
 
-``` sh
+```sh
 $ knife cookbook create perl -o site-cookbooks
 ```
 
@@ -29,7 +29,7 @@ $ knife cookbook create perl -o site-cookbooks
   - Perl のバージョンは指定できるように
   - 同じバージョンの Perl はインストールしない
 
-``` ruby
+```ruby
 perl_user    = node['perl']['user']
 perl_group   = node['perl']['group']
 perl_version = node['perl']['version']
@@ -64,7 +64,7 @@ end
 
 - attribute
 
-``` ruby
+```ruby
 default['perl']['user']    = 'user-name'
 default['perl']['group']   = 'user-group'
 default['perl']['version'] = '5.16.3'

@@ -13,10 +13,10 @@ date = '2017-01-14T12:29:55+09:00'
 大きくは 2 つ。
 
 - git push をトリガーにした pipeline で branch の指定ができない？
- - 前までは ignore branch 的な設定があった気がする
- - トリガーより後ろの pipeline については branch の指定は可能
+  - 前までは ignore branch 的な設定があった気がする
+  - トリガーより後ろの pipeline については branch の指定は可能
 - theme として git submodule を使っている場合はきちんと初期化してあげないといけない？
- - 前までは `wercker.yml` に初期化処理書いてなくても build できてたんだけどな。。。逆になんでだったんだろう
+  - 前までは `wercker.yml` に初期化処理書いてなくても build できてたんだけどな。。。逆になんでだったんだろう
 
 後者は `git submodule update --init --recursive` とかを `wercker.yml` に書いてあげればいいとして、前者はどうするのがベターなんだろうという感じ。前までは master branch に push したら gh-pages branch に `public` 以下だけを push（deploy）していて、ignore branch 的な設定で gh-pages branch への push には反応しないようにしていた。
 
@@ -36,9 +36,9 @@ ignore branch 的な設定ができないと、gh-pages branch への push（dep
 
 そもそも workflow が走ってること自体がもやっとするのは変わらないけど、こけなくはなった。
 
-最終的な `wercker.yml` は以下。もっとスマートな解決策をご存知の方いらっしゃいましたら、ご教示ください🙏
+最終的な `wercker.yml` は以下。もっとスマートな解決策をご存知の方いらっしゃいましたら、ご教示ください 🙏
 
-``` yaml
+```yaml
 box: golang
 pre:
   steps:
@@ -65,5 +65,4 @@ deploy:
         token: $GIT_TOKEN
         domain: m0t0k1ch1st0ry.com
         basedir: public
-
 ```

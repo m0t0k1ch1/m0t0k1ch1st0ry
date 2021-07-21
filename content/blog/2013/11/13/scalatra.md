@@ -10,7 +10,7 @@ date = '2013-11-13'
 
 ## はまりポイント
 
-``` scala
+```scala
 get("/") {
   db withSession {
     Pokemons.insert(303, "Mawile")
@@ -35,7 +35,7 @@ get("/") {
 
 Scalatra の [ソースコード](https://github.com/scalatra/scalatra) をたどってみると、現時点（2.3 系）の `scalatra/core/src/main/scala/org/scalatra/ScalatraBase.scala` の `renderPipeline` に以下のようなコードが。。
 
-``` scala
+```scala
 case status: Int => response.status = ResponseStatus(status)
 ```
 

@@ -4,7 +4,7 @@ tags = ['isucon', 'scala', 'scalatra', 'slick']
 date = '2013-11-28'
 +++
 
-あのアツい闘いから早3週間。。底辺スタッフとして運営に関わらせていただいた m0t0k1ch1 です（[ISUCON3 底辺スタッフの記録]({{< ref "/blog/2013/11/10/isucon3.md" >}})）。勉強目的でこそこそ進めていた本戦お題アプリの Scala 移植がとりあえず終わったので、学んだことを簡単にまとめるついでにソースコードを公開したいと思います。
+あのアツい闘いから早 3 週間。。底辺スタッフとして運営に関わらせていただいた m0t0k1ch1 です（[ISUCON3 底辺スタッフの記録]({{< ref "/blog/2013/11/10/isucon3.md" >}})）。勉強目的でこそこそ進めていた本戦お題アプリの Scala 移植がとりあえず終わったので、学んだことを簡単にまとめるついでにソースコードを公開したいと思います。
 
 <!--more-->
 
@@ -34,7 +34,7 @@ Scalatra ？ Slick ？という方は [こちらのエントリ]({{< ref "/blog/
 
 ### Option と match による null ハンドリング
 
-[ScalaのOptionステキさについてアツく語ってみる](http://yuroyoro.hatenablog.com/entry/20100710/1278763193) に書かれていることを実際にコード書いて体感した感じです。非常に勉強になりました。
+[Scala の Option ステキさについてアツく語ってみる](http://yuroyoro.hatenablog.com/entry/20100710/1278763193) に書かれていることを実際にコード書いて体感した感じです。非常に勉強になりました。
 
 簡単にまとめると、Java では `null` を扱うにあたって
 
@@ -46,7 +46,7 @@ Scalatra ？ Slick ？という方は [こちらのエントリ]({{< ref "/blog/
 
 例として、各 API の頭で行われる「`api_key` から `user` を取得する filter 的な処理」の部分を抜粋して載せておきます。
 
-``` scala
+```scala
 def getUserContainer: Option[User] = {
   db withSession {
     val apiKey = Option(request.getHeader("X-API-KEY")) match {
@@ -85,7 +85,7 @@ def getUser: User = {
 
 `get("/timeline")` の中で呼んでいるこいつ。
 
-``` scala
+```scala
 def getTimeline(userId: Int, latestEntryContainer: Option[String]): List[Entry] = {
   val end = new Timestamp(now.getTime + timeout * 1000)
 
@@ -115,7 +115,7 @@ def getTimeline(userId: Int, latestEntryContainer: Option[String]): List[Entry] 
 
 課題として挙げた `getTimeline` について、再帰を用いた書き方をご提案いただきましたので記載させていただきます。なお、GitHub にあげているソースコードもこちらに置換しています。
 
-``` scala
+```scala
 def getTimeline(userId: Int, latestEntryContainer: Option[String]): List[Entry] = {
   val end = new Timestamp(now.getTime + timeout * 1000)
 

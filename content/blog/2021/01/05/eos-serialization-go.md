@@ -14,7 +14,7 @@ EOS Canada の
 
 を使って実装します。
 
-``` go
+```go
 package main
 
 import (
@@ -69,11 +69,11 @@ func hash(data []byte) []byte {
 
 実行してみます。
 
-``` sh
+```sh
 $ go run main.go
 ```
 
-``` txt
+```txt
 095207f69473db5e4dd7329d3f7838bf3664a6ca9465fe6cf33e52afcf5a61ef
 ```
 

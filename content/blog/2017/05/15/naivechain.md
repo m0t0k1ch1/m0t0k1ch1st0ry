@@ -4,7 +4,7 @@ tags = ['blockchain', 'go']
 date = '2017-05-15T03:38:15+09:00'
 +++
 
-以前に [200行のコードへのブロックチェーンの実装](http://postd.cc/a-blockchain-in-200-lines-of-code) というエントリを読み、たった 200 行の Javascript で実装された Blockchain である [Naivechain](https://github.com/lhartikk/naivechain) の存在を知った。本エントリは、その Naivechain の Go 版を実装してみたので、本家 Naivechain と合わせてご紹介しますという話。ちなみに、コードの短さは求めずになるべく構造化してわかりやすさ重視で書いた（つもり）なので、200 行ではない。
+以前に [200 行のコードへのブロックチェーンの実装](http://postd.cc/a-blockchain-in-200-lines-of-code) というエントリを読み、たった 200 行の Javascript で実装された Blockchain である [Naivechain](https://github.com/lhartikk/naivechain) の存在を知った。本エントリは、その Naivechain の Go 版を実装してみたので、本家 Naivechain と合わせてご紹介しますという話。ちなみに、コードの短さは求めずになるべく構造化してわかりやすさ重視で書いた（つもり）なので、200 行ではない。
 
 <!--more-->
 
@@ -16,7 +16,7 @@ date = '2017-05-15T03:38:15+09:00'
 
 Blockchain の定義についてここで深く議論するつもりはない。界隈でも厳密なコンセンサスが取れているわけではないと思うし。一応、[JBA の定義](http://jba-web.jp/archives/2011003blockchain_definition) を紹介しておく。
 
-> １）「ビザンチン障害を含む不特定多数のノードを用い、時間の経過とともにその時点の合意が覆る確率が0へ収束するプロトコル、またはその実装をブロックチェーンと呼ぶ。」
+> １）「ビザンチン障害を含む不特定多数のノードを用い、時間の経過とともにその時点の合意が覆る確率が 0 へ収束するプロトコル、またはその実装をブロックチェーンと呼ぶ。」
 > ２）「電子署名とハッシュポインタを使用し改竄検出が容易なデータ構造を持ち、且つ、当該データをネットワーク上に分散する多数のノードに保持させることで、高可用性及びデータ同一性等を実現する技術を広義のブロックチェーンと呼ぶ。」
 
 これを基準にすると、Naivechain は Blockchain ではない。長いチェーンを愚直に採用するだけなので合意は容易に覆るし、電子署名も使われていない。分散は可能なのでそこだけは満たしている。
@@ -38,7 +38,7 @@ Blockchain の定義についてここで深く議論するつもりはない。
 
 ## インストール方法
 
-``` sh
+```sh
 $ go get -u github.com/m0t0k1ch1/naivechain
 ```
 
@@ -50,26 +50,26 @@ Naivechain の概要については冒頭で紹介したエントリにまとま
 
 まずは 1 匹目のノードを起動。API 用の HTTP サーバーと P2P 用の websocket サーバーの起動ポートを指定している。
 
-``` sh
+```sh
 $ naivechain -api :3001 -p2p :6001
 ```
 
 次に 2 匹目のノードを別ポートで起動。
 
-``` sh
+```sh
 $ naivechain -api :3002 -p2p :6002
 ```
 
 初期状態の chain を確認してみる。なお、これ以降叩いていく HTTP API の概要は [こちら](https://github.com/m0t0k1ch1/naivechain/blob/master/README.md#http-api)。
 
-``` sh
+```sh
 $ curl http://127.0.0.1:3001/blocks
 $ curl http://127.0.0.1:3002/blocks
 ```
 
 双方、以下のように genesis block 1 つだけの状態のはず。
 
-``` json
+```json
 [
   {
     "index": 0,
@@ -83,13 +83,13 @@ $ curl http://127.0.0.1:3002/blocks
 
 1 匹目と 2 匹目を接続する前に、まずは 1 匹目で 1 block 生成してみる。
 
-``` sh
+```sh
 $ curl http://127.0.0.1:3001/mineBlock -d '{"data":"my first block"}'
 ```
 
 先ほどと同様、`/blocks` を叩いて chain の状態を確認すると、以下のように 1 block 増えているはず。
 
-``` json
+```json
 [
   {
     "index": 0,
@@ -110,7 +110,7 @@ $ curl http://127.0.0.1:3001/mineBlock -d '{"data":"my first block"}'
 
 この状態で 2 匹目から 1 匹目に接続してみる。
 
-``` sh
+```sh
 $ curl http://127.0.0.1:3002/addPeer -d '{"peer":"ws://127.0.0.1:6001"}'
 ```
 

@@ -15,7 +15,7 @@ Bitcoin に限らず、今年はオフチェーンなテクノロジーが多々
 
 に従って進め、
 
-__testnet にて、Lightning Network を利用した single hop payment と multi hop payment を成功させること__
+**testnet にて、Lightning Network を利用した single hop payment と multi hop payment を成功させること**
 
 をゴールとします。
 
@@ -29,24 +29,24 @@ __testnet にて、Lightning Network を利用した single hop payment と mult
 
 1.8 以上が必要とのことなので、今回は 1.9 をインストールします。
 
-``` sh
+```sh
 $ sudo apt-get install golang-1.9-go
 ```
 
 `~/.bashrc` などで、よしなに `GOPATH` と `PATH` を通しておきます。
 
-``` sh
+```sh
 export GOPATH=~/go
 export PATH=$PATH:/usr/lib/go-1.9/bin:$GOPATH/bin
 ```
 
 バージョンを確認します。
 
-``` sh
+```sh
 $ go version
 ```
 
-``` txt
+```txt
 go version go1.9.2 linux/amd64
 ```
 
@@ -54,17 +54,17 @@ go version go1.9.2 linux/amd64
 
 Go 用のパッケージ管理ツールである [Glide](https://glide.sh) をインストールします。lnd はこれを利用してパッケージ管理されています。
 
-``` sh
+```sh
 $ go get -u github.com/Masterminds/glide
 ```
 
 バージョンを確認します。
 
-``` sh
+```sh
 $ glide --version
 ```
 
-``` txt
+```txt
 glide version 0.13.2-dev
 ```
 
@@ -72,7 +72,7 @@ glide version 0.13.2-dev
 
 lnd をインストールします。
 
-``` sh
+```sh
 $ git clone https://github.com/lightningnetwork/lnd $GOPATH/src/github.com/lightningnetwork/lnd
 ...
 $ cd $GOPATH/src/github.com/lightningnetwork/lnd
@@ -83,11 +83,11 @@ $ go install . ./cmd/...
 
 バージョンを確認します。
 
-``` sh
+```sh
 $ lnd --version
 ```
 
-``` txt
+```txt
 lnd version 0.3.0-alpha
 ```
 
@@ -99,7 +99,7 @@ lnd version 0.3.0-alpha
 
 とのことなので、Roasbeef さんが fork してメンテしているバージョンをインストールします。
 
-``` sh
+```sh
 $ git clone https://github.com/roasbeef/btcd $GOPATH/src/github.com/roasbeef/btcd
 ...
 $ cd $GOPATH/src/github.com/roasbeef/btcd
@@ -110,11 +110,11 @@ $ go install . ./cmd/...
 
 バージョンを確認します。
 
-``` sh
+```sh
 $ btcd --version
 ```
 
-``` txt
+```txt
 btcd version 0.12.0-beta
 ```
 
@@ -124,7 +124,7 @@ btcd version 0.12.0-beta
 
 今回は検証目的なので、起動して雑にバックグランドに回しておきます。
 
-``` sh
+```sh
 $ nohup btcd --testnet --txindex --rpcuser=btcdrpc --rpcpass=btcdrpc &
 ```
 
@@ -136,7 +136,7 @@ testnet とのデータの同期にはそれなりに時間がかかるので、
 
 まず、共通のオプションを `~/.lnd/lnd.conf` に設定しておきます。なお、検証目的なので、macaroons による認証は無効化しています。
 
-``` txt
+```txt
 [Application Options]
 datadir=data
 logdir=log
@@ -153,14 +153,14 @@ bitcoin.rpcpass=btcdrpc
 
 3 匹それぞれのデータを保持するディレクトリを作成しておきます。Alice、Bob、Charlie の 3 人が lnd を起動する想定です。
 
-``` sh
+```sh
 $ cd ~/.lnd
 $ mkdir alice bob charlie
 ```
 
 lnd を順番に起動していきます。ここも雑にバックグラウンドに回しておきます。
 
-``` sh
+```sh
 $ cd ~/.lnd/alice
 $ nohup lnd --rpcport=10001 --peerport=10011 --restport=8001 &
 $ cd ~/.lnd/bob
@@ -175,7 +175,7 @@ $ nohup lnd --rpcport=10003 --peerport=10013 --restport=8003 &
 
 以下を実行してウォレットを生成します。パスワード（8 文字以上）の入力を求められますので、よしなに入力してください。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons create
 ...
 $ lncli --rpcserver=localhost:10002 --no-macaroons create
@@ -186,7 +186,7 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons create
 
 成功するとバックエンド（btcd）との同期が始まり、各 `nohup.out` に以下のようなログが出力されるはずです。
 
-``` txt
+```txt
 2018-01-15 23:46:45.582 [INF] LTND: Primary chain is set to: bitcoin
 2018-01-15 23:46:45.582 [INF] LTND: Initializing btcd backed fee estimator
 2018-01-15 23:46:51.336 [INF] LNWL: Opened wallet
@@ -229,26 +229,23 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons create
 
 また、`getinfo` コマンドで基本的な情報を取得することもできます。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons getinfo
 ```
 
-``` json
+```json
 {
-    "identity_pubkey": "03bc52cd50e93c3beb07aea040089c1eec7a1c702628cbee41c63a5101362ba8bf",
-    "alias": "",
-    "num_pending_channels": 0,
-    "num_active_channels": 0,
-    "num_peers": 0,
-    "block_height": 1258880,
-    "block_hash": "00000000000006bb9c24873200926c0a6446bad2b82887f4d05cfcdec8aa220e",
-    "synced_to_chain": true,
-    "testnet": true,
-    "chains": [
-        "bitcoin"
-    ],
-    "uris": [
-    ]
+  "identity_pubkey": "03bc52cd50e93c3beb07aea040089c1eec7a1c702628cbee41c63a5101362ba8bf",
+  "alias": "",
+  "num_pending_channels": 0,
+  "num_active_channels": 0,
+  "num_peers": 0,
+  "block_height": 1258880,
+  "block_hash": "00000000000006bb9c24873200926c0a6446bad2b82887f4d05cfcdec8aa220e",
+  "synced_to_chain": true,
+  "testnet": true,
+  "chains": ["bitcoin"],
+  "uris": []
 }
 ```
 
@@ -256,33 +253,33 @@ $ lncli --rpcserver=localhost:10001 --no-macaroons getinfo
 
 Alice、Bob、Charlie のオンチェーンアドレスを生成します。ここで指定している np2wkh というのは nested-pay-to-witness-key-hash の略で、[P2SH でネストされた P2WPKH](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki#p2wpkh-nested-in-bip16-p2sh) のことです（ちょっと自信ないけど、たぶん合ってるはず）。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons newaddress np2wkh
 ```
 
-``` json
+```json
 {
-    "address": "2MttnqvpvQyipkkbRBbjSu38W33qtMQ86yS"
+  "address": "2MttnqvpvQyipkkbRBbjSu38W33qtMQ86yS"
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10002 --no-macaroons newaddress np2wkh
 ```
 
-``` json
+```json
 {
-    "address": "2N5nawrANXwKo7aXWM3HiFkwZupUmT7RKCj"
+  "address": "2N5nawrANXwKo7aXWM3HiFkwZupUmT7RKCj"
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10003 --no-macaroons newaddress np2wkh
 ```
 
-``` json
+```json
 {
-    "address": "2MviVP7BPcyYn2qA9dXWgvgbhadYApV9zCd"
+  "address": "2MviVP7BPcyYn2qA9dXWgvgbhadYApV9zCd"
 }
 ```
 
@@ -290,27 +287,27 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons newaddress np2wkh
 
 コインがなくては検証できないので、今回は Alice と Charlie にコインを付与します。適当な testnet の faucet をひねってきましょう。その後、残高を確認します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons walletbalance
 ```
 
-``` json
+```json
 {
-    "total_balance": "130000000",
-    "confirmed_balance": "130000000",
-    "unconfirmed_balance": "0"
+  "total_balance": "130000000",
+  "confirmed_balance": "130000000",
+  "unconfirmed_balance": "0"
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10003 --no-macaroons walletbalance
 ```
 
-``` json
+```json
 {
-    "total_balance": "65000000",
-    "confirmed_balance": "65000000",
-    "unconfirmed_balance": "0"
+  "total_balance": "65000000",
+  "confirmed_balance": "65000000",
+  "unconfirmed_balance": "0"
 }
 ```
 
@@ -320,117 +317,114 @@ Alice、Bob、Charlie で P2P ネットワークを構築します。
 
 まず、接続先となる Bob の公開鍵（`identity_pubkey`）を確認します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10002 --no-macaroons getinfo
 ```
 
-``` json
+```json
 {
-    "identity_pubkey": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
-    "alias": "",
-    "num_pending_channels": 0,
-    "num_active_channels": 0,
-    "num_peers": 1,
-    "block_height": 1259892,
-    "block_hash": "00000000000003925458529edd7ebf929e37a4aa4630ac48d5b7a7d2066353d4",
-    "synced_to_chain": true,
-    "testnet": true,
-    "chains": [
-        "bitcoin"
-    ],
-    "uris": [
-    ]
+  "identity_pubkey": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
+  "alias": "",
+  "num_pending_channels": 0,
+  "num_active_channels": 0,
+  "num_peers": 1,
+  "block_height": 1259892,
+  "block_hash": "00000000000003925458529edd7ebf929e37a4aa4630ac48d5b7a7d2066353d4",
+  "synced_to_chain": true,
+  "testnet": true,
+  "chains": ["bitcoin"],
+  "uris": []
 }
 ```
 
 確認した Bob の公開鍵を指定して、Alice から Bob に接続します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons connect 0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74@localhost:10012
 ```
 
 同様に、Charlie から Bob に接続します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10003 --no-macaroons connect 0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74@localhost:10012
 ```
 
 正常に接続されているか確認します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons listpeers
 ```
 
-``` json
+```json
 {
-    "peers": [
-        {
-            "pub_key": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
-            "peer_id": 2,
-            "address": "127.0.0.1:10012",
-            "bytes_sent": "2512295",
-            "bytes_recv": "2536047",
-            "sat_sent": "0",
-            "sat_recv": "0",
-            "inbound": true,
-            "ping_time": "0"
-        }
-    ]
+  "peers": [
+    {
+      "pub_key": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
+      "peer_id": 2,
+      "address": "127.0.0.1:10012",
+      "bytes_sent": "2512295",
+      "bytes_recv": "2536047",
+      "sat_sent": "0",
+      "sat_recv": "0",
+      "inbound": true,
+      "ping_time": "0"
+    }
+  ]
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10002 --no-macaroons listpeers
 ```
 
-``` json
+```json
 {
-    "peers": [
-        {
-            "pub_key": "03bc52cd50e93c3beb07aea040089c1eec7a1c702628cbee41c63a5101362ba8bf",
-            "peer_id": 4,
-            "address": "127.0.0.1:33292",
-            "bytes_sent": "2536047",
-            "bytes_recv": "2512295",
-            "sat_sent": "0",
-            "sat_recv": "0",
-            "inbound": false,
-            "ping_time": "0"
-        },
-        {
-            "pub_key": "0288bedd304fccc8435db8073f1236f820162962a44fb3ef0068eccf287745c69b",
-            "peer_id": 5,
-            "address": "127.0.0.1:33308",
-            "bytes_sent": "195235",
-            "bytes_recv": "1080941",
-            "sat_sent": "0",
-            "sat_recv": "0",
-            "inbound": false,
-            "ping_time": "0"
-        }
-    ]
+  "peers": [
+    {
+      "pub_key": "03bc52cd50e93c3beb07aea040089c1eec7a1c702628cbee41c63a5101362ba8bf",
+      "peer_id": 4,
+      "address": "127.0.0.1:33292",
+      "bytes_sent": "2536047",
+      "bytes_recv": "2512295",
+      "sat_sent": "0",
+      "sat_recv": "0",
+      "inbound": false,
+      "ping_time": "0"
+    },
+    {
+      "pub_key": "0288bedd304fccc8435db8073f1236f820162962a44fb3ef0068eccf287745c69b",
+      "peer_id": 5,
+      "address": "127.0.0.1:33308",
+      "bytes_sent": "195235",
+      "bytes_recv": "1080941",
+      "sat_sent": "0",
+      "sat_recv": "0",
+      "inbound": false,
+      "ping_time": "0"
+    }
+  ]
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10003 --no-macaroons listpeers
 ```
 
-``` json
+```json
 {
-    "peers": [
-        {
-            "pub_key": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
-            "peer_id": 2,
-            "address": "127.0.0.1:10012",
-            "bytes_sent": "2512295",
-            "bytes_recv": "791559",
-            "sat_sent": "0",
-            "sat_recv": "0",
-            "inbound": true,
-            "ping_time": "0"
-        }
-    ]
+  "peers": [
+    {
+      "pub_key": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
+      "peer_id": 2,
+      "address": "127.0.0.1:10012",
+      "bytes_sent": "2512295",
+      "bytes_recv": "791559",
+      "sat_sent": "0",
+      "sat_recv": "0",
+      "inbound": true,
+      "ping_time": "0"
+    }
+  ]
 }
 ```
 
@@ -440,13 +434,13 @@ Alice から Bob への single hop payment を行ってみようと思います�
 
 Alice と Bob の間にペイメントチャネルを開きます。今回は、Alice の 1,000,000 satoshi を利用することにします。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons openchannel --node_key=0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74 --local_amt=1000000
 ```
 
-``` json
+```json
 {
-        "funding_txid": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1"
+  "funding_txid": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1"
 }
 ```
 
@@ -454,63 +448,61 @@ $ lncli --rpcserver=localhost:10001 --no-macaroons openchannel --node_key=0398d5
 
 チャネルが開いたら確認します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons listchannels
 ```
 
-``` json
+```json
 {
-    "channels": [
-        {
-            "active": true,
-            "remote_pubkey": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
-            "channel_point": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1:0",
-            "chan_id": "1385268102766264320",
-            "capacity": "1000000",
-            "local_balance": "959456",
-            "remote_balance": "0",
-            "commit_fee": "40544",
-            "commit_weight": "600",
-            "fee_per_kw": "56000",
-            "unsettled_balance": "0",
-            "total_satoshis_sent": "0",
-            "total_satoshis_received": "0",
-            "num_updates": "0",
-            "pending_htlcs": [
-            ],
-            "csv_delay": 144
-        }
-    ]
+  "channels": [
+    {
+      "active": true,
+      "remote_pubkey": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
+      "channel_point": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1:0",
+      "chan_id": "1385268102766264320",
+      "capacity": "1000000",
+      "local_balance": "959456",
+      "remote_balance": "0",
+      "commit_fee": "40544",
+      "commit_weight": "600",
+      "fee_per_kw": "56000",
+      "unsettled_balance": "0",
+      "total_satoshis_sent": "0",
+      "total_satoshis_received": "0",
+      "num_updates": "0",
+      "pending_htlcs": [],
+      "csv_delay": 144
+    }
+  ]
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10002 --no-macaroons listchannels
 ```
 
-``` json
+```json
 {
-    "channels": [
-        {
-            "active": true,
-            "remote_pubkey": "03bc52cd50e93c3beb07aea040089c1eec7a1c702628cbee41c63a5101362ba8bf",
-            "channel_point": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1:0",
-            "chan_id": "1385268102766264320",
-            "capacity": "1000000",
-            "local_balance": "0",
-            "remote_balance": "959456",
-            "commit_fee": "40544",
-            "commit_weight": "552",
-            "fee_per_kw": "56000",
-            "unsettled_balance": "0",
-            "total_satoshis_sent": "0",
-            "total_satoshis_received": "0",
-            "num_updates": "0",
-            "pending_htlcs": [
-            ],
-            "csv_delay": 144
-        }
-    ]
+  "channels": [
+    {
+      "active": true,
+      "remote_pubkey": "03bc52cd50e93c3beb07aea040089c1eec7a1c702628cbee41c63a5101362ba8bf",
+      "channel_point": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1:0",
+      "chan_id": "1385268102766264320",
+      "capacity": "1000000",
+      "local_balance": "0",
+      "remote_balance": "959456",
+      "commit_fee": "40544",
+      "commit_weight": "552",
+      "fee_per_kw": "56000",
+      "unsettled_balance": "0",
+      "total_satoshis_sent": "0",
+      "total_satoshis_received": "0",
+      "num_updates": "0",
+      "pending_htlcs": [],
+      "csv_delay": 144
+    }
+  ]
 }
 ```
 
@@ -526,101 +518,99 @@ $ lncli --rpcserver=localhost:10002 --no-macaroons listchannels
 
 まず、Bob が 10,000 satoshi 分の invoice を生成します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10002 --no-macaroons addinvoice --value=10000
 ```
 
-``` json
+```json
 {
-        "r_hash": "354026c9a36be070f57371bbccdab636c90ee017bfd6a840fb3b49a908574c88",
-        "pay_req": "lntb100u1pdxvf6hpp5x4qzdjdrd0s8patnwxauek4kxmysacqhhlt2ss8m8dy6jzzhfjyqdqqcqzysmj6fewu9fzyf6e3y793wkqq6s0dfsf7y4h5yxj4s8q30sk66yxs44qsh5q9lah8wlwugf9f9xgsged23sq4sq6ug0qjtg9trn4qe8fqqarz7dv"
+  "r_hash": "354026c9a36be070f57371bbccdab636c90ee017bfd6a840fb3b49a908574c88",
+  "pay_req": "lntb100u1pdxvf6hpp5x4qzdjdrd0s8patnwxauek4kxmysacqhhlt2ss8m8dy6jzzhfjyqdqqcqzysmj6fewu9fzyf6e3y793wkqq6s0dfsf7y4h5yxj4s8q30sk66yxs44qsh5q9lah8wlwugf9f9xgsged23sq4sq6ug0qjtg9trn4qe8fqqarz7dv"
 }
 ```
 
 生成された invoice に対して、Alice が支払いを行います。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons sendpayment --pay_req=lntb100u1pdxvf6hpp5x4qzdjdrd0s8patnwxauek4kxmysacqhhlt2ss8m8dy6jzzhfjyqdqqcqzysmj6fewu9fzyf6e3y793wkqq6s0dfsf7y4h5yxj4s8q30sk66yxs44qsh5q9lah8wlwugf9f9xgsged23sq4sq6ug0qjtg9trn4qe8fqqarz7dv
 ```
 
-``` json
+```json
 {
-        "payment_error": "",
-        "payment_preimage": "84880ffb3614a8d5939cb72406f3462cbd5fce9153caf20d29ac035bcaa15dd9",
-        "payment_route": {
-                "total_time_lock": 1260054,
-                "total_amt": 10000,
-                "hops": [
-                        {
-                                "chan_id": 1385268102766264320,
-                                "chan_capacity": 1000000,
-                                "amt_to_forward": 10000,
-                                "expiry": 1260054
-                        }
-                ]
-        }
+  "payment_error": "",
+  "payment_preimage": "84880ffb3614a8d5939cb72406f3462cbd5fce9153caf20d29ac035bcaa15dd9",
+  "payment_route": {
+    "total_time_lock": 1260054,
+    "total_amt": 10000,
+    "hops": [
+      {
+        "chan_id": 1385268102766264320,
+        "chan_capacity": 1000000,
+        "amt_to_forward": 10000,
+        "expiry": 1260054
+      }
+    ]
+  }
 }
 ```
 
 再度ペイメントチャネルの状態を確認します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons listchannels
 ```
 
-``` json
+```json
 {
-    "channels": [
-        {
-            "active": true,
-            "remote_pubkey": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
-            "channel_point": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1:0",
-            "chan_id": "1385268102766264320",
-            "capacity": "1000000",
-            "local_balance": "949456",
-            "remote_balance": "10000",
-            "commit_fee": "40544",
-            "commit_weight": "724",
-            "fee_per_kw": "56000",
-            "unsettled_balance": "0",
-            "total_satoshis_sent": "10000",
-            "total_satoshis_received": "0",
-            "num_updates": "2",
-            "pending_htlcs": [
-            ],
-            "csv_delay": 144
-        }
-    ]
+  "channels": [
+    {
+      "active": true,
+      "remote_pubkey": "0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74",
+      "channel_point": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1:0",
+      "chan_id": "1385268102766264320",
+      "capacity": "1000000",
+      "local_balance": "949456",
+      "remote_balance": "10000",
+      "commit_fee": "40544",
+      "commit_weight": "724",
+      "fee_per_kw": "56000",
+      "unsettled_balance": "0",
+      "total_satoshis_sent": "10000",
+      "total_satoshis_received": "0",
+      "num_updates": "2",
+      "pending_htlcs": [],
+      "csv_delay": 144
+    }
+  ]
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10002 --no-macaroons listchannels
 ```
 
-``` json
+```json
 {
-    "channels": [
-        {
-            "active": true,
-            "remote_pubkey": "03bc52cd50e93c3beb07aea040089c1eec7a1c702628cbee41c63a5101362ba8bf",
-            "channel_point": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1:0",
-            "chan_id": "1385268102766264320",
-            "capacity": "1000000",
-            "local_balance": "10000",
-            "remote_balance": "949456",
-            "commit_fee": "40544",
-            "commit_weight": "724",
-            "fee_per_kw": "56000",
-            "unsettled_balance": "0",
-            "total_satoshis_sent": "0",
-            "total_satoshis_received": "10000",
-            "num_updates": "2",
-            "pending_htlcs": [
-            ],
-            "csv_delay": 144
-        }
-    ]
+  "channels": [
+    {
+      "active": true,
+      "remote_pubkey": "03bc52cd50e93c3beb07aea040089c1eec7a1c702628cbee41c63a5101362ba8bf",
+      "channel_point": "8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1:0",
+      "chan_id": "1385268102766264320",
+      "capacity": "1000000",
+      "local_balance": "10000",
+      "remote_balance": "949456",
+      "commit_fee": "40544",
+      "commit_weight": "724",
+      "fee_per_kw": "56000",
+      "unsettled_balance": "0",
+      "total_satoshis_sent": "0",
+      "total_satoshis_received": "10000",
+      "num_updates": "2",
+      "pending_htlcs": [],
+      "csv_delay": 144
+    }
+  ]
 }
 ```
 
@@ -634,39 +624,39 @@ $ lncli --rpcserver=localhost:10002 --no-macaroons listchannels
 
 本来はこのペイメントチャネルを利用して Alice と Bob の間で複数回の支払いを行った後にペイメントチャネルを閉じ、最終的な残高をオンチェーンで確定させるべきですが、今回はここでペイメントチャネルを閉じてみます。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons closechannel --funding_txid=8633a3c8e77e047c8c81c07b8777f6fd6eb0ff9fad2b44f37d798c9af12468c1 --output_index=0
 ```
 
-``` json
+```json
 {
-        "closing_txid": "849b08005e31891af7dc33e845d7835b78d4750cb59864efe4896009bda6a3dd"
+  "closing_txid": "849b08005e31891af7dc33e845d7835b78d4750cb59864efe4896009bda6a3dd"
 }
 ```
 
 [ペイメントチャネルを閉じるためのトランザクション](https://testnet.smartbit.com.au/tx/849b08005e31891af7dc33e845d7835b78d4750cb59864efe4896009bda6a3dd) がブロードキャストされました。トランザクションが承認されたら、Alice と Bob のオンチェーンアドレスの残高を確認します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons walletbalance
 ```
 
-``` json
+```json
 {
-    "total_balance": "129981438",
-    "confirmed_balance": "129981438",
-    "unconfirmed_balance": "0"
+  "total_balance": "129981438",
+  "confirmed_balance": "129981438",
+  "unconfirmed_balance": "0"
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10002 --no-macaroons walletbalance
 ```
 
-``` json
+```json
 {
-    "total_balance": "10000",
-    "confirmed_balance": "10000",
-    "unconfirmed_balance": "0"
+  "total_balance": "10000",
+  "confirmed_balance": "10000",
+  "unconfirmed_balance": "0"
 }
 ```
 
@@ -689,23 +679,23 @@ Alice から Charlie へ、Bob を経由して multi hop payment を行ってみ
 
 Alice と Bob の間、Bob と Charlie の間にそれぞれペイメントチャネルを開きます。なお、Charlie がペイメントチャネルを開く際には `--push_amt` を指定し、`--local_amt` で指定した 800,000 satoshi のうち 200,000 satoshi を Bob の初期残高として割り当てておきます。これは、Bob が Alice の支払いを中継できるようにするためです。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons openchannel --node_key=0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74 --local_amt=1000000
 ```
 
-``` json
+```json
 {
-        "funding_txid": "50a5d5dba4b293f6b932f33a1c50c20cfee7d778c9e8848b523ba71ae9399579"
+  "funding_txid": "50a5d5dba4b293f6b932f33a1c50c20cfee7d778c9e8848b523ba71ae9399579"
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10003 --no-macaroons openchannel --node_key=0398d53fe171c4cf492122819ad3c3bc8c25ac9b285840b7279005ba5371a59a74 --local_amt=800000 --push_amt=200000
 ```
 
-``` json
+```json
 {
-        "funding_txid": "8afa8b9685cbc23169cca7211d4bb97c373b411629f62e180757cc78f253980f"
+  "funding_txid": "8afa8b9685cbc23169cca7211d4bb97c373b411629f62e180757cc78f253980f"
 }
 ```
 
@@ -722,48 +712,47 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons openchannel --node_key=0398d5
 
 Charlie が 10,000 satoshi 分の invoice を生成します。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10003 --no-macaroons addinvoice --value=10000
 ```
 
-``` json
+```json
 {
-        "r_hash": "bfa72c4fdefcdcd5a98684a2ff1af41ce1dd0f847e2e7f1cbd432fb1b5a49046",
-        "pay_req": "lntb100u1pdxdxg5pp5h7njcn77lnwdt2vxsj307xh5rnsa6ruy0ch8789agvhmrddyjprqdqqcqzysp8uekllf8ay6wmmj29kyex0w97hwj92gyu9nf4keuuex4phle5u8jrnqfan9rzgcxj3a3r0cnzdlm0eeutv28dhlu89py25gqt0gytgp4hsz53"
+  "r_hash": "bfa72c4fdefcdcd5a98684a2ff1af41ce1dd0f847e2e7f1cbd432fb1b5a49046",
+  "pay_req": "lntb100u1pdxdxg5pp5h7njcn77lnwdt2vxsj307xh5rnsa6ruy0ch8789agvhmrddyjprqdqqcqzysp8uekllf8ay6wmmj29kyex0w97hwj92gyu9nf4keuuex4phle5u8jrnqfan9rzgcxj3a3r0cnzdlm0eeutv28dhlu89py25gqt0gytgp4hsz53"
 }
 ```
 
 生成された invoice に対して、Alice が支払いを行います。このとき、Alice と Charlie はペイメントチャネルを開いていないため、Bob を経由して支払いが行われることになります。
 
-
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons sendpayment --pay_req=lntb100u1pdxdxg5pp5h7njcn77lnwdt2vxsj307xh5rnsa6ruy0ch8789agvhmrddyjprqdqqcqzysp8uekllf8ay6wmmj29kyex0w97hwj92gyu9nf4keuuex4phle5u8jrnqfan9rzgcxj3a3r0cnzdlm0eeutv28dhlu89py25gqt0gytgp4hsz53
 ```
 
-``` json
+```json
 {
-        "payment_error": "",
-        "payment_preimage": "828f01bd8f91bc3da3984edf2698579a5c82cf268b2bc93827e36473efefe84b",
-        "payment_route": {
-                "total_time_lock": 1260357,
-                "total_fees": 1,
-                "total_amt": 10001,
-                "hops": [
-                        {
-                                "chan_id": 1385292292024696832,
-                                "chan_capacity": 1000000,
-                                "amt_to_forward": 10000,
-                                "fee": 1,
-                                "expiry": 1260213
-                        },
-                        {
-                                "chan_id": 1385292292024827904,
-                                "chan_capacity": 800000,
-                                "amt_to_forward": 10000,
-                                "expiry": 1260213
-                        }
-                ]
-        }
+  "payment_error": "",
+  "payment_preimage": "828f01bd8f91bc3da3984edf2698579a5c82cf268b2bc93827e36473efefe84b",
+  "payment_route": {
+    "total_time_lock": 1260357,
+    "total_fees": 1,
+    "total_amt": 10001,
+    "hops": [
+      {
+        "chan_id": 1385292292024696832,
+        "chan_capacity": 1000000,
+        "amt_to_forward": 10000,
+        "fee": 1,
+        "expiry": 1260213
+      },
+      {
+        "chan_id": 1385292292024827904,
+        "chan_capacity": 800000,
+        "amt_to_forward": 10000,
+        "expiry": 1260213
+      }
+    ]
+  }
 }
 ```
 
@@ -788,23 +777,23 @@ $$
 
 無事支払いが行えたようなので、今回はここでペイメントチャネルを閉じます。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons closechannel --funding_txid=50a5d5dba4b293f6b932f33a1c50c20cfee7d778c9e8848b523ba71ae9399579 --output_index=0
 ```
 
-``` json
+```json
 {
-        "closing_txid": "7b2bae6f4aef7c3990df784d082fb0e6b5ac38dcdfd0597061b87fd304b8401d"
+  "closing_txid": "7b2bae6f4aef7c3990df784d082fb0e6b5ac38dcdfd0597061b87fd304b8401d"
 }
 ```
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10003 --no-macaroons closechannel --funding_txid=8afa8b9685cbc23169cca7211d4bb97c373b411629f62e180757cc78f253980f --output_index=0
 ```
 
-``` json
+```json
 {
-        "closing_txid": "49b4f98ecbbfa7a01bfc739a4c4039749b56aeeec7a5d22cd93b6e82be81a8be"
+  "closing_txid": "49b4f98ecbbfa7a01bfc739a4c4039749b56aeeec7a5d22cd93b6e82be81a8be"
 }
 ```
 
@@ -812,15 +801,15 @@ $ lncli --rpcserver=localhost:10003 --no-macaroons closechannel --funding_txid=8
 
 まず、Alice について。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10001 --no-macaroons walletbalance
 ```
 
-``` json
+```json
 {
-    "total_balance": "129961787",
-    "confirmed_balance": "129961787",
-    "unconfirmed_balance": "0"
+  "total_balance": "129961787",
+  "confirmed_balance": "129961787",
+  "unconfirmed_balance": "0"
 }
 ```
 
@@ -830,15 +819,15 @@ $$
 
 次に、Bob について。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10002 --no-macaroons walletbalance
 ```
 
-``` json
+```json
 {
-    "total_balance": "210001",
-    "confirmed_balance": "210001",
-    "unconfirmed_balance": "0"
+  "total_balance": "210001",
+  "confirmed_balance": "210001",
+  "unconfirmed_balance": "0"
 }
 ```
 
@@ -848,15 +837,15 @@ $$
 
 最後に、Charlie について。
 
-``` sh
+```sh
 $ lncli --rpcserver=localhost:10003 --no-macaroons walletbalance
 ```
 
-``` json
+```json
 {
-    "total_balance": "64801438",
-    "confirmed_balance": "64801438",
-    "unconfirmed_balance": "0"
+  "total_balance": "64801438",
+  "confirmed_balance": "64801438",
+  "unconfirmed_balance": "0"
 }
 ```
 
@@ -871,7 +860,6 @@ $$
 - [Lightning Labs](https://lightning.engineering) が実装した Lightning Network ノードである [lnd](https://github.com/lightningnetwork/lnd) を用いて、プライベートな Lightning Network を構築しました
   - バックエンドには [btcd](https://github.com/roasbeef/btcd) を採用し、testnet と接続しました
 - 構築した Lightning Network を利用して、single hop payment と multi hop payment の検証を行いました
-
 
 ## ちなみに
 

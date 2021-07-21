@@ -16,7 +16,7 @@ ref. [Application Gateway - az network application-gateway](https://docs.microso
 
 例えば、以下のような感じ。
 
-``` sh
+```sh
 $ az network application-gateway show-backend-health \
   --resource-group <your resource group> \
   --name <your appilcation gateway name> \
@@ -25,4 +25,4 @@ $ az network application-gateway show-backend-health \
 
 ただ、このコマンド、重い。20 〜 30 秒くらいはかかる。
 
-Application Gateway 関連の操作は、所要時間が他のリソースと比べてだいぶ長い。祈りを捧ぐ🙏
+Application Gateway 関連の操作は、所要時間が他のリソースと比べてだいぶ長い。祈りを捧ぐ 🙏

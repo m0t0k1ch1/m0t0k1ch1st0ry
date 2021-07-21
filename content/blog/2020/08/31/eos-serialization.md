@@ -12,17 +12,17 @@ date = '2020-08-31T20:43:55+09:00'
 
 EOS でよく使う型を適当に組み合わせます。
 
-||type|value
-:---:|:---:|:---:
-n|name|"motokichi"
-a|asset|"21000000 POYO"
-i|uint64|1231006505
-s|string|"poyo!"
-b|bool|false
+|     |  type  |      value      |
+| :-: | :----: | :-------------: |
+|  n  |  name  |   "motokichi"   |
+|  a  | asset  | "21000000 POYO" |
+|  i  | uint64 |   1231006505    |
+|  s  | string |     "poyo!"     |
+|  b  |  bool  |      false      |
 
 ## C++（コントラクト側）で実行する場合
 
-``` cpp
+```cpp
 #include <eosio/asset.hpp>
 #include <eosio/crypto.hpp>
 #include <eosio/eosio.hpp>
@@ -64,11 +64,11 @@ class [[eosio::contract]] test : public contract
 
 [EOSIO.CDT v1.7.0](https://github.com/EOSIO/eosio.cdt/releases/tag/v1.7.0) でコンパイルして、[jungle3 にデプロイして、](https://jungle3.bloks.io/account/s11ntest1111)`serialize` action を実行してみます。
 
-``` sh
+```sh
 $ cleos --url https://jungle3.cryptolions.io push action s11ntest1111 serialize '["motokichi", "21000000 POYO", 1231006505, "poyo!", false]' -p s11ntest1111@active
 ```
 
-``` txt
+```txt
 executed transaction: 3e2d76342d9ec5451bafbc001ea20b7682f359d0007920d71c1dec1f35da09ec  136 bytes  198 us
 #  s11ntest1111 <= s11ntest1111::serialize      {"n":"motokichi","a":"21000000 POYO","i":1231006505,"s":"poyo!","b":0}
 >> 095207f69473db5e4dd7329d3f7838bf3664a6ca9465fe6cf33e52afcf5a61ef
@@ -76,7 +76,7 @@ executed transaction: 3e2d76342d9ec5451bafbc001ea20b7682f359d0007920d71c1dec1f35
 
 serialize したデータの SHA-256 ハッシュとして
 
-``` txt
+```txt
 095207f69473db5e4dd7329d3f7838bf3664a6ca9465fe6cf33e52afcf5a61ef
 ```
 
@@ -84,20 +84,20 @@ serialize したデータの SHA-256 ハッシュとして
 
 ## Node.js（クライアント側）で実行する場合
 
-``` js
-const { Serialize }                = require('eosjs');
-const ecc                          = require('eosjs-ecc');
-const { TextEncoder, TextDecoder } = require('util');
+```js
+const { Serialize } = require("eosjs");
+const ecc = require("eosjs-ecc");
+const { TextEncoder, TextDecoder } = require("util");
 
 const buf = new Serialize.SerialBuffer({
   textEncoder: new TextEncoder(),
   textDecoder: new TextDecoder(),
 });
 
-const n = 'motokichi';
-const a = '21000000 POYO';
+const n = "motokichi";
+const a = "21000000 POYO";
 const i = 1231006505;
-const s = 'poyo!';
+const s = "poyo!";
 const b = false;
 
 buf.pushName(n);
@@ -106,17 +106,20 @@ buf.pushNumberAsUint64(i);
 buf.pushString(s);
 buf.push(b);
 
-const hashed = ecc.sha256(Buffer.from(Serialize.arrayToHex(buf.asUint8Array()), 'hex'), null);
-console.log(hashed.toString('hex'));
+const hashed = ecc.sha256(
+  Buffer.from(Serialize.arrayToHex(buf.asUint8Array()), "hex"),
+  null
+);
+console.log(hashed.toString("hex"));
 ```
 
 実行してみます。
 
-``` sh
+```sh
 $ node serialization.js
 ```
 
-``` txt
+```txt
 095207f69473db5e4dd7329d3f7838bf3664a6ca9465fe6cf33e52afcf5a61ef
 ```
 

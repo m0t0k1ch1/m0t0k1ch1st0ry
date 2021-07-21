@@ -12,7 +12,7 @@ date = '2017-12-08T04:45:34+09:00'
 
 [Hi-Ether](https://qiita.com/amachino/items/605ff76209d7193dc92c) コミュニティにて、[truffle-flattener](https://github.com/alcuadrado/truffle-flattener) の存在を教えていただきました。これを使うと、簡単にがっちゃんこしたコードを生成することができます。
 
-``` sh
+```sh
 $ truffle-flattener contracts/AnotherEther.sol > Combined.sol
 ```
 
@@ -34,7 +34,7 @@ https://ropsten.etherscan.io/address/0x1514e87adb657288060d820c6bffa86b70382f6e#
 
 ということで、愚直に solc をインストールすることにした。以下、Ubuntu 16.04 にて。
 
-``` sh
+```sh
 $ sudo add-apt-repository ppa:ethereum/ethereum
 $ sudo apt-get update
 $ sudo apt-get install solc
@@ -42,7 +42,7 @@ $ sudo apt-get install solc
 
 次に solidity-flattener をインストールする。
 
-``` sh
+```sh
 $ apt-get install python3-pip
 $ pip3 install --upgrade pip
 $ pip3 install solidity-flattener
@@ -58,7 +58,7 @@ $ pip3 install solidity-flattener
 
 時は満ちたり。以下を実行してがっちゃんこする。`--solc-paths` オプションの使い方がポイント。
 
-``` sh
+```sh
 $ solidity_flattener --solc-paths=zeppelin-solidity=$(pwd)/node_modules/zeppelin-solidity/ contracts/AnotherEther.sol --output Combined.sol
 ```
 
@@ -68,7 +68,7 @@ $ solidity_flattener --solc-paths=zeppelin-solidity=$(pwd)/node_modules/zeppelin
 
 修正後の `Combined.sol` は以下のようになった。
 
-``` solidity
+```solidity
 pragma solidity ^0.4.18;
 
 library SafeMath {

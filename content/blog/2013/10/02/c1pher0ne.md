@@ -21,11 +21,12 @@ date = '2013-10-02'
 
 ## どうやってやってるの？？
 
-- [はなもげらAPI](http://truelogic.biz/hanamogera/hana-about.html) と [かな漢字変換API](http://developer.yahoo.co.jp/webapi/jlp/jim/v1/conversion.html) をよしなに組み合わせてやってます
+- [はなもげら API](http://truelogic.biz/hanamogera/hana-about.html) と [かな漢字変換 API](http://developer.yahoo.co.jp/webapi/jlp/jim/v1/conversion.html) をよしなに組み合わせてやってます
 - [こちら](https://github.com/m0t0k1ch1/c1pher0ne/blob/master/lib/Cipherone/Model/Poem.pm) を見ていただければだいたいわかると思います
 - 全部漢字に変換すると趣がなくなったので、[Data::WeightedRoundRobin](http://search.cpan.org/~xaicron/Data-WeightedRoundRobin-0.06/lib/Data/WeightedRoundRobin.pm) を使って、かなを漢字に変換する比率を調整してます
 
 ## 今後の予定
+
 - [前回]({{< ref "/blog/2013/09/30/c1pher0ne.md" >}}) 書いたものに加えて以下も考えてます
 - 流行りのアプリと音楽を教えてくれる機能、特にアプリは鉄板過ぎるのを持ってくるし、あまり変わり映えがしないので、何らかの調整が必要
 - [ついっぷるトレンド](http://tr.twipple.jp) が比較的アツいらしいので、うまいこと利用したい

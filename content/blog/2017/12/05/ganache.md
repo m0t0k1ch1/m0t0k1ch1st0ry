@@ -47,10 +47,11 @@ GUI ベースで諸々の情報閲覧や簡単なマイニング制御が行え�
 
 まず、新しくアカウントを登録します。
 
-``` sh
+```sh
 $ curl -X POST http://127.0.0.1:7545 --data '{"jsonrpc":"2.0","method":"personal_newAccount","params":["pass"],"id":0}'
 ```
-``` json
+
+```json
 {
   "id": 0,
   "jsonrpc": "2.0",
@@ -60,10 +61,11 @@ $ curl -X POST http://127.0.0.1:7545 --data '{"jsonrpc":"2.0","method":"personal
 
 0x05eee23f682718f129719df9d0d0254542c6a10e というアカウントが登録されました。このアカウントに対し、初期状態で登録されていたアカウントの 1 匹である 0x627306090abaB3A6e1400e9345bC60c78a8BEf57 から 1 ETH を送ってみます。
 
-``` sh
+```sh
 $ curl -X POST http://127.0.0.1:7545 --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{"from":"0x627306090abaB3A6e1400e9345bC60c78a8BEf57","value":"0x0de0b6b3a7640000","to":"0x05eee23f682718f129719df9d0d0254542c6a10e"}],"id":0}'
 ```
-``` json
+
+```json
 {
   "id": 0,
   "jsonrpc": "2.0",
@@ -80,10 +82,11 @@ $ curl -X POST http://127.0.0.1:7545 --data '{"jsonrpc":"2.0","method":"eth_send
 
 JSON-RPC で送信先のアカウントの残高も確認してみます。
 
-``` sh
+```sh
 $ curl -X POST http://127.0.0.1:7545 --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x05eee23f682718f129719df9d0d0254542c6a10e", "latest"],"id":1}'
 ```
-``` json
+
+```json
 {
   "id": 1,
   "jsonrpc": "2.0",
@@ -105,25 +108,25 @@ Advent Calendar の 2 日目の記事「[Truffle で始める Ethereum 入門 - 
 
 コントラクトは Ganache にデプロイする必要がありますので、`truffle.js` を以下のように修正し、development ネットワークとして Ganache を登録します（Ganache の初期設定に合わせています）。
 
-``` js
+```js
 module.exports = {
   networks: {
     development: {
-      host: 'localhost',
+      host: "localhost",
       port: 7545,
-      network_id: 5777
-    }
-  }
+      network_id: 5777,
+    },
+  },
 };
 ```
 
 準備ができたら、以下を実行してデプロイします。
 
-``` sh
+```sh
 $ truffle migrate --network development
 ```
 
-``` txt
+```txt
 Using network 'development'.
 
 Running migration: 1_initial_migration.js
@@ -152,7 +155,7 @@ Saving artifacts...
 
 以下を実行してコンソールを起動します。
 
-``` sh
+```sh
 $ truffle console --network development
 ```
 

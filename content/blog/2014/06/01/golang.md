@@ -14,7 +14,7 @@ date = '2014-06-01'
 
 - クロージャもカスタム定義型にキャストしたりすればメソッド（インターフェース）を実装することができる
 
-``` go
+```go
 package main
 
 import (
@@ -43,7 +43,7 @@ func main() {
 - 上記の例ではクロージャを `fmt.Stringer` インターフェースを実装した `MyFunction` にキャストすることで、`fmt.Println` で出力できるようにしている
 - こんなパターンどこで使うの…？と思ったりもするけれど、net/http の `http.HandleFunc` がそれっぽいことをしている
 
-``` go
+```go
 package main
 
 import (

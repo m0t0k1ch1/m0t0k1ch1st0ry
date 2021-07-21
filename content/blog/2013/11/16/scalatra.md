@@ -4,13 +4,13 @@ tags = ['scala', 'scalatra', 'slick']
 date = '2013-11-16'
 +++
 
-現状、Scala でカジュアルにうぇっぶアプリケーションをつくるにはこの構成が一番キマってる感じがするので、サンプルうぇっぶアプリケーションをつくってみました。3つともイニシャルが S という点も素晴らしいですね。
+現状、Scala でカジュアルにうぇっぶアプリケーションをつくるにはこの構成が一番キマってる感じがするので、サンプルうぇっぶアプリケーションをつくってみました。3 つともイニシャルが S という点も素晴らしいですね。
 
 <!--more-->
 
 ## モチベーション
 
-[ISUCON3](http://isucon.net) のお題アプリの Scala 移植を Scalatra + Slick でこそこそやっているのですが、諸々ハマりまくって全然進まないので、先に Scalatra と Slick の基本的な使い方を把握した方がよいのでは？？と今更ながら思いました（頭悪い）。きちんと動くサンプルアプリケーションが1つできれば今後の自分と世界のためになりますしね！！
+[ISUCON3](http://isucon.net) のお題アプリの Scala 移植を Scalatra + Slick でこそこそやっているのですが、諸々ハマりまくって全然進まないので、先に Scalatra と Slick の基本的な使い方を把握した方がよいのでは？？と今更ながら思いました（頭悪い）。きちんと動くサンプルアプリケーションが 1 つできれば今後の自分と世界のためになりますしね！！
 
 あと、たまには表も書きたいよってことで、Scalatra にデフォルトで組み込まれてる Scalate に Furatto を組み合わせて使ってみました。
 
@@ -27,7 +27,7 @@ date = '2013-11-16'
 - 公式は [こちら](http://slick.typesafe.com)
 - ORM というか、modern database query and access library
 - `JOIN` とか `WHERE` が Scala のコレクションを扱う感覚で書けてすごくモダン
-- 神エントリー：[Slick 1.0.0 Documentationを翻訳した](http://qiita.com/krrrr38/items/488ffc49a01cca8425f8)
+- 神エントリー：[Slick 1.0.0 Documentation を翻訳した](http://qiita.com/krrrr38/items/488ffc49a01cca8425f8)
 
 ### Scalate（template engine）
 
@@ -60,7 +60,7 @@ DB 周りついてですが、schema は `src/main/scala/com/github/m0t0k1ch1/sl
 
 新感覚でした。コードを書いている際、DB にアクセスしてごにゃごにゃして…みたいな感覚が薄く、Scala のコードとの親和性が高くつくられている印象を受けました。例えば以下のような感じ。
 
-``` scala
+```scala
 val trainerPokemons = for {
   tp <- TrainerPokemons if tp.trainerId === trainerId
   p  <- Pokemons if p.id === tp.pokemonId

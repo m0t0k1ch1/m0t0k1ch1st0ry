@@ -47,11 +47,11 @@ Scylla が使用するポートに関しては [公式ドキュメント](http:/
 
 なので、まずはデータディスクの設定から。今回は、Azure ポータルから 1,023 GB の Premium_LRS なデータディスクを追加しているので、それをまず確認する。
 
-``` sh
+```sh
 $ lsblk
 ```
 
-``` txt
+```txt
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 fd0      2:0    1    4K  0 disk
 sda      8:0    0 29.3G  0 disk
@@ -64,11 +64,11 @@ sr0     11:0    1  1.1M  0 rom
 
 sdc が追加したデータディスクなので、パーティションを切ってあげる。
 
-``` sh
+```sh
 $ fdisk /dev/sdc
 ```
 
-``` txt
+```txt
 Welcome to fdisk (util-linux 2.27.1).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
@@ -106,11 +106,11 @@ Syncing disks.
 
 パーティションが切れてることを確認する。
 
-``` sh
+```sh
 $ lsblk
 ```
 
-``` txt
+```txt
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 fd0      2:0    1    4K  0 disk
 sda      8:0    0 29.3G  0 disk
@@ -124,11 +124,11 @@ sr0     11:0    1  1.1M  0 rom
 
 XFS でフォーマットする。
 
-``` sh
+```sh
 $ mkfs.xfs /dev/sdc1
 ```
 
-``` txt
+```txt
 meta-data=/dev/sdc1              isize=512    agcount=4, agsize=67043264 blks
          =                       sectsz=4096  attr=2, projid32bit=1
          =                       crc=1        finobt=1, sparse=0
@@ -142,28 +142,28 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 
 フォーマットを確認する。
 
-``` sh
+```sh
 $ file -s /dev/sdc1
 ```
 
-``` txt
+```txt
 /dev/sdc1: SGI XFS filesystem data (blksz 4096, inosz 512, v2 dirs)
 ```
 
 `/var/lib/scylla` にマウントする。
 
-``` sh
+```sh
 $ mkdir /var/lib/scylla
 $ mount /dev/sdc1 /var/lib/scylla
 ```
 
- マウントされているか確認する。
+マウントされているか確認する。
 
-``` sh
+```sh
 $ lsblk
 ```
 
-``` txt
+```txt
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 fd0      2:0    1    4K  0 disk
 sda      8:0    0 29.3G  0 disk
@@ -179,7 +179,7 @@ sr0     11:0    1  1.1M  0 rom
 
 ここからは公式ドキュメント通りにインストールを進める。
 
-``` sh
+```sh
 $ wget -O /etc/apt/sources.list.d/scylla.list http://downloads.scylladb.com/deb/ubuntu/scylla-1.6-xenial.list
 $ apt-get update
 $ apt-get install scylla
@@ -187,11 +187,11 @@ $ apt-get install scylla
 
 今回インストールされたバージョンは以下。
 
-``` sh
+```sh
 $ scylla --version
 ```
 
-``` txt
+```txt
 1.6.0-20170202.7e1b245
 ```
 
@@ -206,14 +206,14 @@ $ scylla --version
 
 GossipingPropertyFileSnitch にしたので、`/etc/scylla/cassandra-rackdc.properties` にも設定を追記。
 
-``` txt
+```txt
 dc=dc1
 rack=rack1
 ```
 
 次にセットアップ用のスクリプトを走らせる。
 
-``` sh
+```sh
 $ scylla_setup
 ```
 
@@ -221,7 +221,7 @@ $ scylla_setup
 
 セットアップ用のスクリプトの中で、ベンチマークをかけて io 関連の設定を自動でやってくれるステップがあるので、これは 3 台ともやっておくとよいかなと思う。3 台それぞれで設定された数字を参考に、最終的には `/etc/scylla.d/io.conf` の内容を以下で揃えた。
 
-``` txt
+```txt
 SEASTAR_IO="--max-io-requests=20"
 ```
 
@@ -229,17 +229,17 @@ SEASTAR_IO="--max-io-requests=20"
 
 `seed_provider.parameters.seeds` に設定した VM から順番に起動していく。
 
-``` sh
+```sh
 $ systemctl start scylla-server
 ```
 
 3 台とも起動できたら、正常にクラスタが組めているか確認する。
 
-``` sh
+```sh
 $ nodetool status
 ```
 
-``` txt
+```txt
 Datacenter: dc1
 ===============
 Status=Up/Down
@@ -261,7 +261,7 @@ cassandra-stress を実行する VM は以下。
 
 scylla-tools をインストールしておく。
 
-``` sh
+```sh
 $ wget -O /etc/apt/sources.list.d/scylla.list http://downloads.scylladb.com/deb/ubuntu/scylla-1.6-xenial.list
 $ apt-get update
 $ apt-get install scylla-tools
@@ -271,19 +271,19 @@ $ apt-get install scylla-tools
 
 まずは以下を実行して keyspace を作成する。
 
-``` sh
+```sh
 $ cassandra-stress write n=1 cl=ALL -schema 'replication(strategy=NetworkTopologyStrategy,dc1=3)' -mode native cql3 -node 10.1.1.22,10.1.1.23,10.1.1.24
 ```
 
 次に、以下を実行して QUORUM で write 負荷を与える。
 
-``` sh
+```sh
 $ cassandra-stress write cl=QUORUM n=1000000 -mode native cql3 -node 10.1.1.22,10.1.1.23,10.1.1.24
 ```
 
 続けて以下を実行して QUORUM で read 負荷を与える。
 
-``` sh
+```sh
 $ cassandra-stress read cl=QUORUM n=1000000 -mode native cql3 -rate threads=512 -node 10.1.1.22,10.1.1.23,10.1.1.24
 ```
 
@@ -293,12 +293,14 @@ $ cassandra-stress read cl=QUORUM n=1000000 -mode native cql3 -rate threads=512 
 
 op rate と latency mean だけ抜き出して表にしてみる。
 
+<!-- prettier-ignore -->
 op rate (/sec)|write|read
 :---:|:---:|:---:
 1 回目|63,490|97,718
 2 回目|64,625|99,711
 3 回目|65,479|102,407
 
+<!-- prettier-ignore -->
 latency mean (msec)|write|read
 :---:|:---:|:---:
 1 回目|3.1|5.2

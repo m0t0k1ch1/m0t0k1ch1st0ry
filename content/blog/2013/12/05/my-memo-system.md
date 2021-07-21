@@ -17,7 +17,7 @@ date = '2013-12-05'
 - macbook（複数台）と iPhone でデータを共有したい
 - タグとかカテゴリでメモを分類したい
 
-Evernote だと上の2つが厳しいですね。。
+Evernote だと上の 2 つが厳しいですね。。
 
 ## 新メモ管理システムについて
 
@@ -45,7 +45,7 @@ Evernote だと上の2つが厳しいですね。。
 - 一旦 Kobito を終了する
 - Kobito.db を Dropbox に移してシンボリックリンクを貼る
 
-``` sh
+```sh
 $ mkdir ~/Dropbox/Kobito
 $ mv ~/Library/Kobito/Kobito.db ~/Dropbox/Kobito
 $ ln -s ~/Dropbox/Kobito/Kobito.db ~/Library/Kobito/Kobito.db

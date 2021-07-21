@@ -13,7 +13,7 @@ Perl の smart match ではまったのでめもめも。
 - smart か smart でないかと問われれば smart かなと思う
 - `grep` とかでごりって感じでやるよりは smart かなと思う
 
-``` perl
+```perl
 my $hoge = 3;
 if ($hoge ~~ [1, 3, 5]) {
     warn '$hoge is 1 or 3 or 5';
@@ -22,13 +22,13 @@ if ($hoge ~~ [1, 3, 5]) {
 
 - 当然、出力は以下
 
-``` txt
+```txt
 $hoge is 1 or 3 or 5
 ```
 
 ## 2. smart さを発揮できない使い方
 
-``` perl
+```perl
 if ('0.00' ~~ '0') {
     warn 'smart match!';
 }
@@ -40,7 +40,7 @@ if ('0.00' == '0') {
 
 - なんと、出力は以下
 
-``` txt
+```txt
 match!
 ```
 

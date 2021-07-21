@@ -22,7 +22,7 @@ date = '2015-05-15T23:18:39+09:00'
 
 評判通り速い。もう Octopress には戻れない。
 
-``` sh
+```sh
 $ time hugo
 0 draft content
 0 future content
@@ -38,7 +38,7 @@ hugo  0.24s user 0.09s system 87% cpu 0.383 total
 
 基本的にはこんな感じ。わかりやすい。
 
-``` sh
+```sh
 $ tree -L 1
 .
 ├── archetypes
@@ -69,7 +69,7 @@ $ tree -L 1
 
 まずはみんながやってるメタデータの日付フォーマット変換。
 
-``` sh
+```sh
 $ find . -type f | xargs sed -i '' -e 's/date: \([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\).*$/date: \1/g'
 ```
 
@@ -84,7 +84,7 @@ $ find . -type f | xargs sed -i '' -e 's/date: \([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\
 
 #### 移行前のメタデータ部分
 
-``` txt
+```txt
 ---
 layout: post
 title: "..."
@@ -97,7 +97,7 @@ categories: [ category1, ... ]
 
 #### 移行後のメタデータ部分
 
-``` txt
+```txt
 +++
 date = "YYYY-MM-DD"
 tags = [ "tag1", ... ]
@@ -109,11 +109,11 @@ title = "..."
 
 theme を何にするかは悩みに悩んだ。これだ！！！みたいなのがなくて心が折れそうになったけど、[vienna](https://github.com/keichi/vienna) を fork してちょこちょこいじることでなんとかなった。
 
-手を動かしたのは、記事のリスト表示でページャー使われてなかったので使うようにした（1ページ7記事）くらい。この theme でいくぞ！！！って決めてからは速かった。
+手を動かしたのは、記事のリスト表示でページャー使われてなかったので使うようにした（1 ページ 7 記事）くらい。この theme でいくぞ！！！って決めてからは速かった。
 
 あと、ローカルで build すると
 
-``` txt
+```txt
 ERROR: 2015/05/15 Site's .BaseUrl is deprecated and will be removed in Hugo 0.15. Use .BaseURL instead.
 ```
 
@@ -125,14 +125,13 @@ Octopress 時代は `bundle exec rake gen_deploy` で build ＋ deploy してた
 
 [公式で紹介されてるやり方](http://gohugo.io/tutorials/automated-deployments) の通りにセットアップすると、GitHub への push にフックして自動的に build ＋ deploy が走るようになる。便利。
 
-
 ## 結果
 
 エントリを公開する手順は以下のような感じになった。
 
 ### 新しいエントリの雛形をつくる
 
-``` sh
+```sh
 $ hugo new poyo.md
 ```
 
@@ -142,13 +141,13 @@ $ hugo new poyo.md
 
 `http://127.0.0.1:1313` でプレビューできる。ファイル更新すると勝手にリロードまでしてくれる。便利。
 
-``` sh
+```sh
 $ hugo server --watch
 ```
 
 ### build ＋ deploy
 
-``` sh
+```sh
 $ git add .
 $ git commit -m 'add poyo.md'
 $ git push origin master

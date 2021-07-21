@@ -12,7 +12,7 @@ Perl で IRC bot を書くとき、[UnazuSan](https://github.com/Songmu/p5-Unazu
 
 README にも書いた通り、こんな感じで使います。
 
-``` go
+```go
 package main
 
 import (
@@ -53,7 +53,7 @@ func main() {
 
 すると、こんな感じでやりとりできます。
 
-``` txt
+```txt
 21:26:57 m0t0k1ch1: pooh: piyo
 21:26:57 pooh: poyo
 21:27:04 m0t0k1ch1: pooh: say 🙏

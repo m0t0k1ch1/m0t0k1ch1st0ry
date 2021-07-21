@@ -55,7 +55,7 @@ Vim と Emacs どっちも触れないのにエンジニアなんですか？へ
 - cperl-mode の hook として、auto-complete + perl-completion + flymake
 - .md と .markdown は markdown-mode で開く
 
-``` lisp
+```lisp
 (defalias 'perl-mode 'cperl-mode)
 
 (add-to-list 'auto-mode-alist '("\\.t$" . cperl-mode))
@@ -89,7 +89,7 @@ Vim と Emacs どっちも触れないのにエンジニアなんですか？へ
             (flymake-mode t)))
 ```
 
-``` lisp
+```lisp
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 ```
@@ -97,13 +97,13 @@ Vim と Emacs どっちも触れないのにエンジニアなんですか？へ
 ## まとめ
 
 - 目的通り、最低限のものがにシンプルにまとまった気がする
-- 次はキーバインドちゃんと覚えます←
-- 開発環境は仕事の効率に大きく影響するし、月1くらいで見直していきたい
+- 次はキーバインドちゃんと覚えます ←
+- 開発環境は仕事の効率に大きく影響するし、月 1 くらいで見直していきたい
 
 ## 参考
 
 - [Perl Hacks on Emacs](http://typester.stfuawsc.com/slides/perlcasual2/start.html)
   - インストールする Elisp を決める際に参考になりました
-  - 基本的な設定の部分も [typesterさんのもの](https://github.com/typester/emacs-config/blob/master/conf/init.el) を参考にさせていただきました
+  - 基本的な設定の部分も [typester さんのもの](https://github.com/typester/emacs-config/blob/master/conf/init.el) を参考にさせていただきました
 - [perl-completion をインストールした](http://d.hatena.ne.jp/a666666/20100524/1274634774)
   - auto-complete と perl-completion がうまく動かなかったときに現れた救世主

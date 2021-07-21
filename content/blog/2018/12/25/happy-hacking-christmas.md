@@ -17,7 +17,7 @@ images = ['img/entry/santa-claus.jpg']
 
 あ、あと、最初にお伝えしておきたいことがもう 1 つ。
 
-__この第 1 回 ex-KAYAC Advent Calendar 開催を記念して、ex-KAYAC の皆さんにはちょっとイイことが起こるかもしれません。__
+**この第 1 回 ex-KAYAC Advent Calendar 開催を記念して、ex-KAYAC の皆さんにはちょっとイイことが起こるかもしれません。**
 
 これに関する続報は、この Advent Calendar と同時に立ち上がった ex-KAYAC な Slack チャンネルに流れると思いますので、チャンネルに join したい方は、[@m0t0k1ch1](https://twitter.com/m0t0k1ch1) もしくは [@ngystks](https://twitter.com/ngystks) まで気軽にお声がけください。
 
@@ -37,33 +37,33 @@ __この第 1 回 ex-KAYAC Advent Calendar 開催を記念して、ex-KAYAC の�
 
 ^ こちらが、Ethereum（Ropsten testnet）上にデプロイされた分散型サンタクロースです。かわいいですね。
 
-もちろん、かわいいだけではありません。この SantaClaus contract は __[SantaClausToken（SCT）](https://ropsten.etherscan.io/token/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d)__という特別なトークンをプレゼントとして配ることができるのです。
+もちろん、かわいいだけではありません。この SantaClaus contract は **[SantaClausToken（SCT）](https://ropsten.etherscan.io/token/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d)**という特別なトークンをプレゼントとして配ることができるのです。
 
 しかし、この SantaClausToken（SCT）、誰もがもらえるわけではありません。
 
 正確に言うと、
 
-__Ethereum（Ropsten testnet）上にクリスマスを題材にしたある種のパズルが構築されており、このパズルを解くことができた方のみ、SantaClausToken（SCT）が獲得できるようになっています。__
+**Ethereum（Ropsten testnet）上にクリスマスを題材にしたある種のパズルが構築されており、このパズルを解くことができた方のみ、SantaClausToken（SCT）が獲得できるようになっています。**
 
 パズルに関連する contract の概要を以下にまとめます。
 
-- __Letter__（低難度パズル）
+- **Letter**（低難度パズル）
   - 💌 [Letter contract](https://ropsten.etherscan.io/address/0xbade12c0bd7943a066e77f0466d529d78d2f70db#code)
   - SantaClaus へのお手紙です
   - SantaClausToken をもらうには、チップを包んで封をする必要があります
-- __ChristmasStocking__（中難度パズル）
+- **ChristmasStocking**（中難度パズル）
   - 🧦 [ChristmasStockin contractg](https://ropsten.etherscan.io/address/0x408f56c4541bd00ec836102d06f7ee6a2a820678#code)
   - SantaClaus がプレゼントを入れるための靴下です
   - SantaClausToken をもらうには、この中に賄賂を仕込む必要があります
-- __ChristmasTree__（高難度パズル）
+- **ChristmasTree**（高難度パズル）
   - 🎄 [ChristmasTree contract](https://ropsten.etherscan.io/address/0x0a97246d46703f72b5c34828f80171f005f66c60#code)
   - お祈りをしたり、飾りつけをしたりすることができる、クリスマスツリーです
   - SantaClausToken をもらうには、たくさんたくさんお祈りをする必要があります
-- __SantaClaus__
+- **SantaClaus**
   - 🎅 [SantaClaus contract](https://ropsten.etherscan.io/address/0x05d9cbee05e82d492ad66842fc7c0cb363b384ea#code)
   - 分散型サンタクロースです
   - 条件を満たした良い子にだけ、SantaClausToken（SCT）をプレゼントしてくれます
-- __SantaClausToken（SCT）__
+- **SantaClausToken（SCT）**
   - 💎 [SantaClausToken contract](https://ropsten.etherscan.io/address/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d#code)
   - パズルを解いた証です
   - 中身は、SantaClaus しか transfer できない ERC20 トークンです
@@ -72,7 +72,7 @@ Letter と ChristmasStocking と ChristmasTree がパズル要素を持った co
 
 パズルを全て解いた状態で SantaClaus contract の `requestToken()` function（下記）を実行することで、SantaClausToken（SCT）が獲得できます。
 
-``` solidity
+```solidity
 function requestToken() public {
   require(_letter.isSealed(msg.sender));
   require(_christmasStocking.balanceOf(msg.sender) > 0);
@@ -130,7 +130,7 @@ SCT を獲得した方は、是非こちらに名前を刻んでいただけた�
 
 最後になってしまいましたが、今回の ex-KAYAC Advent Calendar 2018 を立ち上げ（させ）た身として、参加してくださった皆さんにお礼を申し上げたいと思います。
 
-__突拍子もない企画に乗っかっていただき、本当にありがとうございました 🙏__
+**突拍子もない企画に乗っかっていただき、本当にありがとうございました 🙏**
 
 まさにカヤックの文化の 1 つである「乗っかる」が体現された第 1 回 ex-KAYAC Advent Calendar だったように思います。
 

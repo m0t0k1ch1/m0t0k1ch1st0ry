@@ -14,7 +14,7 @@ date = '2014-08-18'
 
 ## 秘密鍵と公開鍵を準備する
 
-``` sh
+```sh
 $ openssl genrsa 1024 > private-key.pem
 $ openssl rsa -pubout < private-key.pem > public-key.pem
 ```
@@ -23,7 +23,7 @@ $ openssl rsa -pubout < private-key.pem > public-key.pem
 
 以下のコードで署名の作成と検証が実行できます。key へのパスはよしなに置換してください。
 
-``` go
+```go
 package main
 
 import (

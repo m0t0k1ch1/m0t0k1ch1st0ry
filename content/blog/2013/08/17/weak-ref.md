@@ -17,7 +17,7 @@ Mouse のプロパティの `weak_ref` の使いどころで「う…」って�
 
 簡単な例で見てみます。
 
-``` perl
+```perl
 use strict;
 use warnings;
 
@@ -32,7 +32,7 @@ Dump $piyo;
 
 上記のプログラムを実行すると結果は以下のようになり、`REFCNT`（参照カウント）が増えているのがわかります。
 
-``` txt
+```txt
 SV = PV(0x7fd4aa03ab90) at 0x7fd4aa08b408
   REFCNT = 1
   FLAGS = (PADMY,POK,pPOK)
@@ -54,7 +54,7 @@ SV = PV(0x7fd4aa03ab90) at 0x7fd4aa08b408
 
 例えば Mouse を用いて以下のようなオブジェクトを定義したとします。
 
-``` perl
+```perl
 package Piyo;
 use Mouse;
 
@@ -74,7 +74,7 @@ no Mouse;
 1;
 ```
 
-``` perl
+```perl
 package Poyo;
 use Mouse;
 
@@ -96,7 +96,7 @@ no Mouse;
 
 で、Devel::Cycle を用いた以下のようなコードで循環参照になっちゃってるかどうかを調べてみます。
 
-``` perl
+```perl
 use strict;
 use warnings;
 
@@ -116,7 +116,7 @@ find_cycle($piyo);
 
 結果、以下のように循環参照が検出されます。
 
-``` txt
+```txt
 Cycle (1):
                   $Piyo::A->{'poyo'} => \%Poyo::B
                   $Poyo::B->{'piyo'} => \%Piyo::A
@@ -124,9 +124,9 @@ Cycle (1):
 
 ## 循環参照を解決する
 
-- その1：Scalar::Util::weaken を使って、参照カウンタを増やさないようにする
+- その 1：Scalar::Util::weaken を使って、参照カウンタを増やさないようにする
 
-``` perl
+```perl
 package Piyo;
 use Mouse;
 
@@ -147,9 +147,9 @@ no Mouse;
 1;
 ```
 
-- その2：Moose とか Mouse のプロパティを弱い参照にして、スコープを抜けると参照が破棄されるようにする
+- その 2：Moose とか Mouse のプロパティを弱い参照にして、スコープを抜けると参照が破棄されるようにする
 
-``` perl
+```perl
 package Piyo;
 use Mouse;
 

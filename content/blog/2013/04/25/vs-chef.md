@@ -14,7 +14,7 @@ date = '2013-04-25'
 - Chef 以外にも Puppet というやつもいるよ
 - Facebook 社が使っておられます
 - ローカルの開発環境セットアップにも使える！！
-- 利用形態は大きく2つ
+- 利用形態は大きく 2 つ
   - Chef Server ＋ Chef Client（大規模環境管理）
   - Chef Solo（単独のコマンドとして Chef を実行）
 - recipe：「コード化された手順書」「サーバーの状態」
@@ -33,7 +33,7 @@ date = '2013-04-25'
 - 初期設定も終わってたっぽい
 - 終わってなければ以下を実行
 
-``` sh
+```sh
 $ gem install chef
 $ knife configure
 ```
@@ -46,45 +46,45 @@ $ knife configure
 - knife-solo をインストールするディレクトリを作成
 - 当方、ここで入れた knife-solo にはパス通してますが、通ってない前提で書き続けます
 
-``` sh
+```sh
 $ mkdir ~/knife-solo
 $ cd knife-solo
 ```
 
 - bundle 初期化
 
-``` sh
+```sh
 $ bundle init
 ```
 
 - `Gemfile` を編集する
 
-``` sh
+```sh
 $ source "https://rubygems.org"
 $ gem 'knife-solo', '0.3.0.pre3'
 ```
 
 - knife-solo をインストール
 
-``` sh
+```sh
 $ bundle install --path=vendor/bundle --binstubs
 ```
 
 - `.chef/knife.rb` に以下を追加（knife-solo 0.3.0 のときだけ）
 
-``` ruby
+```ruby
 knife[:solo_path] = '/tmp/chef-solo'
 ```
 
 - repository をつくる
 
-``` sh
+```sh
 $ ~/knife-solo/bin/knife solo init your-repo
 ```
 
 - 先人たちの cookbook を手に入れるための準備
 
-``` sh
+```sh
 $ cd your-repo
 $ git init
 $ git add .
@@ -97,13 +97,13 @@ $ git commit -m 'first commit'
 - 秘密鍵をダウンロードして `~/.chef/username.pem` にパーミッション 600 で保存
 - 試しに yum の cookbook をダウンロード
 
-``` sh
+```sh
 $ knife cookbook site vendor yum -o cookbooks
 ```
 
 - とりあえず、参考になりそうな以下をダウンロード
 
-``` sh
+```sh
 $ knife cookbook site vendor nginx -o cookbooks
 $ knife cookbook site vendor mysql -o cookbooks
 $ knife cookbook site vendor daemontools -o cookbooks
@@ -117,7 +117,7 @@ $ knife cookbook site vendor jenkins -o cookbooks
 
 - cookbook の雛形をつくる
 
-``` sh
+```sh
 $ knife cookbook create nginx -o site-cookbooks
 ```
 
@@ -125,7 +125,7 @@ $ knife cookbook create nginx -o site-cookbooks
   - package とか service とか template は Chef が提供する [resource](http://docs.opscode.com/resource.html)
   - user と group は attributes を参照する
 
-``` ruby
+```ruby
 package 'nginx' do
   action :install
 end
@@ -147,7 +147,7 @@ end
 
 - port を指定できるようにして template を書く
 
-``` nginx
+```nginx
 user             nginx;
 worker_processes 1;
 error_log        /var/log/nginx/error.log;
@@ -174,7 +174,7 @@ http {
 
 - attributes にデフォルト値を書いておく
 
-``` ruby
+```ruby
 default['nginx']['user']  = 'user-name'
 default['nginx']['group'] = 'user-group'
 default['nginx']['port']  = '80'
@@ -184,11 +184,9 @@ default['nginx']['port']  = '80'
   - Chef Solo 実行時に渡す変数の値やどの recipe を実行するかを設定する
   - JSON はダブルクォーテーションじゃないとだめ
 
-``` json
+```json
 {
-    "run_list" : [
-        "nginx"
-    ]
+  "run_list": ["nginx"]
 }
 ```
 
@@ -196,18 +194,18 @@ default['nginx']['port']  = '80'
   - 対象サーバー：CentOS
   - SSH の設定は `~/.ssh/config` でうまいことやってる前提
 
-``` sh
+```sh
 $ ~/knife-solo/bin/knife solo prepare host-name
 ```
 
 - cook する（cook するユーザーはパスワードなしで sudo 実行可能にしておく）
 
-``` sh
+```sh
 $ ~/knife-solo/bin/knife solo cook host-name
 ```
 
 ## 参考
 
 - [Chef Solo の正しい始め方](http://tsuchikazu.net/chef_solo_start/)
-- [macにknife-soloをインストール](http://devlog.mitsugeek.net/entry/2013/03/25/mac%E3%81%ABknife-solo%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB\(prepare%E3%81%BE%E3%81%A7%E7%A2%BA%E8%AA%8D%EF%BC%89)
-- [[Mac]『入門Chef Solo』を読んで試してみた](http://blog.hello-world.jp.net/?p=461)
+- [mac に knife-solo をインストール](http://devlog.mitsugeek.net/entry/2013/03/25/mac%E3%81%ABknife-solo%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB(prepare%E3%81%BE%E3%81%A7%E7%A2%BA%E8%AA%8D%EF%BC%89)
+- [[Mac]『入門 Chef Solo』を読んで試してみた](http://blog.hello-world.jp.net/?p=461)

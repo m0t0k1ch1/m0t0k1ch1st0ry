@@ -12,7 +12,7 @@ date = '2017-11-12'
 
 README に書いてある通り、`docker-compose up -d` するだけで private かつ standalone な Ethereum ノードが立ち上がり、マイニングが始まる。なお、起動コマンドは以下。
 
-``` sh
+```sh
 $ geth --networkid 1234 --nodiscover --maxpeers 0 --datadir /root/.ethereum/privchain --mine --minerthreads 1 --etherbase 0x49d38ba99e0a1712388031345114d9da84110e9f --rpc --rpcaddr '0.0.0.0' --rpcport 8545 --rpccorsdomain '*' --rpcapi='admin,db,debug,eth,miner,net,personal,shh,txpool,web3' --unlock 0 --password /root/.ethereum/privchain/passwd
 ```
 
@@ -20,7 +20,7 @@ $ geth --networkid 1234 --nodiscover --maxpeers 0 --datadir /root/.ethereum/priv
 
 正常にマイニングが開始された場合のログは以下のようになる。
 
-``` txt
+```txt
 INFO [11-11|19:43:48] Starting peer-to-peer node               instance=Geth/v1.7.2-stable/linux-amd64/go1.9.1
 INFO [11-11|19:43:48] Allocated cache and file handles         database=/root/.ethereum/privchain/geth/chaindata cache=128 handles=1024
 WARN [11-11|19:43:48] Upgrading database to use lookup entries
@@ -76,11 +76,11 @@ INFO [11-11|19:51:11] 🔨 mined potential block                  number=3 hash=
 
 ノードが起動したら以下を実行してノードに接続し、お馴染みの JavaScript コンソールさんでよしなに動作確認などを行う。
 
-``` sh
+```sh
 $ docker exec -it geth-standalone geth attach rpc:http://localhost:8545
 ```
 
-``` txt
+```txt
 Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.7.2-stable/linux-amd64/go1.9.1

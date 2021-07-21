@@ -24,7 +24,7 @@ date = '2019-03-09T18:02:51+09:00'
 
 `frm` が実行したい操作（`frm` から `to` への MT 譲渡）を行う transaction を `relayer` がブロードキャストして gas を負担する代わりに `frm` から MT を徴収している、辺りがポイントかなと思います。なお、今回は 1 contract 内で完結する固定の 1 操作（`transfer`）だけが実行できるような実装ですが、ここをより汎用的に実装することは可能です。というか、どちらかと言うと本来はそうあるべきでしょう。
 
-``` solidity
+```solidity
 pragma solidity >=0.4.21 <0.6.0;
 
 import "openzeppelin-solidity/contracts/cryptography/ECDSA.sol";
@@ -92,54 +92,65 @@ contract MetaToken is ERC20, ERC20Detailed {
 }
 ```
 
-``` js
-const MetaToken = artifacts.require('MetaToken');
-const BN        = web3.utils.BN;
+```js
+const MetaToken = artifacts.require("MetaToken");
+const BN = web3.utils.BN;
 
-contract('MetaToken', async (accounts) => {
-  it('transfer', async () => {
+contract("MetaToken", async (accounts) => {
+  it("transfer", async () => {
     let metaToken = await MetaToken.deployed();
 
-    let frm    = accounts[0];
-    let to     = accounts[1];
-    let amount = new BN('100');
+    let frm = accounts[0];
+    let to = accounts[1];
+    let amount = new BN("100");
 
     let balanceOfFromBefore = await metaToken.balanceOf(frm);
-    let balanceOfToBefore   = await metaToken.balanceOf(to);
+    let balanceOfToBefore = await metaToken.balanceOf(to);
 
-    await metaToken.transfer(to, amount, {from: frm});
+    await metaToken.transfer(to, amount, { from: frm });
 
     let balanceOfFromAfter = await metaToken.balanceOf(frm);
-    let balanceOfToAfter   = await metaToken.balanceOf(to);
+    let balanceOfToAfter = await metaToken.balanceOf(to);
 
     assert.isTrue(balanceOfFromBefore.sub(amount).eq(balanceOfFromAfter));
     assert.isTrue(balanceOfToBefore.add(amount).eq(balanceOfToAfter));
   });
 
-  it('metaTransfer', async () => {
+  it("metaTransfer", async () => {
     let metaToken = await MetaToken.deployed();
 
-    let frm     = accounts[0];
-    let to      = accounts[1];
-    let amount  = new BN('100');
-    let fee     = new BN('1');
-    let nonce   = new BN('0');
+    let frm = accounts[0];
+    let to = accounts[1];
+    let amount = new BN("100");
+    let fee = new BN("1");
+    let nonce = new BN("0");
     let relayer = accounts[2];
 
-    let hash = await metaToken.metaTransferHash(frm, to, amount, fee, nonce, relayer);
-    let sig  = await web3.eth.sign(hash, frm);
+    let hash = await metaToken.metaTransferHash(
+      frm,
+      to,
+      amount,
+      fee,
+      nonce,
+      relayer
+    );
+    let sig = await web3.eth.sign(hash, frm);
 
-    let balanceOfFromBefore    = await metaToken.balanceOf(frm);
-    let balanceOfToBefore      = await metaToken.balanceOf(to);
+    let balanceOfFromBefore = await metaToken.balanceOf(frm);
+    let balanceOfToBefore = await metaToken.balanceOf(to);
     let balanceOfRelayerBefore = await metaToken.balanceOf(relayer);
 
-    await metaToken.metaTransfer(frm, to, amount, fee, nonce, relayer, sig, {from: relayer});
+    await metaToken.metaTransfer(frm, to, amount, fee, nonce, relayer, sig, {
+      from: relayer,
+    });
 
-    let balanceOfFromAfter    = await metaToken.balanceOf(frm);
-    let balanceOfToAfter      = await metaToken.balanceOf(to);
+    let balanceOfFromAfter = await metaToken.balanceOf(frm);
+    let balanceOfToAfter = await metaToken.balanceOf(to);
     let balanceOfRelayerAfter = await metaToken.balanceOf(relayer);
 
-    assert.isTrue(balanceOfFromBefore.sub(amount).sub(fee).eq(balanceOfFromAfter));
+    assert.isTrue(
+      balanceOfFromBefore.sub(amount).sub(fee).eq(balanceOfFromAfter)
+    );
     assert.isTrue(balanceOfToBefore.add(amount).eq(balanceOfToAfter));
     assert.isTrue(balanceOfRelayerBefore.add(fee).eq(balanceOfRelayerAfter));
   });

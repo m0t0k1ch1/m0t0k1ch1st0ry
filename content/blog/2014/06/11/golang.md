@@ -12,7 +12,7 @@ Go の `nil` で完全に嵌ったのでメモ。
 
 例えば、[Revel](http://revel.github.io) の `validator.go` の中にこんな関数がいる。
 
-``` go
+```go
 func (r Required) IsSatisfied(obj interface{}) bool {
     if obj == nil {
         return false
@@ -40,7 +40,7 @@ func (r Required) IsSatisfied(obj interface{}) bool {
 
 よくある validation なんだけど、これで完全に嵌った。わかりやすいように、上記から一部抜粋してサンプルコードを書いてみる。
 
-``` go
+```go
 package main
 
 import (
@@ -63,11 +63,11 @@ func main() {
 ```
 
 `IsSatisfied(x)` は `true`。ん…？  
-`x` は `nil` じゃ、、ない？？なんでや〜〜〜と1時間くらい悶えていた。
+`x` は `nil` じゃ、、ない？？なんでや〜〜〜と 1 時間くらい悶えていた。
 
 ## 検証してみる
 
-``` go
+```go
 package main
 
 func IsNil(obj interface{}) bool {
@@ -87,7 +87,7 @@ func main() {
 
 なるほど。
 
-``` go
+```go
 package main
 
 import (
@@ -113,13 +113,13 @@ func main() {
 
 ## どういうこと？？
 
-上記の例で、`obj` は当然 `interface{}` として扱われる。また、interface 変数は「型」と「値」の情報を持っており、それらがともに設定されていないときに限り `nil` として扱われるらしい。[公式のFAQ](http://golang.org/doc/faq#nil_error) にも以下のような記載があった。
+上記の例で、`obj` は当然 `interface{}` として扱われる。また、interface 変数は「型」と「値」の情報を持っており、それらがともに設定されていないときに限り `nil` として扱われるらしい。[公式の FAQ](http://golang.org/doc/faq#nil_error) にも以下のような記載があった。
 
-> An interface value is nil only if the inner value and type are both unset, (nil, nil). In particular, a nil interface will always hold a nil type. If we store a pointer of type *int inside an interface value, the inner type will be *int regardless of the value of the pointer: (*int, nil). Such an interface value will therefore be non-nil even when the pointer inside is nil.
+> An interface value is nil only if the inner value and type are both unset, (nil, nil). In particular, a nil interface will always hold a nil type. If we store a pointer of type *int inside an interface value, the inner type will be *int regardless of the value of the pointer: (\*int, nil). Such an interface value will therefore be non-nil even when the pointer inside is nil.
 
 上記の例における `x` は「値」の情報を持ってはいないが「型」の情報（`*int`）は持っている。このため、単純に `nil` と比較しても等しくはならなかった、ということ。試しに `reflect.TypeOf` を使って「型」の情報を出力してみると、以下のようになる。
 
-``` go
+```go
 package main
 
 import (
@@ -145,4 +145,4 @@ Go における `nil` の扱い、ちょっと自分の感覚とは違ってい�
 
 ## 参考
 
-- [絶対ハマる、不思議なnil](http://qiita.com/umisama/items/e215d49138e949d7f805)
+- [絶対ハマる、不思議な nil](http://qiita.com/umisama/items/e215d49138e949d7f805)

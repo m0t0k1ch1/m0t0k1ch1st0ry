@@ -14,7 +14,7 @@ date = '2014-02-04'
 
 `src/main/resources/application.conf` に
 
-``` scala
+```scala
 twitter {
     consumerKey       = "**********"
     consumerSecret    = "**********"
@@ -25,7 +25,7 @@ twitter {
 
 って感じで書いて、
 
-``` scala
+```scala
 import com.typesafe.config.ConfigFactory
 
 val conf        = ConfigFactory.load

@@ -10,6 +10,7 @@ date = '2017-10-07'
 
 このブログは [自分でカスタマイズした ghostwriter](https://github.com/m0t0k1ch1/ghostwriter/tree/m0t0k1ch1st0ry) を theme として使っているので、素直に `layouts/partials/footer.html` に以下を追加した。
 
+<!-- prettier-ignore -->
 ``` html
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -23,7 +24,7 @@ date = '2017-10-07'
 
 実際に試してみる。
 
-``` txt
+```txt
 $$
 T = S((1 + \frac{E}{R})^{F} - 1)
 $$
@@ -39,7 +40,7 @@ $$
 
 インライン表示もできて、
 
-``` txt
+```txt
 次回のエントリでは $T = S((1 + \frac{E}{R})^{F} - 1)$ について書こうと思います。
 ```
 

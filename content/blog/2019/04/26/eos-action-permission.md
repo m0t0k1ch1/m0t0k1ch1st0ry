@@ -19,11 +19,11 @@ EOS 上で複数の contract をまたいだシステムを実装したい場合
 
 ここで注意する必要があるのは、
 
-__`appaccount11` にデプロイされた contract が `useraccount1` の permission を利用して inline action を実行するためには、利用したい `useraccount1` の permission（ex. `active` permission）に対して、`appaccount11` の `eosio.code` permission が付与されている必要がある__
+**`appaccount11` にデプロイされた contract が `useraccount1` の permission を利用して inline action を実行するためには、利用したい `useraccount1` の permission（ex. `active` permission）に対して、`appaccount11` の `eosio.code` permission が付与されている必要がある**
 
 ということである。これは、裏を返せば、
 
-__`appaccount11` の `eosio.code` permission が付与された `useraccount1` の permission は、`appaccount11` にデプロイされた contract が自由に利用できてしまう__
+**`appaccount11` の `eosio.code` permission が付与された `useraccount1` の permission は、`appaccount11` にデプロイされた contract が自由に利用できてしまう**
 
 ということである。
 
@@ -33,7 +33,7 @@ __`appaccount11` の `eosio.code` permission が付与された `useraccount1` �
 
 上記の問題を解決する 1 つの方法は、
 
-__`appaccount11` の `eosio.code` permission を、それが必要な action の実行時のみ付与し、その action が完了したら即座に外す__
+**`appaccount11` の `eosio.code` permission を、それが必要な action の実行時のみ付与し、その action が完了したら即座に外す**
 
 ことである。
 
@@ -51,66 +51,79 @@ __`appaccount11` の `eosio.code` permission を、それが必要な action の
 
 というフローで処理を行うため、例えば、`execute` action 実行前の `active` permission が
 
-``` json
+```json
 {
   "threshold": 1,
-  "keys": [{
-    "key": "EOS57edFL2dE8sxaVQ6uT7Maizi6bD3zh9moXFjDCA35rCMxNYPyf",
-    "weight": 1,
-  }],
-  "accounts": [{
-    "permission": {
-      "actor": "useraccount1",
-      "permission": "eosio.code"
-    },
-    "weight": 1
-  }],
+  "keys": [
+    {
+      "key": "EOS57edFL2dE8sxaVQ6uT7Maizi6bD3zh9moXFjDCA35rCMxNYPyf",
+      "weight": 1
+    }
+  ],
+  "accounts": [
+    {
+      "permission": {
+        "actor": "useraccount1",
+        "permission": "eosio.code"
+      },
+      "weight": 1
+    }
+  ],
   "waits": []
 }
 ```
 
 だとすると、`auth_before` を
 
-``` json
+```json
 {
   "threshold": 1,
-  "keys": [{
-    "key": "EOS57edFL2dE8sxaVQ6uT7Maizi6bD3zh9moXFjDCA35rCMxNYPyf",
-    "weight": 1,
-  }],
-  "accounts": [{
-    "permission": {
-      "actor": "useraccount1",
-      "permission": "eosio.code"
+  "keys": [
+    {
+      "key": "EOS57edFL2dE8sxaVQ6uT7Maizi6bD3zh9moXFjDCA35rCMxNYPyf",
+      "weight": 1
+    }
+  ],
+  "accounts": [
+    {
+      "permission": {
+        "actor": "useraccount1",
+        "permission": "eosio.code"
+      },
+      "weight": 1
     },
-    "weight": 1
-  }, {
-    "permission": {
-      "actor": "appaccount11",
-      "permission": "eosio.code"
-    },
-    "weight": 1
-  }],
+    {
+      "permission": {
+        "actor": "appaccount11",
+        "permission": "eosio.code"
+      },
+      "weight": 1
+    }
+  ],
   "waits": []
 }
 ```
 
 とし、`auth_after` を
 
-``` json
+```json
 {
   "threshold": 1,
-  "keys": [{
-    "key": "EOS57edFL2dE8sxaVQ6uT7Maizi6bD3zh9moXFjDCA35rCMxNYPyf",
-    "weight": 1,
-  }],
-  "accounts": [{
-    "permission": {
-      "actor": "useraccount1",
-      "permission": "eosio.code"
-    },
-    "weight": 1
-  }],
+  "keys": [
+    {
+      "key": "EOS57edFL2dE8sxaVQ6uT7Maizi6bD3zh9moXFjDCA35rCMxNYPyf",
+      "weight": 1
+    }
+  ],
+  "accounts": [
+    {
+      "permission": {
+        "actor": "useraccount1",
+        "permission": "eosio.code"
+      },
+      "weight": 1
+    }
+  ],
   "waits": []
 }
 ```
@@ -135,10 +148,10 @@ __`appaccount11` の `eosio.code` permission を、それが必要な action の
 
 例えば、`proxytest111` の `increment` action の引数をエンコードしたい場合は以下のようにすればよい。
 
-``` sh
+```sh
 $ cleos --url https://api-kylin.eosasia.one convert pack_action_data proxytest111 increment '{"me":"motokichi111"}'
 ```
 
-``` txt
+```txt
 1042700d39483395
 ```

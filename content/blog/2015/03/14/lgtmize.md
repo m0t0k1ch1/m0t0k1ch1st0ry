@@ -17,7 +17,7 @@ images = ['img/entry/zushi-lgtm.jpg']
 
 まずは `go get` する。
 
-``` sh
+```sh
 $ go get github.com/m0t0k1ch1/lgtmize
 ```
 
@@ -31,7 +31,7 @@ $ go get github.com/m0t0k1ch1/lgtmize
 
 これを `zushi.jpg` みたいな名前で適当なディレクトリに置いて、以下を実行する。
 
-``` sh
+```sh
 $ lgtmize /path/to/zushi.jpg
 ```
 

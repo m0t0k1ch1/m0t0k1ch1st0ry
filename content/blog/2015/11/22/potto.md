@@ -12,7 +12,7 @@ Go で API サーバー立てる練習として、Slack の Outgoing WebHook を
 
 README にもある通り、以下のような感じで使える。前につくった IRC 用の [ape](https://github.com/m0t0k1ch1/ape) に似たようなインターフェース。
 
-``` go
+```go
 package main
 
 import (

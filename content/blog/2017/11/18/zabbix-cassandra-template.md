@@ -36,21 +36,21 @@ JMX 経由で取得できる項目を [公式サイト](http://cassandra.apache.
 
 TotalLatency と Latency。
 
-``` sh
+```sh
 $ java -jar cmdline-jmxclient-0.10.3.jar - 127.0.0.1:7199 org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=TotalLatency Count
 ```
 
-``` txt
+```txt
 11/18/2017 11:10:53 +0000 org.archive.jmx.Client Count: 25386616763
 ```
 
 ^ これは書き込みレイテンシの合計。単位はマイクロ秒。
 
-``` sh
+```sh
 $ java -jar cmdline-jmxclient-0.10.3.jar - 127.0.0.1:7199 org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Latency Count
 ```
 
-``` txt
+```txt
 11/18/2017 11:17:56 +0000 org.archive.jmx.Client Count: 105136578
 ```
 

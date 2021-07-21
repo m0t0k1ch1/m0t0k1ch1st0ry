@@ -10,7 +10,7 @@ Go の標準パッケージである net/http を使えば簡単に HTTP サー�
 
 まず、net/http を用いたよく見かけるサンプルコードを書いてみる。
 
-``` go
+```go
 package main
 
 import (
@@ -37,13 +37,13 @@ func main() {
 
 最初に呼んでるのがこれ。
 
-``` go
+```go
 http.HandleFunc("/", poyo)
 ```
 
 中身はこう。
 
-``` go
+```go
 func HandleFunc(pattern string, handler func(ResponseWriter, *Request)) {
     DefaultServeMux.HandleFunc(pattern, handler)
 }
@@ -51,7 +51,7 @@ func HandleFunc(pattern string, handler func(ResponseWriter, *Request)) {
 
 ちなみに、`DefaultServeMux` は以下のようになっている。
 
-``` go
+```go
 type ServeMux struct {
     mu    sync.RWMutex
     m     map[string]muxEntry  // ルーティングルール
@@ -78,7 +78,7 @@ var DefaultServeMux = NewServeMux()
 
 ### 1-1. http.ServeMux.HandleFunc
 
-``` go
+```go
 func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Request)) {
     mux.Handle(pattern, HandlerFunc(handler))
 }
@@ -90,7 +90,7 @@ func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Re
 
 ルーティングルールを追加している。
 
-``` go
+```go
 func (mux *ServeMux) Handle(pattern string, handler Handler) {
     mux.mu.Lock()
     defer mux.mu.Unlock()
@@ -122,7 +122,7 @@ func (mux *ServeMux) Handle(pattern string, handler Handler) {
 }
 ```
 
-お。。っと思ったのは、`pattern` のおしりが `/` のときに、`explicit` が `false` の301リダイレクトが暗黙的にルーティングルールに追加されるということ。もちろん、`pattern` が `/` のときも追加される。こいつはどういう働きをするかというと、こういうことらしい。
+お。。っと思ったのは、`pattern` のおしりが `/` のときに、`explicit` が `false` の 301 リダイレクトが暗黙的にルーティングルールに追加されるということ。もちろん、`pattern` が `/` のときも追加される。こいつはどういう働きをするかというと、こういうことらしい。
 
 > Note that since a pattern ending in a slash names a rooted subtree, the pattern "/" matches all paths not matched by other registered patterns, not just the URL with Path == "/".
 
@@ -132,13 +132,13 @@ func (mux *ServeMux) Handle(pattern string, handler Handler) {
 
 次に呼んでいるのがこれ。
 
-``` go
+```go
 http.ListenAndServe(":9090", nil)
 ```
 
 中身はこう。
 
-``` go
+```go
 func ListenAndServe(addr string, handler Handler) error {
     server := &Server{Addr: addr, Handler: handler}
     return server.ListenAndServe()
@@ -151,7 +151,7 @@ func ListenAndServe(addr string, handler Handler) error {
 
 `net.Listen` で指定したポートを監視し、`http.Server.Serve` を呼んでいる。
 
-``` go
+```go
 func (srv *Server) ListenAndServe() error {
     addr := srv.Addr
     if addr == "" {
@@ -167,9 +167,9 @@ func (srv *Server) ListenAndServe() error {
 
 ### 2-2. http.Server.Serve
 
-`for` ループを起動して、リクエストを待ち受けている。リクエストが来ると `net.Listener.Accept` がそれを受けてコネクションを設立し、リクエストに対して goroutine を1つ立ち上げるようになっている。
+`for` ループを起動して、リクエストを待ち受けている。リクエストが来ると `net.Listener.Accept` がそれを受けてコネクションを設立し、リクエストに対して goroutine を 1 つ立ち上げるようになっている。
 
-``` go
+```go
 func (srv *Server) Serve(l net.Listener) error {
     defer l.Close()
     var tempDelay time.Duration
@@ -205,7 +205,7 @@ func (srv *Server) Serve(l net.Listener) error {
 
 こいつはちょっと長かったので「う。。」ってなった。ということで、わかりやすくするためにいろいろ省きまくってみた。
 
-``` go
+```go
 func (c *conn) serve() {
     for {
         // 省略
@@ -221,7 +221,7 @@ func (c *conn) serve() {
 
 ### 2-4. http.serverHandler.ServeHTTP
 
-``` go
+```go
 type serverHandler struct {
     srv *Server
 }
@@ -242,9 +242,9 @@ func (sh serverHandler) ServeHTTP(rw ResponseWriter, req *Request) {
 
 ### 2-5. http.ServeMux.ServeHTTP
 
-最初に登録した `handler` の中からリクエストに対応するものを探して、そいつの `ServeHTTP` を呼んでいる。　
+最初に登録した `handler` の中からリクエストに対応するものを探して、そいつの `ServeHTTP` を呼んでいる。
 
-``` go
+```go
 func (mux *ServeMux) ServeHTTP(w ResponseWriter, r *Request) {
     if r.RequestURI == "*" {
         if r.ProtoAtLeast(1, 1) {
@@ -266,7 +266,7 @@ URL に対応する `handler` を探す過程は以下のような感じ。`http
 
 > Note that since a pattern ending in a slash names a rooted subtree, the pattern "/" matches all paths not matched by other registered patterns, not just the URL with Path == "/".
 
-``` go
+```go
 func (mux *ServeMux) Handler(r *Request) (h Handler, pattern string) {
     if r.Method != "CONNECT" {
         if p := cleanPath(r.URL.Path); p != r.URL.Path {
@@ -281,7 +281,7 @@ func (mux *ServeMux) Handler(r *Request) (h Handler, pattern string) {
 }
 ```
 
-``` go
+```go
 func (mux *ServeMux) handler(host, path string) (h Handler, pattern string) {
     mux.mu.RLock()
     defer mux.mu.RUnlock()
@@ -299,7 +299,7 @@ func (mux *ServeMux) handler(host, path string) (h Handler, pattern string) {
 }
 ```
 
-``` go
+```go
 func (mux *ServeMux) match(path string) (h Handler, pattern string) {
     var n = 0
     for k, v := range mux.m {
@@ -316,7 +316,7 @@ func (mux *ServeMux) match(path string) (h Handler, pattern string) {
 }
 ```
 
-``` go
+```go
 func pathMatch(pattern, path string) bool {
     if len(pattern) == 0 {
         return false

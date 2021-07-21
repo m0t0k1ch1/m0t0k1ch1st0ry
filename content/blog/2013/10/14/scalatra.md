@@ -17,7 +17,7 @@ m0t0k1ch1 のフレンドコードは 4441-9522-5868 です。
 
 ## Scalatra って？
 
-公式には↓こう書いてあります
+公式には ↓ こう書いてあります
 
 > Scalatra is a simple, accessible and free web micro-framework.
 
@@ -37,13 +37,13 @@ Scala 版 [Sinatra](http://www.sinatrarb.com) 的なやつです。軽量感が�
 
 - まず g8 コマンドでアプリケーションの雛形を作成
 
-``` sh
+```sh
 $ g8 scalatra/scalatra-sbt
 ```
 
 上記のコマンドを実行するといろいろ聞かれますが、何を入力すればよいかは [First steps | Scalatra](http://www.scalatra.org/2.2/getting-started/first-project.html) にちゃんと書いてあります。とりあえず、今回は以下のように入力したとして話を進めます。
 
-``` txt
+```txt
 organization [com.example]:       com.k1ch1
 package [com.example.app]:        com.k1ch1.app
 name [My Scalatra Web App]:       k1ch1
@@ -58,20 +58,20 @@ version [0.1.0-SNAPSHOT]:         （そのまま）
   - `container:start` すると、8080 番ポートでアプリケーションが立ち上がる
   - `~;copy-resources;aux-compile` しておくと、ファイルをいじったときに自動でアプリケーションを再起動してくれる
 
-``` sh
+```sh
 $ cd k1ch1
 $ chmod u+x sbt
 $ ./sbt
 ```
 
-``` txt
+```txt
 > container:start
 > ~;copy-resources;aux-compile
 ```
 
 - ブラウザで見てみる
 
-``` txt
+```txt
 > browse
 ```
 
@@ -90,7 +90,7 @@ deploy できなきゃ意味ない！ってことで deploy してみます。
 
 ### JettyLauncher.scala を作成
 
-``` scala
+```scala
 package com.k1ch1.app  // remember this package in the sbt project definition
 import org.eclipse.jetty.server.Server
 import org.eclipse.jetty.servlet.{DefaultServlet, ServletContextHandler}
@@ -120,25 +120,25 @@ object JettyLauncher { // this is my entry object as specified in sbt project de
 
 - 変更前
 
-``` scala
+```scala
 "org.eclipse.jetty" % "jetty-webapp" % "8.1.8.v20121106" % "container",
 ```
 
 - 変更後
 
-``` scala
+```scala
 "org.eclipse.jetty" % "jetty-webapp" % "8.1.8.v20121106" % "container;compile",
 ```
 
 ### plugins.sbt に以下を追加
 
-``` scala
+```scala
 addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.9.0")
 ```
 
 ### build.sbt を作成
 
-``` scala
+```scala
 import AssemblyKeys._
 
 import sbtassembly.Plugin._
@@ -159,7 +159,7 @@ mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) =>
 
 - 下記を実行すると、`target/scala-2.10` 以下に `k1ch1-assembly-0.1.0-SNAPSHOT.jar` というのができる
 
-``` sh
+```sh
 $ ./sbt clean assembly
 ```
 
@@ -167,7 +167,7 @@ $ ./sbt clean assembly
 
 - 下記を実行すると、8080 番ポートでアプリケーションが立ち上がるので、ブラウザで見てみる
 
-``` sh
+```sh
 $ java -jar target/scala-2.10/k1ch1-assembly-0.1.0-SNAPSHOT.jar
 ```
 

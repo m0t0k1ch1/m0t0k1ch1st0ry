@@ -36,7 +36,7 @@ date = '2014-08-16'
 
 結果的にルーティングとレンダリングは既存のパッケージに任せているので、自分で書いたところはほとんどない。。唯一、「こんな書き方できるのか〜」と思ったのが以下。
 
-``` go
+```go
 func (k *Ksatriya) Handle(method, path string, handler HandlerFunc) {
     k.Router.Handle(method, path, func(w http.ResponseWriter, req *http.Request, params httprouter.Params) {
         c := NewContext(w, req, Params{params}, k.Renderer)

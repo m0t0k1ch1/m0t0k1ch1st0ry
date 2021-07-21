@@ -14,7 +14,7 @@ Google 先生が [github.com/google/go-github/github](https://github.com/google/
 
 ## たたいてみる
 
-``` go
+```go
 package main
 
 import (
@@ -41,14 +41,14 @@ func main() {
 
 上記のコードを使って、例えば以下の Markdown を変換してみると…
 
-``` md
+```md
 # Header 1
 
 ## Header 2
 
-* List
-* List
-* List
+- List
+- List
+- List
 
 ## Header 2
 
@@ -58,6 +58,7 @@ func main() {
 
 期待通り、以下のような HTML が出力される。
 
+<!-- prettier-ignore -->
 ``` html
 <h1>
 <a name="user-content-header-1" class="anchor" href="#header-1"><span class="octicon octicon-link"></span></a>Header 1</h1>

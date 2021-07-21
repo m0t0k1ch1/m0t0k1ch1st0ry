@@ -14,7 +14,7 @@ Perl の例外処理の勉強がてら [Try::Tiny](http://search.cpan.org/~doy/T
 
 試しに、`grep` と逆のことをする eliminate なるものをつくってみた。
 
-``` perl
+```perl
 use strict;
 use warnings;
 
@@ -39,7 +39,7 @@ say eliminate { $_ =~ /^-?\d+$/ && ($_ > 1 || $_ < 0) } @array;
 
 実行結果は以下。
 
-``` txt
+```txt
 m0t0k1ch1
 ```
 

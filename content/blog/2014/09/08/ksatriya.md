@@ -19,7 +19,7 @@ date = '2014-09-08'
 
 手を動かす前は「これくらい簡単やろ〜」と思っていた。でも、これだけをやるために結構いろんな学びがあったし、実際、コードもかなり改修した。
 
-あと、せっかくなので [https://github.com/unrolled/render](https://github.com/unrolled/render) に頼っていたレンダリング部分も自前で実装してみた。結果、標準パッケージ以外への依存が1つ減って幸せになれた。
+あと、せっかくなので [https://github.com/unrolled/render](https://github.com/unrolled/render) に頼っていたレンダリング部分も自前で実装してみた。結果、標準パッケージ以外への依存が 1 つ減って幸せになれた。
 
 ## 使い方
 
@@ -27,7 +27,7 @@ date = '2014-09-08'
 
 まず、`ksatriya.Controller` を埋め込んだ `Controller` を定義する
 
-``` go
+```go
 import (
     "net/http"
 
@@ -73,7 +73,7 @@ func (c *Controller) User(ctx *ksatriya.Context) {
 
 で、以下のようにする。
 
-``` go
+```go
 k := ksatriya.New()
 k.RegisterController(NewController())
 k.Run(":8080")

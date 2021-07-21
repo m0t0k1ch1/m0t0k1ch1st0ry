@@ -4,11 +4,11 @@ tags = ['go', 'mysql']
 date = '2016-01-17T15:50:42+09:00'
 +++
 
-[これ]({{< ref "/blog/2016/01/15/january.md" >}}) の2つ目のやつの API サーバーを Go で書くので、DB 周りどうしようかなあと考えながら [gorp](https://github.com/go-gorp/gorp) ＋ [squirrel](https://github.com/Masterminds/squirrel) でサンプルコードを書いたのでメモ。
+[これ]({{< ref "/blog/2016/01/15/january.md" >}}) の 2 つ目のやつの API サーバーを Go で書くので、DB 周りどうしようかなあと考えながら [gorp](https://github.com/go-gorp/gorp) ＋ [squirrel](https://github.com/Masterminds/squirrel) でサンプルコードを書いたのでメモ。
 
 <!--more-->
 
-``` go
+```go
 package main
 
 import (
@@ -204,7 +204,7 @@ func checkError(err error) {
 
 出力はこんな感じ。
 
-``` txt
+```txt
 userNum: 2
 ---
 id: 1, name: m0t0k1ch1, age: 27, created_at: 2016-01-17 16:16:44 +0900 JST, updated_at: 2016-01-17 16:16:44 +0900 JST
