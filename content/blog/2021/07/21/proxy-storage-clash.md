@@ -87,15 +87,11 @@ describe("Proxy", () => {
   });
 
   it("storage clash", async () => {
-    const i = new ethers.utils.Interface([
-      "function setOwner(address newOwner)",
-    ]);
-
     expect(await proxy.implementation()).to.equal(account.address);
 
     await owner.sendTransaction({
       to: proxy.address,
-      data: i.encodeFunctionData("setOwner", [other.address]),
+      data: Account.interface.encodeFunctionData("setOwner", [other.address]),
     });
 
     expect(await proxy.implementation()).to.equal(other.address);
