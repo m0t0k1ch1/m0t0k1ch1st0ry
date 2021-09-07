@@ -5,8 +5,6 @@ theme              = 'h1st0ry'
 paginate           = 10
 googleAnalytics    = 'UA-40447108-1'
 disqusShortname    = 'm0t0k1ch1st0ry'
-pygmentsCodeFences = true
-pygmentsStyle      = 'monokai'
 
 [taxonomies]
     tag = 'tags'
@@ -16,3 +14,7 @@ pygmentsStyle      = 'monokai'
     mainPageType = 'blog'
     images       = ['img/common/author_256.jpg']
     addthisID    = 'ra-5ce6ac411a98e6f0'
+
+[markup]
+    [markup.highlight]
+        style = 'rrt'
