@@ -217,7 +217,9 @@ Vlad も economist の目的をこう捉えているのであれば、しっく�
 
 例えば、実際に cryptoeconomic なプロトコルをデザインする場合、その安全性や攻撃耐性についての多角的な評価は必要不可欠と言えます。この評価に関しては、[**griefing factor**](https://ethresear.ch/t/a-griefing-factor-analysis-model/2338)（他プレイヤーが失う利得と自分がそのために支払うコストの比率）や [**P + ε attack**](https://blog.ethereum.org/2015/01/28/p-epsilon-attack)（賄賂によってプレイヤーの支配戦略を変えてしまう攻撃）などの重要な概念をベースにした議論が既に繰り広げられており、例えば [**初期状態がナッシュ均衡かどうかに着目した安全性評価**](https://github.com/zack-bitcoin/amoveo/blob/master/docs/design/cryptoeconomics.md) などが提案されています。この記事では深く突っ込みませんが、個々のトピックについて深掘りするだけで余裕で 1 記事書けてしまうでしょう。
 
-また、そもそも論ではありますが、**人間は [ホモ・エコノミクス](https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88%E4%BA%BA) ではありません。**いくら綿密に合理性をデザインしたとしても、それに従って素直に動くような生き物ではないと仮定するのが妥当でしょう。cryptoeconomics と向き合う際、このことも重々頭に入れておく必要があります。
+また、そもそも論ではありますが、**人間は [ホモ・エコノミクス](https://ja.wikipedia.org/wiki/%E7%B5%8C%E6%B8%88%E4%BA%BA) ではありません。**
+
+いくら綿密に合理性をデザインしたとしても、それに従って素直に動くような生き物ではないと仮定するのが妥当でしょう。cryptoeconomics と向き合う際、このことも重々頭に入れておく必要があります。
 
 このような文脈で、cryptoeconomics の発展には [**行動経済学**](https://ja.wikipedia.org/wiki/%E8%A1%8C%E5%8B%95%E7%B5%8C%E6%B8%88%E5%AD%A6) の知見が必要だと主張している記事もあります。その記事から図を 1 つ引用します。
 
