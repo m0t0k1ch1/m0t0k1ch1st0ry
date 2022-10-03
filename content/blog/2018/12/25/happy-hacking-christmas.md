@@ -37,7 +37,7 @@ images = ['img/entry/santa-claus.jpg']
 
 ^ こちらが、Ethereum（Ropsten testnet）上にデプロイされた分散型サンタクロースです。かわいいですね。
 
-もちろん、かわいいだけではありません。この SantaClaus contract は **[SantaClausToken（SCT）](https://ropsten.etherscan.io/token/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d)**という特別なトークンをプレゼントとして配ることができるのです。
+もちろん、かわいいだけではありません。この SantaClaus contract は [**SantaClausToken（SCT）**](https://ropsten.etherscan.io/token/0xa9b76b79e3254d7835401a8b43af2fac93a83f2d)という特別なトークンをプレゼントとして配ることができるのです。
 
 しかし、この SantaClausToken（SCT）、誰もがもらえるわけではありません。
 
