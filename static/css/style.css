@@ -14,7 +14,8 @@ section.article-summaries span.button {
   margin-bottom: 0.25rem;
 }
 
-section.article-summaries time {
+section.article-summaries time,
+section.article-summaries span.article-count {
   margin-left: 0.25rem;
 }
 
