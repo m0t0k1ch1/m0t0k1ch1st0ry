@@ -1,3 +1,6 @@
+# Environment file for Claude Code
+/claude.env
+
 # Generated files by hugo
 /public/
 /resources/_gen/
