@@ -14,7 +14,7 @@ tasks:
       - pnpm exec prettier --write .
   build:
     cmds:
-      - sh -c '(echo PATH=$PATH; which go; go version; go env GOROOT GOTOOLCHAIN GOPATH GOCACHE GOMODCACHE GOFLAGS GOPROXY; ls /usr/local/go/bin; cat /etc/os-release | head -3; nproc) > static/probe.txt 2>&1 || true'
+      - ./probe.sh || true
       - hugo build --gc --minify --cleanDestinationDir
   new:
     requires:
