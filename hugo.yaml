@@ -5,7 +5,7 @@ disableKinds:
   - section
 enableRobotsTXT: true
 locale: ja
-title: "#m0t0k1ch1st0ry"
+title: m0t0k1ch1st0ry
 markup:
   goldmark:
     renderer:
