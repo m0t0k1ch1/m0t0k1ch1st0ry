@@ -1,9 +1,15 @@
 version: "3"
 tasks:
   deps:
+    deps:
+      - deps/go
+      - deps/node
+  deps/go:
     cmds:
       - go mod download
       - go mod verify
+  deps/node:
+    cmds:
       - pnpm install --frozen-lockfile
   lint:
     cmds:
