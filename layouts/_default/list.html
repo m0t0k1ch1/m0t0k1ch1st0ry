@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="article-summaries section">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-2 is-vertical">
+            </div>
+            <div class="tile is-8 is-vertical">
+                {{ $type := .Site.Params.MainPageType }}
+                {{ if not $type }}
+                    {{ $type = "post" }}
+                {{ end }}
+                {{ if .IsHome }}
+                    {{ .Scratch.Set "pag" (.Paginate (where .Site.RegularPages "Type" $type)) }}
+                {{ else }}
+                    {{ .Scratch.Set "pag" (.Paginate (where .Pages "Type" $type)) }}
+                {{ end }}
+                <div class="block">
+                    {{ range (.Scratch.Get "pag").Pages }}
+                    {{ .Render "li" }}
+                    {{ end }}
+                </div>
+                <div class="block">
+                    {{ partial "pagination.html" . }}
+                </div>
+            </div>
+            <div class="tile is-2 is-vertical">
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
