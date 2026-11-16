@@ -25,5 +25,8 @@ params:
   addthisID: ra-5ce6ac411a98e6f0
 
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     style: rrt
