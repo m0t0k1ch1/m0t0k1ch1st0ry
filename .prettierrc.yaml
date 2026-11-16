@@ -6,4 +6,4 @@ overrides:
       parser: go-template
   - files: "*.md"
     options:
-      embeddedLanguageFormatting: "off"
+      embeddedLanguageFormatting: off

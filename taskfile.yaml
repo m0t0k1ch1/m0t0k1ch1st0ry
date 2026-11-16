@@ -1,0 +1,11 @@
+version: "3"
+tasks:
+  deps:
+    cmds:
+      - pnpm install --frozen-lockfile
+  fmt:
+    cmds:
+      - pnpm exec prettier --write .
+  lint:
+    cmds:
+      - pnpm exec prettier --check .
