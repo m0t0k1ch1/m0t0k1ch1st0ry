@@ -1,5 +1,0 @@
-{{ $pages := .Pages }}
-{{ if .IsHome }}
-    {{ $pages = where site.RegularPages "Type" "in" site.MainSections }}
-{{ end }}
-{{ return (.Paginate $pages) }}

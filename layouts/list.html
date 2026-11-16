@@ -1,7 +1,3 @@
-{{ define "canonical" }}
-<link rel="canonical" href="{{ (partial "paginator.html" .).URL | absURL }}">
-{{ end }}
-
 {{ define "main" }}
 <section class="article-summaries section">
     <div class="container">
@@ -9,14 +5,14 @@
             <div class="tile is-2 is-vertical">
             </div>
             <div class="tile is-8 is-vertical">
-                {{ $pag := partial "paginator.html" . }}
+                {{ $pages := .Pages }}
+                {{ if .IsHome }}
+                    {{ $pages = where site.RegularPages "Type" "in" site.MainSections }}
+                {{ end }}
                 <div class="block">
-                    {{ range $pag.Pages }}
+                    {{ range $pages }}
                     {{ .Render "li" }}
                     {{ end }}
-                </div>
-                <div class="block">
-                    {{ partial "pagination.html" . }}
                 </div>
             </div>
             <div class="tile is-2 is-vertical">

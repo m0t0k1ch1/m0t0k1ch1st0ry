@@ -13,8 +13,6 @@ markup:
 module:
   hugoVersion:
     min: 0.158.0
-pagination:
-  pagerSize: 10
 params:
   description: Since 2013
   images:
