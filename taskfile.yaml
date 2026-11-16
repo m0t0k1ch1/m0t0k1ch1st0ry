@@ -14,8 +14,7 @@ tasks:
       - pnpm exec prettier --write .
   build:
     cmds:
-      - ./probe.sh || true
-      - hugo build --gc --minify --cleanDestinationDir
+      - go tool hugo build --gc --minify --cleanDestinationDir
   new:
     requires:
       vars:
