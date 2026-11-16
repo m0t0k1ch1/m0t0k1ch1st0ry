@@ -5,12 +5,8 @@
             <div class="tile is-2 is-vertical">
             </div>
             <div class="tile is-8 is-vertical">
-                {{ $pages := .Pages }}
-                {{ if .IsHome }}
-                    {{ $pages = where site.RegularPages "Type" "in" site.MainSections }}
-                {{ end }}
                 <div class="block">
-                    {{ range $pages }}
+                    {{ range where site.RegularPages "Type" "in" site.MainSections }}
                     {{ .Render "li" }}
                     {{ end }}
                 </div>
