@@ -1,49 +1,50 @@
 {{ define "title" }}
-  {{ .Title }} -
-  {{ .Site.Title }}
+{{ .Title }} - {{ .Site.Title }}
 {{ end }}
 
 {{ define "main" }}
-  <section class="article-content-hero hero">
+<section class="article-content-hero hero">
     <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="wide-block">
-          <h1 class="title">
-            {{ .Title }}
-          </h1>
-        </div>
-        {{ with .Params.tags }}
-          <div class="block has-text-centered">
-            {{ range . }}
-              <a href="{{ "tags" | absURL }}/{{ . | urlize }}">
-                <span class="button is-small is-light">
-                  #{{ . }}
-                </span>
-              </a>
+        <div class="container has-text-centered">
+            <div class="wide-block">
+                <h1 class="title">
+                    {{ .Title }}
+                </h1>
+            </div>
+            {{ with .Params.tags }}
+            <div class="block has-text-centered">
+                {{ range . }}
+                <a href="{{ "tags" | absURL }}/{{ . | urlize }}">
+                    <span class="button is-small is-light">
+                        #{{ . }}
+                    </span>
+                </a>
+                {{ end }}
+            </div>
             {{ end }}
-          </div>
-        {{ end }}
-        {{ with .Date }}
-          <div class="block">
-            <time class="is-size-6 has-text-grey-light">
-              {{ .Format "January 2, 2006" }}
-            </time>
-          </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <section class="article-content section">
-    <div class="container">
-      <div class="tile is-ancestor">
-        <div class="tile is-2 is-vertical"></div>
-        <div class="tile is-8 is-vertical">
-          <article class="content">
-            {{ .Content }}
-          </article>
+            {{ with .Date }}
+            <div class="block">
+                <time class="is-size-6 has-text-grey-light">
+                    {{ .Format "January 2, 2006" }}
+                </time>
+            </div>
+            {{ end }}
         </div>
-        <div class="tile is-2 is-vertical"></div>
-      </div>
     </div>
-  </section>
+</section>
+<section class="article-content section">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-2 is-vertical">
+            </div>
+            <div class="tile is-8 is-vertical">
+                <article class="content">
+                    {{ .Content }}
+                </article>
+            </div>
+            <div class="tile is-2 is-vertical">
+            </div>
+        </div>
+    </div>
+</section>
 {{ end }}
