@@ -2,13 +2,22 @@ version: "3"
 tasks:
   deps:
     cmds:
+      - go mod download
+      - go mod verify
       - pnpm install --frozen-lockfile
   lint:
     cmds:
+      - go mod tidy -diff
       - pnpm exec prettier --check .
   fmt:
     cmds:
       - pnpm exec prettier --write .
   build:
     cmds:
-      - hugo build --gc --minify --cleanDestinationDir
+      - go tool hugo build --gc --minify --cleanDestinationDir
+  new:
+    requires:
+      vars:
+        - name: SLUG
+    cmds:
+      - go tool hugo new content blog/{{ now | date "2006/01/02" }}/{{ .SLUG }}.md
