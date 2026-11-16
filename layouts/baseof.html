@@ -9,6 +9,9 @@
         {{ else if .Site.Params.Description }}
         <meta name="description" content="{{ .Site.Params.Description }}">
         {{ end }}
+        {{ if ne .Kind "404" }}
+        <link rel="canonical" href="{{ .Permalink }}">
+        {{ end }}
         {{ partial "opengraph.html" . }}
         {{ partial "twitter_cards.html" . }}
         {{ hugo.Generator }}
