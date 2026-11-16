@@ -14,23 +14,23 @@ date = '2016-08-28T01:52:33+09:00'
 
 ## 下準備
 
-``` sh
+```sh
 $ yum install nkf unzip
 ```
 
 ## gensim をインストール
 
-``` sh
+```sh
 $ pip install gensim
 ```
 
 バージョンを確認。
 
-``` sh
+```sh
 $ pip list | grep gensim
 ```
 
-``` txt
+```txt
 gensim (0.13.1)
 ```
 
@@ -38,46 +38,45 @@ gensim (0.13.1)
 
 [青空文庫](http://www.aozora.gr.jp) から好きなデータを持ってくる。自分はヘミングウェイの [「老人と海」](http://www.aozora.gr.jp/cards/001847/card57347.html) が好きなので、迷いはない。
 
-__テキストファイル(ルビあり)__ の zip（`57347_ruby_57225.zip`）をダウンロードしてもってきて unzip する。
+**テキストファイル(ルビあり)** の zip（`57347_ruby_57225.zip`）をダウンロードしてもってきて unzip する。
 
-
-``` sh
+```sh
 $ unzip 57347_ruby_57225.zip
 ```
 
 unzip すると、`rojinto_umi.txt` になる。下記のように、カジュアルなサイズ。
 
-``` sh
+```sh
 $ wc rojinto_umi.txt
 ```
 
-``` txt
+```txt
    726    807 122222 rojinto_umi.txt
 ```
 
 nkf で文字コードを見てみる。
 
-``` sh
+```sh
 $ nkf -g rojinto_umi.txt
 ```
 
-``` txt
+```txt
 Shift_JIS (CR)
 ```
 
 Shift_JIS だとつらいので、UTF-8 にする。
 
-``` sh
+```sh
 $ nkf -w --overwrite rojinto_umi.txt
 ```
 
 UTF-8 になったか確認。
 
-``` sh
+```sh
 $ nkf -g rojinto_umi.txt
 ```
 
-``` txt
+```txt
 UTF-8 (CR)
 ```
 
@@ -91,7 +90,7 @@ UTF-8 (CR)
 
 ということで、出力フォーマットを調整して分かち書きする Python スクリプトを描いた。出力フォーマットの調整法については [ここ](https://taku910.github.io/mecab/mecab.html) や [ここ](https://taku910.github.io/mecab/format.html) に記載がある。
 
-``` python
+```python
 # -*- coding: utf-8 -*-
 
 import MeCab
@@ -114,13 +113,13 @@ fo.close()
 
 このスクリプトを `wakati.py` として保存して、`rojinto_umi.txt` に対して実行する。分かち書き後のデータは `rojinto_umi_wakati.txt` として保存する。
 
-``` sh
+```sh
 $ python wakati.py rojinto_umi.txt rojinto_umi_wakati.txt
 ```
 
 `rojinto_umi_wakati.txt` の中身を見てみると、想定通り基本形で分かち書きされている。
 
->　 彼 は 老いる て いる た 。 小さな 船 で メキシコ 湾流 に 漕ぐ 出す 、 独り で 漁 を する て いる た 。 一 匹 も 釣れる ない 日 が 、 既に 八 四 日 も 続く て いる た 。 最初 の 四 〇 日 は 少年 と 一緒 だ た 。 しかし 、 獲物 の 無い まま に 四 〇 日 が 過ぎる と 、 少年 に 両親 が 告げる た 。 あの 老人 は もう 完全 に 「 サラオ 」 だ ん だ よ 、 と 。 サラオ と は 、 すっかり 運 に 見放す れる た という こと だ 。 少年 は 両親 の 言いつける 通り に 別 の ボート に 乗り換える 、 一 週間 で 三 匹 も 立派 だ 魚 を 釣り上げる た 。 老人 が 毎日 空っぽ の 船 で 帰る て くる の を 見る たび に 、 少年 の 心 は 痛む だ 。 彼 は いつも 老人 を 迎える に 行く て 、 巻く た ロープ 、 手鉤 《 ギャフ 》 、 銛 《 もる 》 、 帆 を 巻く つける た マスト など を 運ぶ 手伝い を する の だ た 。 粉 袋 で 継ぎ あて する れる た 帆 は 、 巻き上げる られる て 、 永遠 の 敗北 を 示す 旗印 の よう に 見える た 。
+> 　 彼 は 老いる て いる た 。 小さな 船 で メキシコ 湾流 に 漕ぐ 出す 、 独り で 漁 を する て いる た 。 一 匹 も 釣れる ない 日 が 、 既に 八 四 日 も 続く て いる た 。 最初 の 四 〇 日 は 少年 と 一緒 だ た 。 しかし 、 獲物 の 無い まま に 四 〇 日 が 過ぎる と 、 少年 に 両親 が 告げる た 。 あの 老人 は もう 完全 に 「 サラオ 」 だ ん だ よ 、 と 。 サラオ と は 、 すっかり 運 に 見放す れる た という こと だ 。 少年 は 両親 の 言いつける 通り に 別 の ボート に 乗り換える 、 一 週間 で 三 匹 も 立派 だ 魚 を 釣り上げる た 。 老人 が 毎日 空っぽ の 船 で 帰る て くる の を 見る たび に 、 少年 の 心 は 痛む だ 。 彼 は いつも 老人 を 迎える に 行く て 、 巻く た ロープ 、 手鉤 《 ギャフ 》 、 銛 《 もる 》 、 帆 を 巻く つける た マスト など を 運ぶ 手伝い を する の だ た 。 粉 袋 で 継ぎ あて する れる た 帆 は 、 巻き上げる られる て 、 永遠 の 敗北 を 示す 旗印 の よう に 見える た 。
 
 ## word2vec する
 
@@ -130,7 +129,7 @@ $ python wakati.py rojinto_umi.txt rojinto_umi_wakati.txt
 
 ちなみに、インターネット上にある word2vec を試してみました的なエントリのいくつかでは、text8 以外のコーパスを読み込むときにも `word2vec.Text8Corpus` を使っているみたいだけれど、`word2vec.LineSentence` を使って文ごとに読み込まないと、文と文の間で文脈がごちゃごちゃになってしまうような気がするので、今回は後者を採用する。
 
-``` python
+```python
 # -*- coding: utf-8 -*-
 
 from gensim.models import word2vec
@@ -152,11 +151,11 @@ model.save(sys.argv[2])
 
 このスクリプトを `train.py` として保存して、`rojinto_umi_wakati.txt` に対して実行する。学習の結果として生成される model は `rojinto_umi.model` として保存する。
 
-``` sh
+```sh
 $ python train.py rojinto_umi_wakati.txt rojinto_umi.model
 ```
 
-``` txt
+```txt
 2016-08-27 16:49:18,590 : INFO : collecting all words and their counts
 2016-08-27 16:49:18,590 : INFO : PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
 2016-08-27 16:49:18,607 : INFO : collected 3147 word types from a corpus of 37519 raw words and 634 sentences
@@ -191,7 +190,7 @@ $ python train.py rojinto_umi_wakati.txt rojinto_umi.model
 
 とりあえず、指定した単語とコサイン類似度の高い単語をリストアップするスクリプトを描いて実行してみる。
 
-``` python
+```python
 # -*- coding: utf-8 -*-
 
 from gensim.models import word2vec
@@ -204,11 +203,11 @@ for result in results:
     print(result[0], '\t', result[1])
 ```
 
-``` sh
+```sh
 $ python similars.py rojinto_umi.model 人生
 ```
 
-``` txt
+```txt
 泥棒     0.9779643416404724
 不足     0.969954788684845
 温存     0.9699369668960571

@@ -14,7 +14,7 @@ date = '2016-09-10T01:23:35+09:00'
 
 クロスコンパイルできる環境が整っていない場合、整えておく。例えば macbook で homebrew を使っているような場合は、以下のようにオプションをつけて go をインストールすればいける。
 
-``` sh
+```sh
 $ brew install go --cross-compile-common
 ```
 
@@ -36,7 +36,7 @@ Go で [こんな感じのコード](https://github.com/m0t0k1ch1/go-rpm-sample/
 
 実装が終わったらクロスコンパイルする。今回は Linux - amd64 用。
 
-``` sh
+```sh
 $ GOOS=linux GOARCH=amd64 go build
 ```
 
@@ -48,7 +48,7 @@ $ GOOS=linux GOARCH=amd64 go build
 
 rpmbuild に必要な spec ファイルを準備する。ググったり mackerel-agent の spec ファイルを参考にしたりしながら辿り着いたのが以下。結構シンプルで、記法を知っていなくてもなんとなく読めるレベルなんじゃないかなと思う。
 
-``` txt
+```txt
 %define _binaries_in_noarch_packages_terminate_build 0
 
 Summary: a simple sample application
@@ -91,7 +91,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 [ここ](https://github.com/m0t0k1ch1/go-rpm-sample/tree/master/package) に置いておいた。構造は以下。
 
-``` txt
+```txt
 package
 ├── SOURCES
 │   ├── go-rpm-sample-0.1.0
@@ -104,19 +104,19 @@ package
 
 まずは必要なものを yum で入れる。
 
-``` sh
+```sh
 $ yum install rpmdevtools yum-utils
 ```
 
 で、rpmbuild するための準備。
 
-``` sh
+```sh
 $ rpmdev-setuptree
 ```
 
 上記コマンドを実行すると、`$HOME/rpmbuild` というディレクトリができて、その中が以下のようにセットアップされる。
 
-``` txt
+```txt
 rpmbuild/
 ├── BUILD
 ├── RPMS
@@ -127,7 +127,7 @@ rpmbuild/
 
 で、先ほど準備した諸々を SOURCES と SPECS の中にそのまま配置して、以下を実行。
 
-``` sh
+```sh
 $ rpmbuild -bb $HOME/rpmbuild/SPECS/go-rpm-sample.spec
 ```
 
@@ -135,23 +135,23 @@ $ rpmbuild -bb $HOME/rpmbuild/SPECS/go-rpm-sample.spec
 
 試しに直接インストールしてみる。
 
-``` sh
+```sh
 $ rpm -ivh $HOME/rpmbuild/RPMS/x86_64/go-rpm-sample-0.1.0-1.x86_64.rpm
 ```
 
 インストールが終わったら念のため確認。
 
-``` sh
+```sh
 $ rpm -qa | grep go-rpm-sample
 ```
 
-``` txt
+```txt
 go-rpm-sample-0.1.0-1.x86_64
 ```
 
 正常にインストールできた模様なので、一通りの動作を確認してみる。
 
-``` sh
+```sh
 $ service go-rpm-sample start
 Starting go-rpm-sample:                                    [  OK  ]
 $ service go-rpm-sample status
@@ -171,19 +171,19 @@ yum 用の repo をつくって、先ほどこしらえた RPM パッケージ�
 
 まずは必要なものを yum で入れる。
 
-``` sh
+```sh
 $ yum install createrepo
 ```
 
 適当に mkdir する。
 
-``` sh
+```sh
 $ mkdir repo
 ```
 
 repo 以下に先ほどこしらえた `go-rpm-sample-0.1.0-1.x86_64.rpm` を配置して、以下を実行する。
 
-``` sh
+```sh
 $ createrepo repo
 ```
 
@@ -195,7 +195,7 @@ $ createrepo repo
 
 で、例えばまっさらな別 CentOS 6 に `/etc/yum.repos.d/m0t0k1ch1.repo` を設置する。内容は以下。
 
-``` txt
+```txt
 [m0t0k1ch1]
 name=m0t0k1ch1
 baseurl=https://m0t0k1ch1.github.io/yum-repo/centos/latest/$basearch
@@ -204,11 +204,11 @@ gpgcheck=0
 
 これで yum install できる。初めて自分のつくったものを yum install する記念すべき瞬間。
 
-``` sh
+```sh
 $ yum install --enablerepo=m0t0k1ch1 go-rpm-sample
 ```
 
-``` txt
+```txt
 読み込んだプラグイン:fastestmirror
 インストール処理の設定をしています
 Loading mirror speeds from cached hostfile
@@ -258,7 +258,7 @@ rpm_check_debug を実行しています
 
 先ほどと同様、挙動を確認してみる。
 
-``` sh
+```sh
 $ service go-rpm-sample start
 Starting go-rpm-sample:                                    [  OK  ]
 $ service go-rpm-sample status

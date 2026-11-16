@@ -10,24 +10,24 @@ date = '2016-09-06T01:52:29+09:00'
 
 もともと brew で php56 を入れていたので、とりあえず unlink しておく。もとに戻したいときの手順は後述。
 
-``` sh
+```sh
 $ brew unlink php56
 ```
 
 brew で php70 と php70-phalcon をインストール。
 
-``` sh
+```sh
 $ brew install php70
 $ brew install php70-phalcon
 ```
 
 php のバージョンを確認。
 
-``` sh
+```sh
 $ php --version
 ```
 
-``` txt
+```txt
 PHP 7.0.10 (cli) (built: Aug 21 2016 19:14:33) ( NTS )
 Copyright (c) 1997-2016 The PHP Group
 Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
@@ -35,38 +35,38 @@ Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
 
 Phalcon については、以下のように `/usr/local/etc/php/7.0/conf.d/ext-phalcon.ini` が読み込まれている。
 
-``` sh
+```sh
 $ php -i | grep ext-phalcon.ini
 ```
 
-``` txt
+```txt
 Additional .ini files parsed => /usr/local/etc/php/7.0/conf.d/ext-phalcon.ini
 ```
 
 中身を確認する。
 
-``` sh
+```sh
 $ cat /usr/local/etc/php/7.0/conf.d/ext-phalcon.ini
 ```
 
-``` txt
+```txt
 [phalcon]
 extension="/usr/local/opt/php70-phalcon/phalcon.so"
 ```
 
 以下のように、`/usr/local/opt/php70-phalcon` は `../Cellar/php70-phalcon/3.0.0` への symlink なので、Phalcon のバージョンも 3.0.0 ということで大丈夫そう。
 
-``` sh
+```sh
 $ ll /usr/local/opt | grep php70-phalcon
 ```
 
-``` txt
+```txt
 lrwxr-xr-x   1 m0t0k1ch1  admin    29  9  1 10:23 php70-phalcon -> ../Cellar/php70-phalcon/3.0.0
 ```
 
 ちなみに、php56 に戻したい場合は以下のようにする。逆も然り。
 
-``` sh
+```sh
 $ brew unlink php70
 $ brew link php56
 ```
@@ -79,11 +79,11 @@ phpenv はなんかうまいこと動かなかったし、この 2 バージョ�
 
 こちらのバージョンも 3.0.0 であることを確認。
 
-``` sh
+```sh
 $ phalcon
 ```
 
-``` txt
+```txt
 Phalcon DevTools (3.0.0)
 
 Available commands:
@@ -100,18 +100,18 @@ Available commands:
 
 ## プロジェクトの雛形をつくる
 
-``` sh
+```sh
 $ phalcon create-project multi-module-phalcon
 ```
 
 サーバーを立ち上げる。
 
-``` sh
+```sh
 $ cd multi-module-phalcon
 $ php -S 127.0.0.1:8000 -t public .htrouter.php
 ```
 
-``` txt
+```txt
 PHP 7.0.10 Development Server started at Tue Sep  6 01:02:42 2016
 Listening on http://127.0.0.1:8000
 Document root is /Users/m0t0k1ch1/.ghq/src/github.com/m0t0k1ch1/multi-module-phalcon/public
@@ -134,7 +134,7 @@ Press Ctrl-C to quit.
 
 `apps` 以下はこんな感じ。
 
-``` txt
+```txt
 apps
 ├── backend
 │   ├── Module.php
@@ -160,7 +160,7 @@ apps
 
 `apps/routes.php` で以下のようにルーティングしている。
 
-``` php
+```php
 <?php
 $router = new \Phalcon\Mvc\Router;
 $router->setDefaultModule('frontend');
@@ -190,11 +190,11 @@ return $router;
 
 で、http://127.0.0.1:8000/user を GET で叩くと、以下のようなレスポンスが返ってくる。
 
-``` sh
+```sh
 $ curl -s http://127.0.0.1:8000/user | jq .
 ```
 
-``` json
+```json
 {
   "name": "m0t0k1ch1"
 }
@@ -204,7 +204,7 @@ $ curl -s http://127.0.0.1:8000/user | jq .
 
 ちなみに、`public/index.php` は以下のようになっている。`Phalcon\Mvc\Application` を使っていないのは、backend module（JSON 返すだけ）で view を DI コンテナに突っ込みたくなかったから。処理のフローが明示的になるので、エラーハンドリングもやりやすくなるといいなという想いもある。
 
-``` php
+```php
 <?php
 
 use \Phalcon\Di\FactoryDefault;

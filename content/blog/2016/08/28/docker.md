@@ -14,7 +14,7 @@ date = '2016-08-28T02:08:15+09:00'
 
 [こちらのエントリ](http://qiita.com/minamijoyo/items/ec5b35382797ac08e067) で紹介されているように、[OSX 用のアンインストールスクリプト](https://github.com/docker/toolbox/blob/master/osx/uninstall.sh) が公式の repo にあるので、それを落としてきて実行する。
 
-``` sh
+```sh
 $ git clone git@github.com:docker/toolbox.git
 $ cd toolbox
 $ sudo osx/uninstall.sh
@@ -26,37 +26,37 @@ $ sudo osx/uninstall.sh
 
 インストールできたらバージョンを確認。
 
-``` sh
+```sh
 $ docker --version
 ```
 
-``` txt
+```txt
 Docker version 1.12.0, build 8eab29e
 ```
 
-``` sh
+```sh
 $ docker-compose --version
 ```
 
-``` txt
+```txt
 docker-compose version 1.8.0, build f3628c7
 ```
 
-``` sh
+```sh
 $ docker-machine --version
 ```
 
-``` txt
+```txt
 docker-machine version 0.8.0, build b85aac1
 ```
 
 念を入れてきちんとインストールできているか確認。
 
-``` sh
+```sh
 $ docker run hello-world
 ```
 
-``` txt
+```txt
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 c04b14da8d14: Pull complete
@@ -91,11 +91,11 @@ For more examples and ideas, visit:
 
 ## 試しに既存のコンテナを起動してみる
 
-``` sh
+```sh
 $ docker run -d -p 80:80 --name webserver nginx
 ```
 
-``` txt
+```txt
 Unable to find image 'nginx:latest' locally
 latest: Pulling from library/nginx
 357ea8c3d80b: Pull complete
@@ -112,11 +112,11 @@ http://localhost に行くと、お馴染みの nginx 画面が表示される�
 
 とりあえず、run してみる。
 
-``` sh
+```sh
 $ docker run docker/whalesay cowsay poyo!
 ```
 
-``` txt
+```txt
 Unable to find image 'docker/whalesay:latest' locally
 latest: Pulling from docker/whalesay
 e190868d63f8: Pull complete
@@ -149,7 +149,7 @@ poyo!
 
 続いて、くじらくんがありがたい言葉を発せるようにするために image を改良する。
 
-``` sh
+```sh
 $ mkdir mydockerbuild
 $ cd mydockerbuild
 $ touch Dockerfile
@@ -161,7 +161,7 @@ $ touch Dockerfile
 
 emacs が候補にないことに若干の悲しみを感じながら、emacs で以下の内容を Dockerfile に描く。
 
-``` txt
+```txt
 FROM docker/whalesay:latest
 RUN apt-get -y update && apt-get install -y fortunes
 CMD /usr/games/fortune -a | cowsay
@@ -171,11 +171,11 @@ CMD /usr/games/fortune -a | cowsay
 
 Dockerfile が準備できたので、build する。
 
-``` sh
+```sh
 $ docker build -t docker-whale .
 ```
 
-``` txt
+```txt
 Sending build context to Docker daemon 2.048 kB
 ...
 Removing intermediate container 1c1754725007
@@ -184,11 +184,11 @@ Successfully built d649997c162a
 
 新しく `docker-whale` ができていることを確認する。
 
-``` sh
+```sh
 $ docker images
 ```
 
-``` txt
+```txt
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 docker-whale        latest              d649997c162a        36 seconds ago      274.9 MB
 nginx               latest              4efb2fcdb1ab        3 days ago          183.4 MB
@@ -198,11 +198,11 @@ docker/whalesay     latest              6b362a9f73eb        15 months ago       
 
 できているようなので、run してみる。
 
-``` sh
+```sh
 $ docker run docker-whale
 ```
 
-``` txt
+```txt
  ________________________________________
 / The Golden Rule is of no use to you    \
 | whatever unless you realize it is your |
@@ -231,17 +231,17 @@ $ docker run docker-whale
 
 先ほど build した `docker-whale` に `m0t0k1ch1/docker-whale` という tag をつける。バージョンはとりあえず latest。
 
-``` sh
+```sh
 $ docker tag d649997c162a m0t0k1ch1/docker-whale:latest
 ```
 
 確認する。
 
-``` sh
+```sh
 $ docker images
 ```
 
-``` txt
+```txt
 REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
 docker-whale                latest              d649997c162a        54 minutes ago      274.9 MB
 m0t0k1ch1/docker-whale      latest              d649997c162a        54 minutes ago      274.9 MB
@@ -252,29 +252,29 @@ docker/whalesay             latest              6b362a9f73eb        15 months ag
 
 続いて Docker Hub にログイン。
 
-``` sh
+```sh
 $ docker login --username=m0t0k1ch1
 ```
 
 で、先ほど tag をつけた image を Docker Hub に push する。
 
-``` sh
+```sh
 $ docker push m0t0k1ch1/docker-whale
 ```
 
 Docker Hub の Repositories に `m0t0k1ch1/docker-whale` が存在することが確認できたら、一旦、ローカルにある image を削除する。
 
-``` sh
+```sh
 $ docker rmi -f d649997c162a
 ```
 
 消えてるか確認する。
 
-``` sh
+```sh
 $ docker images
 ```
 
-``` txt
+```txt
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 nginx               latest              4efb2fcdb1ab        3 days ago          183.4 MB
 hello-world         latest              c54a2cc56cbb        8 weeks ago         1.848 kB
@@ -285,11 +285,11 @@ docker/whalesay     latest              6b362a9f73eb        15 months ago       
 
 Docker Hub にログインした状態で、ローカルに image がなくても run できるか確認する。
 
-``` sh
+```sh
 $ docker run m0t0k1ch1/docker-whale
 ```
 
-``` txt
+```txt
 Unable to find image 'm0t0k1ch1/docker-whale:latest' locally
 latest: Pulling from m0t0k1ch1/docker-whale
 e190868d63f8: Already exists

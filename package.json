@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@go-task/cli": "3.54.0",
+    "prettier": "3.10.1"
+  },
+  "packageManager": "pnpm@12.21.0"
+}
