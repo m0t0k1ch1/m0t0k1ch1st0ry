@@ -7,7 +7,7 @@ section.article-summaries article:not(:last-child) {
 }
 
 section.article-summaries h2.title {
-  margin-bottom: 0.5714em;
+  margin-bottom: 0.5em;
 }
 
 section.article-summaries h2 a {
