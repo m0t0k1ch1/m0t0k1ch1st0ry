@@ -15,7 +15,7 @@ date = '2016-07-17T01:38:01+09:00'
 > モデルのweightパラメータを保存する場合，以下のようにHDF5を使います。  
 > 注: HDF5とPythonライブラリの h5pyがインストールされている必要があります(Kerasには同梱されていません)。
 
-``` sh
+```sh
 $ pip install h5py
 ```
 
@@ -23,7 +23,7 @@ $ pip install h5py
 
 [前回描いたコード](https://github.com/m0t0k1ch1/keras-sample/blob/master/mnist_mlp.py) に以下を追加して、モデルを `mnist_mlp_model.json` に、学習結果を `mnist_mlp_weights.h5` に保存する。
 
-``` python
+```python
 model_json_str = model.to_json()
 open('mnist_mlp_model.json', 'w').write(model_json_str)
 model.save_weights('mnist_mlp_weights.h5');
@@ -31,7 +31,7 @@ model.save_weights('mnist_mlp_weights.h5');
 
 ## 保存したモデルと学習結果を利用する
 
-``` python
+```python
 # -*- coding: utf-8 -*-
 
 import numpy as np
@@ -70,7 +70,7 @@ print('Test accuracy :', score[1])
 
 結果は以下。きちんと学習後に近いスコアが出ている。
 
-``` txt
+```txt
 Using TensorFlow backend.
 ____________________________________________________________________________________________________
 Layer (type)                     Output Shape          Param #     Connected to

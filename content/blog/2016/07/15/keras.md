@@ -18,14 +18,14 @@ http://keras.io/ja
 
 ## 準備
 
-``` sh
+```sh
 $ python --version
 Python 3.5.1
 ```
 
 インストールは以下で終わり。簡単。
 
-``` sh
+```sh
 $ pip install keras
 $ pip list | grep Keras
 Keras (1.0.5)
@@ -35,7 +35,7 @@ Keras (1.0.5)
 
 GitHub にある [サンプルコード](https://github.com/fchollet/keras/blob/master/examples/mnist_mlp.py) を落としてきて実行してみると、以下のような感じになる。学習している雰囲気が出ていて、眺めているだけで楽しい。
 
-``` sh
+```sh
 $ python mnist_mlp.py
 Using Theano backend.
 60000 train samples
@@ -68,7 +68,7 @@ Epoch 1/20
 
 で、最終的には以下のような結果となった。テストデータに対して 98.16% で識字できているらしい。すごい。
 
-``` sh
+```sh
 Epoch 19/20
 60000/60000 [==============================] - 13s - loss: 0.0192 - acc: 0.9955 - val_loss: 0.1210 - val_acc: 0.9820
 Epoch 20/20
@@ -83,7 +83,7 @@ Test accuracy: 0.9816
 
 TensorFlow 自体のインストール方法は [こちら](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md)。pip を使えば簡単にできる。ちなみに、自分のバージョンは以下。
 
-``` sh
+```sh
 $ pip list | grep tensorflow
 tensorflow (0.9.0)
 ```
@@ -92,7 +92,7 @@ tensorflow (0.9.0)
 
 とりあえず、初っ端からわからない。まずは以下の部分。
 
-``` python
+```python
 # the data, shuffled and split between train and test sets
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
@@ -112,7 +112,7 @@ Y_test = np_utils.to_categorical(y_test, nb_classes)
 
 なにやらデータセットを準備している模様。考えてもよくわかんないので中身を出力してみることにした。Python も初めてだけど、ググりつつがんばる。とりあえず、`X_train` と `y_train` に絞って中身を見てみる。
 
-``` python
+```python
 # -*- coding: utf-8 -*-
 
 import sys
@@ -141,7 +141,7 @@ sys.stdout.write(']\n'))
 
 上記コードを実行すると、出力は以下のようになる。
 
-``` txt
+```txt
 Using TensorFlow backend.
 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
@@ -184,7 +184,7 @@ first sample is 5
 - `Y_train`：訓練データ（出力）
 - `Y_test`：テストデータ（出力）
 
-``` python
+```python
 # MNIST データセットを取り込む
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
@@ -206,7 +206,7 @@ Y_test  = np_utils.to_categorical(y_test, 10)
 
 という感じで、Keras のドキュメントと照らし合わせつつコードを整理しながら、全部コメントをつけてみたのが以下。
 
-``` python
+```python
 # -*- coding: utf-8 -*-
 
 import numpy as np

@@ -10,21 +10,21 @@ date = '2016-06-05T00:29:34+09:00'
 
 ## install
 
-``` sh
+```sh
 $ brew install mecab
 $ brew install mecab-ipadic
 ```
 
 ### dicdir 確認
 
-``` sh
+```sh
 $ mecab-config --dicdir
 /usr/local/lib/mecab/dic
 ```
 
 ### libexecdir 確認
 
-``` sh
+```sh
 $ mecab-config --libexecdir
 /usr/local/Cellar/mecab/0.996/libexec/mecab
 ```
@@ -35,7 +35,7 @@ $ mecab-config --libexecdir
 
 「ブラックフェニックス」も「日本酒」も知らないので、分割されてしまう。
 
-``` sh
+```sh
 $ echo 'ブラックフェニックスは最高の日本酒である' | mecab
 ブラック        名詞,一般,*,*,*,*,ブラック,ブラック,ブラック
 フェニックス    名詞,固有名詞,一般,*,*,*,フェニックス,フェニックス,フェニックス
@@ -51,7 +51,7 @@ EOS
 
 ### ユーザー辞書の保存先を準備
 
-``` sh
+```sh
 $ mkdir /usr/local/lib/mecab/dic/userdic
 ```
 
@@ -59,7 +59,7 @@ $ mkdir /usr/local/lib/mecab/dic/userdic
 
 「ブラックフェニックス」と「日本酒」を教える。今回は試しにやってみたいだけなのでコストは 1。
 
-``` sh
+```sh
 $ touch sake.csv
 $ echo 'ブラックフェニックス,,,1,名詞,一般,*,*,*,*,ブラックフェニックス,ブラックフェニックス,ブラックフェニックス' >> sake.csv
 $ echo '日本酒,,,1,名詞,一般,*,*,*,*,日本酒,ニホンシュ,ニホンシュ' >> sake.csv
@@ -69,7 +69,7 @@ $ echo '日本酒,,,1,名詞,一般,*,*,*,*,日本酒,ニホンシュ,ニホン�
 
 以下を実行すると、`/usr/local/lib/mecab/dic/userdic/sake.dic` が生成される。
 
-``` sh
+```sh
 $ /usr/local/Cellar/mecab/0.996/libexec/mecab/mecab-dict-index \
 -d /usr/local/lib/mecab/dic/ipadic \
 -u /usr/local/lib/mecab/dic/userdic/sake.dic \
@@ -82,7 +82,7 @@ sake.csv
 
 `/usr/local/etc/mecabrc` に以下を追加する。
 
-``` txt
+```txt
 userdic = /usr/local/lib/mecab/dic/userdic/sake.dic
 ```
 
@@ -90,7 +90,7 @@ userdic = /usr/local/lib/mecab/dic/userdic/sake.dic
 
 「ブラックフェニックス」と「日本酒」が分割されなくなった。
 
-``` sh
+```sh
 $ echo 'ブラックフェニックスは最高の日本酒である' | mecab
 ブラックフェニックス    名詞,一般,*,*,*,*,ブラックフェニックス,ブラックフェニックス,ブラックフェニックス
 は      助詞,係助詞,*,*,*,*,は,ハ,ワ
