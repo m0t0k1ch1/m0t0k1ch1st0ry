@@ -1,0 +1,6 @@
+{{ $type := .Site.Params.MainPageType | default "post" }}
+{{ $pages := .Pages }}
+{{ if .IsHome }}
+    {{ $pages = .Site.RegularPages }}
+{{ end }}
+{{ return (.Paginate (where $pages "Type" $type)) }}

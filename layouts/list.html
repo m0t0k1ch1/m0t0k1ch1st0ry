@@ -1,3 +1,7 @@
+{{ define "canonical" }}
+<link rel="canonical" href="{{ (partial "paginator.html" .).URL | absURL }}">
+{{ end }}
+
 {{ define "main" }}
 <section class="article-summaries section">
     <div class="container">
@@ -5,17 +9,9 @@
             <div class="tile is-2 is-vertical">
             </div>
             <div class="tile is-8 is-vertical">
-                {{ $type := .Site.Params.MainPageType }}
-                {{ if not $type }}
-                    {{ $type = "post" }}
-                {{ end }}
-                {{ if .IsHome }}
-                    {{ .Scratch.Set "pag" (.Paginate (where .Site.RegularPages "Type" $type)) }}
-                {{ else }}
-                    {{ .Scratch.Set "pag" (.Paginate (where .Pages "Type" $type)) }}
-                {{ end }}
+                {{ $pag := partial "paginator.html" . }}
                 <div class="block">
-                    {{ range (.Scratch.Get "pag").Pages }}
+                    {{ range $pag.Pages }}
                     {{ .Render "li" }}
                     {{ end }}
                 </div>
