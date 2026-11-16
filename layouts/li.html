@@ -1,10 +1,10 @@
 <article class="tile box is-marginless is-shadowless">
   <div class="content">
-    <a href="{{ .Permalink }}">
-      <h2 class="title is-size-4">
+    <h2 class="title is-size-4">
+      <a href="{{ .Permalink }}">
         {{ .Title }}
-      </h2>
-    </a>
+      </a>
+    </h2>
     {{ with .Params.tags }}
     <div>
       {{ range . }}

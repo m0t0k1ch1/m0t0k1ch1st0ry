@@ -6,7 +6,15 @@ section.article-summaries article:not(:last-child) {
   border-bottom: 1px solid hsl(0, 0%, 96%);
 }
 
-section.article-summaries h2:hover {
+section.article-summaries h2.title {
+  margin-bottom: 0.5714em;
+}
+
+section.article-summaries h2 a {
+  color: inherit;
+}
+
+section.article-summaries h2 a:hover {
   text-decoration: underline;
 }
 

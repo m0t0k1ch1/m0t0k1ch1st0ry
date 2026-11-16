@@ -24,11 +24,11 @@
           {{ range .Data.Terms.ByCount }}
           <article class="tile box is-marginless is-shadowless">
             <div class="content">
-              <a href="{{ .Page.Permalink }}">
-                <h2 class="title is-size-4">
+              <h2 class="title is-size-4">
+                <a href="{{ .Page.Permalink }}">
                   #{{ .Page.Title }}
-                </h2>
-              </a>
+                </a>
+              </h2>
               <span class="article-count is-size-6 has-text-grey-light">
                 {{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}
               </span>
