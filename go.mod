@@ -2,8 +2,6 @@ module site
 
 go 1.27.0
 
-tool github.com/gohugoio/hugo
-
 require (
 	cel.dev/expr v0.25.2 // indirect
 	cloud.google.com/go v0.123.0 // indirect
@@ -182,3 +180,5 @@ require (
 	rsc.io/qr v0.2.0 // indirect
 	software.sslmate.com/src/go-pkcs12 v0.7.2 // indirect
 )
+
+tool github.com/gohugoio/hugo
