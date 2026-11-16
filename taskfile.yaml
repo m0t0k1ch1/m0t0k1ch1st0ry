@@ -1,14 +1,41 @@
 version: "3"
+vars:
+  HUGO: '{{ .HUGO | default "go tool hugo" }}'
+  HUGO_VERSION_IN_GO_MOD:
+    sh: awk '$1 == "github.com/gohugoio/hugo" { print $2 }' go.mod
 tasks:
   deps:
+    deps:
+      - deps/go
+      - deps/node
+  deps/go:
+    cmds:
+      - go mod download
+      - go mod verify
+  deps/node:
     cmds:
       - pnpm install --frozen-lockfile
   lint:
     cmds:
+      - go mod tidy -diff
       - pnpm exec prettier --check .
   fmt:
     cmds:
       - pnpm exec prettier --write .
   build:
+    vars:
+      HUGO_VERSION_IN_USE:
+        sh: "{{ .HUGO }} version | awk '{ print $2 }'"
+    preconditions:
+      - sh: "{{ .HUGO }} version > /dev/null 2>&1"
+        msg: '"{{ .HUGO }}" is not available.'
+      - sh: 'echo "{{ .HUGO_VERSION_IN_USE }}" | grep -Eq "^{{ .HUGO_VERSION_IN_GO_MOD }}([-+]|$)"'
+        msg: 'The version of "{{ .HUGO }}" is {{ .HUGO_VERSION_IN_USE }}, which does not match {{ .HUGO_VERSION_IN_GO_MOD }} in go.mod.'
     cmds:
-      - hugo build --gc --minify --cleanDestinationDir
+      - "{{ .HUGO }} build --gc --minify --cleanDestinationDir"
+  new:
+    requires:
+      vars:
+        - name: SLUG
+    cmds:
+      - '{{ .HUGO }} new content blog/{{ now | date "2006/01/02" }}/{{ .SLUG }}.md'
