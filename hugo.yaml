@@ -20,8 +20,6 @@ params:
   images:
     - img/common/author_256.jpg
 services:
-  disqus:
-    shortname: m0t0k1ch1st0ry
   googleAnalytics:
     id: G-P7HSR0RPPX
 taxonomies:
