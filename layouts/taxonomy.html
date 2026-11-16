@@ -1,5 +1,5 @@
 {{ define "title" }}
-#{{ .Title }} - {{ .Site.Title }}
+{{ .Title | title }} - {{ .Site.Title }}
 {{ end }}
 
 {{ define "main" }}
@@ -8,7 +8,7 @@
     <div class="container has-text-centered">
       <div class="block">
         <h1 class="title">
-          #{{ .Title }}
+          {{ .Title | title }}
         </h1>
       </div>
     </div>
@@ -21,8 +21,19 @@
       </div>
       <div class="tile is-8 is-vertical">
         <div class="block">
-          {{ range .Pages }}
-          {{ .Render "li" }}
+          {{ range .Data.Terms.ByCount }}
+          <article class="tile box is-marginless is-shadowless">
+            <div class="content">
+              <a href="{{ .Page.Permalink }}">
+                <h2 class="title is-size-4">
+                  #{{ .Page.Title }}
+                </h2>
+              </a>
+              <span class="article-count is-size-6 has-text-grey-light">
+                {{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}
+              </span>
+            </div>
+          </article>
           {{ end }}
         </div>
       </div>
