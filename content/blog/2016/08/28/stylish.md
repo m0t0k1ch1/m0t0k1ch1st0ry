@@ -4,7 +4,7 @@ tags = ['others']
 date = '2016-08-28T02:32:24+09:00'
 +++
 
-{{< tweet 769059623009673218 >}}
+{{< x user="ryusukefuda" id="769059623009673218" >}}
 
 ドレッドの友人がこんなリツイートしてたのを見て、[Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=ja) っていう Chrome プラグインの存在を知った。
 
