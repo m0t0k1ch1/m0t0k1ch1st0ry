@@ -185,7 +185,7 @@ ref. [Blockchain and Smart Contract Mechanism Design Challenges](https://fc17.if
 
 前提として、Vitalik も先ほどのスライドの下部で credit to Vlad Zamfir for this characterization と述べているので、そもそもこの 2 人の意見の根本は同じなのだと思います。
 
-{{< tweet 559181087658631168 >}}
+{{< x user="VladZamfir" id="559181087658631168" >}}
 
 おい。カッコよすぎか。2015 年やぞ。どういうことやねん。
 
@@ -209,7 +209,7 @@ Vlad も economist の目的をこう捉えているのであれば、しっく�
 
 こういった economist 視点での解釈がズレているのは多くの同意が得られると思うので、議論の余地はほぼないと思うのですが、自分が難しいなと感じるのは、**cryptographer 視点で解釈するか、mechanism designer 視点で解釈するか** です。前述した通り、information security という重要かつ明確なゴールを持った前者が極めて妥当だなとは思うのですが、、今回は敢えて以下のように呟いておきました。
 
-{{< tweet 1025865045056671744 >}}
+{{< x user="m0t0k1ch1" id="1025865045056671744" >}}
 
 ### 5-3. さらなる深みへの誘い
 

@@ -105,7 +105,7 @@ ref. [10 億集めた ICO が何もプロダクトをローンチできない理
 
 実際、Vitalik は「反対した」というよりも、[「自身の立場を明確にした」](https://twitter.com/VitalikButerin/status/911217371158683649) という印象です。以下のツイートで、do not blame them とも言っています。
 
-{{< tweet 911300771819352064 >}}
+{{< x user="VitalikButerin" id="911300771819352064" >}}
 
 ref. [Vitalik Buterin Responds To Raiden ICO](https://www.ethnews.com/vitalik-buterin-responds-to-raiden-ico)
 
