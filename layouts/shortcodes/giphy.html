@@ -1,0 +1,10 @@
+{{- $slug := .Get 0 -}}
+{{- $id := index (last 1 (split $slug "-")) 0 -}}
+<div class="giphy">
+    <div style="width: 100%; height: 0; padding-bottom: {{ .Get 1 }}%; position: relative;">
+        <iframe src="https://giphy.com/embed/{{ $id }}" width="100%" height="100%" style="width: 100%; height: 100%; position: absolute;" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+    </div>
+    <p>
+        <a href="https://giphy.com/gifs/{{ $slug }}" target="_blank">via GIPHY</a>
+    </p>
+</div>
