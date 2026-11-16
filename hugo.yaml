@@ -2,7 +2,6 @@ baseURL: https://m0t0k1ch1st0ry.com/
 capitalizeListTitles: false
 copyright: '© 2013 <a href="https://linktr.ee/m0t0k1ch1" class="has-text-grey has-text-weight-bold">m0t0k1ch1</a>'
 locale: ja
-theme: h1st0ry
 title: '#m0t0k1ch1st0ry'
 markup:
   goldmark:
@@ -10,6 +9,9 @@ markup:
       unsafe: true
   highlight:
     style: rrt
+module:
+  hugoVersion:
+    min: 0.158.0
 pagination:
   pagerSize: 10
 params:
