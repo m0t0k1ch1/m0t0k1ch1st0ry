@@ -4,31 +4,31 @@
 
 {{ define "main" }}
 <section class="article-summaries-hero hero">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <div class="block">
-                <h1 class="title">
-                    #{{ .Title }}
-                </h1>
-            </div>
-        </div>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="block">
+        <h1 class="title">
+          #{{ .Title }}
+        </h1>
+      </div>
     </div>
+  </div>
 </section>
 <section class="article-summaries section">
-    <div class="container">
-        <div class="tile is-ancestor">
-            <div class="tile is-2 is-vertical">
-            </div>
-            <div class="tile is-8 is-vertical">
-                <div class="block">
-                    {{ range .Pages }}
-                    {{ .Render "li" }}
-                    {{ end }}
-                </div>
-            </div>
-            <div class="tile is-2 is-vertical">
-            </div>
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-2 is-vertical">
+      </div>
+      <div class="tile is-8 is-vertical">
+        <div class="block">
+          {{ range .Pages }}
+          {{ .Render "li" }}
+          {{ end }}
         </div>
+      </div>
+      <div class="tile is-2 is-vertical">
+      </div>
     </div>
+  </div>
 </section>
 {{ end }}
