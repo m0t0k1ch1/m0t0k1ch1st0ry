@@ -15,7 +15,6 @@ module:
 pagination:
   pagerSize: 10
 params:
-  addthisID: ra-5ce6ac411a98e6f0
   description: Since 2013
   mainPageType: blog
   images:
