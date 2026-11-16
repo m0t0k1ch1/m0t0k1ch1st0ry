@@ -1,7 +1,15 @@
 {
   "redirects": [
-    { "source": "/blog", "destination": "/", "permanent": true },
-    { "source": "/blog/", "destination": "/", "permanent": true },
+    {
+      "source": "/blog",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/",
+      "permanent": true
+    },
     {
       "source": "/blog/index.xml",
       "destination": "/index.xml",
