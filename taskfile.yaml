@@ -24,13 +24,11 @@ tasks:
       - pnpm exec prettier --write .
   build:
     vars:
-      HUGO_PATH:
-        sh: command -v {{ .HUGO }} | head -n 1
       HUGO_VERSION_IN_USE:
         sh: "{{ .HUGO }} version | awk '{ print $2 }'"
     preconditions:
       - sh: 'echo "{{ .HUGO_VERSION_IN_USE }}" | grep -Eq "^{{ .HUGO_VERSION_IN_GO_MOD }}([-+]|$)"'
-        msg: 'The version of "{{ .HUGO }}" ({{ .HUGO_PATH }}) is "{{ .HUGO_VERSION_IN_USE }}", which does not match "{{ .HUGO_VERSION_IN_GO_MOD }}" in go.mod.'
+        msg: The version of {{ .HUGO }} is {{ .HUGO_VERSION_IN_USE }}, which does not match {{ .HUGO_VERSION_IN_GO_MOD }} in go.mod.
     cmds:
       - "{{ .HUGO }} build --gc --minify --cleanDestinationDir"
   new:
