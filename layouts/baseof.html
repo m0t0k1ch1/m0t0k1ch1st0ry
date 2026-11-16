@@ -12,6 +12,9 @@
     {{ if ne .Kind "404" }}
     <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
+    {{ with site.Home.OutputFormats.Get "rss" }}
+    <link rel="alternate" type="{{ .MediaType.Type }}" title="{{ site.Title }}" href="{{ .Permalink }}">
+    {{ end }}
     {{ partial "opengraph.html" . }}
     {{ partial "twitter_cards.html" . }}
     {{ hugo.Generator }}
