@@ -1,1 +1,1 @@
-# m0t0k1ch1st0ry
+![cover](static/img/common/cover.png)
