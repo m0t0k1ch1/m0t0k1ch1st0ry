@@ -1,0 +1,26 @@
+baseURL: https://m0t0k1ch1st0ry.com/
+title: '#m0t0k1ch1st0ry'
+copyright: '© 2013 <a href="https://linktr.ee/m0t0k1ch1" class="has-text-grey has-text-weight-bold">m0t0k1ch1</a>'
+theme: h1st0ry
+capitalizeListTitles: false
+
+pagination:
+  pagerSize: 10
+
+taxonomies:
+  tag: tags
+
+services:
+  disqus:
+    shortname: m0t0k1ch1st0ry
+
+params:
+  description: Since 2013
+  mainPageType: blog
+  images:
+    - img/common/author_256.jpg
+  addthisID: ra-5ce6ac411a98e6f0
+
+markup:
+  highlight:
+    style: rrt
