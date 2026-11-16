@@ -1,27 +1,27 @@
 baseURL: https://m0t0k1ch1st0ry.com/
-title: '#m0t0k1ch1st0ry'
-copyright: '© 2013 <a href="https://linktr.ee/m0t0k1ch1" class="has-text-grey has-text-weight-bold">m0t0k1ch1</a>'
-theme: h1st0ry
-locale: ja
 capitalizeListTitles: false
-pagination:
-  pagerSize: 10
-taxonomies:
-  tag: tags
-services:
-  disqus:
-    shortname: m0t0k1ch1st0ry
-  googleAnalytics:
-    id: G-P7HSR0RPPX
-params:
-  description: Since 2013
-  mainPageType: blog
-  images:
-    - img/common/author_256.jpg
-  addthisID: ra-5ce6ac411a98e6f0
+copyright: '© 2013 <a href="https://linktr.ee/m0t0k1ch1" class="has-text-grey has-text-weight-bold">m0t0k1ch1</a>'
+locale: ja
+theme: h1st0ry
+title: '#m0t0k1ch1st0ry'
 markup:
   goldmark:
     renderer:
       unsafe: true
   highlight:
     style: rrt
+pagination:
+  pagerSize: 10
+params:
+  addthisID: ra-5ce6ac411a98e6f0
+  description: Since 2013
+  mainPageType: blog
+  images:
+    - img/common/author_256.jpg
+services:
+  disqus:
+    shortname: m0t0k1ch1st0ry
+  googleAnalytics:
+    id: G-P7HSR0RPPX
+taxonomies:
+  tag: tags
