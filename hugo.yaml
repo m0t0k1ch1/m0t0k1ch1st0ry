@@ -17,7 +17,6 @@ pagination:
   pagerSize: 10
 params:
   description: Since 2013
-  mainPageType: blog
   images:
     - img/common/cover.png
 services:

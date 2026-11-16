@@ -1,6 +1,5 @@
-{{ $type := .Site.Params.MainPageType | default "post" }}
 {{ $pages := .Pages }}
 {{ if .IsHome }}
-    {{ $pages = .Site.RegularPages }}
+    {{ $pages = where site.RegularPages "Type" "in" site.MainSections }}
 {{ end }}
-{{ return (.Paginate (where $pages "Type" $type)) }}
+{{ return (.Paginate $pages) }}
