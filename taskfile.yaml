@@ -9,3 +9,6 @@ tasks:
   fmt:
     cmds:
       - pnpm exec prettier --write .
+  build:
+    cmds:
+      - hugo build --gc --minify --cleanDestinationDir
