@@ -28,9 +28,9 @@ tasks:
         sh: "{{ .HUGO }} version | awk '{ print $2 }'"
     preconditions:
       - sh: "{{ .HUGO }} version > /dev/null 2>&1"
-        msg: "{{ .HUGO }} is not available."
+        msg: '"{{ .HUGO }}" is not available.'
       - sh: 'echo "{{ .HUGO_VERSION_IN_USE }}" | grep -Eq "^{{ .HUGO_VERSION_IN_GO_MOD }}([-+]|$)"'
-        msg: The version of {{ .HUGO }} is {{ .HUGO_VERSION_IN_USE }}, which does not match {{ .HUGO_VERSION_IN_GO_MOD }} in go.mod.
+        msg: 'The version of "{{ .HUGO }}" is {{ .HUGO_VERSION_IN_USE }}, which does not match {{ .HUGO_VERSION_IN_GO_MOD }} in go.mod.'
     cmds:
       - "{{ .HUGO }} build --gc --minify --cleanDestinationDir"
   new:
