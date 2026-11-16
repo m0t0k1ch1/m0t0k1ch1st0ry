@@ -2,6 +2,7 @@ baseURL: https://m0t0k1ch1st0ry.com/
 title: '#m0t0k1ch1st0ry'
 copyright: '© 2013 <a href="https://linktr.ee/m0t0k1ch1" class="has-text-grey has-text-weight-bold">m0t0k1ch1</a>'
 theme: h1st0ry
+locale: ja
 capitalizeListTitles: false
 
 pagination:
