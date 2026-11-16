@@ -14,6 +14,8 @@ taxonomies:
 services:
   disqus:
     shortname: m0t0k1ch1st0ry
+  googleAnalytics:
+    id: G-P7HSR0RPPX
 
 params:
   description: Since 2013
