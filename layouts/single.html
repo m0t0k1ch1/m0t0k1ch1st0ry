@@ -47,19 +47,4 @@
         </div>
     </div>
 </section>
-{{ if .Site.Config.Services.Disqus.Shortname }}
-<section class="article-comments section">
-    <div class="container">
-        <div class="tile is-ancestor">
-            <div class="tile is-2 is-vertical">
-            </div>
-            <div class="tile is-8 is-vertical">
-                {{ partial "disqus.html" . }}
-            </div>
-            <div class="tile is-2 is-vertical">
-            </div>
-        </div>
-    </div>
-</section>
-{{ end }}
 {{ end }}
