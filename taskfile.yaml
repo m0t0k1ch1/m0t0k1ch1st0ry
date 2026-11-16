@@ -1,4 +1,8 @@
 version: "3"
+vars:
+  HUGO: '{{ .HUGO | default "go tool hugo" }}'
+  HUGO_VERSION_IN_GO_MOD:
+    sh: awk '$1 == "github.com/gohugoio/hugo" { print $2 }' go.mod
 tasks:
   deps:
     deps:
@@ -19,11 +23,14 @@ tasks:
     cmds:
       - pnpm exec prettier --write .
   build:
+    preconditions:
+      - sh: '{{ .HUGO }} version | grep -Eq "^hugo {{ .HUGO_VERSION_IN_GO_MOD }}([-+ ]|$)"'
+        msg: 'The version of "{{ .HUGO }}" does not match {{ .HUGO_VERSION_IN_GO_MOD }} in go.mod.'
     cmds:
-      - go tool hugo build --gc --minify --cleanDestinationDir
+      - "{{ .HUGO }} build --gc --minify --cleanDestinationDir"
   new:
     requires:
       vars:
         - name: SLUG
     cmds:
-      - go tool hugo new content blog/{{ now | date "2006/01/02" }}/{{ .SLUG }}.md
+      - '{{ .HUGO }} new content blog/{{ now | date "2006/01/02" }}/{{ .SLUG }}.md'
