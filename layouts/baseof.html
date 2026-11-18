@@ -15,6 +15,11 @@
     {{ with site.Home.OutputFormats.Get "rss" }}
     <link rel="alternate" type="{{ .MediaType.Type }}" title="{{ site.Title }}" href="{{ .Permalink }}">
     {{ end }}
+    {{ if eq .Kind "term" }}
+    {{ with .OutputFormats.Get "rss" }}
+    <link rel="alternate" type="{{ .MediaType.Type }}" title="#{{ $.Title }} - {{ site.Title }}" href="{{ .Permalink }}">
+    {{ end }}
+    {{ end }}
     {{ partial "opengraph.html" . }}
     {{ partial "twitter_cards.html" . }}
     <link rel="icon" type="image/png" sizes="48x48" href="{{ "favicon-48x48.png" | absURL }}">
