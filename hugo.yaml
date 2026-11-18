@@ -8,6 +8,16 @@ locale: ja
 title: m0t0k1ch1st0ry
 markup:
   goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - $$
+              - $$
+          inline:
+            - - \(
+              - \)
     renderer:
       unsafe: true
   highlight:
