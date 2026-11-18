@@ -7,7 +7,7 @@ section.article-summaries article:not(:last-child) {
 }
 
 section.article-summaries h2.title {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75rem;
 }
 
 section.article-summaries h2 a {
@@ -52,7 +52,7 @@ section.article-content article.content div.github:not(:last-child) {
 }
 
 section.article-content article.content div.math:not(:last-child) {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 section.article-content article.content > div:has(> iframe):not(:last-child) {
