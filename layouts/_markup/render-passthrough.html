@@ -1,12 +1,6 @@
-{{- $opts := dict "output" "mathml" "displayMode" (eq .Type "block") }}
-{{- with try (transform.ToMath .Inner $opts) }}
-{{- with .Err }}
-{{- errorf "Failed to render math with transform.ToMath: %s: see %s" . $.Position }}
+{{- $math := transform.ToMath .Inner (dict "displayMode" (eq .Type "block")) }}
+{{- if eq .Type "block" }}
+<div class="math">{{ $math }}</div>
 {{- else }}
-{{- if eq $.Type "block" }}
-<div class="math">{{ .Value }}</div>
-{{- else }}
-{{- .Value }}
-{{- end }}
-{{- end }}
+{{- $math }}
 {{- end -}}
