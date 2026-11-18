@@ -1,5 +1,5 @@
 # Environment file for Claude Code
-/claude.env
+claude.env
 
 # Generated files by hugo
 /public/
