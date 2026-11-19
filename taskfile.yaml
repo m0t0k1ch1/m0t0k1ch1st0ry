@@ -18,9 +18,11 @@ tasks:
   lint:
     cmds:
       - go mod tidy -diff
+      - go run ./tools/imagemeta check content static
       - pnpm exec prettier --check .
   fmt:
     cmds:
+      - go run ./tools/imagemeta strip content static
       - pnpm exec prettier --write .
   build:
     vars:
