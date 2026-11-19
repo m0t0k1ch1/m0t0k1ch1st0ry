@@ -5,11 +5,11 @@ tags: ['others']
 title: 'Stylish で GitHub と SoundCloud を dark にする'
 ---
 
-{{< x user="ryusukefuda" id="769059623009673218" >}}
-
 ドレッドの友人がこんなリツイートしてたのを見て、[Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=ja) っていう Chrome プラグインの存在を知った。
 
 <!--more-->
+
+{{< x user="ryusukefuda" id="769059623009673218" >}}
 
 > Stylish はユーザー スタイルを管理するツールで、ウェブのスタイルを変更することができます。Stylish を利用すると、Google、Facebook、YouTube、orkut など、さまざまなサイトに対応したテーマやスキンを簡単にインストールできます。
 

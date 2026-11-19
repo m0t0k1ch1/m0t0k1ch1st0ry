@@ -5,11 +5,11 @@ tags: ['go']
 title: 'Go で ksatriya という薄い WAF を書いてみた'
 ---
 
-{{< github "m0t0k1ch1" "ksatriya" >}}
-
 気分転換も兼ねて、Go で薄い WAF を書いてみた。「書いた」というより「つぎはぎした」と表現した方が正しい感じのものですが、そこはご了承ください。
 
 <!--more-->
+
+{{< github "m0t0k1ch1" "ksatriya" >}}
 
 ## 動機
 

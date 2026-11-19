@@ -7,9 +7,9 @@ title: 'Go で IRC bot をつくりやすくする'
 
 Perl で IRC bot を書くとき、[UnazuSan](https://github.com/Songmu/p5-UnazuSan) の `on_command` を使うのに慣れちゃっていたので、Go でも同じ雰囲気で書きたいなあと思って、とりあえず骨組みだけ書いてみた。誰か既に似たようなのを書いていそうな気もする。。
 
-{{< github "m0t0k1ch1" "ape" >}}
-
 <!--more-->
+
+{{< github "m0t0k1ch1" "ape" >}}
 
 README にも書いた通り、こんな感じで使います。
 
