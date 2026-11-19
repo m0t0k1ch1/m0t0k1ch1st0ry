@@ -7,7 +7,7 @@ title: 'Solidity における proxy storage clash を回避する'
 
 昨日書いた [Solidity における proxy storage clash]({{< ref "/blog/2021/07/21/proxy-storage-clash.md" >}}) を回避する方法の 1 つをメモしておきます。
 
-<!-- more -->
+<!--more-->
 
 端的に言うと、昨日の proxy コントラクトの
 
