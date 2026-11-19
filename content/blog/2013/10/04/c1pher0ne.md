@@ -1,8 +1,8 @@
-+++
-title = 'Twitter bot にリマインダー機能を実装してみた'
-tags = ['api', 'c1pher0ne', 'perl']
-date = '2013-10-04'
-+++
+---
+title: 'Twitter bot にリマインダー機能を実装してみた'
+tags: ['api', 'c1pher0ne', 'perl']
+date: '2013-10-04'
+---
 
 {{< figure src="/img/entry/c1pher0ne-on.png" >}}
 

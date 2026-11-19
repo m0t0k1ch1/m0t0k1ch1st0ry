@@ -1,8 +1,8 @@
-+++
-title = 'Go で ksatriya という薄い WAF を書いてみた'
-tags = ['go']
-date = '2014-08-16'
-+++
+---
+title: 'Go で ksatriya という薄い WAF を書いてみた'
+tags: ['go']
+date: '2014-08-16'
+---
 
 {{< github "m0t0k1ch1" "ksatriya" >}}
 

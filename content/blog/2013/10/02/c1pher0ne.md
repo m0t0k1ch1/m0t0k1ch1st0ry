@@ -1,8 +1,8 @@
-+++
-title = 'Twitter bot に趣深い詩を詠ませてみた'
-tags = ['api', 'c1pher0ne', 'perl']
-date = '2013-10-02'
-+++
+---
+title: 'Twitter bot に趣深い詩を詠ませてみた'
+tags: ['api', 'c1pher0ne', 'perl']
+date: '2013-10-02'
+---
 
 {{< figure src="/img/entry/c1pher0ne-on.png" >}}
 

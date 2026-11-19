@@ -1,8 +1,8 @@
-+++
-title = 'vs Chef 第2回戦'
-tags = ['chef', 'perl', 'ruby']
-date = '2013-05-01'
-+++
+---
+title: 'vs Chef 第2回戦'
+tags: ['chef', 'perl', 'ruby']
+date: '2013-05-01'
+---
 
 Chef と戯れ始めてはや 1 週間。  
 先輩方の手厚いサポートもあり、少しずつ敵の姿をとらえつつあります m0t0k1ch1 です。

@@ -1,8 +1,8 @@
-+++
-title = 'EOS な serialization を Go で'
-tags = ['eos', 'go', 'blockchain']
-date = '2021-01-05T16:41:07+09:00'
-+++
+---
+title: 'EOS な serialization を Go で'
+tags: ['eos', 'go', 'blockchain']
+date: '2021-01-05T16:41:07+09:00'
+---
 
 [これ]({{< ref "/blog/2020/08/31/eos-serialization.md" >}}) と同じことを Go でやってみましょうの回。
 

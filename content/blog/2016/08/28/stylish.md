@@ -1,8 +1,8 @@
-+++
-title = 'Stylish で GitHub と SoundCloud を dark にする'
-tags = ['others']
-date = '2016-08-28T02:32:24+09:00'
-+++
+---
+title: 'Stylish で GitHub と SoundCloud を dark にする'
+tags: ['others']
+date: '2016-08-28T02:32:24+09:00'
+---
 
 {{< x user="ryusukefuda" id="769059623009673218" >}}
 
