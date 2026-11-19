@@ -1,7 +1,7 @@
 ---
-title: 'Scalatra + Slick + Scalate でつくるサンプルうぇっぶアプリケーション'
-tags: ['scala', 'scalatra', 'slick']
 date: '2013-11-16'
+tags: ['scala', 'scalatra', 'slick']
+title: 'Scalatra + Slick + Scalate でつくるサンプルうぇっぶアプリケーション'
 ---
 
 現状、Scala でカジュアルにうぇっぶアプリケーションをつくるにはこの構成が一番キマってる感じがするので、サンプルうぇっぶアプリケーションをつくってみました。3 つともイニシャルが S という点も素晴らしいですね。

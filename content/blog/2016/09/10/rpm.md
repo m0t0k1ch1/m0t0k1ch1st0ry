@@ -1,7 +1,7 @@
 ---
-title: 'Go で書いた何かを RPM パッケージにして yum install したい'
-tags: ['rpm', 'go']
 date: '2016-09-10T01:23:35+09:00'
+tags: ['rpm', 'go']
+title: 'Go で書いた何かを RPM パッケージにして yum install したい'
 ---
 
 表題のようなことをやる必要が出てきたので、その検証をした。

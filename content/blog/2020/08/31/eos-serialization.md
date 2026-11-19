@@ -1,7 +1,7 @@
 ---
-title: 'EOS な serialization を C++ と Node.js で'
-tags: ['eos', 'cpp', 'nodejs', 'blockchain']
 date: '2020-08-31T20:43:55+09:00'
+tags: ['eos', 'cpp', 'nodejs', 'blockchain']
+title: 'EOS な serialization を C++ と Node.js で'
 ---
 
 表題の通りのことをやります。非常に基礎的な処理なのですが、いい感じのコードが見当たらなかったので、自分でテスト用に書いたものを載っけておきます。もっとイケてる方法があったら教えてほしいです。

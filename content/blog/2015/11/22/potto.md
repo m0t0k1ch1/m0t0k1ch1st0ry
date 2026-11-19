@@ -1,7 +1,7 @@
 ---
-title: 'Slack の Outgoing WebHook をハンドリングするくん'
-tags: ['go']
 date: '2015-11-22T17:32:45+09:00'
+tags: ['go']
+title: 'Slack の Outgoing WebHook をハンドリングするくん'
 ---
 
 Go で API サーバー立てる練習として、Slack の Outgoing WebHook を捕まえる対話式の bot をつくっていて、その bot 固有の機能でない部分は切り離せるわ〜〜〜と思って、えいやっと書いた。

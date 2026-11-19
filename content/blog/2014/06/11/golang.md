@@ -1,7 +1,7 @@
 ---
-title: 'nil だと思ってやつが nil じゃなかった - Go'
-tags: ['go']
 date: '2014-06-11'
+tags: ['go']
+title: 'nil だと思ってやつが nil じゃなかった - Go'
 ---
 
 Go の `nil` で完全に嵌ったのでメモ。

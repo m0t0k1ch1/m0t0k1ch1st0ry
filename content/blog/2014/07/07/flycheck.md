@@ -1,7 +1,7 @@
 ---
-title: 'flycheck しながら Perl を描くときに'
-tags: ['emacs', 'perl']
 date: '2014-07-07'
+tags: ['emacs', 'perl']
+title: 'flycheck しながら Perl を描くときに'
 ---
 
 Emacs、「モダン」という言葉に誘われて flymake から flycheck に乗り換えたときに Perl の @INC 周りの設定で少しがんばったのでメモ。

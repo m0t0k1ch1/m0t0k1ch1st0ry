@@ -1,8 +1,8 @@
 ---
-title: 'Go で好きな画像を LGTMize する'
-tags: ['go']
 date: '2015-03-14'
 images: ['img/entry/zushi-lgtm.jpg']
+tags: ['go']
+title: 'Go で好きな画像を LGTMize する'
 ---
 
 {{< github "m0t0k1ch1" "lgtmize" >}}
