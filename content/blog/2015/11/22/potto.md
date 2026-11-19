@@ -7,9 +7,9 @@ title: 'Slack の Outgoing WebHook をハンドリングするくん'
 
 Go で API サーバー立てる練習として、Slack の Outgoing WebHook を捕まえる対話式の bot をつくっていて、その bot 固有の機能でない部分は切り離せるわ〜〜〜と思って、えいやっと書いた。
 
-{{< github "m0t0k1ch1" "potto" >}}
-
 <!--more-->
+
+{{< github "m0t0k1ch1" "potto" >}}
 
 README にもある通り、以下のような感じで使える。前につくった IRC 用の [ape](https://github.com/m0t0k1ch1/ape) に似たようなインターフェース。
 

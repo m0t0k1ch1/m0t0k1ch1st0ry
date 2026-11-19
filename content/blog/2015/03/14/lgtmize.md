@@ -6,11 +6,11 @@ tags: ['go']
 title: 'Go で好きな画像を LGTMize する'
 ---
 
-{{< github "m0t0k1ch1" "lgtmize" >}}
-
 普段から多用している `:ok_woman:` に少し飽きてきたので、そろそろしめやかに LGTM 童貞を卒業しようと思い、つくってみた。
 
 <!--more-->
+
+{{< github "m0t0k1ch1" "lgtmize" >}}
 
 ## 使い方
 

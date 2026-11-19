@@ -5,11 +5,11 @@ tags: ['others']
 title: 'Quiver でメモ管理改善'
 ---
 
-[Quiver: The Programmer's Notebook](https://itunes.apple.com/jp/app/quiver-programmers-notebook/id866773894?mt=12)
-
 Twitter のタイムラインで [こちらのエントリ](http://namaraii.com/archives/39626) を見かけて、これはよさそうと思って衝動買いしてちょっと試してみたところ、自分のニーズを全て満たしていると言っても過言ではないくらいよかった。ので、この感動を同じニーズを持った人達に伝えるべく、軽くレポートしてみようと思う。
 
 <!--more-->
+
+[Quiver: The Programmer's Notebook](https://itunes.apple.com/jp/app/quiver-programmers-notebook/id866773894?mt=12)
 
 {{< figure src="/img/entry/quiver.png" >}}
 
