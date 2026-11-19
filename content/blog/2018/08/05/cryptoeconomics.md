@@ -8,9 +8,9 @@ title: 'cryptoeconomics: crypto-backed mechanism design'
 
 [これ]({{< ref "/blog/2018/07/28/cryptoeconomics.md" >}}) の続きです。
 
-<!--more-->
-
 前回の記事は「まず cryptoeconomics という言葉を認知してほしい」という意図で書いたので、敢えてその定義について踏み込んだことは書きませんでした。謎を謎のまま放置して終わるという、自分の好きな園子温監督もよく使う手です。が、これは映画ではないので、きちんと続きを書こうと思います。
+
+<!--more-->
 
 {{< figure src="/img/entry/venus.png" >}}
 
