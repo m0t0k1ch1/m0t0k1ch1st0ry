@@ -7,7 +7,7 @@ title: 'Solidity における proxy storage clash'
 
 スマートコントラクトの upgradability を実現するためによく使われるいわゆる proxy パターンを実装する際に必ず回避しないといけない proxy storage clash を実際に起こしてみましょうの回。
 
-<!-- more -->
+<!--more-->
 
 まず、適当なコントラクトを用意します。
 
