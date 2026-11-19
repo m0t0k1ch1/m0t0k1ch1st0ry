@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    {{ if .Summary }}
-    <meta name="description" content="{{ .Summary }}">
-    {{ else if .Site.Params.Description }}
-    <meta name="description" content="{{ .Site.Params.Description }}">
+    {{ with or (.Summary | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace) .Site.Params.Description }}
+    <meta name="description" content="{{ . }}">
     {{ end }}
     {{ if ne .Kind "404" }}
     <link rel="canonical" href="{{ .Permalink }}">
