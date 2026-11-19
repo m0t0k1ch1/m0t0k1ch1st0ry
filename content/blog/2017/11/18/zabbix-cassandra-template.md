@@ -1,8 +1,8 @@
-+++
-title = 'Cassandra 監視用の Zabbix template'
-tags = ['zabbix', 'cassandra']
-date = '2017-11-18T21:00:45+09:00'
-+++
+---
+date: '2017-11-18T21:00:45+09:00'
+tags: ['zabbix', 'cassandra']
+title: 'Cassandra 監視用の Zabbix template'
+---
 
 主要項目に絞ってつくったつもり。ご自由にお使いください。
 

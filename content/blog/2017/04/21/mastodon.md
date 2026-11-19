@@ -1,8 +1,8 @@
-+++
-title = 'お 1 人様用 Mastodon を立てながら Mastodon について想うこと'
-tags = ['mastodon', 'blockchain']
-date = '2017-04-21T00:21:40+09:00'
-+++
+---
+date: '2017-04-21T00:21:40+09:00'
+tags: ['mastodon', 'blockchain']
+title: 'お 1 人様用 Mastodon を立てながら Mastodon について想うこと'
+---
 
 まず、表題の前半にある通り、遅ればせながら、お 1 人様用 [Mastodon](https://github.com/tootsuite/mastodon) を立てました。分散していきましょう。よろしくお願い致します。
 

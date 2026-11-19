@@ -1,8 +1,8 @@
-+++
-title = 'Solidity における proxy storage clash を回避する'
-tags = ['ethereum', 'solidity', 'blockchain']
-date = '2021-07-22T13:06:03+09:00'
-+++
+---
+date: '2021-07-22T13:06:03+09:00'
+tags: ['ethereum', 'solidity', 'blockchain']
+title: 'Solidity における proxy storage clash を回避する'
+---
 
 昨日書いた [Solidity における proxy storage clash]({{< ref "/blog/2021/07/21/proxy-storage-clash.md" >}}) を回避する方法の 1 つをメモしておきます。
 

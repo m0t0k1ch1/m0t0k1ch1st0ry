@@ -1,5 +1,5 @@
-+++
-title = '{{ replace .TranslationBaseName "-" " " | title }}'
-tags = []
-date = '{{ .Date }}'
-+++
+---
+date: '{{ .Date }}'
+tags: []
+title: '{{ replace .File.ContentBaseName "-" " " | title }}'
+---

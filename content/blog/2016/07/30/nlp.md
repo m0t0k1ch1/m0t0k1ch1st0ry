@@ -1,8 +1,8 @@
-+++
-title = 'CentOS で Python から MeCab と CaboCha を使えるようにする'
-tags = ['python', 'mecab', 'cabocha']
-date = '2016-07-30T02:23:32+09:00'
-+++
+---
+date: '2016-07-30T02:23:32+09:00'
+tags: ['python', 'mecab', 'cabocha']
+title: 'CentOS で Python から MeCab と CaboCha を使えるようにする'
+---
 
 手順が無駄なく綺麗にまとまってるとこをなかなか見つけられなくてごにゃごにゃしたので、最終的に自分が辿り着いた手順を後々のためにメモ。
 

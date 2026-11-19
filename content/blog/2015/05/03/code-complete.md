@@ -1,8 +1,8 @@
-+++
-title = 'CODE COMPLETE 上 - 第5章まで'
-tags = ['book']
-date = '2015-05-03'
-+++
+---
+date: '2015-05-03'
+tags: ['book']
+title: 'CODE COMPLETE 上 - 第5章まで'
+---
 
 3 月から「1 ヶ月 1 技術書読破」縛りを実施中なので、頭の整理も兼ねて自分用にメモ。
 

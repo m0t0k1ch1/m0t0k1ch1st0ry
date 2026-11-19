@@ -1,8 +1,8 @@
-+++
-title = 'ISUCON5 と chatzmers - 予選4位通過編'
-tags = ['isucon', 'perl']
-date = '2015-09-29T01:46:40+09:00'
-+++
+---
+date: '2015-09-29T01:46:40+09:00'
+tags: ['isucon', 'perl']
+title: 'ISUCON5 と chatzmers - 予選4位通過編'
+---
 
 [ISUCON5](http://isucon.net/archives/44132090.html) の予選 2 日目にチーム「**chatzmers**」として参加し、[予選 2 日目 2 位・総合 4 位通過](http://isucon.net/archives/45532743.html) という結果を残すことができました。
 

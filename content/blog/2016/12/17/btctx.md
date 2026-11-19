@@ -1,8 +1,8 @@
-+++
-title = 'Bitcoin の transaction を Go で解読する'
-tags = ['bitcoin', 'blockchain', 'go']
-date = '2016-12-17T02:08:17+09:00'
-+++
+---
+date: '2016-12-17T02:08:17+09:00'
+tags: ['bitcoin', 'blockchain', 'go']
+title: 'Bitcoin の transaction を Go で解読する'
+---
 
 Go で Bitcoin の transaction のバイト列をちまちま読む package を結構前に勉強も兼ねて描き始めていたのだが、これが普段ちょこちょこ使うようになって整ってきた。最近筆不精になってるし、せっかくなのでブログのエントリというカタチでも整えてみることにした。
 
