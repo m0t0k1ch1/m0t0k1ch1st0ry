@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-01-30T05:52:56+09:00'
 tags: ['others']
 title: 'ありがとうカヤック'

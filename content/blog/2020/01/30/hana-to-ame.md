@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2020-01-30T02:58:46+09:00'
 images: ['img/entry/higanbana.jpg']
 tags: ['music', 'movie']

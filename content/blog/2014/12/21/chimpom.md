@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-12-21'
 tags: ['book']
 title: '芸術実行犯'

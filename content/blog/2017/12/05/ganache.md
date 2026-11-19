@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-12-05'
 tags: ['ethereum', 'truffle', 'ganache', 'solidity', 'blockchain']
 title: 'Ganache で始める Ðapp 開発'

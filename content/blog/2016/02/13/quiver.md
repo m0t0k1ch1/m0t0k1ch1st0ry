@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-02-13T19:11:50+09:00'
 tags: ['others']
 title: 'Quiver でメモ管理改善'

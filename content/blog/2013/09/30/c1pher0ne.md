@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-09-30'
 tags: ['api', 'c1pher0ne', 'perl']
 title: '秋なので、Twitter上にかわいい相棒をつくってみた'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-08-11'
 tags: ['scala']
 title: '第1回 Scala で遊ぼ☆ 「関数型のスタイル -基礎-」'

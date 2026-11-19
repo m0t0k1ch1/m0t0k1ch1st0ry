@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-09-06T01:52:29+09:00'
 tags: ['phalcon', 'php']
 title: 'PHP 7 で multi module な Phalcon 3.0.0 を動かしてみる'

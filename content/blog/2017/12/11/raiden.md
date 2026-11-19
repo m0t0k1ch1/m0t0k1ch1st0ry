@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-12-11T03:47:23+09:00'
 images: ['img/entry/raiden_1.png']
 tags: ['ico', 'raiden', 'ethereum', 'solidity', 'blockchain']

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-01-14T12:29:55+09:00'
 tags: ['hugo', 'wercker']
 title: '最近の Hugo + wercker + GitHub pages で嵌ったこと'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-01-03T23:50:54+09:00'
 tags: ['others']
 title: 'おみくじ'

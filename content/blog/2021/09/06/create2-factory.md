@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2021-09-06T15:25:18+09:00'
 tags: ['ethereum', 'solidity', 'blockchain']
 title: '複数 EVM チェーンでコントラクトのアドレスを揃えるためにやっておくとよいこと'

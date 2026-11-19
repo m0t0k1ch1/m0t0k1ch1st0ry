@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-06-03'
 tags: ['api', 'go']
 title: 'Go で GitHub の Markdown API をたたく'

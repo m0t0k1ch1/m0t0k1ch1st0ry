@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-09-10T01:23:35+09:00'
 tags: ['rpm', 'go']
 title: 'Go で書いた何かを RPM パッケージにして yum install したい'

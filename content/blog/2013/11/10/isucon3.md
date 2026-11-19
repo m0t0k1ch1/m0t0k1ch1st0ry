@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-11-10'
 images: ['img/entry/isucon3_1.jpg']
 tags: ['isucon', 'others']

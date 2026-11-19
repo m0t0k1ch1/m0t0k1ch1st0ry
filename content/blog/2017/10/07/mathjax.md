@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-10-07'
 tags: ['math']
 title: 'Hugo に MathJax を導入して数式を書けるようにする'

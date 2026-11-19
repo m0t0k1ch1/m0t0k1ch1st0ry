@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2015-07-26T21:36:12+09:00'
 tags: ['go']
 title: 'Go で IRC bot をつくりやすくする'

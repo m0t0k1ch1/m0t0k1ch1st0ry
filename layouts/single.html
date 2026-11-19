@@ -3,6 +3,10 @@
 {{ end }}
 
 {{ define "main" }}
+{{ $authors := .GetTerms "authors" }}
+{{ if not $authors }}
+{{ errorf "%s: authors must not be empty" .File.Path }}
+{{ end }}
 <section class="article-content-hero hero">
   <div class="hero-body">
     <div class="container has-text-centered">
@@ -29,6 +33,13 @@
         </time>
       </div>
       {{ end }}
+      <div class="block is-size-6 has-text-grey-light">
+        by
+        {{- range $i, $author := $authors }}
+        {{- if $i }},{{ end }}
+        <a href="{{ $author.Permalink }}" class="has-text-grey-light">{{ $author.LinkTitle }}</a>
+        {{- end }}
+      </div>
     </div>
   </div>
 </section>

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-01-15T04:11:05+09:00'
 tags: ['openssl', 'bitcoin']
 title: 'OpenSSL を使って Bitcoin 用の鍵ペアを生成する'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2020-08-31T20:43:55+09:00'
 tags: ['eos', 'cpp', 'nodejs', 'blockchain']
 title: 'EOS な serialization を C++ と Node.js で'

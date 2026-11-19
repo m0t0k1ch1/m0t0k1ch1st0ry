@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-09-15'
 tags: ['others']
 title: 'ありがとう Cytus'

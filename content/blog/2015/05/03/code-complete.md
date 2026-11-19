@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2015-05-03'
 tags: ['book']
 title: 'CODE COMPLETE 上 - 第5章まで'

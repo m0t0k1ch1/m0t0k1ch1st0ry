@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-06-28'
 images: ['img/entry/obey-eye-cover.jpg']
 tags: ['others']

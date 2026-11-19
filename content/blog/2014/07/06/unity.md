@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-07-06'
 tags: ['unity']
 title: 'Unity で 2D シューティング'

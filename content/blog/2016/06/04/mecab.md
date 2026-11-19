@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-06-05T00:29:34+09:00'
 tags: ['mecab']
 title: 'MeCab のユーザー辞書に単語を追加してみる'

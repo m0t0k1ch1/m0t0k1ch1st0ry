@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-10-02'
 tags: ['api', 'c1pher0ne', 'perl']
 title: 'Twitter bot に趣深い詩を詠ませてみた'

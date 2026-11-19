@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-08-28T02:08:15+09:00'
 tags: ['docker']
 title: 'Docker Toolbox をアンインストールして Docker for Mac を試してみる'

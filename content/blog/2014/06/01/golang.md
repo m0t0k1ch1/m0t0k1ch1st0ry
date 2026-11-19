@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-06-01'
 tags: ['go']
 title: 'クロージャにメソッドを実装してみる - Go'

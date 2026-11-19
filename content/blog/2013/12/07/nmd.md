@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-12-07'
 tags: ['music']
 title: 'NMD'

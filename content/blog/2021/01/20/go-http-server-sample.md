@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2021-01-20T00:50:22+09:00'
 tags: ['go']
 title: 'Go で素朴な HTTP API サーバーを書く'

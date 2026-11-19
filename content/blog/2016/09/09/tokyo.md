@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-09-09T00:53:03+09:00'
 tags: ['others']
 title: 'Tokyo'

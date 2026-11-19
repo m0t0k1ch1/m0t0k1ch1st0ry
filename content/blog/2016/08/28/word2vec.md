@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-08-28T01:52:33+09:00'
 tags: ['python', 'word2vec']
 title: 'Python で「老人と海」を word2vec する'

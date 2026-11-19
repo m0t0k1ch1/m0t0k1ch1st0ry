@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2018-09-29T03:43:35+09:00'
 images: ['img/entry/vickrey-auction_1.png']
 tags: ['cryptoeconomics', 'economics', 'blockchain']

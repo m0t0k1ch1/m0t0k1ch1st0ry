@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-11-12'
 tags: ['ethereum', 'blockchain', 'docker']
 title: 'Docker で private かつ standalone な Ethereum ノードを立てる'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-04-30'
 tags: ['emacs', 'perl']
 title: 'Emacs で Perl 描きたい'

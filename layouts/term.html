@@ -1,5 +1,5 @@
 {{ define "title" }}
-#{{ .Title }} - {{ .Site.Title }}
+{{ partial "term-title.html" . }} - {{ .Site.Title }}
 {{ end }}
 
 {{ define "main" }}
@@ -8,7 +8,7 @@
     <div class="container has-text-centered">
       <div class="block">
         <h1 class="title">
-          #{{ .Title }}
+          {{ partial "term-title.html" . }}
         </h1>
       </div>
     </div>
