@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2015-03-14'
 images: ['img/entry/zushi-lgtm.jpg']
 tags: ['go']

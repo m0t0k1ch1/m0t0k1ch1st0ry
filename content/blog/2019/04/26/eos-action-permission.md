@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2019-04-26T01:44:37+09:00'
 images: ['img/entry/eos-action-permission_2.png']
 tags: ['eos', 'cpp', 'blockchain']

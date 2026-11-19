@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-09-08'
 tags: ['go']
 title: 'ksatriya update log'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2018-12-25T01:54:05+09:00'
 images: ['img/entry/santa-claus.jpg']
 tags: ['ethereum', 'solidity', 'blockchain']

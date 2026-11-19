@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2015-11-22T17:32:45+09:00'
 tags: ['go']
 title: 'Slack の Outgoing WebHook をハンドリングするくん'

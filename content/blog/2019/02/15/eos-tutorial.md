@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2019-02-15T11:20:33+09:00'
 tags: ['eos', 'cpp', 'blockchain']
 title: 'EOSIO Developer Portal チュートリアルの軌跡'

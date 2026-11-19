@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-08-28T02:32:24+09:00'
 tags: ['others']
 title: 'Stylish で GitHub と SoundCloud を dark にする'

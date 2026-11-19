@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-07-30T02:23:32+09:00'
 tags: ['python', 'mecab', 'cabocha']
 title: 'CentOS で Python から MeCab と CaboCha を使えるようにする'

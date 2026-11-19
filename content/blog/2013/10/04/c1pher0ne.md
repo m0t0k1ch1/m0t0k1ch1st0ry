@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-10-04'
 tags: ['api', 'c1pher0ne', 'perl']
 title: 'Twitter bot にリマインダー機能を実装してみた'

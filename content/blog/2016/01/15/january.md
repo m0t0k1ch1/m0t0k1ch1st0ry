@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-01-15T18:46:26+09:00'
 tags: ['others']
 title: '2016 睦月'

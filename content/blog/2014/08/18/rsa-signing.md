@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-08-18'
 tags: ['go']
 title: 'Go で RSA 署名'

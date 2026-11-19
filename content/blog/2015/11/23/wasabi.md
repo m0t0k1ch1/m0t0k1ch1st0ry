@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2015-11-23T19:06:57+09:00'
 tags: ['go']
 title: 'なんでもルーレットしてくれる Slack bot'

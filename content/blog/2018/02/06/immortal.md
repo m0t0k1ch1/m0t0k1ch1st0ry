@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2018-02-06T01:43:28+09:00'
 tags: ['go']
 title: 'Go 製の daemon 管理ツール immortal を試してみる'

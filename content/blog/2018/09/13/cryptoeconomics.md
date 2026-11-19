@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2018-09-13T03:39:01+09:00'
 images: ['img/entry/dna.png']
 tags: ['cryptoeconomics', 'economics', 'blockchain']

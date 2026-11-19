@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2015-10-05T00:02:26+09:00'
 tags: ['movie']
 title: 'Guilty of Romance'

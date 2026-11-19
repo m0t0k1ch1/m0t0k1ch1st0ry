@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-12-31'
 tags: ['music']
 title: '音で振り返る2014年'

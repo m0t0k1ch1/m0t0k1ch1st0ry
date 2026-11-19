@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-06-09'
 tags: ['go']
 title: 'net/http の動きを少しだけ追ってみた - Go'

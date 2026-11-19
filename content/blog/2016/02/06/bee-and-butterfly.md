@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-02-07T18:54:48+09:00'
 tags: ['others']
 title: '蜂と蝶'

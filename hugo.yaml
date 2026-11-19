@@ -33,4 +33,5 @@ services:
   googleAnalytics:
     id: G-P7HSR0RPPX
 taxonomies:
+  author: authors
   tag: tags

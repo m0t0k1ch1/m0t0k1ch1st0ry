@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-03-31T01:24:20+09:00'
 tags: ['azure']
 title: 'Azure で Application Gateway 下の Healthy なホスト数を取得する'

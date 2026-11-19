@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-05-15T03:38:15+09:00'
 tags: ['blockchain', 'go']
 title: 'シンプルな Blockchain を Go で実装する'

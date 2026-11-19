@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2021-01-05T16:41:07+09:00'
 tags: ['eos', 'go', 'blockchain']
 title: 'EOS な serialization を Go で'

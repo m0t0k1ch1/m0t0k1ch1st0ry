@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-10-14'
 tags: ['scala', 'scalatra']
 title: 'Scalatra を Jetty で standalone deploy してみる'

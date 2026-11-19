@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-06-11'
 tags: ['go']
 title: 'nil だと思ってやつが nil じゃなかった - Go'

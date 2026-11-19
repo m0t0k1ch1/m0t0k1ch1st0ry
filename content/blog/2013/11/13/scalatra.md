@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-11-13'
 tags: ['scala', 'scalatra', 'slick']
 title: 'Scalatra のアクションで Int が返らなくてはまった'

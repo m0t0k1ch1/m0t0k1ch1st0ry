@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-08-31'
 tags: ['yapc']
 title: 'ブログを書くまでが YAPC::Asia Tokyo 2014'

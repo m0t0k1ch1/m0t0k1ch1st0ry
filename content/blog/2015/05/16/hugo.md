@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2015-05-15T23:18:39+09:00'
 tags: ['hugo', 'wercker']
 title: 'Hugo ＋ wercker ＋ GitHub Pages でブログ管理'

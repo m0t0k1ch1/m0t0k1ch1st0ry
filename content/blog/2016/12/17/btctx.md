@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-12-17T02:08:17+09:00'
 tags: ['bitcoin', 'blockchain', 'go']
 title: 'Bitcoin の transaction を Go で解読する'

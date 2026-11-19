@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-02-14'
 images: ['img/entry/challenge-response.jpg']
 tags: ['others']

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-11-28'
 tags: ['isucon', 'scala', 'scalatra', 'slick']
 title: 'ISUCON3 本戦のお題アプリを Scala に移植しました'

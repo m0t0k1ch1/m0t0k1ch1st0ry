@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-08-17'
 tags: ['perl']
 title: '弱い参照で循環参照を解決する - Perl'

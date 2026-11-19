@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2019-01-17T03:29:24+09:00'
 tags: ['dao', 'ethereum', 'solidity', 'blockchain']
 title: 'Happy Hacking Christmas の解答と狙い'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-11-05'
 images: ['img/entry/love-exposure.jpg']
 tags: ['movie']

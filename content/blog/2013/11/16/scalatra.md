@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-11-16'
 tags: ['scala', 'scalatra', 'slick']
 title: 'Scalatra + Slick + Scalate でつくるサンプルうぇっぶアプリケーション'

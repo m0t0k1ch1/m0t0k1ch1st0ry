@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2018-08-05T00:26:07+09:00'
 images: ['img/entry/venus.png']
 tags: ['cryptoeconomics', 'economics', 'blockchain']

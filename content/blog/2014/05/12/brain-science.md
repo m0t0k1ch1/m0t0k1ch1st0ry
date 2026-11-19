@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2014-05-12'
 tags: ['book']
 title: '脳科学の本を読んだ'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2015-10-12T11:17:19+09:00'
 tags: ['others']
 title: '渋いい感じの Keynote テーマ「ash」'

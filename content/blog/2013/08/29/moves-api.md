@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-08-29'
 tags: ['api', 'perl']
 title: 'moves の API で遊んでみた'

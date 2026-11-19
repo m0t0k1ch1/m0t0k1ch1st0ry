@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-05-09'
 tags: ['perl']
 title: 'smart match の smart さに物申す - Perl'

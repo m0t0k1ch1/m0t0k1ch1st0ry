@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-12-08T04:45:34+09:00'
 tags: ['ethereum', 'truffle', 'solidity', 'blockchain']
 title: 'truffle で書いたコントラクトを solidity-flattener でがっちゃんこして Etherscan で公開する'

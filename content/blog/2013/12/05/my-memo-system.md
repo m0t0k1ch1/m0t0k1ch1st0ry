@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-12-05'
 tags: ['others']
 title: 'Evetnote から脱却して Kobito + Nocs + Dropbox でメモ管理'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2017-11-29T01:59:10+09:00'
 tags: ['blockchain', 'enigma']
 title: 'Catalyst から紐解く Enigma ①'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2018-01-24T04:30:44+09:00'
 tags: ['bitcoin', 'lightning network', 'blockchain']
 title: 'lnd ＋ btcd を使って testnet で Lightning Network 体験'

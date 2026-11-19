@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2019-03-09T18:02:51+09:00'
 tags: ['ethereum', 'solidity', 'blockchain']
 title: 'native meta transaction が扱える ERC20 トークンの簡易実装'

@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2013-05-01'
 tags: ['chef', 'perl', 'ruby']
 title: 'vs Chef 第2回戦'

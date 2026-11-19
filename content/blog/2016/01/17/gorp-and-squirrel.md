@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-01-17T15:50:42+09:00'
 tags: ['go', 'mysql']
 title: 'gorp と squirrel で CRUD'

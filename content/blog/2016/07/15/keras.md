@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-07-15T04:38:39+09:00'
 tags: ['keras', 'tensorflow', 'python']
 title: 'はじめての Deep Learning - Keras で MLP for MNIST'

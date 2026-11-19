@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2016-07-17T01:38:01+09:00'
 tags: ['keras', 'python']
 title: 'Keras のモデルと学習結果を保存して利用する'

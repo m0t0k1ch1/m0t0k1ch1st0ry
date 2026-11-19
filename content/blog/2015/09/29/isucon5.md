@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2015-09-29T01:46:40+09:00'
 tags: ['isucon', 'perl']
 title: 'ISUCON5 と chatzmers - 予選4位通過編'

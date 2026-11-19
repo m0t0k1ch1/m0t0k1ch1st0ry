@@ -1,4 +1,5 @@
 ---
+authors: ['m0t0k1ch1']
 date: '2021-07-21T21:29:15+09:00'
 tags: ['ethereum', 'solidity', 'blockchain']
 title: 'Solidity における proxy storage clash'
