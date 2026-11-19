@@ -8,7 +8,7 @@ date = '2014-07-05'
 
 <!--more-->
 
-{{< figure src="/img/entry/unity-3d.gif" >}}
+{{< figure src="/img/entry/unity-3d.avif" >}}
 
 ## ※追記
 

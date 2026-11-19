@@ -10,7 +10,7 @@ date = '2014-07-06'
 
 <!--more-->
 
-{{< figure src="/img/entry/unity-2d.gif" >}}
+{{< figure src="/img/entry/unity-2d.avif" >}}
 
 プレハブ化とか、当たり判定とか、アニメーションとか、やることが想像以上に多くて勉強になった。あと、デフォルトのエディタを MonoDevelop から Atom に変えて楽しんでいた。
 
