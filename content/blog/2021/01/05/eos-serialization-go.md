@@ -7,13 +7,13 @@ title: 'EOS な serialization を Go で'
 
 [これ]({{< ref "/blog/2020/08/31/eos-serialization.md" >}}) と同じことを Go でやってみましょうの回。
 
+<!--more-->
+
 EOS Canada の
 
 {{< github "eoscanada" "eos-go" >}}
 
 を使って実装します。
-
-<!--more-->
 
 ```go
 package main
