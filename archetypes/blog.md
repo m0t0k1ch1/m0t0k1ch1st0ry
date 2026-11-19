@@ -1,5 +1,5 @@
 ---
 date: '{{ .Date }}'
 tags: []
-title: '{{ replace .TranslationBaseName "-" " " | title }}'
+title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 ---
